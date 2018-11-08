@@ -1,0 +1,215 @@
+﻿@model Finance101.Models.Household
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-card ">
+            <!-- Start .panel -->
+            <div class="panel-heading">
+                <h4 class="panel-title">@Model.Name</h4>
+                <div class="panel-actions">
+                    <a href="#" class="panel-action panel-action-toggle" data-panel-toggle></a>
+                    <a href="#" class="panel-action panel-action-dismiss" data-panel-dismiss></a>
+                </div>
+            </div>
+            <div class="panel-body">
+                <h2>Details</h2>
+                @*<div class="ajaxchart btn btn-sm btn-success" id="arrychart">Current</div>
+                <div class="ajaxchart btn btn-sm btn-success" id="objectchart">Last</div>*@
+
+                <div class="jumbotron">
+
+                    @*<div class="row">
+                        <div class="col-md-12">
+                            <div id="chart"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <hr />*@
+                @*<div class="row">
+                    <div class="col-md-12">
+                        <div id="p-chart-container"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="acct-chart-container"></div>
+                    </div>
+                </div>*@
+                <hr />
+                <div>
+                    @Html.ActionLink("Invite Member", "Invite", "Households", null, new { @class = "btn btn-xs btn-info" })
+                </div>
+                <div>
+                    @Html.ActionLink("Invite List", "Index", "Invites", null, new { @class = "btn btn-xs btn-info" })
+                </div>
+                <div>
+                    <h4>Household</h4>
+                    <hr />
+                    <p>
+                        @Html.ActionLink("Household Accounts", "Index", "PersonalAccounts", null, new { @class = "btn btn-xs btn-success" })
+
+                        @Html.ActionLink("Add Account", "Create", "PersonalAccounts", null, new { @class = "btn btn-xs btn-success" })
+                    </p>
+                    <dl class="dl-horizontal">
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Name)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Name)
+                        </dd>
+
+                    </dl>
+                </div>
+                <div>
+                    <h4>Household Members</h4>
+                    <hr />
+                    <ul>
+                        @foreach (var mem in Model.Members)
+                        {
+                            <li>@mem.FirstName</li>
+                        }
+                    </ul>
+                </div>
+                <p>
+                    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+                    @Html.ActionLink("Back to List", "Index") |
+                </p>
+                <div>
+                    @Html.ActionLink("Leave Household", "LeaveHousehold", "Households", null, new { @class = "btn btn-xs btn-warning" })
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section scripts{
+
+    @*<script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>*@
+
+    @*<script>
+        $(document).ready(function () {
+            $(".ajaxchart").click(function () {
+                var url = '@Url.Action("GetChartDataAjax", "Home")' + '?type=' + $(this).html();
+                $.post(url).then(function (response) {
+                    $('#chart').empty();
+                    new Morris.Bar({
+                        element: 'chart',
+                        data: response,
+                        xkey: 'x',
+                        ykeys: ['y'],
+                        labels: ['Amount']
+                    });
+                })
+            })
+        })
+    </script>
+
+    <script src="~/Scripts/fusioncharts.js"></script>
+    <script src="~/Scripts/fusioncharts.charts.js"></script>
+    <script src="~/Scripts/fusioncharts.widgets.js"></script>
+    <script src="~/Scripts/fusionchart.powercharts.js"></script>
+    <script>
+        $(document).ready(function () {
+            var url = '@Url.Action("FusionDataAjax", "Home")';
+            $.post(url).then(function (response) {
+                console.log(response)
+                data = response;
+                FusionCharts.ready(function (data) {
+                    var d = new Date();
+                    var months = ["January", "February", "March", "April", "May", "June",
+               "July", "August", "September", "October", "November", "December"];
+
+                    var monthName = months[d.getMonth()];
+                    var year = d.getFullYear();
+                    var revenueChart = new FusionCharts({
+                        type: 'column3d',
+                        renderAt: 'p-chart-container',
+                        width: '1020',
+                        height: '500',
+                        dataFormat: 'json',
+                        dataSource: {
+                            "chart": {
+                                "caption": "NYC_Budget Chart",
+                                "subCaption": "/Transactions/",
+                                "xAxisName": monthName + ' ' + year,
+                                "yAxisName": "Values (In USD)",
+                                "paletteColors": "#0075c2",
+                                "valueFontColor": "#ffffff",
+                                "baseFont": "Helvetica Neue,Arial",
+                                "captionFontSize": "14",
+                                "subcaptionFontSize": "14",
+                                "subcaptionFontBold": "0",
+                                "placeValuesInside": "1",
+                                "rotateValues": "1",
+                                "showShadow": "0",
+                                "divlineColor": "#999999",
+                                "divLineIsDashed": "1",
+                                "divlineThickness": "1",
+                                "divLineDashLen": "1",
+                                "divLineGapLen": "1",
+                                "canvasBgColor": "#ffffff"
+                            },
+
+                            "data": response
+                        }
+                    });
+                    revenueChart.render();
+                });
+            })
+        })
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            var url = '@Url.Action("AccountDataAjax", "Home")';
+            $.post(url).then(function (response) {
+                console.log(response)
+                data = response;
+                FusionCharts.ready(function (data) {
+                    var d = new Date();
+                    var months = ["January", "February", "March", "April", "May", "June",
+               "July", "August", "September", "October", "November", "December"];
+
+                    var monthName = months[d.getMonth()];
+                    var year = d.getFullYear();
+                    var revenueChart = new FusionCharts({
+                        type: 'column3d',
+                        renderAt: 'acct-chart-container',
+                        width: '1020',
+                        height: '500',
+                        dataFormat: 'json',
+                        dataSource: {
+                            "chart": {
+                                "caption": "NYC_Budget Chart",
+                                "subCaption": "/Account/",
+                                "xAxisName": monthName + ' ' + year,
+                                "yAxisName": "Values (In USD)",
+                                "paletteColors": "#0075c2",
+                                "valueFontColor": "#ffffff",
+                                "baseFont": "Helvetica Neue,Arial",
+                                "captionFontSize": "14",
+                                "subcaptionFontSize": "14",
+                                "subcaptionFontBold": "0",
+                                "placeValuesInside": "1",
+                                "rotateValues": "1",
+                                "showShadow": "0",
+                                "divlineColor": "#999999",
+                                "divLineIsDashed": "1",
+                                "divlineThickness": "1",
+                                "divLineDashLen": "1",
+                                "divLineGapLen": "1",
+                                "canvasBgColor": "#ffffff"
+                            },
+
+                            "data": response
+                        }
+                    });
+                    revenueChart.render();
+                });
+            })
+        })
+    </script>*@
+
+
+}

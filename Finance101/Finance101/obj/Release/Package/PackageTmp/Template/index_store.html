@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="theme-color" content="#1C2B36" />
+	<title>Bird - Responsive admin dashboard template by Followtechnique</title>
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="144x144">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="114x114">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="72x72">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png">
+	<link href="img/favicon.ico" rel="icon" type="image/png">
+	<link href="img/favicon.ico" rel="shortcut icon">
+    <!-- /Favicon -->
+
+    <!-- Global stylesheets -->
+	<link type="text/css" rel="stylesheet" href="lib/css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="lib/css/animate.min.css">
+    <link type="text/css" rel="stylesheet" href="lib/css/main.css">
+    <!-- /Global stylesheets -->
+
+	<!-- Page css -->
+	<link type="text/css" rel="stylesheet" href="lib/assets/icons/weather/weather-icons.min.css">
+	<link type="text/css" rel="stylesheet" href="lib/assets/icons/weather/weather-icons-wind.min.css">
+	<!-- /page css -->
+</head>
+<body id="top">
+
+<!-- Preloader -->
+<div id="preloader">
+	<div id="status">
+		<div class="loader"></div>
+	</div>
+</div>
+<!-- /Preloader -->
+
+<div id="body-wrapper" class="body-container">
+
+	<!-- Header begins -->
+	<header class="main-nav clearfix">
+
+		<!-- Searchbar -->
+		<div class="top-search-bar">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3">
+						<div class="search-input-addon">
+							<span class="addon-icon"><i class="icon-search4"></i></span>
+							<input type="text" class="form-control top-search-input" placeholder="Enter your keyword...">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Searchbar -->
+
+		<!-- Branding -->
+		<div class="navbar-left pull-left">
+			<div class="clearfix">
+				<ul class="left-branding pull-left">
+					<li class="visible-handheld"><span class="left-toggle-switch"><i class="icon-menu7"></i></span></li>
+					<li>
+						<a href="index.html"><div class="logo"></div></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /Branding -->
+
+		<!-- Search & Languages -->
+		<div class="navbar pull-left">
+			<div class="clearfix">
+				<ul class="pull-left top-icons hidden-xs">
+					<li><a href="#" class="btn-top-search m-l-10"><i class="icon-search4"></i></a></li>
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-flag7"></i></a>
+						<ul class="dropdown-menu languages">
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">Deutsch</a></li>
+                            <li><a href="#">Українська</a></li>
+							<li><a href="#">España</a></li>
+                        </ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /Search & Languages -->
+
+		<!-- Navbar icons -->
+		<div class="navbar pull-right">
+			<div class="clearfix">
+				<ul class="pull-right top-icons">
+					<li><a href="#" class="btn-top-search visible-xs"><i class="icon-search4"></i></a></li>
+
+					<!-- Quick apps dropdown -->
+					<li class="dropdown apps-dropdown hidden-xs">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-grid2"></i></a>
+						<div class="dropdown-menu">
+						</div>
+					</li>
+					<!-- /Quick apps dropdown -->
+
+					<!-- Rightbar -->
+					<li><a href="#" onclick="open_rightbar()"><span class="bubble">6</span><i class="icon-stack3"></i></a></li>
+					<!-- /Rightbar -->
+
+					<!-- User dropdown -->
+					<li class="dropdown user-dropdown">
+						<a class="user-name hidden-xs" data-toggle="dropdown">Jane Elliott <i class="icon-more2"></i><small>Administrator</small></a>
+						<a href="#" class="btn-user dropdown-toggle hidden-xs" data-toggle="dropdown"><img src="http://via.placeholder.com/80x80" class="img-circle user" alt=""/></a>
+						<a href="#" class="dropdown-toggle visible-xs" data-toggle="dropdown"><i class="icon-more"></i></a>
+						<div class="dropdown-menu no-padding">
+						</div>
+					</li>
+					<!-- /User dropdown -->
+
+				</ul>
+			</div>
+		</div>
+		<!-- /Navbar icons -->
+
+	</header>
+	<!-- /Header ends -->
+
+	<!-- Sidebar -->
+	<aside class="menu">
+		<div class="left-aside-container">
+
+			<!-- User profile -->
+			<div class="user-profile"></div>
+			<!-- /User profile -->
+
+
+			<!-- Main menu -->
+			<div class="menu-container"></div>
+			<!-- /Main menu -->
+
+		</div>
+	</aside>
+	<!-- /Sidebar -->
+
+	<!-- Page container begins -->
+	<section class="main-container">
+		<h1 style="display:none">Empty Heading</h1>
+
+			<!--Page Header-->
+			<div class="header">
+				<div class="header-content">
+					<div class="page-title"><i class="icon-store2"></i> Store Overview</div>
+				</div>
+			</div>
+			<!-- /Page Header-->
+
+			<div class="container-fluid page-content">
+
+				<div class="row">
+					<div class="col-md-5 col-sm-12">
+						<div class="row">
+							<div class="col-md-6 col-sm-6">
+
+								<!-- Orders received -->
+								<div class="panel panel-flat bg-purple-a200">
+									<div class="panel-heading">
+										<h5 class="text-uppercase text-semibold text-alpha-4">Orders received</h5>
+									</div>
+									<div class="panel-body">
+										<div class="row m-b-10">
+											<div class="col-md-3 col-sm-3 col-xs-3">
+												<i class="icon-cart2 x5 text-alpha-2"></i>
+											</div>
+											<div class="col-md-9 col-sm-9 col-xs-9">
+												<div class="x6 text-light no-line-height text-alpha-9 text-right">463<i class="icon-arrow-up16 x2 text-alpha-6 position-right"></i></div>
+											</div>
+										</div>
+										<h5 class="text-alpha-5 pull-left no-margin-b">Completed orders</h5>
+										<h5 class="text-bold text-alpha-7 pull-right">240</h5>
+										<div class="clearfix"></div>
+										<h5 class="text-alpha-5 pull-left">Abandoned orders</h5>
+										<h5 class="text-bold text-alpha-7 pull-right">3%</h5>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+								<!-- /Orders received -->
+
+							</div>
+							<div class="col-md-6 col-sm-6">
+
+								<!-- Total sales -->
+								<div class="panel panel-flat bg-amber-600">
+									<div class="panel-heading">
+										<h5 class="text-uppercase text-semibold text-alpha-8">Total sales</h5>
+									</div>
+									<div class="panel-body">
+										<div class="row m-b-10">
+											<div class="col-md-3 col-sm-3 col-xs-3">
+												<i class="icon-price-tags x5 text-alpha-4"></i>
+											</div>
+											<div class="col-md-9 col-sm-9 col-xs-9">
+												<div class="x6 text-light no-line-height text-right">1,264</div>
+											</div>
+										</div>
+										<h5 class="text-alpha-7 pull-left no-margin-b">This month</h5>
+										<h5 class="text-bold text-alpha-9 pull-right">126</h5>
+										<div class="clearfix"></div>
+										<h5 class="text-alpha-7 pull-left">Last month</h5>
+										<h5 class="text-bold text-alpha-9 pull-right">98</h5>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+								<!-- /Total sales -->
+
+							</div>
+							<div class="col-md-6 col-sm-6">
+
+								<!-- Revenue -->
+								<div class="panel panel-flat bg-info-a700">
+									<div class="panel-heading">
+										<h5 class="text-uppercase text-semibold text-alpha-8">Revenue</h5>
+									</div>
+									<div class="panel-body">
+										<div class="row m-b-10">
+											<div class="col-md-3 col-sm-3 col-xs-3">
+												<i class="icon-coin-dollar x5 text-alpha-4"></i>
+											</div>
+											<div class="col-md-9 col-sm-9 col-xs-9">
+												<div class="x5 text-light no-line-height text-right"><small class="x2 position-left">$</small>40,268</div>
+											</div>
+										</div>
+										<h5 class="text-alpha-7 pull-left no-margin-b">This month</h5>
+										<h5 class="text-bold text-alpha-9 pull-right">$4,206</h5>
+										<div class="clearfix"></div>
+										<h5 class="text-alpha-7 pull-left">Last month</h5>
+										<h5 class="text-bold text-alpha-9 pull-right">$3,980</h5>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+								<!-- /Revenue -->
+
+							</div>
+							<div class="col-md-6 col-sm-6">
+
+								<!-- Total profits -->
+								<div class="panel panel-flat bg-teal-700">
+									<div class="panel-heading">
+										<h5 class="text-uppercase text-semibold text-alpha-8">Total profits</h5>
+									</div>
+									<div class="panel-body">
+										<div class="row m-b-10">
+											<div class="col-md-3 col-sm-3 col-xs-3">
+												<i class="icon-wallet x5 text-alpha-4"></i>
+											</div>
+											<div class="col-md-9 col-sm-9 col-xs-9">
+												<div class="x5 text-light no-line-height text-right"><small class="x2 position-left">$</small>8,420</div>
+											</div>
+										</div>
+										<h5 class="text-alpha-7 pull-left no-margin-b">This month</h5>
+										<h5 class="text-bold text-alpha-9 pull-right">$485</h5>
+										<div class="clearfix"></div>
+										<h5 class="text-alpha-7 pull-left">Last month</h5>
+										<h5 class="text-bold text-alpha-9 pull-right">$980</h5>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+								<!-- /Total profits -->
+
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-7 col-sm-12">
+						<div class="row">
+							<div class="col-md-12">
+
+								<!-- Sales report -->
+								<div class="panel panel-flat">
+									<div class="panel-heading">
+										<div class="panel-title">Sales report</div>
+									</div>
+									<div class="panel-body">
+										<div class="pull-right">
+											<div class="button-toolbar">
+												<div class="btn-group">
+													<button type="button" class="btn btn-sm btn-default">Week</button>
+													<button type="button" class="btn btn-sm btn-default active">Month</button>
+													<button type="button" class="btn btn-sm btn-default">Year</button>
+												</div>
+												<div class="btn-group">
+													<button type="button" class="btn btn-sm btn-default">Today</button>
+												</div>
+											</div>
+										</div>
+										<div id="sales"></div>
+									</div>
+								</div>
+								<!-- /Sales report -->
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4 col-sm-4">
+
+						<!-- Top products -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<h4 class="text-semibold text-uppercase">Top products</h4>
+							</div>
+							<div class="panel-body">
+								<div id="google-donut-exploded"></div>
+							</div>
+						</div>
+						<!-- /Top products -->
+
+					</div>
+					<div class="col-md-8 col-sm-8">
+
+						<!-- Latest trends -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<h4 class="text-semibold text-uppercase">Latest trends</h4>
+							</div>
+							<div class="btn-group pull-right m-r-15 m-b-10">
+								<button type="button" class="btn btn-xs btn-default">Week</button>
+								<button type="button" class="btn btn-xs btn-default active">Month</button>
+								<button type="button" class="btn btn-xs btn-default">Year</button>
+							</div>
+							<table class="table table-bordered table-hover" id="table-sparkline">
+								<thead>
+									<tr>
+										<th></th>
+										<th>This Month</th>
+										<th>Last Month</th>
+										<th>% Change</th>
+										<th class="col-md-1 col-sm-1">Trends</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Orders</td>
+										<td>563</td>
+										<td>456</td>
+										<td>19%</td>
+										<td data-sparkline="71, 78, 39, 66, 56, 34, 54, 102, 34 " class="no-padding"></td>
+									</tr>
+									<tr>
+										<td>Sales</td>
+										<td>$12,980</td>
+										<td>$10,745</td>
+										<td>17%</td>
+										<td data-sparkline="34, 54, 102, 34, 71, 78, 39, 66, 56 " class="no-padding"></td>
+									</tr>
+									<tr>
+										<td>Avg. Per Customer</td>
+										<td>$23.05</td>
+										<td>$23.56</td>
+										<td>-2.21%</td>
+										<td data-sparkline="34, 71, 78, 71, 78, 39, 66, 56, 74 " class="no-padding"></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- /Latest trends -->
+
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-12">
+
+						<!-- Recent orders -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<h4 class="text-semibold text-uppercase">Recent orders</h4>
+							</div>
+							<div class="table-responsive">
+								<table class="table table-striped">
+									<thead>
+										<tr>
+											<th class="col-md-1 col-sm-1">Image</th>
+											<th>Product Code</th>
+											<th>Customer</th>
+											<th>Purchased On</th>
+											<th>Status</th>
+											<th>Transaction ID</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><img src="http://via.placeholder.com/100x100" class="img-responsive" alt="product" style="width:70px"/></td>
+											<td>PNG002344</td>
+											<td>Jane Elliott</td>
+											<td>06-01-2017</td>
+											<td><span class="badge bg-info-400 p-l-10 p-r-10">Shipping</span></td>
+											<td>#7234421</td>
+										</tr>
+										<tr>
+											<td><img src="http://via.placeholder.com/100x100" class="img-responsive" alt="product" style="width:70px"/></td>
+											<td>PNG003256</td>
+											<td>Florence Douglas</td>
+											<td>06-01-2017</td>
+											<td><span class="badge bg-danger-400 p-l-10 p-r-10">Failed</span></td>
+											<td>#7233227</td>
+										</tr>
+										<tr>
+											<td><img src="http://via.placeholder.com/100x100" class="img-responsive" alt="product" style="width:70px"/></td>
+											<td>PNG006413</td>
+											<td>Jacqueline Howell</td>
+											<td>05-01-2017</td>
+											<td><span class="badge bg-success-400 p-l-10 p-r-10">Delivered</span></td>
+											<td>#7233235</td>
+										</tr>
+										<tr>
+											<td><img src="http://via.placeholder.com/100x100" class="img-responsive" alt="product" style="width:70px"/></td>
+											<td>PNG004327</td>
+											<td>Eugine Turner</td>
+											<td>04-01-2017</td>
+											<td><span class="badge bg-warning-400 p-l-10 p-r-10">Pending</span></td>
+											<td>#7233123</td>
+										</tr>
+										<tr>
+											<td><img src="http://via.placeholder.com/100x100" class="img-responsive" alt="product" style="width:70px"/></td>
+											<td>PNG004311</td>
+											<td>Eugine Turner</td>
+											<td>02-01-2017</td>
+											<td><span class="badge bg-success-400 p-l-10 p-r-10">Delivered</span></td>
+											<td>#7233573</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<!-- /Recent orders -->
+
+					</div>
+				</div>
+
+			</div>
+
+			<!-- Footer -->
+			<footer class="footer-container">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12 col-sm-12">
+							<div class="pull-left">
+								© 2017 Bird&nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;&nbsp;Web app kit by <a href="http://followtechnique.com" target="_blank">FollowTechnique</a>.							</div>
+	                        <div class="pull-right">
+								<div class="label label-info">Version: 1.3.0</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- /Footer -->
+
+		</section>
+		<!-- /Page Container ends -->
+
+		<!-- ScrolltoTop -->
+		<a id="scrollTop" href="#top"><i class="icon-arrow-up12"></i></a>
+		<!-- /ScrolltoTop -->
+
+	</div>
+
+<!-- Rightbar -->
+<div id="right_sidebar" class="right_bar"></div>
+<script>
+function open_rightbar() {
+	$(window).resize(function() {
+		if(($(window).width() < 500)){
+			document.getElementById("right_sidebar").style.width = "100%";
+		}
+		else if($(window).width() > 500) {
+			document.getElementById("right_sidebar").style.width = "260px";
+		}
+	}).resize();
+}
+function close_rightbar() {
+	document.getElementById("right_sidebar").style.width = "0";
+}
+</script>
+<!-- /Rightbar -->
+
+<!-- Layout settings -->
+<div class="layout"></div>
+<span class="is_hidden" id="jquery_vars">
+	<span class="is_hidden switch-active"></span>
+	<span class="is_hidden switch-inactive"></span>
+	<span class="is_hidden chart-bg"></span>
+	<span class="is_hidden chart-gridlines-color"></span>
+	<span class="is_hidden chart-legends-text-color"></span>
+	<span class="is_hidden chart-grid-text-color"></span>
+	<span class="is_hidden chart-data-color-option1"></span>
+	<span class="is_hidden chart-data-color-option2"></span>
+	<span class="is_hidden chart-data-color-option3"></span>
+	<span class="is_hidden chart-data-color-option4"></span>
+	<span class="is_hidden chart-data-color-option5"></span>
+	<span class="is_hidden chart-data-color-option6"></span>
+	<span class="is_hidden chart-data-color-option7"></span>
+	<span class="is_hidden chart-data-color-option8"></span>
+</span>
+<!-- /Layout settings -->
+
+<!-- Global scripts -->
+<script src="lib/js/core/jquery/jquery.js"></script>
+<script src="lib/js/core/jquery/jquery.ui.js"></script>
+<script src="lib/js/core/bootstrap/bootstrap.js"></script>
+<script src="lib/js/core/bootstrap/jasny_bootstrap.min.js"></script>
+<script src="lib/js/core/navigation/nav.accordion.js"></script>
+<script src="lib/js/core/hammer/hammerjs.js"></script>
+<script src="lib/js/core/hammer/jquery.hammer.js"></script>
+<script src="lib/js/core/slimscroll/jquery.slimscroll.js"></script>
+<script src="lib/js/extensions/smart-resize.js"></script>
+<script src="lib/js/extensions/blockui.min.js"></script>
+<script src="lib/js/forms/uniform.min.js"></script>
+<script src="lib/js/forms/switchery.js"></script>
+<script src="lib/js/forms/select2.min.js"></script>
+<script src="lib/js/plugins/venobox.js"></script>
+<script src="lib/js/core/app/layouts.js"></script>
+<script src="lib/js/core/app/core.js"></script>
+<!-- /Global scripts -->
+
+<!-- Page scripts -->
+<script src="lib/js/charts/highcharts.js"></script>
+<script src="lib/js/charts/highcharts-more.js"></script>
+<script src="https://www.google.com/jsapi"></script>
+<script src="lib/js/pages/dashboard_store.js"></script>
+<!-- /Page scripts -->
+
+</body>
+</html>

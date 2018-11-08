@@ -1,0 +1,129 @@
+﻿@model Finance101.Models.PersonalAccount
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Account : @Model.Name</h2>
+
+<div>
+    <h4>Beginning Balance:  @Model.Balance.ToString("C2")</h4>
+
+    <h4>Current Balance:  @ViewBag.Balance.ToString("C2")</h4>
+
+    <h4>Reconciled Balance:  @ViewBag.RecBalance.ToString("C2")</h4>
+
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Household.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Household.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReconciledBalance)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReconciledBalance)
+        </dd>
+
+    </dl>
+</div>
+<p>
+@Html.ActionLink("Create", "Create","Transactions",new { acctId = Model.Id },new { @class="btn btn-sm btn-success"})
+</p>
+
+<div>
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            Entered By
+                        </th>
+                        <th>
+                            Account
+                        </th>
+                        <th>
+                            Date
+                        </th>
+                        <th>
+                            Amount
+                        </th>
+                        <th>
+                            Credit
+                        </th>
+                        <th>
+                            Category
+                        </th>
+                        <th>
+                            Reconciled
+                        </th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.Transactions)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.EnteredBy.FirstName) @Html.DisplayFor(modelItem => item.EnteredBy.LastName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Account.Name)
+                            </td>
+                            <td>
+                                @item.Date.ToString("MM/dd/yyyy")
+                            </td>
+                                @if (!item.Type)
+                                {
+                                <td style="color:red">
+                                    (@item.Amount)
+                                </td>
+                                }
+                                else
+                                {
+                                    <td>
+                                        @item.Amount.ToString("C2")
+                                    </td>
+                                }
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Type)
+                            </td>
+                            <td>
+                                @item.Category.Name
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Reconciled)
+                            </td>
+                            <td>
+                                @Html.ActionLink("Edit", "Edit", "Transactions", new { id = item.Id }, new { @class = "btn btn-primary btn-xs", style = "width:60px" }) |
+                                @Html.ActionLink("Details", "Details", "Transactions", new { id = item.Id }, new { @class = "btn btn-primary btn-xs disabled", style = "width:60px" }) |
+                                @Html.ActionLink("Void", "VoidTransaction", "Transactions", new { id = item.Id }, new { @class = "btn btn-danger btn-xs", style = "width:60px" })
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+@section scripts{
+    
+    <script>
+
+    </script>
+<script>
+
+</script>
+    }

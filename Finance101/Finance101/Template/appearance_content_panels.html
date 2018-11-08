@@ -1,0 +1,819 @@
+<!doctype html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="theme-color" content="#1C2B36" />
+	<title>Bird - Responsive admin dashboard template by Followtechnique</title>
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="144x144">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="114x114">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="72x72">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png">
+	<link href="img/favicon.ico" rel="icon" type="image/png">
+	<link href="img/favicon.ico" rel="shortcut icon">
+    <!-- /Favicon -->
+
+    <!-- Global stylesheets -->
+	<link type="text/css" rel="stylesheet" href="lib/css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="lib/css/animate.min.css">
+    <link type="text/css" rel="stylesheet" href="lib/css/main.css">
+    <!-- /Global stylesheets -->
+</head>
+<body id="top">
+
+<!-- Preloader -->
+<div id="preloader">
+	<div id="status">
+		<div class="loader"></div>
+	</div>
+</div>
+<!-- /Preloader -->
+
+<div id="body-wrapper" class="body-container">
+
+	<!-- Header begins -->
+	<header class="main-nav clearfix">
+
+		<!-- Searchbar -->
+		<div class="top-search-bar">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3">
+						<div class="search-input-addon">
+							<span class="addon-icon"><i class="icon-search4"></i></span>
+							<input type="text" class="form-control top-search-input" placeholder="Enter your keyword...">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Searchbar -->
+
+		<!-- Branding -->
+		<div class="navbar-left pull-left">
+			<div class="clearfix">
+				<ul class="left-branding pull-left">
+					<li class="visible-handheld"><span class="left-toggle-switch"><i class="icon-menu7"></i></span></li>
+					<li>
+						<a href="index.html"><div class="logo"></div></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /Branding -->
+
+		<!-- Search & Languages -->
+		<div class="navbar pull-left">
+			<div class="clearfix">
+				<ul class="pull-left top-icons hidden-xs">
+					<li><a href="#" class="btn-top-search m-l-10"><i class="icon-search4"></i></a></li>
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-flag7"></i></a>
+						<ul class="dropdown-menu languages">
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">Deutsch</a></li>
+                            <li><a href="#">Українська</a></li>
+							<li><a href="#">España</a></li>
+                        </ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /Search & Languages -->
+
+		<!-- Navbar icons -->
+		<div class="navbar pull-right">
+			<div class="clearfix">
+				<ul class="pull-right top-icons">
+					<li><a href="#" class="btn-top-search visible-xs"><i class="icon-search4"></i></a></li>
+
+					<!-- Quick apps dropdown -->
+					<li class="dropdown apps-dropdown hidden-xs">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-grid2"></i></a>
+						<div class="dropdown-menu">
+						</div>
+					</li>
+					<!-- /Quick apps dropdown -->
+
+					<!-- Rightbar -->
+					<li><a href="#" onclick="open_rightbar()"><span class="bubble">6</span><i class="icon-stack3"></i></a></li>
+					<!-- /Rightbar -->
+
+					<!-- User dropdown -->
+					<li class="dropdown user-dropdown">
+						<a class="user-name hidden-xs" data-toggle="dropdown">Jane Elliott <i class="icon-more2"></i><small>Administrator</small></a>
+						<a href="#" class="btn-user dropdown-toggle hidden-xs" data-toggle="dropdown"><img src="http://via.placeholder.com/80x80" class="img-circle user" alt=""/></a>
+						<a href="#" class="dropdown-toggle visible-xs" data-toggle="dropdown"><i class="icon-more"></i></a>
+						<div class="dropdown-menu no-padding">
+						</div>
+					</li>
+					<!-- /User dropdown -->
+
+				</ul>
+			</div>
+		</div>
+		<!-- /Navbar icons -->
+
+	</header>
+	<!-- /Header ends -->
+
+	<!-- Sidebar -->
+	<aside class="menu">
+		<div class="left-aside-container">
+
+			<!-- User profile -->
+			<div class="user-profile"></div>
+			<!-- /User profile -->
+
+
+			<!-- Main menu -->
+			<div class="menu-container"></div>
+			<!-- /Main menu -->
+
+		</div>
+	</aside>
+	<!-- /Sidebar -->
+
+	<!-- Page container begins -->
+	<section class="main-container">
+		<h1 style="display:none">Empty Heading</h1>
+
+			<!-- Page header -->
+			<div class="header">
+				<div class="header-content">
+					<div class="page-title">
+						<i class="icon-puzzle2 position-left"></i> Content panels
+					</div>
+					<ul class="breadcrumb">
+						<li><a href="index.html"></a></li>
+						<li>Content Appearance</li>
+						<li class="active">Content panels</li>
+					</ul>
+				</div>
+			</div>
+			<!-- /Page header -->
+
+			<div class="container-fluid page-content">
+
+				<div class="row">
+					<div class="col-md-12">
+
+						<!-- Transparent Panel -->
+						<div class="panel panel-transparent">
+							<div class="panel-heading">
+								<div class="panel-title">Transparent panel</div>
+							</div>
+
+							<div class="panel-body mt-20">
+								Transparent panel using <code>.panel-transparent</code> class
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</div>
+						</div>
+						<!-- /Transparent Panel -->
+					</div>
+				</div>
+
+				<!-- Basic panels -->
+				<div class="page-subtitle">Basic panels</div>
+
+				<div class="row">
+					<div class="col-md-3 col-sm-3">
+
+						<!-- Flat Panel -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Flat panel</div>
+							</div>
+
+							<div class="panel-body mt-20">
+								Flat panel using <code>.panel-flat</code> class
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+							</div>
+						</div>
+						<!-- /Flat Panel -->
+					</div>
+
+					<div class="col-md-3 col-sm-3">
+
+						<!-- White Panel -->
+						<div class="panel panel-white">
+							<div class="panel-heading">
+								<div class="panel-title">White panel</div>
+							</div>
+
+							<div class="panel-body">
+								White panel using <code>.panel-white</code> class
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+							</div>
+						</div>
+						<!-- /White Panel -->
+					</div>
+
+					<div class="col-md-3 col-sm-3">
+
+						<!-- Default Panel -->
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<div class="panel-title">Default panel</div>
+							</div>
+
+							<div class="panel-body">
+								Default panel using <code>.panel-default</code> class
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+							</div>
+						</div>
+						<!-- /Default Panel -->
+					</div>
+
+					<div class="col-md-3 col-sm-3">
+
+						<!-- Success Panel -->
+						<div class="panel panel-success">
+							<div class="panel-heading">
+								<div class="panel-title">Success panel</div>
+							</div>
+
+							<div class="panel-body">
+								Success panel using <code>.panel-success</code> class
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+							</div>
+						</div>
+						<!-- /Success Panel -->
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-3 col-sm-3">
+
+						<!-- Primary Panel -->
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								<div class="panel-title">Primary panel</div>
+							</div>
+
+							<div class="panel-body">
+								Primary panel using <code>.panel-primary</code> class
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+							</div>
+						</div>
+						<!-- /Primary Panel -->
+					</div>
+
+					<div class="col-md-3 col-sm-3">
+
+						<!-- Warning Panel -->
+						<div class="panel panel-warning">
+							<div class="panel-heading">
+								<div class="panel-title">Warning panel</div>
+							</div>
+
+							<div class="panel-body">
+								Warning panel using <code>.panel-warning</code> class
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+							</div>
+						</div>
+						<!-- /Warning Panel -->
+					</div>
+
+					<div class="col-md-3 col-sm-3">
+
+						<!-- Danger Panel -->
+						<div class="panel panel-danger">
+							<div class="panel-heading">
+								<div class="panel-title">Danger panel</div>
+							</div>
+
+							<div class="panel-body">
+								Danger panel using <code>.panel-danger</code> class
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+							</div>
+						</div>
+						<!-- /Danger Panel -->
+					</div>
+
+					<div class="col-md-3 col-sm-3">
+
+						<!-- Info Panel -->
+						<div class="panel panel-info">
+							<div class="panel-heading">
+								<div class="panel-title">Info panel</div>
+							</div>
+
+							<div class="panel-body">
+								Info panel using <code>.panel-info</code> class
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+							</div>
+						</div>
+						<!-- /Info Panel -->
+					</div>
+				</div>
+				<!-- /Basic panels -->
+
+
+				<!-- Bordered panels -->
+				<div class="page-subtitle">Bordered panels</div>
+
+				<div class="row">
+					<div class="col-md-4 col-sm-4">
+
+						<!-- Custom Panel Border -->
+						<div class="panel panel-default panel-border border-amber">
+							<div class="panel-heading">
+								<h5 class="panel-title">Custom panel border</h5>
+								</div>
+
+							<div class="panel-body">
+								Custom panel border color using <code>.border-*</code> class
+								<p >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+							</div>
+						</div>
+						<!-- /Custom Panel Border -->
+					</div>
+
+					<div class="col-md-4 col-sm-4">
+
+						<!-- Primary Panel Border -->
+						<div class="panel panel-primary panel-border border-primary">
+							<div class="panel-heading">
+								<h5 class="panel-title">Primary panel</h5>
+								</div>
+
+							<div class="panel-body">
+								Primary border panel using <code>.panel-border</code> class
+								<p >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+							</div>
+						</div>
+						<!-- /Primary Panel Border -->
+					</div>
+
+					<div class="col-md-4 col-sm-4">
+
+						<!-- Danger Panel Border -->
+						<div class="panel panel-danger panel-border border-danger">
+							<div class="panel-heading">
+								<h5 class="panel-title">Danger panel</h5>
+								</div>
+
+							<div class="panel-body">
+								Danger border panel using <code>.panel-border</code> class
+								<p >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+							</div>
+						</div>
+						<!-- /Danger Panel Border -->
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4 col-sm-4">
+
+						<!-- Success Panel Border -->
+						<div class="panel panel-success panel-border border-success">
+							<div class="panel-heading">
+								<h5 class="panel-title">Success panel</h5>
+								</div>
+
+							<div class="panel-body">
+								Success border panel using <code>.panel-border</code> class
+								<p >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+							</div>
+						</div>
+						<!-- /Success Panel Border -->
+					</div>
+
+					<div class="col-md-4 col-sm-4">
+
+						<!-- Warning Panel Border -->
+						<div class="panel panel-warning panel-border border-warning">
+							<div class="panel-heading">
+								<h5 class="panel-title">Warning panel</h5>
+								</div>
+
+							<div class="panel-body">
+								Warning border panel using <code>.panel-border</code> class
+								<p >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+							</div>
+						</div>
+						<!-- /Warning Panel Border -->
+					</div>
+
+					<div class="col-md-4 col-sm-4">
+
+						<!-- Info Panel Border -->
+						<div class="panel panel-info panel-border border-info">
+							<div class="panel-heading">
+								<h5 class="panel-title">Info panel</h5>
+								</div>
+
+							<div class="panel-body">
+								Info border panel using <code>.panel-border</code> class
+								<p >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+							</div>
+						</div>
+						<!-- /Info Panel Border -->
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4 col-sm-4">
+
+						<!-- Top Custom Border -->
+						<div class="panel panel-flat panel-border border-top-success">
+							<div class="panel-heading">
+								<h5 class="panel-title">Top custom border</h5>
+							</div>
+
+							<div class="panel-body">
+								Panel with top <code>success</code> border
+								<p >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+							</div>
+						</div>
+						<!-- /Top Custom Border -->
+					</div>
+
+					<div class="col-md-4 col-sm-4">
+
+						<!-- Bottom Custom Border -->
+						<div class="panel panel-flat panel-border border-bottom-success">
+							<div class="panel-heading">
+								<h5 class="panel-title">Bottom custom border</h5>
+							</div>
+
+							<div class="panel-body">
+								Panel with bottom <code>success</code> border
+								<p >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+							</div>
+						</div>
+						<!-- /Bottom Custom Border -->
+					</div>
+
+					<div class="col-md-4 col-sm-4">
+
+						<!-- Top & Bottom Border -->
+						<div class="panel panel-flat panel-border border-top-info border-bottom-info">
+							<div class="panel-heading">
+								<h5 class="panel-title">Top and bottom borders</h5>
+							</div>
+
+							<div class="panel-body">
+								Panel with top and bottom <code>info</code> borders
+								<p >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+							</div>
+						</div>
+						<!-- /Top & Bottom Border -->
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4 col-sm-4">
+
+						<!-- Left Custom Border -->
+						<div class="panel panel-flat panel-border border-left-danger">
+							<div class="panel-heading">
+								<h5 class="panel-title">Left custom border</h5>
+							</div>
+
+							<div class="panel-body">
+								Panel with left <code>danger</code> border
+								<p >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+							</div>
+						</div>
+						<!-- /Left Custom Border -->
+					</div>
+
+					<div class="col-md-4 col-sm-4">
+
+						<!-- Right Custom Border -->
+						<div class="panel panel-flat panel-border border-right-danger">
+							<div class="panel-heading">
+								<h5 class="panel-title">Right custom border</h5>
+							</div>
+
+							<div class="panel-body">
+								Panel with right <code>danger</code> border
+								<p >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+							</div>
+						</div>
+						<!-- /Right Custom Border -->
+					</div>
+
+					<div class="col-md-4 col-sm-4">
+
+						<!-- Left & Right Border -->
+						<div class="panel panel-flat panel-border border-left-info border-right-info">
+							<div class="panel-heading">
+								<h5 class="panel-title">Left and right borders</h5>
+							</div>
+
+							<div class="panel-body">
+								Panel with left and right <code>info</code> borders
+								<p >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+							</div>
+						</div>
+						<!-- /Left & Right Border -->
+					</div>
+				</div>
+				<!-- /Bordered panels -->
+
+
+				<!-- Border sizes -->
+				<div class="page-subtitle">Border sizes</div>
+
+				<div class="row">
+					<div class="col-md-4 col-sm-4">
+
+						<!-- Basic Border -->
+						<div class="panel panel-flat panel-border border-top-warning">
+							<div class="panel-heading">
+								<h5 class="panel-title"><span class="text-semibold">Basic</span> size</h5>
+							</div>
+
+							<div class="panel-body">
+								Basic border size of the element
+								<p >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+							</div>
+						</div>
+						<!-- /Basic Border -->
+					</div>
+
+					<div class="col-md-4 col-sm-4">
+
+						<!-- Large Border -->
+						<div class="panel panel-flat border-top-lg border-top-warning">
+							<div class="panel-heading">
+								<h5 class="panel-title"><span class="text-semibold">Large</span> size</h5>
+							</div>
+
+							<div class="panel-body">
+								Large border size using <code>.border-*-lg</code> class
+								<p >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+							</div>
+						</div>
+						<!-- /Large Border -->
+					</div>
+
+					<div class="col-md-4 col-sm-4">
+
+						<!-- ExtraLarge Border -->
+						<div class="panel panel-flat border-top-xlg border-top-warning">
+							<div class="panel-heading">
+								<h5 class="panel-title"><span class="text-semibold">Extra large</span> size</h5>
+							</div>
+
+							<div class="panel-body">
+								Extra large border size using <code>.border-*-xlg</code> class
+								<p >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+							</div>
+						</div>
+						<!-- /ExtraLarge Border -->
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4 col-sm-4">
+
+						<!-- Basic Border -->
+						<div class="panel panel-flat panel-border border-left-info">
+							<div class="panel-heading">
+								<h5 class="panel-title"><span class="text-semibold">Basic</span> size</h5>
+							</div>
+
+							<div class="panel-body">
+								Basic border size of the element
+								<p >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+							</div>
+						</div>
+						<!-- /Basic Border -->
+					</div>
+
+					<div class="col-md-4 col-sm-4">
+
+						<!-- Large Border -->
+						<div class="panel panel-flat border-left-lg border-left-info">
+							<div class="panel-heading">
+								<h5 class="panel-title"><span class="text-semibold">Large</span> size</h5>
+							</div>
+
+							<div class="panel-body">
+								Large border size using <code>.border-*-lg</code> class
+								<p >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+							</div>
+						</div>
+						<!-- /Large Border -->
+					</div>
+
+					<div class="col-md-4 col-sm-4">
+
+						<!-- ExtraLarge Border -->
+						<div class="panel panel-flat border-left-xlg border-left-info">
+							<div class="panel-heading">
+								<h5 class="panel-title"><span class="text-semibold">Extra large</span> size</h5>
+							</div>
+
+							<div class="panel-body">
+								Extra large border size using <code>.border-*-xlg</code> class
+								<p >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+							</div>
+						</div>
+						<!-- /ExtraLarge Border -->
+					</div>
+				</div>
+				<!-- /Border sizes -->
+
+
+				<!-- Solid panels -->
+				<div class="page-subtitle">Solid panels</div>
+
+				<div class="row">
+					<div class="col-md-4 col-sm-4">
+
+						<!-- Primary Panel -->
+						<div class="panel bg-primary">
+							<div class="panel-heading">
+								<h5 class="panel-title">Primary solid</h5>
+								</div>
+
+							<div class="panel-body">
+								Primary solid panel using <code>.bg-primary</code> class
+								<p >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+							</div>
+						</div>
+						<!-- /Primary Panel -->
+					</div>
+
+					<div class="col-md-4 col-sm-4">
+
+						<!-- Danger Panel -->
+						<div class="panel bg-danger">
+							<div class="panel-heading">
+								<h5 class="panel-title">Danger solid</h5>
+								</div>
+
+							<div class="panel-body">
+								Danger solid panel using <code>.bg-danger</code> class
+								<p >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+							</div>
+						</div>
+						<!-- /Danger Panel -->
+					</div>
+
+					<div class="col-md-4 col-sm-4">
+
+						<!-- Success Panel -->
+						<div class="panel bg-success">
+							<div class="panel-heading">
+								<h5 class="panel-title">Success solid</h5>
+								</div>
+
+							<div class="panel-body">
+								Success solid panel using <code>.bg-success</code> class
+								<p >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+							</div>
+						</div>
+						<!-- /Success Panel -->
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4 col-sm-4">
+
+						<!-- Warning Panel -->
+						<div class="panel bg-warning">
+							<div class="panel-heading">
+								<h5 class="panel-title">Warning solid</h5>
+								</div>
+
+							<div class="panel-body">
+								Warning solid panel using <code>.bg-warning</code> class
+								<p >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+							</div>
+						</div>
+						<!-- /Warning Panel -->
+					</div>
+
+					<div class="col-md-4 col-sm-4">
+
+						<!-- Info Panel -->
+						<div class="panel bg-info">
+							<div class="panel-heading">
+								<h5 class="panel-title">Info solid</h5>
+								</div>
+
+							<div class="panel-body">
+								Info solid panel using <code>.bg-info</code> class
+								<p >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+							</div>
+						</div>
+						<!-- /Info Panel -->
+					</div>
+
+					<div class="col-md-4 col-sm-4">
+
+						<!-- Custom Panel -->
+						<div class="panel bg-teal">
+							<div class="panel-heading">
+								<h5 class="panel-title">Custom color</h5>
+								</div>
+
+							<div class="panel-body">
+								Solid panel with custom color using <code>.bg--*</code> class
+								<p >Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+							</div>
+						</div>
+						<!-- /Custom Panel -->
+					</div>
+				</div>
+				<!-- /Solid panels -->
+
+			</div>
+
+			<!-- Footer -->
+			<footer class="footer-container">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12 col-sm-12">
+							<div class="pull-left">
+								© 2017 Bird&nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;&nbsp;Web app kit by <a href="http://followtechnique.com" target="_blank">FollowTechnique</a>.							</div>
+	                        <div class="pull-right">
+								<div class="label label-info">Version: 1.3.0</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- /Footer -->
+
+		</section>
+		<!-- /Page Container ends -->
+
+		<!-- ScrolltoTop -->
+		<a id="scrollTop" href="#top"><i class="icon-arrow-up12"></i></a>
+		<!-- /ScrolltoTop -->
+
+	</div>
+
+<!-- Rightbar -->
+<div id="right_sidebar" class="right_bar"></div>
+<script>
+function open_rightbar() {
+	$(window).resize(function() {
+		if(($(window).width() < 500)){
+			document.getElementById("right_sidebar").style.width = "100%";
+		}
+		else if($(window).width() > 500) {
+			document.getElementById("right_sidebar").style.width = "260px";
+		}
+	}).resize();
+}
+function close_rightbar() {
+	document.getElementById("right_sidebar").style.width = "0";
+}
+</script>
+<!-- /Rightbar -->
+
+<!-- Layout settings -->
+<div class="layout"></div>
+<span class="is_hidden" id="jquery_vars">
+	<span class="is_hidden switch-active"></span>
+	<span class="is_hidden switch-inactive"></span>
+	<span class="is_hidden chart-bg"></span>
+	<span class="is_hidden chart-gridlines-color"></span>
+	<span class="is_hidden chart-legends-text-color"></span>
+	<span class="is_hidden chart-grid-text-color"></span>
+	<span class="is_hidden chart-data-color-option1"></span>
+	<span class="is_hidden chart-data-color-option2"></span>
+	<span class="is_hidden chart-data-color-option3"></span>
+	<span class="is_hidden chart-data-color-option4"></span>
+	<span class="is_hidden chart-data-color-option5"></span>
+	<span class="is_hidden chart-data-color-option6"></span>
+	<span class="is_hidden chart-data-color-option7"></span>
+	<span class="is_hidden chart-data-color-option8"></span>
+</span>
+<!-- /Layout settings -->
+
+<!-- Global scripts -->
+<script src="lib/js/core/jquery/jquery.js"></script>
+<script src="lib/js/core/jquery/jquery.ui.js"></script>
+<script src="lib/js/core/bootstrap/bootstrap.js"></script>
+<script src="lib/js/core/bootstrap/jasny_bootstrap.min.js"></script>
+<script src="lib/js/core/navigation/nav.accordion.js"></script>
+<script src="lib/js/core/hammer/hammerjs.js"></script>
+<script src="lib/js/core/hammer/jquery.hammer.js"></script>
+<script src="lib/js/core/slimscroll/jquery.slimscroll.js"></script>
+<script src="lib/js/extensions/smart-resize.js"></script>
+<script src="lib/js/extensions/blockui.min.js"></script>
+<script src="lib/js/forms/uniform.min.js"></script>
+<script src="lib/js/forms/switchery.js"></script>
+<script src="lib/js/forms/select2.min.js"></script>
+<script src="lib/js/plugins/venobox.js"></script>
+<script src="lib/js/core/app/layouts.js"></script>
+<script src="lib/js/core/app/core.js"></script>
+<!-- /Global scripts -->
+
+<!-- Page scripts -->
+<!-- /Page scripts -->
+
+</body>
+</html>

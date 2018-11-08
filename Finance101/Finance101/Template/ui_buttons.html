@@ -1,0 +1,760 @@
+<!doctype html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="theme-color" content="#1C2B36" />
+	<title>Bird - Responsive admin dashboard template by Followtechnique</title>
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="144x144">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="114x114">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="72x72">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png">
+	<link href="img/favicon.ico" rel="icon" type="image/png">
+	<link href="img/favicon.ico" rel="shortcut icon">
+    <!-- /Favicon -->
+
+    <!-- Global stylesheets -->
+	<link type="text/css" rel="stylesheet" href="lib/css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="lib/css/animate.min.css">
+    <link type="text/css" rel="stylesheet" href="lib/css/main.css">
+    <!-- /Global stylesheets -->
+</head>
+<body id="top">
+
+<!-- Preloader -->
+<div id="preloader">
+	<div id="status">
+		<div class="loader"></div>
+	</div>
+</div>
+<!-- /Preloader -->
+
+<div id="body-wrapper" class="body-container">
+
+	<!-- Header begins -->
+	<header class="main-nav clearfix">
+
+		<!-- Searchbar -->
+		<div class="top-search-bar">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3">
+						<div class="search-input-addon">
+							<span class="addon-icon"><i class="icon-search4"></i></span>
+							<input type="text" class="form-control top-search-input" placeholder="Enter your keyword...">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Searchbar -->
+
+		<!-- Branding -->
+		<div class="navbar-left pull-left">
+			<div class="clearfix">
+				<ul class="left-branding pull-left">
+					<li class="visible-handheld"><span class="left-toggle-switch"><i class="icon-menu7"></i></span></li>
+					<li>
+						<a href="index.html"><div class="logo"></div></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /Branding -->
+
+		<!-- Search & Languages -->
+		<div class="navbar pull-left">
+			<div class="clearfix">
+				<ul class="pull-left top-icons hidden-xs">
+					<li><a href="#" class="btn-top-search m-l-10"><i class="icon-search4"></i></a></li>
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-flag7"></i></a>
+						<ul class="dropdown-menu languages">
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">Deutsch</a></li>
+                            <li><a href="#">Українська</a></li>
+							<li><a href="#">España</a></li>
+                        </ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /Search & Languages -->
+
+		<!-- Navbar icons -->
+		<div class="navbar pull-right">
+			<div class="clearfix">
+				<ul class="pull-right top-icons">
+					<li><a href="#" class="btn-top-search visible-xs"><i class="icon-search4"></i></a></li>
+
+					<!-- Quick apps dropdown -->
+					<li class="dropdown apps-dropdown hidden-xs">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-grid2"></i></a>
+						<div class="dropdown-menu">
+						</div>
+					</li>
+					<!-- /Quick apps dropdown -->
+
+					<!-- Rightbar -->
+					<li><a href="#" onclick="open_rightbar()"><span class="bubble">6</span><i class="icon-stack3"></i></a></li>
+					<!-- /Rightbar -->
+
+					<!-- User dropdown -->
+					<li class="dropdown user-dropdown">
+						<a class="user-name hidden-xs" data-toggle="dropdown">Jane Elliott <i class="icon-more2"></i><small>Administrator</small></a>
+						<a href="#" class="btn-user dropdown-toggle hidden-xs" data-toggle="dropdown"><img src="http://via.placeholder.com/80x80" class="img-circle user" alt=""/></a>
+						<a href="#" class="dropdown-toggle visible-xs" data-toggle="dropdown"><i class="icon-more"></i></a>
+						<div class="dropdown-menu no-padding">
+						</div>
+					</li>
+					<!-- /User dropdown -->
+
+				</ul>
+			</div>
+		</div>
+		<!-- /Navbar icons -->
+
+	</header>
+	<!-- /Header ends -->
+
+	<!-- Sidebar -->
+	<aside class="menu">
+		<div class="left-aside-container">
+
+			<!-- User profile -->
+			<div class="user-profile"></div>
+			<!-- /User profile -->
+
+
+			<!-- Main menu -->
+			<div class="menu-container"></div>
+			<!-- /Main menu -->
+
+		</div>
+	</aside>
+	<!-- /Sidebar -->
+
+	<!-- Page container begins -->
+	<section class="main-container">
+		<h1 style="display:none">Empty Heading</h1>
+
+			<!-- Page header -->
+			<div class="header">
+				<div class="header-content">
+					<div class="page-title">
+						<i class="icon-grid4 position-left"></i> Buttons
+					</div>
+					<ul class="breadcrumb">
+						<li><a href="index.html"></a></li>
+						<li>UI elements</li>
+						<li class="active">Buttons</li>
+					</ul>
+				</div>
+			</div>
+			<!-- /Page header -->
+
+			<div class="container-fluid page-content">
+
+                <div class="row">
+                    <div class="col-md-4 col-sm-4">
+                        <div class="panel panel-flat text-center">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                Default button
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <button type="button" class="btn btn-default">Default button</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="panel panel-flat text-center">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                Default with icon
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <button type="button" class="btn btn-default"><i class="icon-three-bars position-left"></i>With icon</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="panel panel-flat text-center">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                Default with menu
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">One more action</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated line</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 col-sm-4">
+                        <div class="panel panel-flat text-center">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                Colored button
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <button type="button" class="btn btn-primary">Default button</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="panel panel-flat text-center">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                Colored with icon
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <button type="button" class="btn btn-primary"><i class="icon-cogs position-left"></i> With icon</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="panel panel-flat text-center">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                Colored with menu
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">One more action</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated line</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 col-sm-4">
+                        <div class="panel panel-flat text-center">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                Rounded button
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <button type="button" class="btn btn-danger btn-rounded">Rounded button</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="panel panel-flat text-center">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                Rounded with icon
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <button type="button" class="btn btn-danger btn-rounded"><i class="icon-warning position-left"></i> With icon</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="panel panel-flat text-center">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                Rounded with menu
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-danger btn-rounded dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">One more action</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated line</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 col-sm-4">
+                        <div class="panel panel-flat text-center">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                Labeled button
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <button type="button" class="btn btn-primary btn-labeled"><b><i class="icon-home"></i></b> Labeled</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="panel panel-flat text-center">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                Rounded with label
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <button type="button" class="btn btn-primary btn-labeled btn-rounded"><b><i class="icon-home"></i></b> Rounded</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="panel panel-flat text-center">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                Labeled with menu
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-primary btn-labeled dropdown-toggle" data-toggle="dropdown"><b><i class="icon-home"></i></b> Dropdown </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">One more action</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated line</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 col-sm-4">
+                        <div class="panel panel-flat text-center">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                Flat button
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <button type="button" class="btn border-slate text-slate-800 btn-flat">Flat button</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="panel panel-flat text-center">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                Flat with icon
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <button type="button" class="btn border-slate text-slate-800 btn-flat"><i class="icon-cog position-left"></i> With icon</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="panel panel-flat text-center">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                Flat with menu
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="btn-group">
+                                    <button type="button" class="btn border-slate text-slate-800 btn-flat dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">One more action</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated line</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-4">
+                        <div class="panel panel-flat text-center">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                Left icon position
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <button type="button" class="btn btn-success"><i class="icon-three-bars position-left"></i> Left position</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="panel panel-flat text-center">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                Right icon position
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <button type="button" class="btn btn-success">Right position <i class="icon-three-bars position-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="panel panel-flat text-center">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                Right in dropdown
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">Dropdown <i class="icon-three-bars position-right"></i></button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">One more action</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated line</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-4">
+                        <div class="panel panel-flat text-center">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                Left label position
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <button type="button" class="btn btn-danger btn-labeled"><b><i class="icon-three-bars"></i></b> Left position</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="panel panel-flat text-center">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                Right label position
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <button type="button" class="btn btn-danger btn-labeled btn-labeled-right"><b><i class="icon-three-bars"></i></b> Right position</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="panel panel-flat text-center">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                Right in dropdown
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-danger btn-labeled btn-labeled-right dropdown-toggle" data-toggle="dropdown"><b><i class="icon-three-bars"></i></b> Dropdown</button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                        <li><a href="#">One more action</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Separated line</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-4">
+                        <div class="panel panel-flat text-center">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                Default state
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <button type="button" class="btn btn-primary">Default state</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="panel panel-flat text-center">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                Active state
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <button type="button" class="btn btn-primary active">Active state</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4">
+                        <div class="panel panel-flat text-center">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                Disabled state
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <button type="button" class="btn btn-primary disabled">Disabled state</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="panel panel-flat text-center">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                Default button sizing
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <p><button type="button" class="btn btn-primary btn-xlg">Extra large size</button></p>
+                                <p><button type="button" class="btn btn-danger btn-lg">Large size</button></p>
+                                <p><button type="button" class="btn btn-success">Default size</button></p>
+                                <p><button type="button" class="btn btn-warning btn-sm">Small size</button></p>
+                                <p><button type="button" class="btn btn-info btn-xs">Mini size</button></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="panel panel-flat text-center">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                Default button sizing
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <p><button type="button" class="btn btn-primary btn-xlg"><i class="icon-comments position-left"></i> Extra large size</button></p>
+                                <p><button type="button" class="btn btn-danger btn-lg"><i class="icon-comments position-left"></i> Large size</button></p>
+                                <p><button type="button" class="btn btn-success"><i class="icon-comments position-left"></i> Default size</button></p>
+                                <p><button type="button" class="btn btn-warning btn-sm"><i class="icon-comments position-left"></i> Small size</button></p>
+                                <p><button type="button" class="btn btn-info btn-xs"><i class="icon-comments position-left"></i> Mini size</button></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="panel panel-flat text-center">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                Labeled button sizing
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <p><button type="button" class="btn btn-primary btn-labeled btn-xlg"><b><i class="icon-home"></i></b> Extra large size</button></p>
+                                <p><button type="button" class="btn btn-danger btn-labeled btn-lg"><b><i class="icon-home"></i></b> Large size</button></p>
+                                <p><button type="button" class="btn btn-success btn-labeled"><b><i class="icon-home"></i></b> Default size</button></p>
+                                <p><button type="button" class="btn btn-warning btn-labeled btn-sm"><b><i class="icon-home"></i></b> Small size</button></p>
+                                <p><button type="button" class="btn btn-info btn-labeled btn-xs"><b><i class="icon-home"></i></b> Mini size</button></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="panel panel-flat text-center">
+                            <div class="panel-heading">
+                                <div class="panel-title">
+                                Rounded button sizing
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <p><button type="button" class="btn btn-primary btn-rounded btn-xlg"><i class="icon-envelope position-left"></i> Extra large size</button></p>
+                                <p><button type="button" class="btn btn-danger btn-rounded btn-lg"><i class="icon-envelope position-left"></i> Large size</button></p>
+                                <p><button type="button" class="btn btn-success btn-rounded"><i class="icon-envelope position-left"></i> Default size</button></p>
+                                <p><button type="button" class="btn btn-warning btn-rounded btn-sm"><i class="icon-envelope position-left"></i> Small size</button></p>
+                                <p><button type="button" class="btn btn-info btn-rounded btn-xs"><i class="icon-envelope position-left"></i> Mini size</button></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+				<div class="row">
+					<div class="col-md-4 col-sm-4">
+						<div class="panel panel-flat text-center">
+							<div class="panel-heading">
+								<div class="panel-title">
+                                Buttons group
+                                </div>
+							</div>
+							<div class="panel-body">
+	                            <div class="btn-group">
+	                                <button type="button" class="btn btn-default">1</button>
+	                                <button type="button" class="btn btn-default">2</button>
+	                                <button type="button" class="btn btn-default">3</button>
+	                            </div>
+
+	                            <div class="btn-group">
+	                                <button type="button" class="btn btn-default">4</button>
+	                                <button type="button" class="btn btn-default">5</button>
+	                            </div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="panel panel-flat text-center">
+							<div class="panel-heading">
+								<div class="panel-title">
+                                Radio buttons group
+                                </div>
+							</div>
+							<div class="panel-body">
+								<div class="btn-group" data-toggle="buttons">
+		                            <label class="btn btn-primary">
+		                                <input type="radio" name="options" id="option1"> Option 1
+		                            </label>
+
+		                            <label class="btn btn-primary">
+		                                <input type="radio" name="options" id="option2"> Option 2
+		                            </label>
+
+		                            <label class="btn btn-primary">
+		                                <input type="radio" name="options" id="option3"> Option 3
+		                            </label>
+		                        </div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="panel panel-flat text-center">
+							<div class="panel-heading">
+								<div class="panel-title">
+                                Checkbox buttons group
+                                </div>
+							</div>
+							<div class="panel-body">
+								<div class="btn-group" data-toggle="buttons">
+		                            <label class="btn btn-primary">
+		                                <input type="checkbox"> Option 1
+		                            </label>
+
+		                            <label class="btn btn-primary">
+		                                <input type="checkbox"> Option 2
+		                            </label>
+
+		                            <label class="btn btn-primary">
+		                                <input type="checkbox"> Option 3
+		                            </label>
+		                        </div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<!-- Footer -->
+			<footer class="footer-container">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12 col-sm-12">
+							<div class="pull-left">
+								© 2017 Bird&nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;&nbsp;Web app kit by <a href="http://followtechnique.com" target="_blank">FollowTechnique</a>.							</div>
+	                        <div class="pull-right">
+								<div class="label label-info">Version: 1.3.0</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- /Footer -->
+
+		</section>
+		<!-- /Page Container ends -->
+
+		<!-- ScrolltoTop -->
+		<a id="scrollTop" href="#top"><i class="icon-arrow-up12"></i></a>
+		<!-- /ScrolltoTop -->
+
+	</div>
+
+<!-- Rightbar -->
+<div id="right_sidebar" class="right_bar"></div>
+<script>
+function open_rightbar() {
+	$(window).resize(function() {
+		if(($(window).width() < 500)){
+			document.getElementById("right_sidebar").style.width = "100%";
+		}
+		else if($(window).width() > 500) {
+			document.getElementById("right_sidebar").style.width = "260px";
+		}
+	}).resize();
+}
+function close_rightbar() {
+	document.getElementById("right_sidebar").style.width = "0";
+}
+</script>
+<!-- /Rightbar -->
+
+<!-- Layout settings -->
+<div class="layout"></div>
+<span class="is_hidden" id="jquery_vars">
+	<span class="is_hidden switch-active"></span>
+	<span class="is_hidden switch-inactive"></span>
+	<span class="is_hidden chart-bg"></span>
+	<span class="is_hidden chart-gridlines-color"></span>
+	<span class="is_hidden chart-legends-text-color"></span>
+	<span class="is_hidden chart-grid-text-color"></span>
+	<span class="is_hidden chart-data-color-option1"></span>
+	<span class="is_hidden chart-data-color-option2"></span>
+	<span class="is_hidden chart-data-color-option3"></span>
+	<span class="is_hidden chart-data-color-option4"></span>
+	<span class="is_hidden chart-data-color-option5"></span>
+	<span class="is_hidden chart-data-color-option6"></span>
+	<span class="is_hidden chart-data-color-option7"></span>
+	<span class="is_hidden chart-data-color-option8"></span>
+</span>
+<!-- /Layout settings -->
+
+<!-- Global scripts -->
+<script src="lib/js/core/jquery/jquery.js"></script>
+<script src="lib/js/core/jquery/jquery.ui.js"></script>
+<script src="lib/js/core/bootstrap/bootstrap.js"></script>
+<script src="lib/js/core/bootstrap/jasny_bootstrap.min.js"></script>
+<script src="lib/js/core/navigation/nav.accordion.js"></script>
+<script src="lib/js/core/hammer/hammerjs.js"></script>
+<script src="lib/js/core/hammer/jquery.hammer.js"></script>
+<script src="lib/js/core/slimscroll/jquery.slimscroll.js"></script>
+<script src="lib/js/extensions/smart-resize.js"></script>
+<script src="lib/js/extensions/blockui.min.js"></script>
+<script src="lib/js/forms/uniform.min.js"></script>
+<script src="lib/js/forms/switchery.js"></script>
+<script src="lib/js/forms/select2.min.js"></script>
+<script src="lib/js/plugins/venobox.js"></script>
+<script src="lib/js/core/app/layouts.js"></script>
+<script src="lib/js/core/app/core.js"></script>
+<!-- /Global scripts -->
+
+<!-- Page scripts -->
+<!-- /Page scripts -->
+
+</body>
+</html>

@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="theme-color" content="#1C2B36" />
+	<title>Bird - Responsive admin dashboard template by Followtechnique</title>
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="144x144">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="114x114">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="72x72">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png">
+	<link href="img/favicon.ico" rel="icon" type="image/png">
+	<link href="img/favicon.ico" rel="shortcut icon">
+    <!-- /Favicon -->
+
+    <!-- Global stylesheets -->
+	<link type="text/css" rel="stylesheet" href="lib/css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="lib/css/animate.min.css">
+    <link type="text/css" rel="stylesheet" href="lib/css/main.css">
+    <!-- /Global stylesheets -->
+</head>
+<body id="top">
+
+<!-- Preloader -->
+<div id="preloader">
+	<div id="status">
+		<div class="loader"></div>
+	</div>
+</div>
+<!-- /Preloader -->
+
+<div id="body-wrapper" class="body-container">
+
+	<!-- Header begins -->
+	<header class="main-nav clearfix">
+
+		<!-- Searchbar -->
+		<div class="top-search-bar">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3">
+						<div class="search-input-addon">
+							<span class="addon-icon"><i class="icon-search4"></i></span>
+							<input type="text" class="form-control top-search-input" placeholder="Enter your keyword...">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Searchbar -->
+
+		<!-- Branding -->
+		<div class="navbar-left pull-left">
+			<div class="clearfix">
+				<ul class="left-branding pull-left">
+					<li class="visible-handheld"><span class="left-toggle-switch"><i class="icon-menu7"></i></span></li>
+					<li>
+						<a href="index.html"><div class="logo"></div></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /Branding -->
+
+		<!-- Search & Languages -->
+		<div class="navbar pull-left">
+			<div class="clearfix">
+				<ul class="pull-left top-icons hidden-xs">
+					<li><a href="#" class="btn-top-search m-l-10"><i class="icon-search4"></i></a></li>
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-flag7"></i></a>
+						<ul class="dropdown-menu languages">
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">Deutsch</a></li>
+                            <li><a href="#">Українська</a></li>
+							<li><a href="#">España</a></li>
+                        </ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /Search & Languages -->
+
+		<!-- Navbar icons -->
+		<div class="navbar pull-right">
+			<div class="clearfix">
+				<ul class="pull-right top-icons">
+					<li><a href="#" class="btn-top-search visible-xs"><i class="icon-search4"></i></a></li>
+
+					<!-- Quick apps dropdown -->
+					<li class="dropdown apps-dropdown hidden-xs">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-grid2"></i></a>
+						<div class="dropdown-menu">
+						</div>
+					</li>
+					<!-- /Quick apps dropdown -->
+
+					<!-- Rightbar -->
+					<li><a href="#" onclick="open_rightbar()"><span class="bubble">6</span><i class="icon-stack3"></i></a></li>
+					<!-- /Rightbar -->
+
+					<!-- User dropdown -->
+					<li class="dropdown user-dropdown">
+						<a class="user-name hidden-xs" data-toggle="dropdown">Jane Elliott <i class="icon-more2"></i><small>Administrator</small></a>
+						<a href="#" class="btn-user dropdown-toggle hidden-xs" data-toggle="dropdown"><img src="http://via.placeholder.com/80x80" class="img-circle user" alt=""/></a>
+						<a href="#" class="dropdown-toggle visible-xs" data-toggle="dropdown"><i class="icon-more"></i></a>
+						<div class="dropdown-menu no-padding">
+						</div>
+					</li>
+					<!-- /User dropdown -->
+
+				</ul>
+			</div>
+		</div>
+		<!-- /Navbar icons -->
+
+	</header>
+	<!-- /Header ends -->
+
+	<!-- Sidebar -->
+	<aside class="menu">
+		<div class="left-aside-container">
+
+			<!-- User profile -->
+			<div class="user-profile"></div>
+			<!-- /User profile -->
+
+
+			<!-- Main menu -->
+			<div class="menu-container"></div>
+			<!-- /Main menu -->
+
+		</div>
+	</aside>
+	<!-- /Sidebar -->
+
+	<!-- Page container begins -->
+	<section class="main-container">
+		<h1 style="display:none">Empty Heading</h1>
+
+
+			<!-- Page header -->
+			<div class="header">
+				<div class="header-content">
+					<div class="page-title">
+						<i class="icon-grid4 position-left"></i> Progress bars
+					</div>
+					<ul class="breadcrumb">
+						<li><a href="index.html"></a></li>
+						<li>UI elements</li>
+						<li class="active">Progress bars</li>
+					</ul>
+				</div>
+			</div>
+			<!-- /Page header -->
+
+			<div class="container-fluid page-content">
+
+				<div class="row">
+
+					<!-- Basic examples -->
+					<div class="col-md-6 col-sm-6">
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Basic examples</div>
+							</div>
+							<div class="panel-body">
+								<div class="progress m-b-10">
+									<div class="progress-bar" style="width: 15%">
+										<span class="sr-only">15% complete</span>
+									</div>
+								</div>
+
+								<div class="progress m-b-10">
+									<div class="progress-bar" style="width: 25%">
+										<span class="sr-only">25% complete</span>
+									</div>
+								</div>
+
+								<div class="progress m-b-10">
+									<div class="progress-bar" style="width: 35%">
+										<span class="sr-only">35% complete</span>
+									</div>
+								</div>
+
+								<div class="progress m-b-10">
+									<div class="progress-bar" style="width: 55%">
+										<span class="sr-only">55% complete</span>
+									</div>
+								</div>
+
+								<div class="progress m-b-10">
+									<div class="progress-bar" style="width: 75%">
+										<span class="sr-only">75% complete</span>
+									</div>
+								</div>
+
+								<div class="progress">
+									<div class="progress-bar" style="width: 95%">
+										<span class="sr-only">95% complete</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /Basic examples -->
+
+					<!-- Contextual colors -->
+					<div class="col-md-6 col-sm-6">
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Contextual colors</div>
+							</div>
+							<div class="panel-body">
+								<div class="progress m-b-10">
+									<div class="progress-bar" style="width: 15%">
+										<span class="sr-only">15% complete (Default)</span>
+									</div>
+								</div>
+
+								<div class="progress m-b-10">
+									<div class="progress-bar progress-bar-primary" style="width: 25%">
+										<span class="sr-only">25% complete (Primary)</span>
+									</div>
+								</div>
+
+								<div class="progress m-b-10">
+									<div class="progress-bar progress-bar-danger" style="width: 35%">
+										<span class="sr-only">35% complete (Danger)</span>
+									</div>
+								</div>
+
+								<div class="progress m-b-10">
+									<div class="progress-bar progress-bar-success" style="width: 55%">
+										<span class="sr-only">55% complete (Success)</span>
+									</div>
+								</div>
+
+								<div class="progress m-b-10">
+									<div class="progress-bar progress-bar-warning" style="width: 75%">
+										<span class="sr-only">75% complete (Warning)</span>
+									</div>
+								</div>
+
+								<div class="progress">
+									<div class="progress-bar progress-bar-info" style="width: 95%">
+										<span class="sr-only">95% complete (Info)</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /Contextual colors -->
+
+				</div>
+
+				<div class="row">
+
+					<!-- Striped examples -->
+					<div class="col-md-6 col-sm-6">
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Striped examples</div>
+							</div>
+							<div class="panel-body">
+								<div class="progress m-b-10">
+									<div class="progress-bar progress-bar-striped" style="width: 15%">
+										<span class="sr-only">15% complete (Default)</span>
+									</div>
+								</div>
+
+								<div class="progress m-b-10">
+									<div class="progress-bar progress-bar-primary progress-bar-striped" style="width: 25%">
+										<span class="sr-only">25% complete (Primary)</span>
+									</div>
+								</div>
+
+								<div class="progress m-b-10">
+									<div class="progress-bar progress-bar-danger progress-bar-striped" style="width: 35%">
+										<span class="sr-only">35% complete (Danger)</span>
+									</div>
+								</div>
+
+								<div class="progress m-b-10">
+									<div class="progress-bar progress-bar-success progress-bar-striped" style="width: 55%">
+										<span class="sr-only">55% complete (Success)</span>
+									</div>
+								</div>
+
+								<div class="progress m-b-10">
+									<div class="progress-bar progress-bar-warning progress-bar-striped" style="width: 75%">
+										<span class="sr-only">75% complete (Warning)</span>
+									</div>
+								</div>
+
+								<div class="progress">
+									<div class="progress-bar progress-bar-info progress-bar-striped" style="width: 95%">
+										<span class="sr-only">95% complete (Info)</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /Striped examples -->
+
+					<!-- Animated examples -->
+					<div class="col-md-6 col-sm-6">
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Animated examples</div>
+							</div>
+							<div class="panel-body">
+								<div class="progress m-b-10">
+									<div class="progress-bar progress-bar-striped active" style="width: 15%">
+										<span class="sr-only">15% complete (Default)</span>
+									</div>
+								</div>
+
+								<div class="progress m-b-10">
+									<div class="progress-bar progress-bar-primary progress-bar-striped active" style="width: 25%">
+										<span class="sr-only">25% complete (Primary)</span>
+									</div>
+								</div>
+
+								<div class="progress m-b-10">
+									<div class="progress-bar progress-bar-danger progress-bar-striped active" style="width: 35%">
+										<span class="sr-only">35% complete (Danger)</span>
+									</div>
+								</div>
+
+								<div class="progress m-b-10">
+									<div class="progress-bar progress-bar-success progress-bar-striped active" style="width: 55%">
+										<span class="sr-only">55% complete (Success)</span>
+									</div>
+								</div>
+
+								<div class="progress m-b-10">
+									<div class="progress-bar progress-bar-warning progress-bar-striped active" style="width: 75%">
+										<span class="sr-only">75% complete (Warning)</span>
+									</div>
+								</div>
+
+								<div class="progress">
+									<div class="progress-bar progress-bar-info progress-bar-striped active" style="width: 95%">
+										<span class="sr-only">95% complete (Info)</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /Animated examples -->
+
+				</div>
+
+				<div class="row">
+
+					<!-- Sizing options -->
+					<div class="col-md-6 col-sm-6">
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Sizing options</div>
+							</div>
+							<div class="panel-body">
+
+								<h6 class="text-semibold">Large progress bar</h6>
+								<div class="progress progress-lg m-b-20">
+									<div class="progress-bar" style="width: 15%">
+									</div>
+								</div>
+
+								<h6 class="text-semibold">Normal progress bar</h6>
+								<div class="progress m-b-20">
+									<div class="progress-bar progress-bar-primary" style="width: 30%">
+									</div>
+								</div>
+
+								<h6 class="text-semibold">Small progress bar</h6>
+								<div class="progress progress-sm m-b-20">
+									<div class="progress-bar progress-bar-success" style="width: 45%">
+									</div>
+								</div>
+
+								<h6 class="text-semibold">Extrasmall progress bar</h6>
+								<div class="progress progress-xs m-b-20">
+									<div class="progress-bar progress-bar-warning" style="width: 60%">
+									</div>
+								</div>
+
+								<h6 class="text-semibold">Mini progress bar</h6>
+								<div class="progress progress-xxs m-b-20">
+									<div class="progress-bar progress-bar-info" style="width: 75%">
+									</div>
+								</div>
+
+								<h6 class="text-semibold">Micro progress bar</h6>
+								<div class="progress progress-micro">
+									<div class="progress-bar progress-bar-danger" style="width: 90%">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /Sizing options -->
+					
+				</div>
+
+			</div>
+
+			<!-- Footer -->
+			<footer class="footer-container">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12 col-sm-12">
+							<div class="pull-left">
+								© 2017 Bird&nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;&nbsp;Web app kit by <a href="http://followtechnique.com" target="_blank">FollowTechnique</a>.							</div>
+	                        <div class="pull-right">
+								<div class="label label-info">Version: 1.3.0</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- /Footer -->
+
+		</section>
+		<!-- /Page Container ends -->
+
+		<!-- ScrolltoTop -->
+		<a id="scrollTop" href="#top"><i class="icon-arrow-up12"></i></a>
+		<!-- /ScrolltoTop -->
+
+	</div>
+
+<!-- Rightbar -->
+<div id="right_sidebar" class="right_bar"></div>
+<script>
+function open_rightbar() {
+	$(window).resize(function() {
+		if(($(window).width() < 500)){
+			document.getElementById("right_sidebar").style.width = "100%";
+		}
+		else if($(window).width() > 500) {
+			document.getElementById("right_sidebar").style.width = "260px";
+		}
+	}).resize();
+}
+function close_rightbar() {
+	document.getElementById("right_sidebar").style.width = "0";
+}
+</script>
+<!-- /Rightbar -->
+
+<!-- Layout settings -->
+<div class="layout"></div>
+<span class="is_hidden" id="jquery_vars">
+	<span class="is_hidden switch-active"></span>
+	<span class="is_hidden switch-inactive"></span>
+	<span class="is_hidden chart-bg"></span>
+	<span class="is_hidden chart-gridlines-color"></span>
+	<span class="is_hidden chart-legends-text-color"></span>
+	<span class="is_hidden chart-grid-text-color"></span>
+	<span class="is_hidden chart-data-color-option1"></span>
+	<span class="is_hidden chart-data-color-option2"></span>
+	<span class="is_hidden chart-data-color-option3"></span>
+	<span class="is_hidden chart-data-color-option4"></span>
+	<span class="is_hidden chart-data-color-option5"></span>
+	<span class="is_hidden chart-data-color-option6"></span>
+	<span class="is_hidden chart-data-color-option7"></span>
+	<span class="is_hidden chart-data-color-option8"></span>
+</span>
+<!-- /Layout settings -->
+
+<!-- Global scripts -->
+<script src="lib/js/core/jquery/jquery.js"></script>
+<script src="lib/js/core/jquery/jquery.ui.js"></script>
+<script src="lib/js/core/bootstrap/bootstrap.js"></script>
+<script src="lib/js/core/bootstrap/jasny_bootstrap.min.js"></script>
+<script src="lib/js/core/navigation/nav.accordion.js"></script>
+<script src="lib/js/core/hammer/hammerjs.js"></script>
+<script src="lib/js/core/hammer/jquery.hammer.js"></script>
+<script src="lib/js/core/slimscroll/jquery.slimscroll.js"></script>
+<script src="lib/js/extensions/smart-resize.js"></script>
+<script src="lib/js/extensions/blockui.min.js"></script>
+<script src="lib/js/forms/uniform.min.js"></script>
+<script src="lib/js/forms/switchery.js"></script>
+<script src="lib/js/forms/select2.min.js"></script>
+<script src="lib/js/plugins/venobox.js"></script>
+<script src="lib/js/core/app/layouts.js"></script>
+<script src="lib/js/core/app/core.js"></script>
+<!-- /Global scripts -->
+
+<!-- Page scripts -->
+<!-- /Page scripts -->
+
+</body>
+</html>

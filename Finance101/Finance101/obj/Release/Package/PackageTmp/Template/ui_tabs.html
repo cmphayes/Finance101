@@ -1,0 +1,996 @@
+<!doctype html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="theme-color" content="#1C2B36" />
+	<title>Bird - Responsive admin dashboard template by Followtechnique</title>
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="144x144">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="114x114">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="72x72">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png">
+	<link href="img/favicon.ico" rel="icon" type="image/png">
+	<link href="img/favicon.ico" rel="shortcut icon">
+    <!-- /Favicon -->
+
+    <!-- Global stylesheets -->
+	<link type="text/css" rel="stylesheet" href="lib/css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="lib/css/animate.min.css">
+    <link type="text/css" rel="stylesheet" href="lib/css/main.css">
+    <!-- /Global stylesheets -->
+</head>
+<body id="top">
+
+<!-- Preloader -->
+<div id="preloader">
+	<div id="status">
+		<div class="loader"></div>
+	</div>
+</div>
+<!-- /Preloader -->
+
+<div id="body-wrapper" class="body-container">
+
+	<!-- Header begins -->
+	<header class="main-nav clearfix">
+
+		<!-- Searchbar -->
+		<div class="top-search-bar">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3">
+						<div class="search-input-addon">
+							<span class="addon-icon"><i class="icon-search4"></i></span>
+							<input type="text" class="form-control top-search-input" placeholder="Enter your keyword...">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Searchbar -->
+
+		<!-- Branding -->
+		<div class="navbar-left pull-left">
+			<div class="clearfix">
+				<ul class="left-branding pull-left">
+					<li class="visible-handheld"><span class="left-toggle-switch"><i class="icon-menu7"></i></span></li>
+					<li>
+						<a href="index.html"><div class="logo"></div></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /Branding -->
+
+		<!-- Search & Languages -->
+		<div class="navbar pull-left">
+			<div class="clearfix">
+				<ul class="pull-left top-icons hidden-xs">
+					<li><a href="#" class="btn-top-search m-l-10"><i class="icon-search4"></i></a></li>
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-flag7"></i></a>
+						<ul class="dropdown-menu languages">
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">Deutsch</a></li>
+                            <li><a href="#">Українська</a></li>
+							<li><a href="#">España</a></li>
+                        </ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /Search & Languages -->
+
+		<!-- Navbar icons -->
+		<div class="navbar pull-right">
+			<div class="clearfix">
+				<ul class="pull-right top-icons">
+					<li><a href="#" class="btn-top-search visible-xs"><i class="icon-search4"></i></a></li>
+
+					<!-- Quick apps dropdown -->
+					<li class="dropdown apps-dropdown hidden-xs">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-grid2"></i></a>
+						<div class="dropdown-menu">
+						</div>
+					</li>
+					<!-- /Quick apps dropdown -->
+
+					<!-- Rightbar -->
+					<li><a href="#" onclick="open_rightbar()"><span class="bubble">6</span><i class="icon-stack3"></i></a></li>
+					<!-- /Rightbar -->
+
+					<!-- User dropdown -->
+					<li class="dropdown user-dropdown">
+						<a class="user-name hidden-xs" data-toggle="dropdown">Jane Elliott <i class="icon-more2"></i><small>Administrator</small></a>
+						<a href="#" class="btn-user dropdown-toggle hidden-xs" data-toggle="dropdown"><img src="http://via.placeholder.com/80x80" class="img-circle user" alt=""/></a>
+						<a href="#" class="dropdown-toggle visible-xs" data-toggle="dropdown"><i class="icon-more"></i></a>
+						<div class="dropdown-menu no-padding">
+						</div>
+					</li>
+					<!-- /User dropdown -->
+
+				</ul>
+			</div>
+		</div>
+		<!-- /Navbar icons -->
+
+	</header>
+	<!-- /Header ends -->
+
+	<!-- Sidebar -->
+	<aside class="menu">
+		<div class="left-aside-container">
+
+			<!-- User profile -->
+			<div class="user-profile"></div>
+			<!-- /User profile -->
+
+
+			<!-- Main menu -->
+			<div class="menu-container"></div>
+			<!-- /Main menu -->
+
+		</div>
+	</aside>
+	<!-- /Sidebar -->
+
+	<!-- Page container begins -->
+	<section class="main-container">
+		<h1 style="display:none">Empty Heading</h1>
+
+
+			<!-- Page header -->
+			<div class="header">
+				<div class="header-content">
+					<div class="page-title">
+						<i class="icon-grid4 position-left"></i> Tabs
+					</div>
+					<ul class="breadcrumb">
+						<li><a href="index.html"></a></li>
+						<li>UI elements</li>
+						<li class="active">Tabs</li>
+					</ul>
+				</div>
+			</div>
+			<!-- /Page header -->
+
+			<div class="container-fluid page-content">
+
+				<div class="row">
+					<div class="col-md-6 col-sm-6">
+
+						<!-- Basic tabs -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">
+								Basic tabs
+								</div>
+							</div>
+							<div class="panel-body">
+								<div class="tabbable">
+									<ul class="nav nav-tabs">
+										<li class="active"><a href="#basic-tab1" data-toggle="tab">Active</a></li>
+										<li><a href="#basic-tab2" data-toggle="tab">Inactive</a></li>
+										<li class="dropdown">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+											<ul class="dropdown-menu dropdown-menu-right">
+												<li><a href="#basic-tab3" data-toggle="tab">Dropdown tab</a></li>
+												<li><a href="#basic-tab4" data-toggle="tab">Another tab</a></li>
+											</ul>
+										</li>
+									</ul>
+
+									<div class="tab-content">
+										<div class="tab-pane active">
+											Basic tabs example using <code>.nav-tabs</code> class. Also requires base <code>.nav</code> class.
+										</div>
+
+										<div class="tab-pane">
+											Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+										</div>
+
+										<div class="tab-pane">
+											Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+										</div>
+
+										<div class="tab-pane">
+											Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /Basic tabs -->
+
+					</div>
+
+					<div class="col-md-6 col-sm-6">
+
+						<!-- Basic justified -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">
+								Basic justified
+								</div>
+							</div>
+							<div class="panel-body">
+								<div class="tabbable">
+									<ul class="nav nav-tabs nav-justified">
+										<li class="active"><a href="#basic-justified-tab1" data-toggle="tab">Active</a></li>
+										<li><a href="#basic-justified-tab2" data-toggle="tab">Inactive</a></li>
+										<li class="dropdown">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+											<ul class="dropdown-menu dropdown-menu-right">
+												<li><a href="#basic-justified-tab3" data-toggle="tab">Dropdown tab</a></li>
+												<li><a href="#basic-justified-tab4" data-toggle="tab">Another tab</a></li>
+											</ul>
+										</li>
+									</ul>
+
+									<div class="tab-content">
+										<div class="tab-pane active" id="basic-justified-tab1">
+											Easily make tabs equal widths of their parent with <code>.nav-justified</code> class.
+										</div>
+
+										<div class="tab-pane" id="basic-justified-tab2">
+											Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+										</div>
+
+										<div class="tab-pane" id="basic-justified-tab3">
+											Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+										</div>
+
+										<div class="tab-pane" id="basic-justified-tab4">
+											Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /Basic justified -->
+
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6 col-sm-6">
+
+						<!-- Highlighted tabs -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">
+								Highlighted tabs
+								</div>
+							</div>
+							<div class="panel-body">
+								<div class="tabbable">
+									<ul class="nav nav-tabs nav-tabs-highlight">
+										<li class="active"><a href="#highlight-tab1" data-toggle="tab">Active</a></li>
+										<li><a href="#highlighted-tab2" data-toggle="tab">Inactive</a></li>
+										<li class="dropdown">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+											<ul class="dropdown-menu dropdown-menu-right">
+												<li><a href="#highlighted-tab3" data-toggle="tab">Dropdown tab</a></li>
+												<li><a href="#highlighted-tab4" data-toggle="tab">Another tab</a></li>
+											</ul>
+										</li>
+									</ul>
+
+									<div class="tab-content">
+										<div class="tab-pane active" id="highlighted-tab1">
+											Highlight top border of the active tab by adding <code>.nav-tabs-highlight</code> class.
+										</div>
+
+										<div class="tab-pane" id="highlighted-tab2">
+											Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+										</div>
+
+										<div class="tab-pane" id="highlighted-tab3">
+											Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+										</div>
+
+										<div class="tab-pane" id="highlighted-tab4">
+											Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /Highlighted tabs -->
+
+					</div>
+
+					<div class="col-md-6 col-sm-6">
+
+						<!-- Highlighted justified -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">
+								Highlighted justified
+								</div>
+							</div>
+							<div class="panel-body">
+								<div class="tabbable">
+									<ul class="nav nav-tabs nav-tabs-highlight nav-justified">
+										<li class="active"><a href="#highlighted-justified-tab1" data-toggle="tab">Active</a></li>
+										<li><a href="#highlighted-justified-tab2" data-toggle="tab">Inactive</a></li>
+										<li class="dropdown">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+											<ul class="dropdown-menu dropdown-menu-right">
+												<li><a href="#highlighted-justified-tab3" data-toggle="tab">Dropdown tab</a></li>
+												<li><a href="#highlighted-justified-tab4" data-toggle="tab">Another tab</a></li>
+											</ul>
+										</li>
+									</ul>
+
+									<div class="tab-content">
+										<div class="tab-pane active" id="highlighted-justified-tab1">
+											To use in tabs with equal widths add <code>.nav-justified .nav-tabs-highlight</code> classes.
+										</div>
+
+										<div class="tab-pane" id="highlighted-justified-tab2">
+											Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+										</div>
+
+										<div class="tab-pane" id="highlighted-justified-tab3">
+											Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+										</div>
+
+										<div class="tab-pane" id="highlighted-justified-tab4">
+											Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /Highlighted justified -->
+
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6 col-sm-6">
+
+						<!-- Solid tabs -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">
+								Solid tabs
+								</div>
+							</div>
+							<div class="panel-body">
+								<div class="tabbable">
+									<ul class="nav nav-tabs nav-tabs-solid">
+										<li class="active"><a href="#solid-tab1" data-toggle="tab">Active</a></li>
+										<li><a href="#solid-tab2" data-toggle="tab">Inactive</a></li>
+										<li class="dropdown">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+											<ul class="dropdown-menu dropdown-menu-right">
+												<li><a href="#solid-tab3" data-toggle="tab">Dropdown tab</a></li>
+												<li><a href="#solid-tab4" data-toggle="tab">Another tab</a></li>
+											</ul>
+										</li>
+									</ul>
+
+									<div class="tab-content">
+										<div class="tab-pane active" id="solid-tab1">
+											Add solid background color to the tabs with <code>.nav-tabs-solid</code> class.
+										</div>
+
+										<div class="tab-pane" id="solid-tab2">
+											Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+										</div>
+
+										<div class="tab-pane" id="solid-tab3">
+											Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+										</div>
+
+										<div class="tab-pane" id="solid-tab4">
+											Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /Solid tabs -->
+
+					</div>
+
+					<div class="col-md-6 col-sm-6">
+
+						<!-- Solid justified -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">
+								Solid justified
+								</div>
+							</div>
+							<div class="panel-body">
+								<div class="tabbable">
+									<ul class="nav nav-tabs nav-tabs-solid nav-justified">
+										<li class="active"><a href="#solid-justified-tab1" data-toggle="tab">Active</a></li>
+										<li><a href="#solid-justified-tab2" data-toggle="tab">Inactive</a></li>
+										<li class="dropdown">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+											<ul class="dropdown-menu dropdown-menu-right">
+												<li><a href="#solid-justified-tab3" data-toggle="tab">Dropdown tab</a></li>
+												<li><a href="#solid-justified-tab4" data-toggle="tab">Another tab</a></li>
+											</ul>
+										</li>
+									</ul>
+
+									<div class="tab-content">
+										<div class="tab-pane active" id="solid-justified-tab1">
+											To use in tabs with equal widths add <code>.nav-justified .nav-tabs-solid</code> classes.
+										</div>
+
+										<div class="tab-pane" id="solid-justified-tab2">
+											Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+										</div>
+
+										<div class="tab-pane" id="solid-justified-tab3">
+											Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+										</div>
+
+										<div class="tab-pane" id="solid-justified-tab4">
+											Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /Solid justified -->
+
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6 col-sm-6">
+
+						<!-- Colored tabs -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">
+								Colored tabs
+								</div>
+							</div>
+							<div class="panel-body">
+								<div class="tabbable">
+									<ul class="nav nav-tabs bg-teal">
+										<li class="active"><a href="#colored-tab1" data-toggle="tab">Active</a></li>
+										<li><a href="#colored-tab2" data-toggle="tab">Inactive</a></li>
+										<li class="dropdown">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+											<ul class="dropdown-menu dropdown-menu-right">
+												<li><a href="#colored-tab3" data-toggle="tab">Dropdown tab</a></li>
+												<li><a href="#colored-tab4" data-toggle="tab">Another tab</a></li>
+											</ul>
+										</li>
+									</ul>
+
+									<div class="tab-content">
+										<div class="tab-pane active" id="colored-tab1">
+											Add <code>custom</code> background color to the tabs using <code>.bg-*</code> class.
+										</div>
+
+										<div class="tab-pane" id="colored-tab2">
+											Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+										</div>
+
+										<div class="tab-pane" id="colored-tab3">
+											Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+										</div>
+
+										<div class="tab-pane" id="colored-tab4">
+											Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /Colored tabs -->
+
+					</div>
+
+					<div class="col-md-6 col-sm-6">
+
+						<!-- Colored justified -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">
+								Colored justified
+								</div>
+							</div>
+							<div class="panel-body">
+								<div class="tabbable">
+									<ul class="nav nav-tabs bg-teal nav-justified">
+										<li class="active"><a href="#colored-justified-tab1" data-toggle="tab">Active</a></li>
+										<li><a href="#colored-justified-tab2" data-toggle="tab">Inactive</a></li>
+										<li class="dropdown">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+											<ul class="dropdown-menu dropdown-menu-right">
+												<li><a href="#colored-justified-tab3" data-toggle="tab">Dropdown tab</a></li>
+												<li><a href="#colored-justified-tab4" data-toggle="tab">Another tab</a></li>
+											</ul>
+										</li>
+									</ul>
+
+									<div class="tab-content">
+										<div class="tab-pane active" id="colored-justified-tab1">
+											To use in tabs with equal widths add <code>.nav-justified .bg-*</code> classes.
+										</div>
+
+										<div class="tab-pane" id="colored-justified-tab2">
+											Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+										</div>
+
+										<div class="tab-pane" id="colored-justified-tab3">
+											Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+										</div>
+
+										<div class="tab-pane" id="colored-justified-tab4">
+											Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /Colored justified -->
+
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6 col-sm-6">
+
+						<!-- Tabs with left icons -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">
+								Tabs with left icons
+								</div>
+							</div>
+							<div class="panel-body">
+								<div class="tabbable">
+									<ul class="nav nav-tabs nav-tabs-highlight">
+										<li class="active"><a href="#left-icon-tab1" data-toggle="tab"><i class="icon-three-bars position-left"></i> Active</a></li>
+										<li><a href="#left-icon-tab2" data-toggle="tab"><i class="icon-gear position-left"></i> Inactive</a></li>
+									</ul>
+									<div class="tab-content">
+										<div class="tab-pane active" id="left-icon-tab1">
+											Add icon markup <code>before</code> tab nav text to display icons on the left side.
+										</div>
+										<div class="tab-pane" id="left-icon-tab2">
+											Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /Tabs with left icons -->
+
+					</div>
+
+					<div class="col-md-6 col-sm-6">
+
+						<!-- Tabs with right icons -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">
+								Tabs with right icons
+								</div>
+							</div>
+							<div class="panel-body">
+								<div class="tabbable">
+									<ul class="nav nav-tabs nav-tabs-highlight">
+										<li class="active"><a href="#right-icon-tab1" data-toggle="tab">Active <i class="icon-three-bars position-right"></i></a></li>
+										<li><a href="#right-icon-tab2" data-toggle="tab">Inactive <i class="icon-gear position-right"></i></a></li>
+									</ul>
+									<div class="tab-content">
+										<div class="tab-pane active" id="right-icon-tab1">
+											Add icon markup <code>after</code> tab nav text to display icons on the right side.
+										</div>
+										<div class="tab-pane" id="right-icon-tab2">
+											Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /Tabs with right icons -->
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6 col-sm-6">
+
+						<!-- Tabs with labels -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">
+								Tabs with labels
+								</div>
+							</div>
+							<div class="panel-body">
+								<div class="tabbable">
+									<ul class="nav nav-tabs nav-tabs-highlight">
+										<li class="active"><a href="#left-label-tab" data-toggle="tab"><span class="label label-danger position-left">Bug</span> Active</a></li>
+										<li><a href="#right-label-tab" data-toggle="tab">Inactive<span class="label label-info position-right">Fixed</span></a></li>
+									</ul>
+									<div class="tab-content">
+										<div class="tab-pane active" id="left-label-tab">
+											Add icon markup <code>before</code> tab nav text to display icons on the left side.
+										</div>
+										<div class="tab-pane" id="right-label-tab">
+											Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /Tabs with labels -->
+
+					</div>
+
+					<div class="col-md-6 col-sm-6">
+
+						<!-- Tabs with badges -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">
+								Tabs with badges
+								</div>
+							</div>
+							<div class="panel-body">
+								<div class="tabbable">
+									<ul class="nav nav-tabs nav-tabs-highlight">
+										<li class="active"><a href="#left-badges-tab" data-toggle="tab"><span class="badge badge-danger position-left">3</span> Active</a></li>
+										<li><a href="#right-badges-tab" data-toggle="tab">Inactive<span class="badge badge-info position-right">10</span></a></li>
+									</ul>
+									<div class="tab-content">
+										<div class="tab-pane active" id="left-badges-tab">
+											Add icon markup <code>before</code> tab nav text to display icons on the left side.
+										</div>
+										<div class="tab-pane" id="right-badges-tab">
+											Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /Tabs with badges -->
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6 col-sm-6">
+
+						<!-- Left side placement -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">
+								Left side placement
+								</div>
+							</div>
+							<div class="panel-body">
+								<div class="tabbable nav-tabs-vertical nav-tabs-left">
+									<ul class="nav nav-tabs nav-tabs-highlight">
+										<li class="active"><a href="#left-tab1" data-toggle="tab"><i class="icon-three-bars position-left"></i> Active</a></li>
+										<li><a href="#left-tab2" data-toggle="tab"><i class="icon-wrench position-left"></i> Inactive</a></li>
+										<li class="dropdown">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-gear position-left"></i> Dropdown <span class="caret"></span></a>
+											<ul class="dropdown-menu">
+												<li><a href="#left-tab3" data-toggle="tab">Dropdown tab</a></li>
+												<li><a href="#left-tab4" data-toggle="tab">Another tab</a></li>
+											</ul>
+										</li>
+									</ul>
+
+									<div class="tab-content">
+										<div class="tab-pane active has-padding" id="left-tab1">
+											Basic tabs example using <code>.nav-tabs</code> class. Also requires base <code>.nav</code> class.
+										</div>
+
+										<div class="tab-pane has-padding" id="left-tab2">
+											Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+										</div>
+
+										<div class="tab-pane has-padding" id="left-tab3">
+											Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+										</div>
+
+										<div class="tab-pane has-padding" id="left-tab4">
+											Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /Left side placement -->
+						
+					</div>
+
+					<div class="col-md-6 col-sm-6">
+
+						<!-- Right side placement -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">
+								Right side placement
+								</div>
+							</div>
+							<div class="panel-body">
+								<div class="tabbable nav-tabs-vertical nav-tabs-right">
+									<div class="tab-content">
+										<div class="tab-pane active has-padding" id="right-tab1">
+											Basic tabs example using <code>.nav-tabs</code> class. Also requires base <code>.nav</code> class.
+										</div>
+
+										<div class="tab-pane has-padding" id="right-tab2">
+											Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+										</div>
+
+										<div class="tab-pane has-padding" id="right-tab3">
+											Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+										</div>
+
+										<div class="tab-pane has-padding" id="right-tab4">
+											Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
+										</div>
+									</div>
+
+									<ul class="nav nav-tabs nav-tabs-highlight">
+										<li class="active"><a href="#right-tab1" data-toggle="tab"><span class="label label-danger pull-right">Bug</span> Active</a></li>
+										<li><a href="#right-tab2" data-toggle="tab"><span class="label label-info pull-right">Fixed</span> Inactive</a></li>
+										<li class="dropdown">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="badge badge-success pull-right">37</span> Dropdown <span class="caret"></span></a>
+											<ul class="dropdown-menu">
+												<li><a href="#right-tab3" data-toggle="tab">Dropdown tab</a></li>
+												<li><a href="#right-tab4" data-toggle="tab">Another tab</a></li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- /Right side placement -->
+
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">
+
+						<!-- Large tabs -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">
+								Large tabs
+								</div>
+							</div>
+							<div class="panel-body">
+								<div class="tabbable">
+									<ul class="nav nav-tabs nav-lg">
+										<li class="active"><a href="#basic-tab1" data-toggle="tab">Active</a></li>
+										<li><a href="#basic-tab2" data-toggle="tab">Inactive</a></li>
+										<li class="dropdown">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+											<ul class="dropdown-menu dropdown-menu-right">
+												<li><a href="#basic-tab3" data-toggle="tab">Dropdown tab</a></li>
+												<li><a href="#basic-tab4" data-toggle="tab">Another tab</a></li>
+											</ul>
+										</li>
+									</ul>
+
+									<div class="tab-content">
+										<div class="tab-pane active">
+											Basic tabs example using <code>.nav-tabs</code> class. Also requires base <code>.nav</code> class.
+										</div>
+
+										<div class="tab-pane">
+											Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+										</div>
+
+										<div class="tab-pane">
+											Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+										</div>
+
+										<div class="tab-pane">
+											Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /Large tabs -->
+
+					</div>
+
+					<div class="col-md-4">
+
+						<!-- Small tabs -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">
+								Small tabs
+								</div>
+							</div>
+							<div class="panel-body">
+								<div class="tabbable">
+									<ul class="nav nav-tabs nav-sm">
+										<li class="active"><a href="#basic-tab1" data-toggle="tab">Active</a></li>
+										<li><a href="#basic-tab2" data-toggle="tab">Inactive</a></li>
+										<li class="dropdown">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+											<ul class="dropdown-menu dropdown-menu-right">
+												<li><a href="#basic-tab3" data-toggle="tab">Dropdown tab</a></li>
+												<li><a href="#basic-tab4" data-toggle="tab">Another tab</a></li>
+											</ul>
+										</li>
+									</ul>
+
+									<div class="tab-content">
+										<div class="tab-pane active">
+											Basic tabs example using <code>.nav-tabs</code> class. Also requires base <code>.nav</code> class.
+										</div>
+
+										<div class="tab-pane">
+											Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+										</div>
+
+										<div class="tab-pane">
+											Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+										</div>
+
+										<div class="tab-pane">
+											Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /Small tabs -->
+
+					</div>
+
+					<div class="col-md-4">
+
+						<!-- Mini tabs -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">
+								Mini tabs
+								</div>
+							</div>
+							<div class="panel-body">
+								<div class="tabbable">
+									<ul class="nav nav-tabs nav-xs">
+										<li class="active"><a href="#basic-tab1" data-toggle="tab">Active</a></li>
+										<li><a href="#basic-tab2" data-toggle="tab">Inactive</a></li>
+										<li class="dropdown">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <span class="caret"></span></a>
+											<ul class="dropdown-menu dropdown-menu-right">
+												<li><a href="#basic-tab3" data-toggle="tab">Dropdown tab</a></li>
+												<li><a href="#basic-tab4" data-toggle="tab">Another tab</a></li>
+											</ul>
+										</li>
+									</ul>
+
+									<div class="tab-content">
+										<div class="tab-pane active">
+											Basic tabs example using <code>.nav-tabs</code> class. Also requires base <code>.nav</code> class.
+										</div>
+
+										<div class="tab-pane">
+											Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+										</div>
+
+										<div class="tab-pane">
+											Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.
+										</div>
+
+										<div class="tab-pane">
+											Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /Mini tabs -->
+
+					</div>
+				</div>
+
+			</div>
+
+			<!-- Footer -->
+			<footer class="footer-container">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12 col-sm-12">
+							<div class="pull-left">
+								© 2017 Bird&nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;&nbsp;Web app kit by <a href="http://followtechnique.com" target="_blank">FollowTechnique</a>.							</div>
+	                        <div class="pull-right">
+								<div class="label label-info">Version: 1.3.0</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- /Footer -->
+
+		</section>
+		<!-- /Page Container ends -->
+
+		<!-- ScrolltoTop -->
+		<a id="scrollTop" href="#top"><i class="icon-arrow-up12"></i></a>
+		<!-- /ScrolltoTop -->
+
+	</div>
+
+<!-- Rightbar -->
+<div id="right_sidebar" class="right_bar"></div>
+<script>
+function open_rightbar() {
+	$(window).resize(function() {
+		if(($(window).width() < 500)){
+			document.getElementById("right_sidebar").style.width = "100%";
+		}
+		else if($(window).width() > 500) {
+			document.getElementById("right_sidebar").style.width = "260px";
+		}
+	}).resize();
+}
+function close_rightbar() {
+	document.getElementById("right_sidebar").style.width = "0";
+}
+</script>
+<!-- /Rightbar -->
+
+<!-- Layout settings -->
+<div class="layout"></div>
+<span class="is_hidden" id="jquery_vars">
+	<span class="is_hidden switch-active"></span>
+	<span class="is_hidden switch-inactive"></span>
+	<span class="is_hidden chart-bg"></span>
+	<span class="is_hidden chart-gridlines-color"></span>
+	<span class="is_hidden chart-legends-text-color"></span>
+	<span class="is_hidden chart-grid-text-color"></span>
+	<span class="is_hidden chart-data-color-option1"></span>
+	<span class="is_hidden chart-data-color-option2"></span>
+	<span class="is_hidden chart-data-color-option3"></span>
+	<span class="is_hidden chart-data-color-option4"></span>
+	<span class="is_hidden chart-data-color-option5"></span>
+	<span class="is_hidden chart-data-color-option6"></span>
+	<span class="is_hidden chart-data-color-option7"></span>
+	<span class="is_hidden chart-data-color-option8"></span>
+</span>
+<!-- /Layout settings -->
+
+<!-- Global scripts -->
+<script src="lib/js/core/jquery/jquery.js"></script>
+<script src="lib/js/core/jquery/jquery.ui.js"></script>
+<script src="lib/js/core/bootstrap/bootstrap.js"></script>
+<script src="lib/js/core/bootstrap/jasny_bootstrap.min.js"></script>
+<script src="lib/js/core/navigation/nav.accordion.js"></script>
+<script src="lib/js/core/hammer/hammerjs.js"></script>
+<script src="lib/js/core/hammer/jquery.hammer.js"></script>
+<script src="lib/js/core/slimscroll/jquery.slimscroll.js"></script>
+<script src="lib/js/extensions/smart-resize.js"></script>
+<script src="lib/js/extensions/blockui.min.js"></script>
+<script src="lib/js/forms/uniform.min.js"></script>
+<script src="lib/js/forms/switchery.js"></script>
+<script src="lib/js/forms/select2.min.js"></script>
+<script src="lib/js/plugins/venobox.js"></script>
+<script src="lib/js/core/app/layouts.js"></script>
+<script src="lib/js/core/app/core.js"></script>
+<!-- /Global scripts -->
+
+<!-- Page scripts -->
+<!-- /Page scripts -->
+
+</body>
+</html>

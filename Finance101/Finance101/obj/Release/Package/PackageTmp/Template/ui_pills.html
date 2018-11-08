@@ -1,0 +1,953 @@
+<!doctype html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="theme-color" content="#1C2B36" />
+	<title>Bird - Responsive admin dashboard template by Followtechnique</title>
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="144x144">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="114x114">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="72x72">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png">
+	<link href="img/favicon.ico" rel="icon" type="image/png">
+	<link href="img/favicon.ico" rel="shortcut icon">
+    <!-- /Favicon -->
+
+    <!-- Global stylesheets -->
+	<link type="text/css" rel="stylesheet" href="lib/css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="lib/css/animate.min.css">
+    <link type="text/css" rel="stylesheet" href="lib/css/main.css">
+    <!-- /Global stylesheets -->
+</head>
+<body id="top">
+
+<!-- Preloader -->
+<div id="preloader">
+	<div id="status">
+		<div class="loader"></div>
+	</div>
+</div>
+<!-- /Preloader -->
+
+<div id="body-wrapper" class="body-container">
+
+	<!-- Header begins -->
+	<header class="main-nav clearfix">
+
+		<!-- Searchbar -->
+		<div class="top-search-bar">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3">
+						<div class="search-input-addon">
+							<span class="addon-icon"><i class="icon-search4"></i></span>
+							<input type="text" class="form-control top-search-input" placeholder="Enter your keyword...">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Searchbar -->
+
+		<!-- Branding -->
+		<div class="navbar-left pull-left">
+			<div class="clearfix">
+				<ul class="left-branding pull-left">
+					<li class="visible-handheld"><span class="left-toggle-switch"><i class="icon-menu7"></i></span></li>
+					<li>
+						<a href="index.html"><div class="logo"></div></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /Branding -->
+
+		<!-- Search & Languages -->
+		<div class="navbar pull-left">
+			<div class="clearfix">
+				<ul class="pull-left top-icons hidden-xs">
+					<li><a href="#" class="btn-top-search m-l-10"><i class="icon-search4"></i></a></li>
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-flag7"></i></a>
+						<ul class="dropdown-menu languages">
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">Deutsch</a></li>
+                            <li><a href="#">Українська</a></li>
+							<li><a href="#">España</a></li>
+                        </ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /Search & Languages -->
+
+		<!-- Navbar icons -->
+		<div class="navbar pull-right">
+			<div class="clearfix">
+				<ul class="pull-right top-icons">
+					<li><a href="#" class="btn-top-search visible-xs"><i class="icon-search4"></i></a></li>
+
+					<!-- Quick apps dropdown -->
+					<li class="dropdown apps-dropdown hidden-xs">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-grid2"></i></a>
+						<div class="dropdown-menu">
+						</div>
+					</li>
+					<!-- /Quick apps dropdown -->
+
+					<!-- Rightbar -->
+					<li><a href="#" onclick="open_rightbar()"><span class="bubble">6</span><i class="icon-stack3"></i></a></li>
+					<!-- /Rightbar -->
+
+					<!-- User dropdown -->
+					<li class="dropdown user-dropdown">
+						<a class="user-name hidden-xs" data-toggle="dropdown">Jane Elliott <i class="icon-more2"></i><small>Administrator</small></a>
+						<a href="#" class="btn-user dropdown-toggle hidden-xs" data-toggle="dropdown"><img src="http://via.placeholder.com/80x80" class="img-circle user" alt=""/></a>
+						<a href="#" class="dropdown-toggle visible-xs" data-toggle="dropdown"><i class="icon-more"></i></a>
+						<div class="dropdown-menu no-padding">
+						</div>
+					</li>
+					<!-- /User dropdown -->
+
+				</ul>
+			</div>
+		</div>
+		<!-- /Navbar icons -->
+
+	</header>
+	<!-- /Header ends -->
+
+	<!-- Sidebar -->
+	<aside class="menu">
+		<div class="left-aside-container">
+
+			<!-- User profile -->
+			<div class="user-profile"></div>
+			<!-- /User profile -->
+
+
+			<!-- Main menu -->
+			<div class="menu-container"></div>
+			<!-- /Main menu -->
+
+		</div>
+	</aside>
+	<!-- /Sidebar -->
+
+	<!-- Page container begins -->
+	<section class="main-container">
+		<h1 style="display:none">Empty Heading</h1>
+
+
+			<!-- Page header -->
+			<div class="header">
+				<div class="header-content">
+					<div class="page-title">
+						<i class="icon-grid4 position-left"></i> Nav pills
+					</div>
+					<ul class="breadcrumb">
+						<li><a href="index.html"></a></li>
+						<li>UI elements</li>
+						<li class="active">Nav pills</li>
+					</ul>
+				</div>
+			</div>
+			<!-- /Page header -->
+
+			<div class="container-fluid page-content">
+				<div class="row">
+
+					<!-- Basic pills -->
+					<div class="col-md-6 col-sm-6">
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Basic pills</div>
+							</div>
+							<div class="panel-body">
+								<div class="tabbable">
+									<ul class="nav nav-pills">
+										<li class="active"><a href="#basic-pill1" data-toggle="tab">Active</a></li>
+										<li><a href="#basic-pill2" data-toggle="tab">Inactive</a></li>
+										<li class="dropdown">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown">More <span class="caret"></span></a>
+											<ul class="dropdown-menu dropdown-menu-right">
+												<li><a href="#basic-pill3" data-toggle="tab">Dropdown pill</a></li>
+												<li><a href="#basic-pill4" data-toggle="tab">Another pill</a></li>
+											</ul>
+										</li>
+									</ul>
+
+									<div class="tab-content">
+										<div class="tab-pane active" id="basic-pill1">
+											Basic pills example using <code>.nav-pills</code> class. Also requires base <code>.nav</code> class.
+										</div>
+
+										<div class="tab-pane" id="basic-pill2">
+											Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+										</div>
+
+										<div class="tab-pane" id="basic-pill3">
+											Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+										</div>
+
+										<div class="tab-pane" id="basic-pill4">
+											Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /Basic pills -->
+
+					<!-- Justified pills -->
+					<div class="col-md-6 col-sm-6">
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Justified pills</div>
+							</div>
+							<div class="panel-body">
+								<div class="tabbable">
+									<ul class="nav nav-pills nav-justified">
+										<li class="active"><a href="#justified-pill1" data-toggle="tab">Active</a></li>
+										<li><a href="#justified-pill2" data-toggle="tab">Inactive</a></li>
+										<li class="dropdown">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown">More <span class="caret"></span></a>
+											<ul class="dropdown-menu dropdown-menu-right">
+												<li><a href="#justified-pill3" data-toggle="tab">Dropdown pill</a></li>
+												<li><a href="#justified-pill4" data-toggle="tab">Another pill</a></li>
+											</ul>
+										</li>
+									</ul>
+
+									<div class="tab-content">
+										<div class="tab-pane active" id="justified-pill1">
+											Easily make pills equal widths of their parent with <code>.nav-justified</code> class.
+										</div>
+
+										<div class="tab-pane" id="justified-pill2">
+											Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+										</div>
+
+										<div class="tab-pane" id="justified-pill3">
+											Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+										</div>
+
+										<div class="tab-pane" id="justified-pill4">
+											Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Justified pills -->
+
+				</div>
+
+				<div class="row">
+
+					<!-- Bordered pills -->
+					<div class="col-md-6 col-sm-6">
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Bordered pills</div>
+							</div>
+							<div class="panel-body">
+								<div class="tabbable">
+									<ul class="nav nav-pills nav-pills-bordered">
+										<li class="active"><a href="#bordered-pill1" data-toggle="tab">Active</a></li>
+										<li><a href="#bordered-pill2" data-toggle="tab">Inactive</a></li>
+										<li class="dropdown">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown">More <span class="caret"></span></a>
+											<ul class="dropdown-menu dropdown-menu-right">
+												<li><a href="#bordered-pill3" data-toggle="tab">Dropdown pill</a></li>
+												<li><a href="#bordered-pill4" data-toggle="tab">Another pill</a></li>
+											</ul>
+										</li>
+									</ul>
+
+									<div class="tab-content">
+										<div class="tab-pane active" id="bordered-pill1">
+											Add border and background color to the pills with <code>.nav-pills-bordered</code> class.
+										</div>
+
+										<div class="tab-pane" id="bordered-pill2">
+											Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+										</div>
+
+										<div class="tab-pane" id="bordered-pill3">
+											Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+										</div>
+
+										<div class="tab-pane" id="bordered-pill4">
+											Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /Bordered pills -->
+
+					<!-- Pills toolbar -->
+					<div class="col-md-6 col-sm-6">
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Pills toolbar</div>
+							</div>
+							<div class="panel-body">
+								<div class="tabbable">
+									<ul class="nav nav-pills nav-pills-toolbar">
+										<li class="active"><a href="#toolbar-pill1" data-toggle="tab">Active</a></li>
+										<li><a href="#toolbar-pill2" data-toggle="tab">Inactive</a></li>
+										<li class="dropdown">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown">More <span class="caret"></span></a>
+											<ul class="dropdown-menu dropdown-menu-right">
+												<li><a href="#toolbar-pill3" data-toggle="tab">Dropdown pill</a></li>
+												<li><a href="#toolbar-pill4" data-toggle="tab">Another pill</a></li>
+											</ul>
+										</li>
+									</ul>
+
+									<div class="tab-content">
+										<div class="tab-pane active" id="toolbar-pill1">
+											Display pills as a toolbar with <code>.nav-pills-toolbar</code> class.
+										</div>
+
+										<div class="tab-pane" id="toolbar-pill2">
+											Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+										</div>
+
+										<div class="tab-pane" id="toolbar-pill3">
+											Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+										</div>
+
+										<div class="tab-pane" id="toolbar-pill4">
+											Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /Pills toolbar -->
+
+				</div>
+
+				<div class="row">
+
+					<!-- Centered position -->
+					<div class="col-md-6 col-sm-6">
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Centered position</div>
+							</div>
+							<div class="panel-body">
+								<div class="tabbable">
+									<ul class="nav nav-pills text-center">
+										<li class="active"><a href="#centered-pill1" data-toggle="tab">Active</a></li>
+										<li><a href="#centered-pill2" data-toggle="tab">Inactive</a></li>
+										<li class="dropdown">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown">More <span class="caret"></span></a>
+											<ul class="dropdown-menu dropdown-menu-right">
+												<li><a href="#centered-pill3" data-toggle="tab">Dropdown pill</a></li>
+												<li><a href="#centered-pill4" data-toggle="tab">Another pill</a></li>
+											</ul>
+										</li>
+									</ul>
+
+									<div class="tab-content">
+										<div class="tab-pane active" id="centered-pill1">
+											To use centered pills, add <code>.text-center</code> to the <code>.nav-pills</code> class.
+										</div>
+
+										<div class="tab-pane" id="centered-pill2">
+											Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+										</div>
+
+										<div class="tab-pane" id="centered-pill3">
+											Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+										</div>
+
+										<div class="tab-pane" id="centered-pill4">
+											Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /Centered position -->
+
+					<!-- Right position -->
+					<div class="col-md-6 col-sm-6">
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Right position</div>
+							</div>
+							<div class="panel-body">
+								<div class="tabbable">
+									<ul class="nav nav-pills text-right">
+										<li class="active"><a href="#right-pill1" data-toggle="tab">Active</a></li>
+										<li><a href="#right-pill2" data-toggle="tab">Inactive</a></li>
+										<li class="dropdown">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown">More <span class="caret"></span></a>
+											<ul class="dropdown-menu dropdown-menu-right">
+												<li><a href="#right-pill3" data-toggle="tab">Dropdown pill</a></li>
+												<li><a href="#right-pill4" data-toggle="tab">Another pill</a></li>
+											</ul>
+										</li>
+									</ul>
+
+									<div class="tab-content">
+										<div class="tab-pane active" id="right-pill1">
+											To use right aligned pills, add <code>.text-right</code> to the <code>.nav-pills</code> class.
+										</div>
+
+										<div class="tab-pane" id="right-pill2">
+											Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+										</div>
+
+										<div class="tab-pane" id="right-pill3">
+											Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+										</div>
+
+										<div class="tab-pane" id="right-pill4">
+											Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /Right position -->
+
+				</div>
+
+				<div class="row">
+
+					<!-- Stacked pills -->
+					<div class="col-md-6 col-sm-6">
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Stacked pills</div>
+							</div>
+							<div class="panel-body">
+								<div class="tabbable">
+									<ul class="nav nav-pills nav-stacked">
+										<li class="active"><a href="#stacked-icons-pill1" data-toggle="tab">Active</a></li>
+										<li><a href="#stacked-icons-pill2" data-toggle="tab">Inactive</a></li>
+										<li class="dropdown">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown">More <span class="caret"></span></a>
+											<ul class="dropdown-menu">
+												<li><a href="#stacked-icons-pill3" data-toggle="tab">Dropdown pill</a></li>
+												<li><a href="#stacked-icons-pill4" data-toggle="tab">Another pill</a></li>
+											</ul>
+										</li>
+									</ul>
+
+									<div class="tab-content">
+										<div class="tab-pane active" id="stacked-icons-pill1">
+											Pills are also vertically stackable. Just add <code>.nav-stacked</code> to the <code>.nav-pills</code> class.
+										</div>
+
+										<div class="tab-pane" id="stacked-icons-pill2">
+											Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+										</div>
+
+										<div class="tab-pane" id="stacked-icons-pill3">
+											Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+										</div>
+
+										<div class="tab-pane" id="stacked-icons-pill4">
+											Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /Stacked pills -->
+
+					<!-- Stacked with labels -->
+					<div class="col-md-6 col-sm-6">
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Stacked with labels</div>
+							</div>
+							<div class="panel-body">
+								<div class="tabbable">
+									<ul class="nav nav-pills nav-stacked">
+										<li class="active"><a href="#stacked-labels-pill1" data-toggle="tab"><i class="icon-menu7 position-left"></i> Active</a></li>
+										<li><a href="#stacked-labels-pill2" data-toggle="tab"><i class="icon-make-group position-left"></i> <span class="label label-danger pull-right">Bug</span> Inactive</a></li>
+										<li class="dropdown">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="badge badge-primary pull-right">95</span> More <span class="caret"></span></a>
+											<ul class="dropdown-menu">
+												<li><a href="#stacked-labels-pill3" data-toggle="tab">Dropdown pill</a></li>
+												<li><a href="#stacked-labels-pill4" data-toggle="tab">Another pill</a></li>
+											</ul>
+										</li>
+									</ul>
+
+									<div class="tab-content">
+										<div class="tab-pane active" id="stacked-labels-pill1">
+											Examples of stackable pills with icons, labels, badges and dropdown menu.
+										</div>
+
+										<div class="tab-pane" id="stacked-labels-pill2">
+											Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+										</div>
+
+										<div class="tab-pane" id="stacked-labels-pill3">
+											Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+										</div>
+
+										<div class="tab-pane" id="stacked-labels-pill4">
+											Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /Stacked with labels -->
+
+				</div>
+
+				<div class="row">
+
+					<!-- Pills with left icons -->
+					<div class="col-md-4 col-sm-4">
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Pills with left icons</div>
+							</div>
+							<div class="panel-body">
+								<div class="tabbable">
+									<ul class="nav nav-pills">
+										<li class="active"><a href="#left-icon-pill1" data-toggle="tab"><i class="icon-menu7 position-left"></i> Active</a></li>
+										<li><a href="#left-icon-pill2" data-toggle="tab"><i class="icon-grid6 position-left"></i> Inactive</a></li>
+									</ul>
+
+									<div class="tab-content">
+										<div class="tab-pane active" id="left-icon-pill1">
+											Add icon markup <code>before</code> pill nav text to display icons on the left side.
+										</div>
+
+										<div class="tab-pane" id="left-icon-pill2">
+											Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /Pills with left icons -->
+
+					<!-- Pills with right icons -->
+					<div class="col-md-4 col-sm-4">
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Pills with right icons</div>
+							</div>
+							<div class="panel-body">
+								<div class="tabbable">
+									<ul class="nav nav-pills">
+										<li class="active"><a href="#right-icon-pill1" data-toggle="tab">Active <i class="icon-menu7 position-right"></i></a></li>
+										<li><a href="#right-icon-pill2" data-toggle="tab">Inactive <i class="icon-grid6 position-right"></i></a></li>
+									</ul>
+
+									<div class="tab-content">
+										<div class="tab-pane active" id="right-icon-pill1">
+											Add icon markup <code>after</code> pill nav text to display icons on the right side.
+										</div>
+
+										<div class="tab-pane" id="right-icon-pill2">
+											Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /Pills with right icons -->
+
+					<!-- Pills with icons only -->
+					<div class="col-md-4 col-sm-4">
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Pills with icons only</div>
+							</div>
+							<div class="panel-body">
+								<div class="tabbable">
+									<ul class="nav nav-pills">
+										<li class="active">
+											<a href="#icon-only-pill1" data-toggle="tab">
+												<i class="icon-menu7"></i>
+												<span class="visible-xs-inline-block position-right">Active</span>
+											</a>
+										</li>
+
+										<li>
+											<a href="#icon-only-pill2" data-toggle="tab">
+												<i class="icon-grid6"></i>
+												<span class="visible-xs-inline-block position-right">Inactive</span>
+											</a>
+										</li>
+
+										<li class="dropdown">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+												<i class="icon-equalizer2"></i>
+												<span class="visible-xs-inline-block position-right">More</span>
+												<span class="caret"></span>
+											</a>
+
+											<ul class="dropdown-menu dropdown-menu-right">
+												<li><a href="#icon-only-pill3" data-toggle="tab">Dropdown pill</a></li>
+												<li><a href="#icon-only-pill4" data-toggle="tab">Another pill</a></li>
+											</ul>
+										</li>
+									</ul>
+
+									<div class="tab-content">
+										<div class="tab-pane active" id="icon-only-pill1">
+											If pill nav doesn't have a text, add icon markup to display icon only.
+										</div>
+
+										<div class="tab-pane" id="icon-only-pill2">
+											Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+										</div>
+
+										<div class="tab-pane" id="icon-only-pill3">
+											Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+										</div>
+
+										<div class="tab-pane" id="icon-only-pill4">
+											Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /Pills with icons only -->
+
+				</div>
+
+				<div class="row">
+
+					<!-- Pills with labels -->
+					<div class="col-md-6 col-sm-6">
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Pills with labels</div>
+							</div>
+							<div class="panel-body">
+								<div class="tabbable">
+									<ul class="nav nav-pills">
+										<li class="active"><a href="#label-pill1" data-toggle="tab"><span class="label label-danger position-left">Bug</span> Active</a></li>
+										<li><a href="#label-pill2" data-toggle="tab">Inactive <span class="label label-success position-right">Fixed</span></a></li>
+										<li class="dropdown">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="label label-warning">Priority</span> <span class="caret"></span></a>
+											<ul class="dropdown-menu dropdown-menu-right">
+												<li><a href="#label-pill3" data-toggle="tab">Dropdown pill</a></li>
+												<li><a href="#label-pill4" data-toggle="tab">Another pill</a></li>
+											</ul>
+										</li>
+									</ul>
+
+									<div class="tab-content">
+										<div class="tab-pane active" id="label-pill1">
+											Display <code>labels</code> on the left/right sides and in empty pill nav. Empty labels are hidden.
+										</div>
+
+										<div class="tab-pane" id="label-pill2">
+											Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+										</div>
+
+										<div class="tab-pane" id="label-pill3">
+											Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+										</div>
+
+										<div class="tab-pane" id="label-pill4">
+											Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /Pills with labels -->
+
+					<!-- Pills with badges -->
+					<div class="col-md-6 col-sm-6">
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Pills with badges</div>
+							</div>
+							<div class="panel-body">
+								<div class="tabbable">
+									<ul class="nav nav-pills">
+										<li class="active"><a href="#badges-pill1" data-toggle="tab"><span class="badge badge-primary position-left">12</span> Active</a></li>
+										<li><a href="#badges-pill2" data-toggle="tab">Inactive <span class="badge badge-default position-right">56</span></a></li>
+										<li class="dropdown">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="badge badge-danger">14</span> <span class="caret"></span></a>
+											<ul class="dropdown-menu dropdown-menu-right">
+												<li><a href="#badges-pill3" data-toggle="tab">Dropdown pill</a></li>
+												<li><a href="#badges-pill4" data-toggle="tab">Another pill</a></li>
+											</ul>
+										</li>
+									</ul>
+
+									<div class="tab-content">
+										<div class="tab-pane active" id="badges-pill1">
+											Display <code>badges</code> on the left/right sides and in empty pill nav. Empty badges are hidden.
+										</div>
+
+										<div class="tab-pane" id="badges-pill2">
+											Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+										</div>
+
+										<div class="tab-pane" id="badges-pill3">
+											Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+										</div>
+
+										<div class="tab-pane" id="badges-pill4">
+											Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /Pills with badges -->
+
+				</div>
+
+				<div class="row">
+
+					<!-- Large pills -->
+					<div class="col-md-4 col-sm-4">
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Large pills</div>
+							</div>
+							<div class="panel-body">
+								<div class="tabbable">
+									<ul class="nav nav-lg nav-pills">
+										<li class="active"><a href="#default-pill1" data-toggle="tab">Active</a></li>
+										<li><a href="#default-pill2" data-toggle="tab">Inactive</a></li>
+										<li class="dropdown">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown">More <span class="caret"></span></a>
+											<ul class="dropdown-menu dropdown-menu-right">
+												<li><a href="#default-pill3" data-toggle="tab">Dropdown pill</a></li>
+												<li><a href="#default-pill4" data-toggle="tab">Another pill</a></li>
+											</ul>
+										</li>
+									</ul>
+
+									<div class="tab-content">
+										<div class="tab-pane active" id="default-pill1">
+											Default pills size doesn't require any additional sizing classes.
+										</div>
+
+										<div class="tab-pane" id="default-pill3">
+											Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+										</div>
+
+										<div class="tab-pane" id="default-pill4">
+											Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+										</div>
+
+										<div class="tab-pane" id="default-pill5">
+											Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /Large pills -->
+
+					<!-- Small pills -->
+					<div class="col-md-4 col-sm-4">
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Small pills</div>
+							</div>
+							<div class="panel-body">
+								<div class="tabbable">
+									<ul class="nav nav-sm nav-pills">
+										<li class="active"><a href="#small-pill1" data-toggle="tab">Active</a></li>
+										<li><a href="#small-pill2" data-toggle="tab">Inactive</a></li>
+										<li class="dropdown">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown">More <span class="caret"></span></a>
+											<ul class="dropdown-menu dropdown-menu-right">
+												<li><a href="#small-pill3" data-toggle="tab">Dropdown pill</a></li>
+												<li><a href="#small-pill4" data-toggle="tab">Another pill</a></li>
+											</ul>
+										</li>
+									</ul>
+
+									<div class="tab-content">
+										<div class="tab-pane active" id="small-pill1">
+											To use small size, add <code>.nav-pills-sm</code> class to the <code>.nav-pills</code> base class.
+										</div>
+
+										<div class="tab-pane" id="small-pill2">
+											Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+										</div>
+
+										<div class="tab-pane" id="small-pill3">
+											Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+										</div>
+
+										<div class="tab-pane" id="small-pill4">
+											Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /Small pills -->
+
+					<!-- Mini pills -->
+					<div class="col-md-4 col-sm-4">
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Mini pills</div>
+							</div>
+							<div class="panel-body">
+								<div class="tabbable">
+									<ul class="nav nav-xs nav-pills">
+										<li class="active"><a href="#mini-pill1" data-toggle="tab">Active</a></li>
+										<li><a href="#mini-pill2" data-toggle="tab">Inactive</a></li>
+										<li class="dropdown">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown">More <span class="caret"></span></a>
+											<ul class="dropdown-menu dropdown-menu-right">
+												<li><a href="#mini-pill3" data-toggle="tab">Dropdown pill</a></li>
+												<li><a href="#mini-pill4" data-toggle="tab">Another pill</a></li>
+											</ul>
+										</li>
+									</ul>
+
+									<div class="tab-content">
+										<div class="tab-pane active" id="mini-pill1">
+											To use mini size, add <code>.nav-pills-xs</code> class to the <code>.nav-pills</code> base class.
+										</div>
+
+										<div class="tab-pane" id="mini-pill2">
+											Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+										</div>
+
+										<div class="tab-pane" id="mini-pill3">
+											Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+										</div>
+
+										<div class="tab-pane" id="mini-pill4">
+											Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /Mini pills -->
+
+				</div>
+
+			</div>
+
+			<!-- Footer -->
+			<footer class="footer-container">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12 col-sm-12">
+							<div class="pull-left">
+								© 2017 Bird&nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;&nbsp;Web app kit by <a href="http://followtechnique.com" target="_blank">FollowTechnique</a>.							</div>
+	                        <div class="pull-right">
+								<div class="label label-info">Version: 1.3.0</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- /Footer -->
+
+		</section>
+		<!-- /Page Container ends -->
+
+		<!-- ScrolltoTop -->
+		<a id="scrollTop" href="#top"><i class="icon-arrow-up12"></i></a>
+		<!-- /ScrolltoTop -->
+
+	</div>
+
+<!-- Rightbar -->
+<div id="right_sidebar" class="right_bar"></div>
+<script>
+function open_rightbar() {
+	$(window).resize(function() {
+		if(($(window).width() < 500)){
+			document.getElementById("right_sidebar").style.width = "100%";
+		}
+		else if($(window).width() > 500) {
+			document.getElementById("right_sidebar").style.width = "260px";
+		}
+	}).resize();
+}
+function close_rightbar() {
+	document.getElementById("right_sidebar").style.width = "0";
+}
+</script>
+<!-- /Rightbar -->
+
+<!-- Layout settings -->
+<div class="layout"></div>
+<span class="is_hidden" id="jquery_vars">
+	<span class="is_hidden switch-active"></span>
+	<span class="is_hidden switch-inactive"></span>
+	<span class="is_hidden chart-bg"></span>
+	<span class="is_hidden chart-gridlines-color"></span>
+	<span class="is_hidden chart-legends-text-color"></span>
+	<span class="is_hidden chart-grid-text-color"></span>
+	<span class="is_hidden chart-data-color-option1"></span>
+	<span class="is_hidden chart-data-color-option2"></span>
+	<span class="is_hidden chart-data-color-option3"></span>
+	<span class="is_hidden chart-data-color-option4"></span>
+	<span class="is_hidden chart-data-color-option5"></span>
+	<span class="is_hidden chart-data-color-option6"></span>
+	<span class="is_hidden chart-data-color-option7"></span>
+	<span class="is_hidden chart-data-color-option8"></span>
+</span>
+<!-- /Layout settings -->
+
+<!-- Global scripts -->
+<script src="lib/js/core/jquery/jquery.js"></script>
+<script src="lib/js/core/jquery/jquery.ui.js"></script>
+<script src="lib/js/core/bootstrap/bootstrap.js"></script>
+<script src="lib/js/core/bootstrap/jasny_bootstrap.min.js"></script>
+<script src="lib/js/core/navigation/nav.accordion.js"></script>
+<script src="lib/js/core/hammer/hammerjs.js"></script>
+<script src="lib/js/core/hammer/jquery.hammer.js"></script>
+<script src="lib/js/core/slimscroll/jquery.slimscroll.js"></script>
+<script src="lib/js/extensions/smart-resize.js"></script>
+<script src="lib/js/extensions/blockui.min.js"></script>
+<script src="lib/js/forms/uniform.min.js"></script>
+<script src="lib/js/forms/switchery.js"></script>
+<script src="lib/js/forms/select2.min.js"></script>
+<script src="lib/js/plugins/venobox.js"></script>
+<script src="lib/js/core/app/layouts.js"></script>
+<script src="lib/js/core/app/core.js"></script>
+<!-- /Global scripts -->
+
+<!-- Page scripts -->
+<!-- /Page scripts -->
+
+</body>
+</html>

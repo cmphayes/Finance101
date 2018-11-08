@@ -1,0 +1,1584 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FF7A1E6F-CA31-4AA0-A282-63EC298AC126}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Finance101</RootNamespace>
+    <AssemblyName>Finance101</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.1\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.0.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.3.0.1\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.3.0.1\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.0.1\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.3.0.1\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.3.0.1\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.3.0.1\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.2.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.0.6\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.2.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.2.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.2.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.2.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.2.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\IdentityConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BudgetItemsController.cs" />
+    <Compile Include="Controllers\BudgetsController.cs" />
+    <Compile Include="Controllers\CategoriesController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\HouseholdsController.cs" />
+    <Compile Include="Controllers\InvitesController.cs" />
+    <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PersonalAccountsController.cs" />
+    <Compile Include="Controllers\TransactionsController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Custom\Attributes.cs" />
+    <Compile Include="Models\Custom\Extensions.cs" />
+    <Compile Include="Models\Finance.cs" />
+    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\ViewModels\HouseholdViewModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Startup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="private.config" />
+    <None Include="Properties\PublishProfiles\Finance101Demo - Web Deploy.pubxml" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Template\animations.html" />
+    <Content Include="Template\appearance_content_panels.html" />
+    <Content Include="Template\appearance_text_styling.html" />
+    <Content Include="Template\appearance_typography.html" />
+    <Content Include="Template\auth_login.html" />
+    <Content Include="Template\auth_recover.html" />
+    <Content Include="Template\auth_unlock.html" />
+    <Content Include="Template\blocks\emails\email_confirm.html" />
+    <Content Include="Template\blocks\emails\email_missing.html" />
+    <Content Include="Template\blocks\emails\email_ratings.html" />
+    <Content Include="Template\blocks\emails\email_steps.html" />
+    <Content Include="Template\blocks\emails\email_welcome.html" />
+    <Content Include="Template\blocks\menus\dropdown.html" />
+    <Content Include="Template\blocks\menus\iconic.html" />
+    <Content Include="Template\blocks\menus\material-sidebar.html" />
+    <Content Include="Template\blocks\menus\megamenu.html" />
+    <Content Include="Template\blocks\navbar\apps-dropdown.html" />
+    <Content Include="Template\blocks\navbar\user-dropdown.html" />
+    <Content Include="Template\blocks\rightbar\activities.html" />
+    <Content Include="Template\blocks\rightbar\cart.html" />
+    <Content Include="Template\blocks\rightbar\chat.html" />
+    <Content Include="Template\blocks\rightbar\notifications.html" />
+    <Content Include="Template\blocks\rightbar\rightbar.html" />
+    <Content Include="Template\blocks\rightbar\settings.html" />
+    <Content Include="Template\blocks\sidebar-user-profile.html" />
+    <Content Include="Template\charts_google_bar.html" />
+    <Content Include="Template\charts_google_bubble.html" />
+    <Content Include="Template\charts_google_line.html" />
+    <Content Include="Template\charts_google_pie.html" />
+    <Content Include="Template\charts_google_scatter.html" />
+    <Content Include="Template\charts_highcharts_area.html" />
+    <Content Include="Template\charts_highcharts_bar.html" />
+    <Content Include="Template\charts_highcharts_line.html" />
+    <Content Include="Template\charts_highcharts_pie.html" />
+    <Content Include="Template\charts_morrischarts.html" />
+    <Content Include="Template\charts_peitycharts.html" />
+    <Content Include="Template\charts_sparklinecharts.html" />
+    <Content Include="Template\color_system.html" />
+    <Content Include="Template\components_carousel.html" />
+    <Content Include="Template\components_draggable_panels.html" />
+    <Content Include="Template\components_panel_elements.html" />
+    <Content Include="Template\datatable_advanced.html" />
+    <Content Include="Template\datatable_basic.html" />
+    <Content Include="Template\datatable_extension_autofill.html" />
+    <Content Include="Template\datatable_extension_columns_selection.html" />
+    <Content Include="Template\datatable_extension_column_reorder.html" />
+    <Content Include="Template\datatable_extension_export_options.html" />
+    <Content Include="Template\datatable_extension_fixed_columns.html" />
+    <Content Include="Template\datatable_extension_fixed_header.html" />
+    <Content Include="Template\datatable_extension_key_table.html" />
+    <Content Include="Template\datatable_extension_row_reorder.html" />
+    <Content Include="Template\datatable_extension_state_saving.html" />
+    <Content Include="Template\ecom_cart.html" />
+    <Content Include="Template\ecom_checkout.html" />
+    <Content Include="Template\ecom_orders.html" />
+    <Content Include="Template\ecom_product.html" />
+    <Content Include="Template\ecom_products.html" />
+    <Content Include="Template\editor_ckeditor.html" />
+    <Content Include="Template\editor_tinymce.html" />
+    <Content Include="Template\emails.html" />
+    <Content Include="Template\error_403.html" />
+    <Content Include="Template\error_404.html" />
+    <Content Include="Template\error_405.html" />
+    <Content Include="Template\error_500.html" />
+    <Content Include="Template\error_503.html" />
+    <Content Include="Template\error_offline.html" />
+    <Content Include="Template\extension_bootstrap_uploader.html" />
+    <Content Include="Template\extension_fullcalendar.html" />
+    <Content Include="Template\extension_jcrop_api.html" />
+    <Content Include="Template\extension_jcrop_basic.html" />
+    <Content Include="Template\extension_jcrop_handlers.html" />
+    <Content Include="Template\extension_jcrop_preview.html" />
+    <Content Include="Template\extension_jcrop_transitions.html" />
+    <Content Include="Template\extension_owl_carousel.html" />
+    <Content Include="Template\extension_pnotify.html" />
+    <Content Include="Template\extension_sweet_alert.html" />
+    <Content Include="Template\form_bootstrap_touchspin.html" />
+    <Content Include="Template\form_checkboxes_radios.html" />
+    <Content Include="Template\form_controls_extended.html" />
+    <Content Include="Template\form_inputs_basic.html" />
+    <Content Include="Template\form_input_groups.html" />
+    <Content Include="Template\form_noui_slider.html" />
+    <Content Include="Template\form_select2.html" />
+    <Content Include="Template\form_switchery.html" />
+    <Content Include="Template\form_tag_inputs.html" />
+    <Content Include="Template\form_validations.html" />
+    <Content Include="Template\form_wizard.html" />
+    <Content Include="Template\grid_system.html" />
+    <Content Include="Template\helper_classes.html" />
+    <Content Include="Template\icons.html" />
+    <Content Include="Template\img\assets\bubble-corner.png" />
+    <Content Include="Template\img\assets\bubble-cornerR.png" />
+    <Content Include="Template\img\assets\email_confirm.png" />
+    <Content Include="Template\img\assets\email_missing.png" />
+    <Content Include="Template\img\assets\email_ratings.png" />
+    <Content Include="Template\img\assets\email_steps.png" />
+    <Content Include="Template\img\assets\email_welcome.png" />
+    <Content Include="Template\img\assets\star_empty.png" />
+    <Content Include="Template\img\assets\star_full.png" />
+    <Content Include="Template\img\assets\star_half.png" />
+    <Content Include="Template\img\assets\steps.png" />
+    <Content Include="Template\img\assets\thumbs-up-1.png" />
+    <Content Include="Template\img\assets\thumbs-up-2.png" />
+    <Content Include="Template\img\bg\help.png" />
+    <Content Include="Template\img\demo\city.jpg" />
+    <Content Include="Template\img\demo\forecast.png" />
+    <Content Include="Template\img\demo\login.jpg" />
+    <Content Include="Template\img\demo\paris-lg.jpg" />
+    <Content Include="Template\img\demo\paris-sm.jpg" />
+    <Content Include="Template\img\demo\profile-bg.jpg" />
+    <Content Include="Template\img\error\403.png" />
+    <Content Include="Template\img\error\404.png" />
+    <Content Include="Template\img\error\405.png" />
+    <Content Include="Template\img\error\500.png" />
+    <Content Include="Template\img\error\503.png" />
+    <Content Include="Template\img\error\launching.png" />
+    <Content Include="Template\img\error\maintenance.png" />
+    <Content Include="Template\img\error\offline.png" />
+    <Content Include="Template\img\favicon.ico" />
+    <Content Include="Template\img\gallery\bg.png" />
+    <Content Include="Template\img\gallery\black_denim.png" />
+    <Content Include="Template\img\gallery\loading.gif" />
+    <Content Include="Template\img\gallery\loading_dark.gif" />
+    <Content Include="Template\img\gallery\nav-icon.png" />
+    <Content Include="Template\img\gallery\nav.png" />
+    <Content Include="Template\img\icons\cart.png" />
+    <Content Include="Template\img\icons\emails.png" />
+    <Content Include="Template\img\icons\invoices.png" />
+    <Content Include="Template\img\icons\messages.png" />
+    <Content Include="Template\img\icons\people.png" />
+    <Content Include="Template\img\icons\projects.png" />
+    <Content Include="Template\img\loading.gif" />
+    <Content Include="Template\img\logo-dark.png" />
+    <Content Include="Template\img\logo-iconic.png" />
+    <Content Include="Template\img\logo-light.png" />
+    <Content Include="Template\img\logo-mobile.png" />
+    <Content Include="Template\img\material_bg.png" />
+    <Content Include="Template\img\pnotify\danger.png" />
+    <Content Include="Template\img\pnotify\default.png" />
+    <Content Include="Template\img\pnotify\info.png" />
+    <Content Include="Template\img\pnotify\success.png" />
+    <Content Include="Template\img\pnotify\warning.png" />
+    <Content Include="Template\img\ui\map_marker.png" />
+    <Content Include="Template\img\venobox\close.gif" />
+    <Content Include="Template\img\venobox\next.gif" />
+    <Content Include="Template\img\venobox\preload-circle.png" />
+    <Content Include="Template\img\venobox\preload-dots.png" />
+    <Content Include="Template\img\venobox\preload-ios.png" />
+    <Content Include="Template\img\venobox\preload-quads.png" />
+    <Content Include="Template\img\venobox\preload.png" />
+    <Content Include="Template\img\venobox\prev.gif" />
+    <Content Include="Template\index.html" />
+    <Content Include="Template\index_analytics.html" />
+    <Content Include="Template\index_inverse.html" />
+    <Content Include="Template\index_store.html" />
+    <Content Include="Template\invoice_list.html" />
+    <Content Include="Template\invoice_template.html" />
+    <Content Include="Template\lib\assets\editors\ckeditor\adapters\jquery.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\build-config.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\ckeditor.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\config.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\contents.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\lang\en.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\a11yhelp.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\af.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\ar.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\bg.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\ca.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\cs.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\cy.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\da.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\de-ch.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\de.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\el.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\en-gb.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\en.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\eo.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\es.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\et.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\eu.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\fa.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\fi.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\fo.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\fr-ca.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\fr.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\gl.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\gu.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\he.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\hi.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\hr.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\hu.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\id.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\it.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\ja.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\km.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\ko.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\ku.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\lt.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\lv.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\mk.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\mn.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\nb.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\nl.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\no.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\pl.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\pt-br.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\pt.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\ro.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\ru.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\si.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\sk.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\sl.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\sq.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\sr-latn.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\sr.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\sv.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\th.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\tr.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\tt.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\ug.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\uk.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\vi.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\zh-cn.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\zh.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\a11yhelp\dialogs\lang\_translationstatus.txt" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\about\dialogs\about.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\about\dialogs\hidpi\logo_ckeditor.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\about\dialogs\logo_ckeditor.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\bootstrapTabs\dialogs\bootstrapTabs.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\bootstrapTabs\sample\bootstrapTabs.html" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\btgrid\dialogs\btgrid.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\btgrid\LICENSE.txt" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\btgrid\styles\editor.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\ckeditor-gwf-plugin\style.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\clipboard\dialogs\paste.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\codesnippet\dialogs\codesnippet.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\codesnippet\lib\highlight\highlight.pack.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\codesnippet\lib\highlight\styles\arta.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\codesnippet\lib\highlight\styles\ascetic.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\codesnippet\lib\highlight\styles\atelier-dune.dark.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\codesnippet\lib\highlight\styles\atelier-dune.light.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\codesnippet\lib\highlight\styles\atelier-forest.dark.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\codesnippet\lib\highlight\styles\atelier-forest.light.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\codesnippet\lib\highlight\styles\atelier-heath.dark.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\codesnippet\lib\highlight\styles\atelier-heath.light.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\codesnippet\lib\highlight\styles\atelier-lakeside.dark.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\codesnippet\lib\highlight\styles\atelier-lakeside.light.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\codesnippet\lib\highlight\styles\atelier-seaside.dark.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\codesnippet\lib\highlight\styles\atelier-seaside.light.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\codesnippet\lib\highlight\styles\brown_paper.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\codesnippet\lib\highlight\styles\brown_papersq.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\codesnippet\lib\highlight\styles\dark.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\codesnippet\lib\highlight\styles\default.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\codesnippet\lib\highlight\styles\docco.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\codesnippet\lib\highlight\styles\far.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\codesnippet\lib\highlight\styles\foundation.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\codesnippet\lib\highlight\styles\github.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\codesnippet\lib\highlight\styles\googlecode.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\codesnippet\lib\highlight\styles\idea.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\codesnippet\lib\highlight\styles\ir_black.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\codesnippet\lib\highlight\styles\magula.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\codesnippet\lib\highlight\styles\mono-blue.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\codesnippet\lib\highlight\styles\monokai.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\codesnippet\lib\highlight\styles\monokai_sublime.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\codesnippet\lib\highlight\styles\obsidian.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\codesnippet\lib\highlight\styles\paraiso.dark.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\codesnippet\lib\highlight\styles\paraiso.light.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\codesnippet\lib\highlight\styles\pojoaque.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\codesnippet\lib\highlight\styles\pojoaque.jpg" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\codesnippet\lib\highlight\styles\railscasts.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\codesnippet\lib\highlight\styles\rainbow.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\codesnippet\lib\highlight\styles\school_book.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\codesnippet\lib\highlight\styles\school_book.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\codesnippet\lib\highlight\styles\solarized_dark.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\codesnippet\lib\highlight\styles\solarized_light.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\codesnippet\lib\highlight\styles\sunburst.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\codesnippet\lib\highlight\styles\tomorrow-night-blue.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\codesnippet\lib\highlight\styles\tomorrow-night-bright.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\codesnippet\lib\highlight\styles\tomorrow-night-eighties.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\codesnippet\lib\highlight\styles\tomorrow-night.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\codesnippet\lib\highlight\styles\tomorrow.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\codesnippet\lib\highlight\styles\vs.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\codesnippet\lib\highlight\styles\xcode.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\codesnippet\lib\highlight\styles\zenburn.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\colordialog\dialogs\colordialog.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\colordialog\dialogs\colordialog.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\cssanim\css\cssanim.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\cssanim\css\prefixfree.min.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\cssanim\dialogs\css3animation.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\cssanim\dialogs\cssaddanim.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\cssanim\dialogs\cssaddanim.min.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\cssanim\dialogs\cssanim.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\cssanim\dialogs\cssanim.min.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\cssanim\images\add.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\cssanim\images\del.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\cssanim\images\edit.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\cssanim\images\highlight.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\cssanim\images\lamp.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\cssanim\parseCSS3AnimationShorthand.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\cssanim\parseCSS3AnimationShorthand.min.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\dialog\dialogDefinition.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\div\dialogs\div.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\find\dialogs\find.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\flash\dialogs\flash.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\flash\images\placeholder.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\forms\dialogs\button.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\forms\dialogs\checkbox.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\forms\dialogs\form.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\forms\dialogs\hiddenfield.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\forms\dialogs\radio.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\forms\dialogs\select.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\forms\dialogs\textarea.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\forms\dialogs\textfield.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\forms\images\hiddenfield.gif" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\glyphicons\bootstrap\css\bootstrap.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\glyphicons\bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\glyphicons\dialogs\glyphicons.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\glyphicons\installation.txt" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\glyphicons\logs.txt" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\icons.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\icons_hidpi.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\iframe\dialogs\iframe.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\iframe\images\placeholder.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\check_permission.php" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\create.php" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\dist\jquery.lazyload.min.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\dist\js.cookie-2.0.3.min.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\dist\sweetalert.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\dist\sweetalert.min.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\function.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\function.php" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\imgbrowser.php" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\imgdelete.php" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\imgupload.php" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\img\cd-ico-browser.ico" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\img\cd-icon-block.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\img\cd-icon-browser.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\img\cd-icon-bug.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\img\cd-icon-close-black.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\img\cd-icon-close-grey.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\img\cd-icon-close.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\img\cd-icon-coffee.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\img\cd-icon-credits.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\img\cd-icon-delete.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\img\cd-icon-disable.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\img\cd-icon-done.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\img\cd-icon-download.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\img\cd-icon-edit.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\img\cd-icon-english.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\img\cd-icon-faq.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\img\cd-icon-german.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\img\cd-icon-hideext.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\img\cd-icon-image.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\img\cd-icon-images.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\img\cd-icon-list.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\img\cd-icon-logout.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\img\cd-icon-password.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\img\cd-icon-polish.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\img\cd-icon-qedit.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\img\cd-icon-qtrash.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\img\cd-icon-refresh.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\img\cd-icon-select.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\img\cd-icon-settings.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\img\cd-icon-showext.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\img\cd-icon-translate.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\img\cd-icon-updates.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\img\cd-icon-upload-big.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\img\cd-icon-upload-grey.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\img\cd-icon-upload.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\img\cd-icon-use.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\img\cd-icon-version.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\img\cd-icon-warning.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\login.php" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\loginindex.php" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\logout.php" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\new.php" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\pluginconfig.php" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\styles.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\styles.min.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\uploads\placeholder.jpg" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\image\dialogs\image.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\image\images\noimage.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\link\dialogs\anchor.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\link\dialogs\link.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\link\images\anchor.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\link\images\hidpi\anchor.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\liststyle\dialogs\liststyle.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\magicline\images\hidpi\icon-rtl.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\magicline\images\hidpi\icon.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\magicline\images\icon-rtl.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\magicline\images\icon.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\pagebreak\images\pagebreak.gif" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\pastefromword\filter\default.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\pbckcode\dialogs\pbckcode.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\pbckcode\dialogs\PBSyntaxHighlighter.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\pbckcode\dialogs\style.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\preview\preview.html" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\scayt\dialogs\options.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\scayt\dialogs\toolbar.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\showblocks\images\block_address.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\showblocks\images\block_blockquote.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\showblocks\images\block_div.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\showblocks\images\block_h1.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\showblocks\images\block_h2.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\showblocks\images\block_h3.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\showblocks\images\block_h4.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\showblocks\images\block_h5.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\showblocks\images\block_h6.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\showblocks\images\block_p.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\showblocks\images\block_pre.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\smiley\dialogs\smiley.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\smiley\images\angel_smile.gif" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\smiley\images\angel_smile.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\smiley\images\angry_smile.gif" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\smiley\images\angry_smile.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\smiley\images\broken_heart.gif" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\smiley\images\broken_heart.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\smiley\images\confused_smile.gif" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\smiley\images\confused_smile.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\smiley\images\cry_smile.gif" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\smiley\images\cry_smile.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\smiley\images\devil_smile.gif" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\smiley\images\devil_smile.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\smiley\images\embaressed_smile.gif" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\smiley\images\embarrassed_smile.gif" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\smiley\images\embarrassed_smile.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\smiley\images\envelope.gif" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\smiley\images\envelope.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\smiley\images\heart.gif" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\smiley\images\heart.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\smiley\images\kiss.gif" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\smiley\images\kiss.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\smiley\images\lightbulb.gif" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\smiley\images\lightbulb.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\smiley\images\omg_smile.gif" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\smiley\images\omg_smile.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\smiley\images\regular_smile.gif" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\smiley\images\regular_smile.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\smiley\images\sad_smile.gif" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\smiley\images\sad_smile.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\smiley\images\shades_smile.gif" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\smiley\images\shades_smile.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\smiley\images\teeth_smile.gif" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\smiley\images\teeth_smile.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\smiley\images\thumbs_down.gif" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\smiley\images\thumbs_down.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\smiley\images\thumbs_up.gif" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\smiley\images\thumbs_up.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\smiley\images\tongue_smile.gif" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\smiley\images\tongue_smile.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\smiley\images\tounge_smile.gif" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\smiley\images\whatchutalkingabout_smile.gif" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\smiley\images\whatchutalkingabout_smile.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\smiley\images\wink_smile.gif" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\smiley\images\wink_smile.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\specialchar\dialogs\lang\af.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\specialchar\dialogs\lang\ar.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\specialchar\dialogs\lang\bg.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\specialchar\dialogs\lang\ca.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\specialchar\dialogs\lang\cs.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\specialchar\dialogs\lang\cy.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\specialchar\dialogs\lang\da.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\specialchar\dialogs\lang\de-ch.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\specialchar\dialogs\lang\de.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\specialchar\dialogs\lang\el.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\specialchar\dialogs\lang\en-gb.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\specialchar\dialogs\lang\en.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\specialchar\dialogs\lang\eo.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\specialchar\dialogs\lang\es.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\specialchar\dialogs\lang\et.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\specialchar\dialogs\lang\eu.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\specialchar\dialogs\lang\fa.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\specialchar\dialogs\lang\fi.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\specialchar\dialogs\lang\fr-ca.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\specialchar\dialogs\lang\fr.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\specialchar\dialogs\lang\gl.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\specialchar\dialogs\lang\he.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\specialchar\dialogs\lang\hr.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\specialchar\dialogs\lang\hu.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\specialchar\dialogs\lang\id.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\specialchar\dialogs\lang\it.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\specialchar\dialogs\lang\ja.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\specialchar\dialogs\lang\km.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\specialchar\dialogs\lang\ko.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\specialchar\dialogs\lang\ku.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\specialchar\dialogs\lang\lt.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\specialchar\dialogs\lang\lv.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\specialchar\dialogs\lang\nb.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\specialchar\dialogs\lang\nl.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\specialchar\dialogs\lang\no.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\specialchar\dialogs\lang\pl.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\specialchar\dialogs\lang\pt-br.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\specialchar\dialogs\lang\pt.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\specialchar\dialogs\lang\ru.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\specialchar\dialogs\lang\si.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\specialchar\dialogs\lang\sk.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\specialchar\dialogs\lang\sl.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\specialchar\dialogs\lang\sq.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\specialchar\dialogs\lang\sv.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\specialchar\dialogs\lang\th.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\specialchar\dialogs\lang\tr.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\specialchar\dialogs\lang\tt.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\specialchar\dialogs\lang\ug.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\specialchar\dialogs\lang\uk.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\specialchar\dialogs\lang\vi.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\specialchar\dialogs\lang\zh-cn.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\specialchar\dialogs\lang\zh.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\specialchar\dialogs\lang\_translationstatus.txt" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\specialchar\dialogs\specialchar.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\tabletools\dialogs\tableCell.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\table\dialogs\table.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\templates\dialogs\templates.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\templates\dialogs\templates.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\templates\templates\default.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\templates\templates\images\template1.gif" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\templates\templates\images\template2.gif" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\templates\templates\images\template3.gif" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\uicolor\dialogs\uicolor.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\uicolor\yui\assets\hue_bg.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\uicolor\yui\assets\hue_thumb.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\uicolor\yui\assets\picker_mask.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\uicolor\yui\assets\picker_thumb.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\uicolor\yui\assets\yui.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\uicolor\yui\yui.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\widgetbootstrap\contents.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\widgetbootstrap\dialogs\widgetbootstrapAlert.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\widgetbootstrap\dialogs\widgetfoundationAccordion.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\widget\images\handle.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\wsc\dialogs\ciframe.html" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\wsc\dialogs\tmpFrameset.html" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\wsc\dialogs\wsc.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\wsc\dialogs\wsc.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\wsc\dialogs\wsc_ie.js" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\dialog.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\dialog_ie.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\dialog_ie7.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\dialog_ie8.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\dialog_iequirks.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\dialog_opera.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\editor.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\editor_gecko.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\editor_ie.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\editor_ie7.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\editor_ie8.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\editor_iequirks.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\icons.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\icons_hidpi.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\images\arrow.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\images\close.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\images\hidpi\close.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\images\hidpi\lock-open.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\images\hidpi\lock.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\images\hidpi\refresh.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\images\lock-open.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\images\lock.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\images\refresh.png" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\scss\browser-specific\gecko\editor_gecko.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\scss\browser-specific\ie7\dialog_ie7.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\scss\browser-specific\ie7\editor_ie7.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\scss\browser-specific\ie8\dialog_ie8.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\scss\browser-specific\ie8\editor_ie8.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\scss\browser-specific\iequirks\dialog_iequirks.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\scss\browser-specific\iequirks\editor_iequirks.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\scss\browser-specific\ie\dialog_ie.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\scss\browser-specific\ie\editor_ie.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\scss\browser-specific\opera\dialog_opera.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\scss\components\editor.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\scss\dialog\dialog.css" />
+    <Content Include="Template\lib\assets\editors\ckeditor\styles.js" />
+    <Content Include="Template\lib\assets\editors\tinymce\jquery.tinymce.min.js" />
+    <Content Include="Template\lib\assets\editors\tinymce\license.txt" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\advlist\plugin.min.js" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\anchor\plugin.min.js" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\autolink\plugin.min.js" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\autoresize\plugin.min.js" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\autosave\plugin.min.js" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\bbcode\plugin.min.js" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\charmap\plugin.min.js" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\codesample\css\prism.css" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\codesample\plugin.min.js" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\code\plugin.min.js" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\colorpicker\plugin.min.js" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\contextmenu\plugin.min.js" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\directionality\plugin.min.js" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\emoticons\img\smiley-cool.gif" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\emoticons\img\smiley-cry.gif" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\emoticons\img\smiley-embarassed.gif" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\emoticons\img\smiley-foot-in-mouth.gif" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\emoticons\img\smiley-frown.gif" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\emoticons\img\smiley-innocent.gif" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\emoticons\img\smiley-kiss.gif" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\emoticons\img\smiley-laughing.gif" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\emoticons\img\smiley-money-mouth.gif" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\emoticons\img\smiley-sealed.gif" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\emoticons\img\smiley-smile.gif" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\emoticons\img\smiley-surprised.gif" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\emoticons\img\smiley-tongue-out.gif" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\emoticons\img\smiley-undecided.gif" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\emoticons\img\smiley-wink.gif" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\emoticons\img\smiley-yell.gif" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\emoticons\plugin.min.js" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\example\dialog.html" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\example\plugin.min.js" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\example_dependency\plugin.min.js" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\fullpage\plugin.min.js" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\fullscreen\plugin.min.js" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\hr\plugin.min.js" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\imagetools\plugin.min.js" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\image\plugin.min.js" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\importcss\plugin.min.js" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\insertdatetime\plugin.min.js" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\layer\plugin.min.js" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\legacyoutput\plugin.min.js" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\link\plugin.min.js" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\lists\plugin.min.js" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\media\moxieplayer.swf" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\media\plugin.min.js" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\nonbreaking\plugin.min.js" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\noneditable\plugin.min.js" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\pagebreak\plugin.min.js" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\paste\plugin.min.js" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\preview\plugin.min.js" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\print\plugin.min.js" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\save\plugin.min.js" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\searchreplace\plugin.min.js" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\spellchecker\plugin.min.js" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\tabfocus\plugin.min.js" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\table\plugin.min.js" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\template\plugin.min.js" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\textcolor\plugin.min.js" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\textpattern\plugin.min.js" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\visualblocks\css\visualblocks.css" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\visualblocks\plugin.min.js" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\visualchars\plugin.min.js" />
+    <Content Include="Template\lib\assets\editors\tinymce\plugins\wordcount\plugin.min.js" />
+    <Content Include="Template\lib\assets\editors\tinymce\skins\lightgray\content.inline.min.css" />
+    <Content Include="Template\lib\assets\editors\tinymce\skins\lightgray\content.min.css" />
+    <Content Include="Template\lib\assets\editors\tinymce\skins\lightgray\fonts\tinymce-small.svg" />
+    <Content Include="Template\lib\assets\editors\tinymce\skins\lightgray\fonts\tinymce.svg" />
+    <Content Include="Template\lib\assets\editors\tinymce\skins\lightgray\img\anchor.gif" />
+    <Content Include="Template\lib\assets\editors\tinymce\skins\lightgray\img\loader.gif" />
+    <Content Include="Template\lib\assets\editors\tinymce\skins\lightgray\img\object.gif" />
+    <Content Include="Template\lib\assets\editors\tinymce\skins\lightgray\img\trans.gif" />
+    <Content Include="Template\lib\assets\editors\tinymce\skins\lightgray\skin.ie7.min.css" />
+    <Content Include="Template\lib\assets\editors\tinymce\skins\lightgray\skin.min.css" />
+    <Content Include="Template\lib\assets\editors\tinymce\themes\modern\theme.min.js" />
+    <Content Include="Template\lib\assets\editors\tinymce\tinymce.min.js" />
+    <Content Include="Template\lib\assets\icons\climacon\climacon.css" />
+    <Content Include="Template\lib\assets\icons\climacon\climacons-webfont.svg" />
+    <Content Include="Template\lib\assets\icons\climacon\skycons.js" />
+    <Content Include="Template\lib\assets\icons\climacon\styles.css" />
+    <Content Include="Template\lib\assets\icons\weather\weather-icons-wind.min.css" />
+    <Content Include="Template\lib\assets\icons\weather\weather-icons.min.css" />
+    <Content Include="Template\lib\assets\icons\weather\weathericons-regular-webfont.svg" />
+    <Content Include="Template\lib\css\AjaxLoader.gif" />
+    <Content Include="Template\lib\css\animate.min.css" />
+    <Content Include="Template\lib\css\aqua-iconbar.css" />
+    <Content Include="Template\lib\css\aqua-material.css" />
+    <Content Include="Template\lib\css\aqua-megamenu.css" />
+    <Content Include="Template\lib\css\bismark-dropdown_label.css" />
+    <Content Include="Template\lib\css\bismark-iconbar.css" />
+    <Content Include="Template\lib\css\bootstrap.css" />
+    <Content Include="Template\lib\css\index.html" />
+    <Content Include="Template\lib\css\inverse-material.css" />
+    <Content Include="Template\lib\css\main.css" />
+    <Content Include="Template\lib\css\moonlight-boxed.css" />
+    <Content Include="Template\lib\css\moonlight-dropdown.css" />
+    <Content Include="Template\lib\css\moonlight-dropdown_label.css" />
+    <Content Include="Template\lib\css\moonlight-iconbar.css" />
+    <Content Include="Template\lib\css\moonlight-iconic.css" />
+    <Content Include="Template\lib\css\moonlight-material.css" />
+    <Content Include="Template\lib\css\moonlight-megamenu.css" />
+    <Content Include="Template\lib\css\moonlight-sidebar.css" />
+    <Content Include="Template\lib\css\moonlightdark-boxed.css" />
+    <Content Include="Template\lib\css\moonlightdark-dropdown.css" />
+    <Content Include="Template\lib\css\moonlightdark-dropdown_label.css" />
+    <Content Include="Template\lib\css\moonlightdark-iconbar.css" />
+    <Content Include="Template\lib\css\moonlightdark-iconic.css" />
+    <Content Include="Template\lib\css\moonlightdark-material.css" />
+    <Content Include="Template\lib\css\moonlightdark-megamenu.css" />
+    <Content Include="Template\lib\css\moonlightdark-sidebar.css" />
+    <Content Include="Template\lib\fonts\OpenSans-Bold-webfont.svg" />
+    <Content Include="Template\lib\fonts\OpenSans-ExtraBold-webfont.svg" />
+    <Content Include="Template\lib\fonts\OpenSans-Light-webfont.svg" />
+    <Content Include="Template\lib\fonts\OpenSans-Regular-webfont.svg" />
+    <Content Include="Template\lib\fonts\OpenSans-Semibold-webfont.svg" />
+    <Content Include="Template\lib\icons\icomoon.svg" />
+    <Content Include="Template\lib\icons\index.html" />
+    <Content Include="Template\lib\js\charts\gauge.min.js" />
+    <Content Include="Template\lib\js\charts\google\bars\bar.js" />
+    <Content Include="Template\lib\js\charts\google\bars\bar_stacked.js" />
+    <Content Include="Template\lib\js\charts\google\bars\column.js" />
+    <Content Include="Template\lib\js\charts\google\bars\column_stacked.js" />
+    <Content Include="Template\lib\js\charts\google\bars\combo.js" />
+    <Content Include="Template\lib\js\charts\google\bars\histogram.js" />
+    <Content Include="Template\lib\js\charts\google\bubbles\bubble.js" />
+    <Content Include="Template\lib\js\charts\google\bubbles\bubble_gradient.js" />
+    <Content Include="Template\lib\js\charts\google\lines\area.js" />
+    <Content Include="Template\lib\js\charts\google\lines\area_intervals.js" />
+    <Content Include="Template\lib\js\charts\google\lines\area_stacked.js" />
+    <Content Include="Template\lib\js\charts\google\lines\area_stepped.js" />
+    <Content Include="Template\lib\js\charts\google\lines\lines.js" />
+    <Content Include="Template\lib\js\charts\google\lines\line_intervals.js" />
+    <Content Include="Template\lib\js\charts\google\pies\3d_exploded.js" />
+    <Content Include="Template\lib\js\charts\google\pies\donut.js" />
+    <Content Include="Template\lib\js\charts\google\pies\donut_exploded.js" />
+    <Content Include="Template\lib\js\charts\google\pies\donut_rotate.js" />
+    <Content Include="Template\lib\js\charts\google\pies\pie.js" />
+    <Content Include="Template\lib\js\charts\google\pies\pie_3d.js" />
+    <Content Include="Template\lib\js\charts\google\pies\pie_diff_border.js" />
+    <Content Include="Template\lib\js\charts\google\pies\pie_diff_invert.js" />
+    <Content Include="Template\lib\js\charts\google\pies\pie_diff_opacity.js" />
+    <Content Include="Template\lib\js\charts\google\pies\pie_diff_radius.js" />
+    <Content Include="Template\lib\js\charts\google\pies\pie_exploded.js" />
+    <Content Include="Template\lib\js\charts\google\pies\pie_rotate.js" />
+    <Content Include="Template\lib\js\charts\google\scatter\scatter.js" />
+    <Content Include="Template\lib\js\charts\google\scatter\scatter_diff.js" />
+    <Content Include="Template\lib\js\charts\highcharts-more.js" />
+    <Content Include="Template\lib\js\charts\highcharts.js" />
+    <Content Include="Template\lib\js\charts\jquery.easypiechart.min.js" />
+    <Content Include="Template\lib\js\charts\jquery.peity.min.js" />
+    <Content Include="Template\lib\js\charts\morris.min.js" />
+    <Content Include="Template\lib\js\charts\raphael-min.js" />
+    <Content Include="Template\lib\js\charts\Rickshaw\d3.v3.js" />
+    <Content Include="Template\lib\js\charts\Rickshaw\Rickshaw.Class.js" />
+    <Content Include="Template\lib\js\charts\Rickshaw\Rickshaw.Color.Palette.js" />
+    <Content Include="Template\lib\js\charts\Rickshaw\Rickshaw.Compat.ClassList.js" />
+    <Content Include="Template\lib\js\charts\Rickshaw\Rickshaw.Fixtures.Color.js" />
+    <Content Include="Template\lib\js\charts\Rickshaw\Rickshaw.Fixtures.Number.js" />
+    <Content Include="Template\lib\js\charts\Rickshaw\Rickshaw.Fixtures.RandomData.js" />
+    <Content Include="Template\lib\js\charts\Rickshaw\Rickshaw.Fixtures.Time.js" />
+    <Content Include="Template\lib\js\charts\Rickshaw\Rickshaw.Fixtures.Time.Local.js" />
+    <Content Include="Template\lib\js\charts\Rickshaw\Rickshaw.Graph.Ajax.js" />
+    <Content Include="Template\lib\js\charts\Rickshaw\Rickshaw.Graph.Annotate.js" />
+    <Content Include="Template\lib\js\charts\Rickshaw\Rickshaw.Graph.Axis.Time.js" />
+    <Content Include="Template\lib\js\charts\Rickshaw\Rickshaw.Graph.Axis.X.js" />
+    <Content Include="Template\lib\js\charts\Rickshaw\Rickshaw.Graph.Axis.Y.js" />
+    <Content Include="Template\lib\js\charts\Rickshaw\Rickshaw.Graph.Axis.Y.Scaled.js" />
+    <Content Include="Template\lib\js\charts\Rickshaw\Rickshaw.Graph.Behavior.Series.Highlight.js" />
+    <Content Include="Template\lib\js\charts\Rickshaw\Rickshaw.Graph.Behavior.Series.Order.js" />
+    <Content Include="Template\lib\js\charts\Rickshaw\Rickshaw.Graph.Behavior.Series.Toggle.js" />
+    <Content Include="Template\lib\js\charts\Rickshaw\Rickshaw.Graph.HoverDetail.js" />
+    <Content Include="Template\lib\js\charts\Rickshaw\Rickshaw.Graph.js" />
+    <Content Include="Template\lib\js\charts\Rickshaw\Rickshaw.Graph.JSONP.js" />
+    <Content Include="Template\lib\js\charts\Rickshaw\Rickshaw.Graph.Legend.js" />
+    <Content Include="Template\lib\js\charts\Rickshaw\Rickshaw.Graph.RangeSlider.js" />
+    <Content Include="Template\lib\js\charts\Rickshaw\Rickshaw.Graph.RangeSlider.Preview.js" />
+    <Content Include="Template\lib\js\charts\Rickshaw\Rickshaw.Graph.Renderer.Area.js" />
+    <Content Include="Template\lib\js\charts\Rickshaw\Rickshaw.Graph.Renderer.Bar.js" />
+    <Content Include="Template\lib\js\charts\Rickshaw\Rickshaw.Graph.Renderer.js" />
+    <Content Include="Template\lib\js\charts\Rickshaw\Rickshaw.Graph.Renderer.Line.js" />
+    <Content Include="Template\lib\js\charts\Rickshaw\Rickshaw.Graph.Renderer.LinePlot.js" />
+    <Content Include="Template\lib\js\charts\Rickshaw\Rickshaw.Graph.Renderer.Multi.js" />
+    <Content Include="Template\lib\js\charts\Rickshaw\Rickshaw.Graph.Renderer.ScatterPlot.js" />
+    <Content Include="Template\lib\js\charts\Rickshaw\Rickshaw.Graph.Renderer.Stack.js" />
+    <Content Include="Template\lib\js\charts\Rickshaw\Rickshaw.Graph.Smoother.js" />
+    <Content Include="Template\lib\js\charts\Rickshaw\Rickshaw.Graph.Socketio.js" />
+    <Content Include="Template\lib\js\charts\Rickshaw\Rickshaw.js" />
+    <Content Include="Template\lib\js\charts\Rickshaw\Rickshaw.Series.FixedDuration.js" />
+    <Content Include="Template\lib\js\charts\Rickshaw\Rickshaw.Series.js" />
+    <Content Include="Template\lib\js\core\app\core.js" />
+    <Content Include="Template\lib\js\core\app\layouts.js" />
+    <Content Include="Template\lib\js\core\bootstrap\bootstrap.js" />
+    <Content Include="Template\lib\js\core\bootstrap\jasny_bootstrap.min.js" />
+    <Content Include="Template\lib\js\core\hammer\hammerjs.js" />
+    <Content Include="Template\lib\js\core\hammer\jquery.hammer.js" />
+    <Content Include="Template\lib\js\core\jquery\jquery.easing.min.js" />
+    <Content Include="Template\lib\js\core\jquery\jquery.js" />
+    <Content Include="Template\lib\js\core\jquery\jquery.ui.js" />
+    <Content Include="Template\lib\js\core\jquery\prettify.min.js" />
+    <Content Include="Template\lib\js\core\moment.min.js" />
+    <Content Include="Template\lib\js\core\navigation\nav.accordion.js" />
+    <Content Include="Template\lib\js\core\slimscroll\jquery.slimscroll.js" />
+    <Content Include="Template\lib\js\core\underscore-min.js" />
+    <Content Include="Template\lib\js\extensions\blockui.min.js" />
+    <Content Include="Template\lib\js\extensions\classie.js" />
+    <Content Include="Template\lib\js\extensions\elastic_grid.min.js" />
+    <Content Include="Template\lib\js\extensions\interactions.min.js" />
+    <Content Include="Template\lib\js\extensions\jquery.countdown.min.js" />
+    <Content Include="Template\lib\js\extensions\modernizr.custom.js" />
+    <Content Include="Template\lib\js\extensions\moment.min.js" />
+    <Content Include="Template\lib\js\extensions\smart-resize.js" />
+    <Content Include="Template\lib\js\forms\clockpicker.js" />
+    <Content Include="Template\lib\js\forms\datepicker.en.js" />
+    <Content Include="Template\lib\js\forms\datepicker.min.js" />
+    <Content Include="Template\lib\js\forms\form.min.js" />
+    <Content Include="Template\lib\js\forms\formatter.min.js" />
+    <Content Include="Template\lib\js\forms\form_wizard.min.js" />
+    <Content Include="Template\lib\js\forms\jquery.validate.js" />
+    <Content Include="Template\lib\js\forms\nouislider.min.js" />
+    <Content Include="Template\lib\js\forms\select2.min.js" />
+    <Content Include="Template\lib\js\forms\spectrum.js" />
+    <Content Include="Template\lib\js\forms\switchery.js" />
+    <Content Include="Template\lib\js\forms\tagsinput.min.js" />
+    <Content Include="Template\lib\js\forms\tokenfield.min.js" />
+    <Content Include="Template\lib\js\forms\touchspin.min.js" />
+    <Content Include="Template\lib\js\forms\typeahead.bundle.min.js" />
+    <Content Include="Template\lib\js\forms\uniform.min.js" />
+    <Content Include="Template\lib\js\maps\google\basic\basic.js" />
+    <Content Include="Template\lib\js\maps\google\basic\geolocation.js" />
+    <Content Include="Template\lib\js\maps\google\layers\traffic.js" />
+    <Content Include="Template\lib\js\maps\google\layers\transit.js" />
+    <Content Include="Template\lib\js\maps\google\markers\simple.js" />
+    <Content Include="Template\lib\js\maps\google\markers\symbols_custom.js" />
+    <Content Include="Template\lib\js\maps\jvectormap\jvectormap.min.js" />
+    <Content Include="Template\lib\js\maps\jvectormap\map_files\algeria.js" />
+    <Content Include="Template\lib\js\maps\jvectormap\map_files\argentina.js" />
+    <Content Include="Template\lib\js\maps\jvectormap\map_files\brazil.js" />
+    <Content Include="Template\lib\js\maps\jvectormap\map_files\canada.js" />
+    <Content Include="Template\lib\js\maps\jvectormap\map_files\continents\africa.js" />
+    <Content Include="Template\lib\js\maps\jvectormap\map_files\continents\asia.js" />
+    <Content Include="Template\lib\js\maps\jvectormap\map_files\continents\australia.js" />
+    <Content Include="Template\lib\js\maps\jvectormap\map_files\continents\europe.js" />
+    <Content Include="Template\lib\js\maps\jvectormap\map_files\continents\north-america.js" />
+    <Content Include="Template\lib\js\maps\jvectormap\map_files\continents\south-america.js" />
+    <Content Include="Template\lib\js\maps\jvectormap\map_files\europe.js" />
+    <Content Include="Template\lib\js\maps\jvectormap\map_files\france.js" />
+    <Content Include="Template\lib\js\maps\jvectormap\map_files\germany.js" />
+    <Content Include="Template\lib\js\maps\jvectormap\map_files\greece.js" />
+    <Content Include="Template\lib\js\maps\jvectormap\map_files\iran.js" />
+    <Content Include="Template\lib\js\maps\jvectormap\map_files\iraq.js" />
+    <Content Include="Template\lib\js\maps\jvectormap\map_files\russia.js" />
+    <Content Include="Template\lib\js\maps\jvectormap\map_files\tunisia.js" />
+    <Content Include="Template\lib\js\maps\jvectormap\map_files\turkey.js" />
+    <Content Include="Template\lib\js\maps\jvectormap\map_files\usa.js" />
+    <Content Include="Template\lib\js\maps\jvectormap\map_files\world.js" />
+    <Content Include="Template\lib\js\pages\animations.js" />
+    <Content Include="Template\lib\js\pages\apps\emails.js" />
+    <Content Include="Template\lib\js\pages\apps\invoice_list.js" />
+    <Content Include="Template\lib\js\pages\apps\invoice_template.js" />
+    <Content Include="Template\lib\js\pages\apps\messages.js" />
+    <Content Include="Template\lib\js\pages\apps\people.js" />
+    <Content Include="Template\lib\js\pages\auth\authentication.js" />
+    <Content Include="Template\lib\js\pages\charts\charts_highcharts_area.js" />
+    <Content Include="Template\lib\js\pages\charts\charts_highcharts_bar.js" />
+    <Content Include="Template\lib\js\pages\charts\charts_highcharts_line.js" />
+    <Content Include="Template\lib\js\pages\charts\charts_highcharts_pie.js" />
+    <Content Include="Template\lib\js\pages\charts\charts_morrischarts.js" />
+    <Content Include="Template\lib\js\pages\charts\charts_peitycharts.js" />
+    <Content Include="Template\lib\js\pages\charts\charts_sparklinecharts.js" />
+    <Content Include="Template\lib\js\pages\components\components_draggable_panels.js" />
+    <Content Include="Template\lib\js\pages\dashboard.js" />
+    <Content Include="Template\lib\js\pages\dashboard_analytics.js" />
+    <Content Include="Template\lib\js\pages\dashboard_inverse.js" />
+    <Content Include="Template\lib\js\pages\dashboard_store.js" />
+    <Content Include="Template\lib\js\pages\ecom\ecom_orders.js" />
+    <Content Include="Template\lib\js\pages\ecom\ecom_product.js" />
+    <Content Include="Template\lib\js\pages\editors\editor_ckeditor.js" />
+    <Content Include="Template\lib\js\pages\editors\editor_tinymce.js" />
+    <Content Include="Template\lib\js\pages\extensions\extension_bootstrap_uploader.js" />
+    <Content Include="Template\lib\js\pages\extensions\extension_fullcalendar.js" />
+    <Content Include="Template\lib\js\pages\extensions\extension_jcrop_api.js" />
+    <Content Include="Template\lib\js\pages\extensions\extension_jcrop_basic.js" />
+    <Content Include="Template\lib\js\pages\extensions\extension_jcrop_handlers.js" />
+    <Content Include="Template\lib\js\pages\extensions\extension_jcrop_preview.js" />
+    <Content Include="Template\lib\js\pages\extensions\extension_jcrop_transitions.js" />
+    <Content Include="Template\lib\js\pages\extensions\extension_owl_carousel.js" />
+    <Content Include="Template\lib\js\pages\extensions\extension_pnotify.js" />
+    <Content Include="Template\lib\js\pages\extensions\extension_sweet_alert.js" />
+    <Content Include="Template\lib\js\pages\extensions\page_gallery.js" />
+    <Content Include="Template\lib\js\pages\extensions\page_launching.js" />
+    <Content Include="Template\lib\js\pages\forms\form_bootstrap_touchspin.js" />
+    <Content Include="Template\lib\js\pages\forms\form_controls_extended.js" />
+    <Content Include="Template\lib\js\pages\forms\form_inputs_basic.js" />
+    <Content Include="Template\lib\js\pages\forms\form_noui_slider.js" />
+    <Content Include="Template\lib\js\pages\forms\form_select2.js" />
+    <Content Include="Template\lib\js\pages\forms\form_switchery.js" />
+    <Content Include="Template\lib\js\pages\forms\form_tag_inputs.js" />
+    <Content Include="Template\lib\js\pages\forms\form_validations.js" />
+    <Content Include="Template\lib\js\pages\forms\form_wizard.js" />
+    <Content Include="Template\lib\js\pages\forms\picker_color.js" />
+    <Content Include="Template\lib\js\pages\forms\picker_date.js" />
+    <Content Include="Template\lib\js\pages\forms\picker_time.js" />
+    <Content Include="Template\lib\js\pages\maps\maps_vector.js" />
+    <Content Include="Template\lib\js\pages\snippets\fab_buttons.js" />
+    <Content Include="Template\lib\js\pages\tables\datatable_advanced.js" />
+    <Content Include="Template\lib\js\pages\tables\datatable_basic.js" />
+    <Content Include="Template\lib\js\pages\tables\datatable_extension_autofill.js" />
+    <Content Include="Template\lib\js\pages\tables\datatable_extension_columns_selection.js" />
+    <Content Include="Template\lib\js\pages\tables\datatable_extension_column_reorder.js" />
+    <Content Include="Template\lib\js\pages\tables\datatable_extension_export_options.js" />
+    <Content Include="Template\lib\js\pages\tables\datatable_extension_fixed_columns.js" />
+    <Content Include="Template\lib\js\pages\tables\datatable_extension_fixed_header.js" />
+    <Content Include="Template\lib\js\pages\tables\datatable_extension_key_table.js" />
+    <Content Include="Template\lib\js\pages\tables\datatable_extension_row_reorder.js" />
+    <Content Include="Template\lib\js\pages\tables\datatable_extension_state_saving.js" />
+    <Content Include="Template\lib\js\pages\tables\tables_responsive.js" />
+    <Content Include="Template\lib\js\pages\widgets\widgets_dashboard.js" />
+    <Content Include="Template\lib\js\pages\widgets\widgets_news_sliders.js" />
+    <Content Include="Template\lib\js\pages\widgets\widgets_testimonials.js" />
+    <Content Include="Template\lib\js\plugins\clndr\calndr.js" />
+    <Content Include="Template\lib\js\plugins\clndr\clndr.js" />
+    <Content Include="Template\lib\js\plugins\fullcalendar\fullcalendar.min.js" />
+    <Content Include="Template\lib\js\plugins\jcrop\jcrop.color.js" />
+    <Content Include="Template\lib\js\plugins\jcrop\jcrop.js" />
+    <Content Include="Template\lib\js\plugins\notifications\pnotify.min.js" />
+    <Content Include="Template\lib\js\plugins\notifications\sweetalert.js" />
+    <Content Include="Template\lib\js\plugins\owl.carousel.js" />
+    <Content Include="Template\lib\js\plugins\ratings\bootstrap-rating.js" />
+    <Content Include="Template\lib\js\plugins\tables\datatables\datatables.min.js" />
+    <Content Include="Template\lib\js\plugins\tables\datatables\extensions\autofill.min.js" />
+    <Content Include="Template\lib\js\plugins\tables\datatables\extensions\buttons.min.js" />
+    <Content Include="Template\lib\js\plugins\tables\datatables\extensions\col_reorder.min.js" />
+    <Content Include="Template\lib\js\plugins\tables\datatables\extensions\fixed_columns.min.js" />
+    <Content Include="Template\lib\js\plugins\tables\datatables\extensions\fixed_header.min.js" />
+    <Content Include="Template\lib\js\plugins\tables\datatables\extensions\jszip\jszip.min.js" />
+    <Content Include="Template\lib\js\plugins\tables\datatables\extensions\key_table.min.js" />
+    <Content Include="Template\lib\js\plugins\tables\datatables\extensions\natural_sort.js" />
+    <Content Include="Template\lib\js\plugins\tables\datatables\extensions\pdfmake\pdfmake.min.js" />
+    <Content Include="Template\lib\js\plugins\tables\datatables\extensions\pdfmake\vfs_fonts.min.js" />
+    <Content Include="Template\lib\js\plugins\tables\datatables\extensions\responsive.min.js" />
+    <Content Include="Template\lib\js\plugins\tables\datatables\extensions\row_reorder.min.js" />
+    <Content Include="Template\lib\js\plugins\tables\datatables\extensions\scroller.min.js" />
+    <Content Include="Template\lib\js\plugins\tables\datatables\extensions\select.min.js" />
+    <Content Include="Template\lib\js\plugins\tables\footable.min.js" />
+    <Content Include="Template\lib\js\plugins\uploaders\bootstrap-uploader\bootstrap-uploader.js" />
+    <Content Include="Template\lib\js\plugins\venobox.js" />
+    <Content Include="Template\lib\scss\assets\index.html" />
+    <Content Include="Template\lib\scss\components\index.html" />
+    <Content Include="Template\lib\scss\extensions\index.html" />
+    <Content Include="Template\lib\scss\index.html" />
+    <Content Include="Template\lib\scss\layouts\index.html" />
+    <Content Include="Template\lib\scss\mixins\index.html" />
+    <Content Include="Template\lib\scss\packages\index.html" />
+    <Content Include="Template\lib\scss\pages\index.html" />
+    <Content Include="Template\lib\scss\plugins\calendar\index.html" />
+    <Content Include="Template\lib\scss\plugins\charts\index.html" />
+    <Content Include="Template\lib\scss\plugins\forms\index.html" />
+    <Content Include="Template\lib\scss\plugins\hovers\index.html" />
+    <Content Include="Template\lib\scss\plugins\index.html" />
+    <Content Include="Template\lib\scss\plugins\jcrop\index.html" />
+    <Content Include="Template\lib\scss\plugins\maps\index.html" />
+    <Content Include="Template\lib\scss\plugins\notifications\index.html" />
+    <Content Include="Template\lib\scss\plugins\sliders\index.html" />
+    <Content Include="Template\lib\scss\plugins\tables\index.html" />
+    <Content Include="Template\lib\scss\plugins\uploaders\index.html" />
+    <Content Include="Template\lib\scss\snippets\index.html" />
+    <Content Include="Template\lib\scss\snippets\loaders\index.html" />
+    <Content Include="Template\lib\scss\widgets\index.html" />
+    <Content Include="Template\maps_google_basic.html" />
+    <Content Include="Template\maps_google_layers.html" />
+    <Content Include="Template\maps_google_markers.html" />
+    <Content Include="Template\maps_vector.html" />
+    <Content Include="Template\messages.html" />
+    <Content Include="Template\page_contact.html" />
+    <Content Include="Template\page_email_templates.html" />
+    <Content Include="Template\page_empty.html" />
+    <Content Include="Template\page_gallery.html" />
+    <Content Include="Template\page_knowledgebase.html" />
+    <Content Include="Template\page_launching.html" />
+    <Content Include="Template\page_maintenance.html" />
+    <Content Include="Template\page_pricing_tables.html" />
+    <Content Include="Template\page_search.html" />
+    <Content Include="Template\page_support.html" />
+    <Content Include="Template\people.html" />
+    <Content Include="Template\picker_color.html" />
+    <Content Include="Template\picker_date.html" />
+    <Content Include="Template\picker_time.html" />
+    <Content Include="Template\projects_details.html" />
+    <Content Include="Template\projects_list.html" />
+    <Content Include="Template\responsive_utilities.html" />
+    <Content Include="Template\snippets_fab_buttons.html" />
+    <Content Include="Template\snippets_loaders.html" />
+    <Content Include="Template\tables_basic.html" />
+    <Content Include="Template\tables_responsive.html" />
+    <Content Include="Template\ui_accordions.html" />
+    <Content Include="Template\ui_alerts.html" />
+    <Content Include="Template\ui_buttons.html" />
+    <Content Include="Template\ui_dropdowns.html" />
+    <Content Include="Template\ui_labels.html" />
+    <Content Include="Template\ui_lists.html" />
+    <Content Include="Template\ui_media_objects.html" />
+    <Content Include="Template\ui_modals.html" />
+    <Content Include="Template\ui_pagination.html" />
+    <Content Include="Template\ui_pills.html" />
+    <Content Include="Template\ui_progress_bars.html" />
+    <Content Include="Template\ui_tabs.html" />
+    <Content Include="Template\ui_thumbnails.html" />
+    <Content Include="Template\ui_tooltips.html" />
+    <Content Include="Template\user_list.html" />
+    <Content Include="Template\user_profile_simple.html" />
+    <Content Include="Template\widgets_dashboard.html" />
+    <Content Include="Template\widgets_hover_effects.html" />
+    <Content Include="Template\widgets_news_sliders.html" />
+    <Content Include="Template\widgets_team.html" />
+    <Content Include="Template\widgets_testimonials.html" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
+    <Content Include="Views\Account\ConfirmEmail.cshtml" />
+    <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
+    <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
+    <Content Include="Views\Account\ForgotPassword.cshtml" />
+    <Content Include="Views\Account\ForgotPasswordConfirmation.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Account\ResetPassword.cshtml" />
+    <Content Include="Views\Account\ResetPasswordConfirmation.cshtml" />
+    <Content Include="Views\Account\SendCode.cshtml" />
+    <Content Include="Views\Account\VerifyCode.cshtml" />
+    <Content Include="Views\Manage\AddPhoneNumber.cshtml" />
+    <Content Include="Views\Manage\ChangePassword.cshtml" />
+    <Content Include="Views\Manage\Index.cshtml" />
+    <Content Include="Views\Manage\ManageLogins.cshtml" />
+    <Content Include="Views\Manage\SetPassword.cshtml" />
+    <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
+    <Content Include="Views\Shared\Lockout.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\PersonalAccounts\Create.cshtml" />
+    <Content Include="Views\PersonalAccounts\Delete.cshtml" />
+    <Content Include="Views\PersonalAccounts\Details.cshtml" />
+    <Content Include="Views\PersonalAccounts\Edit.cshtml" />
+    <Content Include="Views\PersonalAccounts\Index.cshtml" />
+    <Content Include="Views\Households\Create.cshtml" />
+    <Content Include="Views\Households\Delete.cshtml" />
+    <Content Include="Views\Households\Details.cshtml" />
+    <Content Include="Views\Households\Edit.cshtml" />
+    <Content Include="Views\Households\Index.cshtml" />
+    <Content Include="Views\Budgets\Create.cshtml" />
+    <Content Include="Views\Budgets\Delete.cshtml" />
+    <Content Include="Views\Budgets\Details.cshtml" />
+    <Content Include="Views\Budgets\Edit.cshtml" />
+    <Content Include="Views\Budgets\Index.cshtml" />
+    <Content Include="Views\Invites\Create.cshtml" />
+    <Content Include="Views\Invites\Delete.cshtml" />
+    <Content Include="Views\Invites\Details.cshtml" />
+    <Content Include="Views\Invites\Edit.cshtml" />
+    <Content Include="Views\Invites\Index.cshtml" />
+    <Content Include="Views\Categories\Create.cshtml" />
+    <Content Include="Views\Categories\Delete.cshtml" />
+    <Content Include="Views\Categories\Details.cshtml" />
+    <Content Include="Views\Categories\Edit.cshtml" />
+    <Content Include="Views\Categories\Index.cshtml" />
+    <Content Include="Views\Transactions\Create.cshtml" />
+    <Content Include="Views\Transactions\Delete.cshtml" />
+    <Content Include="Views\Transactions\Details.cshtml" />
+    <Content Include="Views\Transactions\Edit.cshtml" />
+    <Content Include="Views\Transactions\Index.cshtml" />
+    <Content Include="Views\BudgetItems\Create.cshtml" />
+    <Content Include="Views\BudgetItems\Delete.cshtml" />
+    <Content Include="Views\BudgetItems\Details.cshtml" />
+    <Content Include="Views\BudgetItems\Edit.cshtml" />
+    <Content Include="Views\BudgetItems\Index.cshtml" />
+    <Content Include="Views\Households\CreateJoinHousehold.cshtml" />
+    <Content Include="Views\Households\Invite.cshtml" />
+    <Content Include="Views\Households\LeaveHousehold.cshtml" />
+    <Content Include="Template\lib\assets\editors\ckeditor\CHANGES.md" />
+    <Content Include="Template\lib\assets\editors\ckeditor\LICENSE.md" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\bootstrapTabs\LICENSE-GPL" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\bootstrapTabs\LICENSE-LGPL" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\bootstrapTabs\LICENSE-MPL" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\bootstrapTabs\README.md" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\btgrid\bower.json" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\btgrid\README.md" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\ckeditor-gwf-plugin\LICENSE" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\ckeditor-gwf-plugin\README.md" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\codesnippet\lib\highlight\CHANGES.md" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\codesnippet\lib\highlight\LICENSE" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\codesnippet\lib\highlight\README.md" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\codesnippet\lib\highlight\README.ru.md" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\glyphicons\bootstrap\config.json" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\glyphicons\bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\glyphicons\bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\glyphicons\bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\LICENSE.md" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\imageuploader\README.md" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\pbckcode\CHANGELOG.md" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\pbckcode\LICENSE" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\pbckcode\README.md" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\scayt\CHANGELOG.md" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\scayt\LICENSE.md" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\scayt\README.md" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\wsc\LICENSE.md" />
+    <Content Include="Template\lib\assets\editors\ckeditor\plugins\wsc\README.md" />
+    <Content Include="Template\lib\assets\editors\ckeditor\README.md" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\readme.md" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\scss\browser-specific\gecko\editor_gecko.css.map" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\scss\browser-specific\gecko\editor_gecko.scss" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\scss\browser-specific\ie7\dialog_ie7.css.map" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\scss\browser-specific\ie7\dialog_ie7.scss" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\scss\browser-specific\ie7\editor_ie7.css.map" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\scss\browser-specific\ie7\editor_ie7.scss" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\scss\browser-specific\ie8\dialog_ie8.css.map" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\scss\browser-specific\ie8\dialog_ie8.scss" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\scss\browser-specific\ie8\editor_ie8.css.map" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\scss\browser-specific\ie8\editor_ie8.scss" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\scss\browser-specific\iequirks\dialog_iequirks.css.map" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\scss\browser-specific\iequirks\dialog_iequirks.scss" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\scss\browser-specific\iequirks\editor_iequirks.css.map" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\scss\browser-specific\iequirks\editor_iequirks.scss" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\scss\browser-specific\ie\dialog_ie.css.map" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\scss\browser-specific\ie\dialog_ie.scss" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\scss\browser-specific\ie\editor_ie.css.map" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\scss\browser-specific\ie\editor_ie.scss" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\scss\browser-specific\opera\dialog_opera.css.map" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\scss\browser-specific\opera\dialog_opera.scss" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\scss\components\editor.css.map" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\scss\components\editor.scss" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\scss\components\_colorpanel.scss" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\scss\components\_elementspath.scss" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\scss\components\_mainui.scss" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\scss\components\_menu.scss" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\scss\components\_panel.scss" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\scss\components\_presets.scss" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\scss\components\_reset.scss" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\scss\components\_richcombo.scss" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\scss\components\_toolbar.scss" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\scss\config\_colors.scss" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\scss\config\_config.scss" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\scss\config\_defaults.scss" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\scss\dialog\dialog.css.map" />
+    <Content Include="Template\lib\assets\editors\ckeditor\skins\bootstrapck\scss\dialog\dialog.scss" />
+    <Content Include="Template\lib\assets\editors\tinymce\langs\readme.md" />
+    <Content Include="Template\lib\assets\editors\tinymce\skins\lightgray\fonts\tinymce-small.eot" />
+    <Content Include="Template\lib\assets\editors\tinymce\skins\lightgray\fonts\tinymce-small.ttf" />
+    <Content Include="Template\lib\assets\editors\tinymce\skins\lightgray\fonts\tinymce-small.woff" />
+    <Content Include="Template\lib\assets\editors\tinymce\skins\lightgray\fonts\tinymce.eot" />
+    <Content Include="Template\lib\assets\editors\tinymce\skins\lightgray\fonts\tinymce.ttf" />
+    <Content Include="Template\lib\assets\editors\tinymce\skins\lightgray\fonts\tinymce.woff" />
+    <Content Include="Template\lib\assets\icons\climacon\climacons-webfont.eot" />
+    <Content Include="Template\lib\assets\icons\climacon\climacons-webfont.ttf" />
+    <Content Include="Template\lib\assets\icons\climacon\climacons-webfont.woff" />
+    <Content Include="Template\lib\assets\icons\weather\weathericons-regular-webfont.eot" />
+    <Content Include="Template\lib\assets\icons\weather\weathericons-regular-webfont.ttf" />
+    <Content Include="Template\lib\assets\icons\weather\weathericons-regular-webfont.woff" />
+    <Content Include="Template\lib\assets\icons\weather\weathericons-regular-webfont.woff2" />
+    <Content Include="Template\lib\fonts\OpenSans-Bold-webfont.eot" />
+    <Content Include="Template\lib\fonts\OpenSans-Bold-webfont.ttf" />
+    <Content Include="Template\lib\fonts\OpenSans-Bold-webfont.woff" />
+    <Content Include="Template\lib\fonts\OpenSans-ExtraBold-webfont.eot" />
+    <Content Include="Template\lib\fonts\OpenSans-ExtraBold-webfont.ttf" />
+    <Content Include="Template\lib\fonts\OpenSans-ExtraBold-webfont.woff" />
+    <Content Include="Template\lib\fonts\OpenSans-Light-webfont.eot" />
+    <Content Include="Template\lib\fonts\OpenSans-Light-webfont.ttf" />
+    <Content Include="Template\lib\fonts\OpenSans-Light-webfont.woff" />
+    <Content Include="Template\lib\fonts\OpenSans-Regular-webfont.eot" />
+    <Content Include="Template\lib\fonts\OpenSans-Regular-webfont.ttf" />
+    <Content Include="Template\lib\fonts\OpenSans-Regular-webfont.woff" />
+    <Content Include="Template\lib\fonts\OpenSans-Semibold-webfont.eot" />
+    <Content Include="Template\lib\fonts\OpenSans-Semibold-webfont.ttf" />
+    <Content Include="Template\lib\fonts\OpenSans-Semibold-webfont.woff" />
+    <Content Include="Template\lib\icons\icomoon.eot" />
+    <Content Include="Template\lib\icons\icomoon.ttf" />
+    <Content Include="Template\lib\icons\icomoon.woff" />
+    <Content Include="Template\lib\scss\assets\_fonts.scss" />
+    <Content Include="Template\lib\scss\assets\_icons.scss" />
+    <Content Include="Template\lib\scss\components\_alerts.scss" />
+    <Content Include="Template\lib\scss\components\_badges.scss" />
+    <Content Include="Template\lib\scss\components\_buttons.scss" />
+    <Content Include="Template\lib\scss\components\_carousel.scss" />
+    <Content Include="Template\lib\scss\components\_code.scss" />
+    <Content Include="Template\lib\scss\components\_colors.scss" />
+    <Content Include="Template\lib\scss\components\_content.scss" />
+    <Content Include="Template\lib\scss\components\_dropdowns.scss" />
+    <Content Include="Template\lib\scss\components\_elements.scss" />
+    <Content Include="Template\lib\scss\components\_forms.scss" />
+    <Content Include="Template\lib\scss\components\_grid.scss" />
+    <Content Include="Template\lib\scss\components\_header.scss" />
+    <Content Include="Template\lib\scss\components\_helper-classes.scss" />
+    <Content Include="Template\lib\scss\components\_icons.scss" />
+    <Content Include="Template\lib\scss\components\_jumbo.scss" />
+    <Content Include="Template\lib\scss\components\_labels.scss" />
+    <Content Include="Template\lib\scss\components\_lists.scss" />
+    <Content Include="Template\lib\scss\components\_media.scss" />
+    <Content Include="Template\lib\scss\components\_modals.scss" />
+    <Content Include="Template\lib\scss\components\_pager.scss" />
+    <Content Include="Template\lib\scss\components\_pagination.scss" />
+    <Content Include="Template\lib\scss\components\_panels.scss" />
+    <Content Include="Template\lib\scss\components\_pills.scss" />
+    <Content Include="Template\lib\scss\components\_popovers.scss" />
+    <Content Include="Template\lib\scss\components\_progress-bars.scss" />
+    <Content Include="Template\lib\scss\components\_secondary-sidebar.scss" />
+    <Content Include="Template\lib\scss\components\_tables.scss" />
+    <Content Include="Template\lib\scss\components\_tabs.scss" />
+    <Content Include="Template\lib\scss\components\_thumbnails.scss" />
+    <Content Include="Template\lib\scss\components\_tooltips.scss" />
+    <Content Include="Template\lib\scss\components\_typography.scss" />
+    <Content Include="Template\lib\scss\extensions\_draggable-panels.scss" />
+    <Content Include="Template\lib\scss\extensions\_elastic-grid.scss" />
+    <Content Include="Template\lib\scss\layouts\_accordion.scss" />
+    <Content Include="Template\lib\scss\layouts\_boxed.scss" />
+    <Content Include="Template\lib\scss\layouts\_dropdown.scss" />
+    <Content Include="Template\lib\scss\layouts\_dropdown_label.scss" />
+    <Content Include="Template\lib\scss\layouts\_handheld.scss" />
+    <Content Include="Template\lib\scss\layouts\_iconbar.scss" />
+    <Content Include="Template\lib\scss\layouts\_iconic.scss" />
+    <Content Include="Template\lib\scss\layouts\_material.scss" />
+    <Content Include="Template\lib\scss\layouts\_megamenu.scss" />
+    <Content Include="Template\lib\scss\layouts\_profile.scss" />
+    <Content Include="Template\lib\scss\layouts\_sidebar.scss" />
+    <Content Include="Template\lib\scss\main.scss" />
+    <Content Include="Template\lib\scss\mixins\_animation.scss" />
+    <Content Include="Template\lib\scss\mixins\_arrow.scss" />
+    <Content Include="Template\lib\scss\mixins\_background-gradient.scss" />
+    <Content Include="Template\lib\scss\mixins\_background.scss" />
+    <Content Include="Template\lib\scss\mixins\_border-radius.scss" />
+    <Content Include="Template\lib\scss\mixins\_border.scss" />
+    <Content Include="Template\lib\scss\mixins\_clearfix.scss" />
+    <Content Include="Template\lib\scss\mixins\_colors.scss" />
+    <Content Include="Template\lib\scss\mixins\_drop-shadow.scss" />
+    <Content Include="Template\lib\scss\mixins\_icons.scss" />
+    <Content Include="Template\lib\scss\mixins\_inputs.scss" />
+    <Content Include="Template\lib\scss\mixins\_interaction.scss" />
+    <Content Include="Template\lib\scss\mixins\_layout.scss" />
+    <Content Include="Template\lib\scss\mixins\_list.scss" />
+    <Content Include="Template\lib\scss\mixins\_media.scss" />
+    <Content Include="Template\lib\scss\mixins\_opacity.scss" />
+    <Content Include="Template\lib\scss\mixins\_spacing.scss" />
+    <Content Include="Template\lib\scss\mixins\_text.scss" />
+    <Content Include="Template\lib\scss\mixins\_vendors.scss" />
+    <Content Include="Template\lib\scss\packages\_ecom.scss" />
+    <Content Include="Template\lib\scss\pages\_auth.scss" />
+    <Content Include="Template\lib\scss\pages\_emails.scss" />
+    <Content Include="Template\lib\scss\pages\_errors.scss" />
+    <Content Include="Template\lib\scss\pages\_launching.scss" />
+    <Content Include="Template\lib\scss\pages\_messages.scss" />
+    <Content Include="Template\lib\scss\pages\_people.scss" />
+    <Content Include="Template\lib\scss\pages\_pricing-table.scss" />
+    <Content Include="Template\lib\scss\plugins\calendar\_fullcalendar.scss" />
+    <Content Include="Template\lib\scss\plugins\charts\_charts.scss" />
+    <Content Include="Template\lib\scss\plugins\forms\_bootstrap-slider.scss" />
+    <Content Include="Template\lib\scss\plugins\forms\_bootstrap-uploader.scss" />
+    <Content Include="Template\lib\scss\plugins\forms\_checker.scss" />
+    <Content Include="Template\lib\scss\plugins\forms\_color-picker.scss" />
+    <Content Include="Template\lib\scss\plugins\forms\_datetime-picker.scss" />
+    <Content Include="Template\lib\scss\plugins\forms\_noui-slider.scss" />
+    <Content Include="Template\lib\scss\plugins\forms\_select2.scss" />
+    <Content Include="Template\lib\scss\plugins\forms\_switchery.scss" />
+    <Content Include="Template\lib\scss\plugins\forms\_time-picker.scss" />
+    <Content Include="Template\lib\scss\plugins\forms\_tokenfield.scss" />
+    <Content Include="Template\lib\scss\plugins\forms\_typehead.scss" />
+    <Content Include="Template\lib\scss\plugins\forms\_validations.scss" />
+    <Content Include="Template\lib\scss\plugins\forms\_wizards.scss" />
+    <Content Include="Template\lib\scss\plugins\hovers\_venobox.scss" />
+    <Content Include="Template\lib\scss\plugins\jcrop\_jcrop.scss" />
+    <Content Include="Template\lib\scss\plugins\maps\_vector-maps.scss" />
+    <Content Include="Template\lib\scss\plugins\notifications\_pnotify.scss" />
+    <Content Include="Template\lib\scss\plugins\notifications\_sweetalert.scss" />
+    <Content Include="Template\lib\scss\plugins\sliders\_owl-carousel.scss" />
+    <Content Include="Template\lib\scss\plugins\tables\_datatables.scss" />
+    <Content Include="Template\lib\scss\plugins\uploaders\_bootstrap-uploader.scss" />
+    <Content Include="Template\lib\scss\plugins\uploaders\_file-uploader.scss" />
+    <Content Include="Template\lib\scss\snippets\loaders\_loader01.scss" />
+    <Content Include="Template\lib\scss\snippets\loaders\_loader02.scss" />
+    <Content Include="Template\lib\scss\snippets\loaders\_loader03.scss" />
+    <Content Include="Template\lib\scss\snippets\loaders\_loader04.scss" />
+    <Content Include="Template\lib\scss\snippets\loaders\_loader05.scss" />
+    <Content Include="Template\lib\scss\snippets\loaders\_loader06.scss" />
+    <Content Include="Template\lib\scss\snippets\loaders\_loader07.scss" />
+    <Content Include="Template\lib\scss\snippets\loaders\_loader08.scss" />
+    <Content Include="Template\lib\scss\snippets\loaders\_loader09.scss" />
+    <Content Include="Template\lib\scss\snippets\loaders\_loader10.scss" />
+    <Content Include="Template\lib\scss\snippets\loaders\_loader11.scss" />
+    <Content Include="Template\lib\scss\snippets\loaders\_loader12.scss" />
+    <Content Include="Template\lib\scss\snippets\_fab-buttons.scss" />
+    <Content Include="Template\lib\scss\snippets\_loaders.scss" />
+    <Content Include="Template\lib\scss\widgets\_activity.scss" />
+    <Content Include="Template\lib\scss\widgets\_content.scss" />
+    <Content Include="Template\lib\scss\widgets\_hovers.scss" />
+    <Content Include="Template\lib\scss\widgets\_news.scss" />
+    <Content Include="Template\lib\scss\widgets\_team.scss" />
+    <Content Include="Template\lib\scss\widgets\_testimonials.scss" />
+    <Content Include="Template\lib\scss\widgets\_weather.scss" />
+    <Content Include="Template\lib\scss\_colors.scss" />
+    <Content Include="Template\lib\scss\_config.scss" />
+    <Content Include="Template\lib\scss\_functions.scss" />
+    <Content Include="Template\lib\scss\_layout.scss" />
+    <Content Include="Template\lib\scss\_navbar.scss" />
+    <Content Include="Template\lib\scss\_reboot.scss" />
+    <Content Include="Template\lib\scss\_rightbar.scss" />
+    <Content Include="Views\Shared\_Layout - Copy.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50578</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50578/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

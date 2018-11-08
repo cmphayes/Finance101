@@ -1,0 +1,764 @@
+<!doctype html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="theme-color" content="#1C2B36" />
+	<title>Bird - Responsive admin dashboard template by Followtechnique</title>
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="144x144">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="114x114">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="72x72">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png">
+	<link href="img/favicon.ico" rel="icon" type="image/png">
+	<link href="img/favicon.ico" rel="shortcut icon">
+    <!-- /Favicon -->
+
+    <!-- Global stylesheets -->
+	<link type="text/css" rel="stylesheet" href="lib/css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="lib/css/animate.min.css">
+    <link type="text/css" rel="stylesheet" href="lib/css/main.css">
+    <!-- /Global stylesheets -->
+</head>
+<body id="top">
+
+<!-- Preloader -->
+<div id="preloader">
+	<div id="status">
+		<div class="loader"></div>
+	</div>
+</div>
+<!-- /Preloader -->
+
+<div id="body-wrapper" class="body-container">
+
+	<!-- Header begins -->
+	<header class="main-nav clearfix">
+
+		<!-- Searchbar -->
+		<div class="top-search-bar">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3">
+						<div class="search-input-addon">
+							<span class="addon-icon"><i class="icon-search4"></i></span>
+							<input type="text" class="form-control top-search-input" placeholder="Enter your keyword...">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Searchbar -->
+
+		<!-- Branding -->
+		<div class="navbar-left pull-left">
+			<div class="clearfix">
+				<ul class="left-branding pull-left">
+					<li class="visible-handheld"><span class="left-toggle-switch"><i class="icon-menu7"></i></span></li>
+					<li>
+						<a href="index.html"><div class="logo"></div></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /Branding -->
+
+		<!-- Search & Languages -->
+		<div class="navbar pull-left">
+			<div class="clearfix">
+				<ul class="pull-left top-icons hidden-xs">
+					<li><a href="#" class="btn-top-search m-l-10"><i class="icon-search4"></i></a></li>
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-flag7"></i></a>
+						<ul class="dropdown-menu languages">
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">Deutsch</a></li>
+                            <li><a href="#">Українська</a></li>
+							<li><a href="#">España</a></li>
+                        </ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /Search & Languages -->
+
+		<!-- Navbar icons -->
+		<div class="navbar pull-right">
+			<div class="clearfix">
+				<ul class="pull-right top-icons">
+					<li><a href="#" class="btn-top-search visible-xs"><i class="icon-search4"></i></a></li>
+
+					<!-- Quick apps dropdown -->
+					<li class="dropdown apps-dropdown hidden-xs">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-grid2"></i></a>
+						<div class="dropdown-menu">
+						</div>
+					</li>
+					<!-- /Quick apps dropdown -->
+
+					<!-- Rightbar -->
+					<li><a href="#" onclick="open_rightbar()"><span class="bubble">6</span><i class="icon-stack3"></i></a></li>
+					<!-- /Rightbar -->
+
+					<!-- User dropdown -->
+					<li class="dropdown user-dropdown">
+						<a class="user-name hidden-xs" data-toggle="dropdown">Jane Elliott <i class="icon-more2"></i><small>Administrator</small></a>
+						<a href="#" class="btn-user dropdown-toggle hidden-xs" data-toggle="dropdown"><img src="http://via.placeholder.com/80x80" class="img-circle user" alt=""/></a>
+						<a href="#" class="dropdown-toggle visible-xs" data-toggle="dropdown"><i class="icon-more"></i></a>
+						<div class="dropdown-menu no-padding">
+						</div>
+					</li>
+					<!-- /User dropdown -->
+
+				</ul>
+			</div>
+		</div>
+		<!-- /Navbar icons -->
+
+	</header>
+	<!-- /Header ends -->
+
+	<!-- Sidebar -->
+	<aside class="menu">
+		<div class="left-aside-container">
+
+			<!-- User profile -->
+			<div class="user-profile"></div>
+			<!-- /User profile -->
+
+
+			<!-- Main menu -->
+			<div class="menu-container"></div>
+			<!-- /Main menu -->
+
+		</div>
+	</aside>
+	<!-- /Sidebar -->
+
+	<!-- Page container begins -->
+	<section class="main-container">
+		<h1 style="display:none">Empty Heading</h1>
+
+			<!-- Page Header -->
+			<div class="header">
+				<div class="header-content">
+					<div class="page-title">
+						<i class="icon-select2 position-left"></i> Input groups
+					</div>
+					<ul class="breadcrumb">
+						<li><a href="index.html"></a></li>
+						<li>Form components</li>
+						<li class="active">Input groups</li>
+					</ul>
+				</div>
+			</div>
+			<!-- /Page Header -->
+
+
+			<div class="container-fluid page-content">
+
+				<div class="row">
+
+					<!-- Text addon -->
+					<div class="col-md-6 col-sm-6">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<div class="panel-title">Text addon</div>
+							</div>
+
+							<div class="panel-body">
+								<form class="form-horizontal" action="#">
+									<fieldset>
+										<div class="form-group">
+											<div class="input-group">
+												<span class="input-group-addon">@</span>
+												<input type="text" class="form-control" placeholder="Left addon">
+											</div>
+										</div>
+
+										<div class="form-group">
+											<div class="input-group">
+												<input type="text" class="form-control" placeholder="Right addon">
+												<span class="input-group-addon">%</span>
+											</div>
+										</div>
+
+										<div class="form-group">
+											<div class="input-group">
+												<span class="input-group-addon">$</span>
+												<input type="text" class="form-control" placeholder="Left and right addons">
+												<span class="input-group-addon">.00</span>
+											</div>
+										</div>
+									</fieldset>
+								</form>
+							</div>
+						</div>
+					</div>
+					<!-- /Text addon -->
+
+					<!-- Icon addons -->
+					<div class="col-md-6 col-sm-6">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<div class="panel-title">Icon addons</div>
+							</div>
+							<div class="panel-body">
+								<form class="form-horizontal" action="#">
+									<fieldset>
+										<div class="form-group">
+											<div class="input-group">
+												<span class="input-group-addon"><i class="icon-user"></i></span>
+												<input type="text" class="form-control" placeholder="Left icon">
+											</div>
+										</div>
+
+										<div class="form-group">
+											<div class="input-group">
+												<input type="text" class="form-control" placeholder="Right icon">
+												<span class="input-group-addon"><i class="icon-user"></i></span>
+											</div>
+										</div>
+
+										<div class="form-group">
+											<div class="input-group">
+												<span class="input-group-addon"><i class="icon-envelope"></i></span>
+												<input type="text" class="form-control" placeholder="Left and right icons">
+												<span class="input-group-addon"><i class="icon-user"></i></span>
+											</div>
+										</div>
+									</fieldset>
+								</form>
+							</div>
+						</div>
+					</div>
+					<!-- /Icon addons -->
+
+				</div>
+
+				<!-- Color options -->
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<div class="panel-title">Color options</div>
+					</div>
+					<div class="panel-body">
+						<form class="form-horizontal" action="#">
+							<fieldset>
+								<div class="form-group">
+									<label class="control-label col-lg-2">Contextual class</label>
+									<div class="col-lg-10">
+										<div class="input-group">
+											<span class="input-group-addon bg-primary"><i class="icon-stack3"></i></span>
+											<input type="text" class="form-control" placeholder="Primary addon">
+										</div>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label class="control-label col-lg-2">Custom color class</label>
+									<div class="col-lg-10">
+										<div class="input-group">
+											<input type="text" class="form-control" placeholder="Pink addon">
+											<span class="input-group-addon bg-pink"><i class="icon-folder2"></i></span>
+										</div>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label class="control-label col-lg-2">Color everything</label>
+									<div class="col-lg-10">
+										<div class="input-group">
+											<span class="input-group-addon bg-slate"><i class="icon-lock"></i></span>
+											<input type="text" class="form-control bg-slate-300" placeholder="Solid background color">
+											<span class="input-group-addon bg-slate"><i class="icon-folder2"></i></span>
+										</div>
+									</div>
+								</div>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+				<!-- /Color options -->
+
+				<div class="row">
+					<div class="col-md-4 col-sm-6">
+
+						<!-- Left button addons -->
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<div class="panel-title">Left button addons</div>
+							</div>
+							<div class="panel-body">
+								<form class="form-horizontal" action="#">
+									<fieldset>
+										<div class="form-group">
+											<div class="input-group input-group-xlg">
+												<span class="input-group-btn">
+													<button class="btn btn-default" type="button">Button</button>
+												</span>
+												<input type="text" class="form-control input-xlg" placeholder="Left button extralarge">
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="input-group input-group-lg">
+												<span class="input-group-btn">
+													<button class="btn btn-default" type="button">Button</button>
+												</span>
+												<input type="text" class="form-control input-lg" placeholder="Left button large">
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="input-group">
+												<span class="input-group-btn">
+													<button class="btn btn-default" type="button">Button</button>
+												</span>
+												<input type="text" class="form-control" placeholder="Left button default">
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="input-group input-group-sm">
+												<span class="input-group-btn">
+													<button class="btn btn-default" type="button">Button</button>
+												</span>
+												<input type="text" class="form-control input-sm" placeholder="Left button small">
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="input-group input-group-xs">
+												<span class="input-group-btn">
+													<button class="btn btn-default" type="button">Button</button>
+												</span>
+												<input type="text" class="form-control input-xs" placeholder="Left button mini">
+											</div>
+										</div>
+									</fieldset>
+								</form>
+							</div>
+						</div>
+						<!-- /Left button addons -->
+
+					</div>
+
+					<div class="col-md-4 col-sm-6">
+
+						<!-- Right button addons -->
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<div class="panel-title">Right button addons</div>
+							</div>
+							<div class="panel-body">
+								<form class="form-horizontal" action="#">
+									<fieldset>
+										<div class="form-group">
+											<div class="input-group input-group-xlg">
+												<input type="text" class="form-control input-xlg" placeholder="Left button extralarge">
+												<span class="input-group-btn">
+													<button class="btn btn-default" type="button">Button</button>
+												</span>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="input-group input-group-lg">
+												<input type="text" class="form-control input-lg" placeholder="Left button large">
+												<span class="input-group-btn">
+													<button class="btn btn-default" type="button">Button</button>
+												</span>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="input-group">
+												<input type="text" class="form-control" placeholder="Left button default">
+												<span class="input-group-btn">
+													<button class="btn btn-default" type="button">Button</button>
+												</span>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="input-group input-group-sm">
+												<input type="text" class="form-control input-sm" placeholder="Left button small">
+												<span class="input-group-btn">
+													<button class="btn btn-default" type="button">Button</button>
+												</span>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="input-group input-group-xs">
+												<input type="text" class="form-control input-xs" placeholder="Left button mini">
+												<span class="input-group-btn">
+													<button class="btn btn-default" type="button">Button</button>
+												</span>
+											</div>
+										</div>
+									</fieldset>
+								</form>
+							</div>
+						</div>
+						<!-- /Right button addons -->
+
+					</div>
+
+					<div class="col-md-4 col-sm-6">
+
+						<!-- Left & right addons -->
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<div class="panel-title">Left & right addons</div>
+							</div>
+							<div class="panel-body">
+								<form class="form-horizontal" action="#">
+									<fieldset>
+										<div class="form-group">
+											<div class="input-group input-group-xlg">
+												<span class="input-group-addon"><i class="icon-stats-bars2"></i></span>
+												<input type="text" class="form-control input-xlg" placeholder="Left and right extralarge buttons">
+												<span class="input-group-btn">
+													<button class="btn btn-default" type="button">Button</button>
+												</span>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="input-group input-group-lg">
+												<span class="input-group-addon"><i class="icon-location3"></i></span>
+												<input type="text" class="form-control input-lg" placeholder="Left and right large buttons">
+												<span class="input-group-btn">
+													<button class="btn btn-default" type="button">Button</button>
+												</span>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="input-group">
+												<span class="input-group-addon"><i class="icon-cart5"></i></span>
+												<input type="text" class="form-control" placeholder="Left and right default buttons">
+												<span class="input-group-btn">
+													<button class="btn btn-default" type="button">Button</button>
+												</span>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="input-group input-group-sm">
+												<span class="input-group-addon"><i class="icon-price-tag2"></i></span>
+												<input type="text" class="form-control input-sm" placeholder="Left and right small buttons">
+												<span class="input-group-btn">
+													<button class="btn btn-default" type="button">Button</button>
+												</span>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="input-group input-group-xs">
+												<span class="input-group-addon"><i class="icon-folder4"></i></span>
+												<input type="text" class="form-control input-xs" placeholder="Left and right mini buttons">
+												<span class="input-group-btn">
+													<button class="btn btn-default" type="button">Button</button>
+												</span>
+											</div>
+										</div>
+									</fieldset>
+								</form>
+							</div>
+						</div>
+						<!-- /Left & right addons -->
+
+					</div>
+				</div>
+
+				<div class="row">
+
+					<!-- Button dropdown addons -->
+					<div class="col-md-6 col-sm-6">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<div class="panel-title">Button dropdown addons</div>
+							</div>
+							<div class="panel-body">
+								<form class="form-horizontal" action="#">
+									<fieldset>
+										<div class="form-group">
+											<div class="input-group">
+												<div class="input-group-btn">
+													<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+													<ul class="dropdown-menu">
+														<li><a href="#">Action</a></li>
+														<li><a href="#">Another action</a></li>
+														<li><a href="#">Something else here</a></li>
+													</ul>
+												</div>
+												<input type="text" class="form-control" placeholder="Left dropdown">
+											</div>
+										</div>
+
+										<div class="form-group">
+											<div class="input-group">
+												<input type="text" class="form-control" placeholder="Right dropdown">
+												<div class="input-group-btn">
+													<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+													<ul class="dropdown-menu dropdown-menu-right">
+														<li><a href="#">Action</a></li>
+														<li><a href="#">Another action</a></li>
+														<li><a href="#">Something else here</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+
+										<div class="form-group">
+											<div class="input-group">
+												<div class="input-group-btn">
+													<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+													<ul class="dropdown-menu">
+														<li><a href="#">Action</a></li>
+														<li><a href="#">Another action</a></li>
+														<li><a href="#">Something else here</a></li>
+													</ul>
+												</div>
+												<input type="text" class="form-control" placeholder="Left and right dropdowns">
+												<div class="input-group-btn">
+													<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+													<ul class="dropdown-menu dropdown-menu-right">
+														<li><a href="#">Action</a></li>
+														<li><a href="#">Another action</a></li>
+														<li><a href="#">Something else here</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</fieldset>
+								</form>
+							</div>
+						</div>
+					</div>
+					<!-- /Button dropdown addons -->
+
+					<!-- Segmented button addons -->
+					<div class="col-md-6 col-sm-6">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<div class="panel-title">Segmented button addons</div>
+							</div>
+							<div class="panel-body">
+								<form class="form-horizontal" action="#">
+									<fieldset>
+										<div class="form-group">
+											<div class="input-group">
+												<div class="input-group-btn">
+													<button type="button" class="btn btn-default">Action</button>
+													<button type="button" class="btn btn-default dropdown-toggle btn-icon" data-toggle="dropdown">
+														<span class="caret"></span>
+													</button>
+													<ul class="dropdown-menu">
+														<li><a href="#">Action</a></li>
+														<li><a href="#">Another action</a></li>
+														<li><a href="#">Something else here</a></li>
+													</ul>
+												</div>
+												<input type="text" class="form-control" placeholder="Left buttons">
+											</div>
+										</div>
+
+										<div class="form-group">
+											<div class="input-group">
+												<input type="text" class="form-control" placeholder="Right buttons">
+												<div class="input-group-btn">
+													<button type="button" class="btn btn-default">Action</button>
+													<button type="button" class="btn btn-default dropdown-toggle btn-icon" data-toggle="dropdown">
+														<span class="caret"></span>
+													</button>
+													<ul class="dropdown-menu dropdown-menu-right">
+														<li><a href="#">Action</a></li>
+														<li><a href="#">Another action</a></li>
+														<li><a href="#">Something else here</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+
+										<div class="form-group">
+											<div class="input-group">
+												<div class="input-group-btn">
+													<button type="button" class="btn btn-default">Button</button>
+													<button type="button" class="btn btn-default dropdown-toggle btn-icon" data-toggle="dropdown">
+														<span class="caret"></span>
+													</button>
+													<ul class="dropdown-menu">
+														<li><a href="#">Action</a></li>
+														<li><a href="#">Another action</a></li>
+														<li><a href="#">Something else here</a></li>
+													</ul>
+												</div>
+												<input type="text" class="form-control" placeholder="Left and right buttons">
+												<div class="input-group-btn">
+													<button type="button" class="btn btn-default btn-icon"><i class="icon-folder2"></i></button>
+													<button type="button" class="btn btn-default dropdown-toggle btn-icon" data-toggle="dropdown">
+														<span class="caret"></span>
+													</button>
+													<ul class="dropdown-menu dropdown-menu-right">
+														<li><a href="#">Action</a></li>
+														<li><a href="#">Another action</a></li>
+														<li><a href="#">Something else here</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</fieldset>
+								</form>
+							</div>
+						</div>
+					</div>
+					<!-- /Segmented button addons -->
+				</div>
+
+				<!-- Sizing options -->
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<div class="panel-title">Sizing options</div>
+					</div>
+
+					<div class="panel-body">
+						<form class="form-horizontal" action="#">
+							<fieldset>
+								<div class="form-group">
+									<label class="control-label col-lg-2">Extra Large input group</label>
+									<div class="col-lg-10">
+										<div class="input-group input-group-xlg">
+											<span class="input-group-addon"><i class="icon-stats-bars2"></i></span>
+											<input type="text" class="form-control" placeholder=".input-group-xlg">
+										</div>
+									</div>
+								</div>
+
+                                <div class="form-group">
+									<label class="control-label col-lg-2">Large input group</label>
+									<div class="col-lg-10">
+										<div class="input-group input-group-lg">
+											<span class="input-group-addon"><i class="icon-location3"></i></span>
+											<input type="text" class="form-control" placeholder=".input-group-lg">
+										</div>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label class="control-label col-lg-2">Default input group</label>
+									<div class="col-lg-10">
+										<div class="input-group">
+											<span class="input-group-addon"><i class="icon-cart5"></i></span>
+											<input type="text" class="form-control" placeholder=".input-group">
+										</div>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label class="control-label col-lg-2">Small input group</label>
+									<div class="col-lg-10">
+										<div class="input-group input-group-sm">
+											<span class="input-group-addon"><i class="icon-price-tag2"></i></span>
+											<input type="text" class="form-control" placeholder=".input-group-sm">
+										</div>
+									</div>
+								</div>
+
+								<div class="form-group">
+									<label class="control-label col-lg-2">Mini input group</label>
+									<div class="col-lg-10">
+										<div class="input-group input-group-xs">
+											<span class="input-group-addon"><i class="icon-folder4"></i></span>
+											<input type="text" class="form-control" placeholder=".input-group-xs">
+										</div>
+									</div>
+								</div>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+				<!-- /Sizing options -->
+
+			</div>
+
+			<!-- Footer -->
+			<footer class="footer-container">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12 col-sm-12">
+							<div class="pull-left">
+								© 2017 Bird&nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;&nbsp;Web app kit by <a href="http://followtechnique.com" target="_blank">FollowTechnique</a>.							</div>
+	                        <div class="pull-right">
+								<div class="label label-info">Version: 1.3.0</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- /Footer -->
+
+		</section>
+		<!-- /Page Container ends -->
+
+		<!-- ScrolltoTop -->
+		<a id="scrollTop" href="#top"><i class="icon-arrow-up12"></i></a>
+		<!-- /ScrolltoTop -->
+
+	</div>
+
+<!-- Rightbar -->
+<div id="right_sidebar" class="right_bar"></div>
+<script>
+function open_rightbar() {
+	$(window).resize(function() {
+		if(($(window).width() < 500)){
+			document.getElementById("right_sidebar").style.width = "100%";
+		}
+		else if($(window).width() > 500) {
+			document.getElementById("right_sidebar").style.width = "260px";
+		}
+	}).resize();
+}
+function close_rightbar() {
+	document.getElementById("right_sidebar").style.width = "0";
+}
+</script>
+<!-- /Rightbar -->
+
+<!-- Layout settings -->
+<div class="layout"></div>
+<span class="is_hidden" id="jquery_vars">
+	<span class="is_hidden switch-active"></span>
+	<span class="is_hidden switch-inactive"></span>
+	<span class="is_hidden chart-bg"></span>
+	<span class="is_hidden chart-gridlines-color"></span>
+	<span class="is_hidden chart-legends-text-color"></span>
+	<span class="is_hidden chart-grid-text-color"></span>
+	<span class="is_hidden chart-data-color-option1"></span>
+	<span class="is_hidden chart-data-color-option2"></span>
+	<span class="is_hidden chart-data-color-option3"></span>
+	<span class="is_hidden chart-data-color-option4"></span>
+	<span class="is_hidden chart-data-color-option5"></span>
+	<span class="is_hidden chart-data-color-option6"></span>
+	<span class="is_hidden chart-data-color-option7"></span>
+	<span class="is_hidden chart-data-color-option8"></span>
+</span>
+<!-- /Layout settings -->
+
+<!-- Global scripts -->
+<script src="lib/js/core/jquery/jquery.js"></script>
+<script src="lib/js/core/jquery/jquery.ui.js"></script>
+<script src="lib/js/core/bootstrap/bootstrap.js"></script>
+<script src="lib/js/core/bootstrap/jasny_bootstrap.min.js"></script>
+<script src="lib/js/core/navigation/nav.accordion.js"></script>
+<script src="lib/js/core/hammer/hammerjs.js"></script>
+<script src="lib/js/core/hammer/jquery.hammer.js"></script>
+<script src="lib/js/core/slimscroll/jquery.slimscroll.js"></script>
+<script src="lib/js/extensions/smart-resize.js"></script>
+<script src="lib/js/extensions/blockui.min.js"></script>
+<script src="lib/js/forms/uniform.min.js"></script>
+<script src="lib/js/forms/switchery.js"></script>
+<script src="lib/js/forms/select2.min.js"></script>
+<script src="lib/js/plugins/venobox.js"></script>
+<script src="lib/js/core/app/layouts.js"></script>
+<script src="lib/js/core/app/core.js"></script>
+<!-- /Global scripts -->
+
+<!-- Page scripts -->
+<!-- /Page scripts -->
+
+</body>
+</html>

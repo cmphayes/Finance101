@@ -1,0 +1,913 @@
+<!doctype html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="theme-color" content="#1C2B36" />
+	<title>Bird - Responsive admin dashboard template by Followtechnique</title>
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="144x144">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="114x114">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="72x72">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png">
+	<link href="img/favicon.ico" rel="icon" type="image/png">
+	<link href="img/favicon.ico" rel="shortcut icon">
+    <!-- /Favicon -->
+
+    <!-- Global stylesheets -->
+	<link type="text/css" rel="stylesheet" href="lib/css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="lib/css/animate.min.css">
+    <link type="text/css" rel="stylesheet" href="lib/css/main.css">
+    <!-- /Global stylesheets -->
+</head>
+<body id="top">
+
+<!-- Preloader -->
+<div id="preloader">
+	<div id="status">
+		<div class="loader"></div>
+	</div>
+</div>
+<!-- /Preloader -->
+
+<div id="body-wrapper" class="body-container">
+
+	<!-- Header begins -->
+	<header class="main-nav clearfix">
+
+		<!-- Searchbar -->
+		<div class="top-search-bar">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3">
+						<div class="search-input-addon">
+							<span class="addon-icon"><i class="icon-search4"></i></span>
+							<input type="text" class="form-control top-search-input" placeholder="Enter your keyword...">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Searchbar -->
+
+		<!-- Branding -->
+		<div class="navbar-left pull-left">
+			<div class="clearfix">
+				<ul class="left-branding pull-left">
+					<li class="visible-handheld"><span class="left-toggle-switch"><i class="icon-menu7"></i></span></li>
+					<li>
+						<a href="index.html"><div class="logo"></div></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /Branding -->
+
+		<!-- Search & Languages -->
+		<div class="navbar pull-left">
+			<div class="clearfix">
+				<ul class="pull-left top-icons hidden-xs">
+					<li><a href="#" class="btn-top-search m-l-10"><i class="icon-search4"></i></a></li>
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-flag7"></i></a>
+						<ul class="dropdown-menu languages">
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">Deutsch</a></li>
+                            <li><a href="#">Українська</a></li>
+							<li><a href="#">España</a></li>
+                        </ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /Search & Languages -->
+
+		<!-- Navbar icons -->
+		<div class="navbar pull-right">
+			<div class="clearfix">
+				<ul class="pull-right top-icons">
+					<li><a href="#" class="btn-top-search visible-xs"><i class="icon-search4"></i></a></li>
+
+					<!-- Quick apps dropdown -->
+					<li class="dropdown apps-dropdown hidden-xs">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-grid2"></i></a>
+						<div class="dropdown-menu">
+						</div>
+					</li>
+					<!-- /Quick apps dropdown -->
+
+					<!-- Rightbar -->
+					<li><a href="#" onclick="open_rightbar()"><span class="bubble">6</span><i class="icon-stack3"></i></a></li>
+					<!-- /Rightbar -->
+
+					<!-- User dropdown -->
+					<li class="dropdown user-dropdown">
+						<a class="user-name hidden-xs" data-toggle="dropdown">Jane Elliott <i class="icon-more2"></i><small>Administrator</small></a>
+						<a href="#" class="btn-user dropdown-toggle hidden-xs" data-toggle="dropdown"><img src="http://via.placeholder.com/80x80" class="img-circle user" alt=""/></a>
+						<a href="#" class="dropdown-toggle visible-xs" data-toggle="dropdown"><i class="icon-more"></i></a>
+						<div class="dropdown-menu no-padding">
+						</div>
+					</li>
+					<!-- /User dropdown -->
+
+				</ul>
+			</div>
+		</div>
+		<!-- /Navbar icons -->
+
+	</header>
+	<!-- /Header ends -->
+
+	<!-- Sidebar -->
+	<aside class="menu">
+		<div class="left-aside-container">
+
+			<!-- User profile -->
+			<div class="user-profile"></div>
+			<!-- /User profile -->
+
+
+			<!-- Main menu -->
+			<div class="menu-container"></div>
+			<!-- /Main menu -->
+
+		</div>
+	</aside>
+	<!-- /Sidebar -->
+
+	<!-- Page container begins -->
+	<section class="main-container">
+		<h1 style="display:none">Empty Heading</h1>
+
+			<!-- Page header -->
+			<div class="header">
+				<div class="header-content">
+					<div class="page-title">
+						<i class="icon-puzzle2 position-left"></i> Typography
+					</div>
+					<ul class="breadcrumb">
+						<li><a href="index.html"></a></li>
+						<li>Content Appearance</li>
+						<li class="active">Typography</li>
+					</ul>
+				</div>
+			</div>
+			<!-- /Page header -->
+
+			<div class="container-fluid page-content">
+
+				<!-- Paragraph styles -->
+				<div class="page-subtitle">Paragraph styles</div>
+				<div class="row">
+					<div class="col-md-3 col-sm-3">
+
+						<!-- Default Paragraph -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">
+								Default paragraph
+								</div>
+							</div>
+							<div class="panel-body">
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+							</div>
+						</div>
+						<!-- /Default Paragraph -->
+					</div>
+					<div class="col-md-3 col-sm-3">
+
+						<!-- Light Paragraph -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">
+								Light paragraph
+								</div>
+							</div>
+							<div class="panel-body">
+								<p class="text-light">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+							</div>
+						</div>
+						<!-- /Light Paragraph -->
+
+					</div>
+					<div class="col-md-3 col-sm-3">
+
+						<!-- Semibold Paragraph -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">
+								Semibold paragraph
+								</div>
+							</div>
+							<div class="panel-body">
+								<p class="text-semibold">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+							</div>
+						</div>
+						<!-- /Semibold Paragraph -->
+
+					</div>
+					<div class="col-md-3 col-sm-3">
+
+						<!-- Bold Paragraph -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">
+								Bold paragraph
+								</div>
+							</div>
+							<div class="panel-body">
+								<p class="text-bold">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+							</div>
+						</div>
+						<!-- /Bold Paragraph -->
+
+					</div>
+				</div>
+				<!-- Paragraph styles -->
+
+
+				<!-- Heading styles -->
+				<div class="page-subtitle">Heading styles</div>
+				<div class="row">
+					<div class="col-md-3 col-sm-3">
+
+						<!-- Large Heading -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">
+								Light headings
+								</div>
+							</div>
+							<div class="panel-body">
+								<h1 class="text-light">H1 Heading <small>(22px)</small></h1>
+								<h2 class="text-light">H2 Heading <small>(19px)</small></h2>
+								<h3 class="text-light">H3 Heading <small>(17px)</small></h3>
+								<h4 class="text-light">h4 Heading  <small>(14px)</small></h4>
+								<h5 class="text-light">h5 Heading <small>(12px)</small></h5>
+								<h6 class="text-light">h6 Heading <small>(11px)</small></h6>
+							</div>
+						</div>
+						<!-- /Large Heading -->
+					</div>
+					<div class="col-md-3 col-sm-3">
+
+						<!-- Regular Heading -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">
+								Regular headings
+								</div>
+							</div>
+							<div class="panel-body">
+								<h1 class="text-regular">H1 Heading <small>(22px)</small></h1>
+								<h2 class="text-regular">H2 Heading <small>(19px)</small></h2>
+								<h3 class="text-regular">H3 Heading <small>(17px)</small></h3>
+								<h4 class="text-regular">h4 Heading  <small>(14px)</small></h4>
+								<h5 class="text-regular">h5 Heading <small>(12px)</small></h5>
+								<h6 class="text-regular">h6 Heading <small>(11px)</small></h6>
+							</div>
+						</div>
+						<!-- /Regular Heading -->
+					</div>
+					<div class="col-md-3 col-sm-3">
+
+						<!-- Semibold Heading -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">
+								Semibold headings
+								</div>
+							</div>
+							<div class="panel-body">
+								<h1 class="text-semibold">H1 Heading <small>(22px)</small></h1>
+								<h2 class="text-semibold">H2 Heading <small>(19px)</small></h2>
+								<h3 class="text-semibold">H3 Heading <small>(17px)</small></h3>
+								<h4 class="text-semibold">h4 Heading  <small>(14px)</small></h4>
+								<h5 class="text-semibold">h5 Heading <small>(12px)</small></h5>
+								<h6 class="text-semibold">h6 Heading <small>(11px)</small></h6>
+							</div>
+						</div>
+						<!-- /Semibold Heading -->
+					</div>
+					<div class="col-md-3 col-sm-3">
+
+						<!-- Bold Heading -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">
+								Bold headings
+								</div>
+							</div>
+							<div class="panel-body">
+								<h1 class="text-bold">H1 Heading <small>(22px)</small></h1>
+								<h2 class="text-bold">H2 Heading <small>(19px)</small></h2>
+								<h3 class="text-bold">H3 Heading <small>(17px)</small></h3>
+								<h4 class="text-bold">h4 Heading  <small>(14px)</small></h4>
+								<h5 class="text-bold">h5 Heading <small>(12px)</small></h5>
+								<h6 class="text-bold">h6 Heading <small>(11px)</small></h6>
+							</div>
+						</div>
+						<!-- /Bold Heading -->
+					</div>
+				</div>
+				<!-- /Heading styles -->
+
+
+				<!-- Heading elements -->
+				<div class="page-subtitle">Heading elements</div>
+				<div class="row">
+					<div class="col-md-4 col-sm-4">
+						<div class="panel panel-flat">
+							<div class="panel-body p-t-10">
+								<div class="m-b-20">
+									<i class="icon-circle-right2 position-left"></i> Left icon
+									<small class="display-block">Left positioned heading icon</small>
+								</div>
+
+								<div class="m-b-20">
+									Right inline icon <i class="icon-circle-right2 position-right"></i>
+									<small class="display-block">Right inline icon position</small>
+								</div>
+
+								<div>
+									Right floating icon <i class="icon-circle-right2 pull-right"></i>
+									<small class="display-block">Right floating icon</small>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="panel panel-flat">
+							<div class="panel-body p-t-10">
+								<div class="m-b-20">
+									<span class="label label-info position-left">New</span> Left label
+									<small class="display-block">Left positioned heading label</small>
+								</div>
+								<div class="m-b-20">
+									Right inline label <span class="label label-info position-right">New</span>
+									<small class="display-block">Right inline heading label</small>
+								</div>
+								<div>
+									Right floating label <span class="label label-info pull-right">New</span>
+									<small class="display-block">Right floating heading label</small>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="panel panel-flat">
+							<div class="panel-body p-t-10">
+								<div class="m-b-20">
+									<span class="badge badge-warning position-left">18</span> Left badge
+									<small class="display-block">Left positioned heading badge</small>
+								</div>
+								<div class="m-b-20">
+									Right inline badge <span class="badge badge-warning position-right">18</span>
+									<small class="display-block">Right inline heading badge</small>
+								</div>
+								<div>
+									Right floating badge <span class="badge badge-warning pull-right">18</span>
+									<small class="display-block">Right floating heading badge</small>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /Heading elements -->
+
+
+				<!-- List options -->
+				<div class="page-subtitle">List options</div>
+				<div class="row">
+					<div class="col-md-3 col-sm-3">
+
+						<!-- Default Unordered List -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">
+								Default unordered list
+								</div>
+							</div>
+							<div class="panel-body">
+								<ul class="list no-margin-bottom">
+									<li>Lorem ipsum dolor sit amet</li>
+									<li>Nulla volutpat aliquam velit
+										<ul class="list">
+											<li>Phasellus iaculis neque</li>
+											<li>Purus sodales ultricies</li>
+										</ul>
+									</li>
+									<li>Faucibus porta lacus fringilla</li>
+									<li>Aenean sit amet erat nunc</li>
+								</ul>
+							</div>
+						</div>
+						<!-- /Default Unordered List -->
+
+					</div>
+					<div class="col-md-3 col-sm-3">
+
+						<!-- Square List -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">
+								Square list type
+								</div>
+							</div>
+							<div class="panel-body">
+								<ul class="list list-square no-margin-bottom">
+									<li>Lorem ipsum dolor sit amet</li>
+									<li>Nulla volutpat aliquam velit
+										<ul class="list list-square">
+											<li>Phasellus iaculis neque</li>
+											<li>Purus sodales ultricies</li>
+										</ul>
+									</li>
+									<li>Faucibus porta lacus fringilla</li>
+									<li>Aenean sit amet erat nunc</li>
+								</ul>
+							</div>
+						</div>
+						<!-- /Square List -->
+
+					</div>
+					<div class="col-md-3 col-sm-3">
+
+						<!-- Default Ordered List -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">
+								Default ordered list
+								</div>
+							</div>
+							<div class="panel-body">
+								<ol class="list no-margin-bottom">
+									<li>Lorem ipsum dolor sit amet</li>
+									<li>Nulla volutpat aliquam velit
+										<ol class="list">
+											<li>Phasellus iaculis neque</li>
+											<li>Purus sodales ultricies</li>
+										</ol>
+									</li>
+									<li>Faucibus porta lacus fringilla</li>
+									<li>Aenean sit amet erat nunc</li>
+								</ol>
+							</div>
+						</div>
+						<!-- /Default Ordered List -->
+
+					</div>
+					<div class="col-md-3 col-sm-3">
+
+						<!-- List with Icons -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">
+								List with icons
+								</div>
+							</div>
+							<div class="panel-body">
+								<ul class="list list-icons no-margin-bottom">
+									<li><i class="icon-arrow-right22"></i>Lorem ipsum dolor sit amet</li>
+									<li><i class="icon-arrow-right22"></i>Nulla volutpat aliquam velit
+										<ul class="list">
+											<li><i class="icon-arrow-right22"></i>Phasellus iaculis neque</li>
+											<li><i class="icon-arrow-right22"></i>Purus sodales ultricies</li>
+										</ul>
+									</li>
+									<li><i class="icon-arrow-right22"></i>Faucibus porta lacus fringilla</li>
+									<li><i class="icon-arrow-right22"></i>Aenean sit amet erat nunc</li>
+								</ul>
+							</div>
+						</div>
+						<!-- /List with Icons -->
+
+					</div>
+				</div>
+				<!-- /List options -->
+
+
+				<!-- Inline list options -->
+				<div class="page-subtitle">Inline list options</div>
+				<div class="row">
+					<div class="col-md-4 col-sm-4">
+
+						<!-- Default Inline List -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">
+								Default inline list
+								</div>
+							</div>
+							<div class="panel-body">
+								<ul class="list-inline no-margin-bottom">
+									<li>1. First item</li>
+									<li>2. Second item</li>
+									<li>3. Third item</li>
+								</ul>
+							</div>
+						</div>
+						<!-- /Default Inline List -->
+
+					</div>
+					<div class="col-md-4 col-sm-4">
+
+						<!-- Condensed Inline List -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">
+								Condensed inline list
+								</div>
+							</div>
+							<div class="panel-body">
+								<ul class="list-inline list-inline-condensed no-margin-bottom">
+									<li>1. First item</li>
+									<li>2. Second item</li>
+									<li>3. Third item</li>
+								</ul>
+							</div>
+						</div>
+						<!-- /Condensed Inline List -->
+
+					</div>
+					<div class="col-md-4 col-sm-4">
+
+						<!-- Separated Inline List -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">
+								Separated inline list
+								</div>
+							</div>
+							<div class="panel-body">
+								<ul class="list-inline list-inline-separate no-margin-bottom">
+									<li>First item</li>
+									<li>Second item</li>
+									<li>Third item</li>
+								</ul>
+							</div>
+						</div>
+						<!-- /Separated Inline List -->
+
+					</div>
+				</div>
+				<!-- /Inline list options -->
+
+
+				<!-- Description lists -->
+				<div class="page-subtitle">Description lists</div>
+				<div class="row">
+					<div class="col-md-6 col-sm-6">
+
+						<!-- Vertical Description List -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">
+								Vertical description list
+								</div>
+							</div>
+							<div class="panel-body">
+								<dl>
+									<dt>Lorem ipsum dolor</dt>
+									<dd>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</dd>
+
+									<dt>Aenean massa</dt>
+									<dd>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </dd>
+
+									<dt>Donec quam felis</dt>
+									<dd>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+								</dl>
+							</div>
+						</div>
+						<!-- /Vertical Description List -->
+
+					</div>
+					<div class="col-md-6 col-sm-6">
+
+						<!-- Horizontal Description List -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">
+								Horizontal description list
+								</div>
+							</div>
+							<div class="panel-body">
+								<dl class="dl-horizontal">
+									<dt>Lorem ipsum dolor</dt>
+									<dd>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</dd>
+
+									<dt>Aenean massa</dt>
+									<dd>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </dd>
+
+									<dt>Donec quam felis</dt>
+									<dd>Ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</dd>
+
+									<dt>Felis euismod semper eg</dt>
+									<dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+								</dl>
+							</div>
+						</div>
+						<!-- /Horizontal Description List -->
+
+					</div>
+				</div>
+				<!-- /Description lists -->
+
+
+				<!-- Blockquote options -->
+				<div class="page-subtitle">Blockquote options</div>
+				<div class="row">
+					<div class="col-md-6 col-sm-6">
+
+						<!-- Left Blockquotes -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">
+								Left blockquote
+								</div>
+							</div>
+							<div class="panel-body">
+								<blockquote class="no-margin">
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+									<footer>Aenean massa <cite title="Source Title">Cum sociis natoque </cite></footer>
+								</blockquote>
+							</div>
+						</div>
+						<!-- /Left Blockquotes -->
+
+					</div>
+					<div class="col-md-6 col-sm-6">
+
+						<!-- Right Blockquotes -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">
+								Right blockquote
+								</div>
+							</div>
+							<div class="panel-body">
+								<blockquote class="blockquote-reverse no-margin">
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+									<footer>Aenean massa <cite title="Source Title">Cum sociis natoque </cite></footer>
+								</blockquote>
+							</div>
+						</div>
+						<!-- /Right Blockquotes -->
+
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6 col-sm-6">
+
+						<!-- Left Blockquotes with Image -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">
+								Left blockquote with image
+								</div>
+							</div>
+							<div class="panel-body">
+								<blockquote class="no-margin">
+									<img class="img-circle" src="img/demo/img1.jpg" alt="">
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+									<footer>Aenean massa <cite title="Source Title">Cum sociis natoque </cite></footer>
+								</blockquote>
+							</div>
+						</div>
+						<!-- /Left Blockquotes with Image -->
+
+					</div>
+					<div class="col-md-6 col-sm-6">
+
+						<!-- Right Blockquotes with Image -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">
+								Right blockquote with image
+								</div>
+							</div>
+							<div class="panel-body">
+								<blockquote class="blockquote-reverse no-margin">
+									<img class="img-circle pull-right" src="img/demo/img2.jpg" alt="">
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+									<footer>Aenean massa <cite title="Source Title">Cum sociis natoque </cite></footer>
+								</blockquote>
+							</div>
+						</div>
+						<!-- /Right Blockquotes with Image -->
+
+					</div>
+				</div>
+				<!-- /Blockquote options -->
+
+
+				<!-- Well blocks -->
+				<div class="page-subtitle">Well blocks</div>
+				<div class="row">
+					<div class="col-md-4 col-sm-4">
+
+						<!-- Large Well -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">
+								Large well block
+								</div>
+							</div>
+							<div class="panel-body no-padding-b">
+								<div class="well well-lg">
+									Look, I'm in a large <code>well</code> block!
+								</div>
+							</div>
+						</div>
+						<!-- /Large Well -->
+
+					</div>
+					<div class="col-md-4 col-sm-4">
+
+						<!-- Default Well -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">
+								Default well block
+								</div>
+							</div>
+							<div class="panel-body no-padding-b">
+								<div class="well">
+									Look, I'm in a <code>well</code> block!
+								</div>
+							</div>
+						</div>
+						<!-- /Default Well -->
+
+					</div>
+					<div class="col-md-4 col-sm-4">
+
+						<!-- Small Well -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">
+								Small well block
+								</div>
+							</div>
+							<div class="panel-body no-padding-b">
+								<div class="well well-sm">
+									Look, I'm in a small <code>well</code> block!
+								</div>
+							</div>
+						</div>
+						<!-- /Small Well -->
+
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4 col-sm-4">
+
+						<!-- White Well -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">
+								White well block
+								</div>
+							</div>
+							<div class="panel-body no-padding-b">
+								<div class="well well-white">
+									Look, I'm in a <code>white well</code> block!
+								</div>
+							</div>
+						</div>
+						<!-- /White Well -->
+
+					</div>
+					<div class="col-md-4 col-sm-4">
+
+						<!-- Optional Border Well -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">
+								Optional border
+								</div>
+							</div>
+							<div class="panel-body no-padding-b">
+								<div class="well border-top-lg border-top-info">
+									Look, I'm in a <code>bordered well</code> block!
+								</div>
+							</div>
+						</div>
+						<!-- /Optional Border Well -->
+
+					</div>
+					<div class="col-md-4 col-sm-4">
+
+						<!-- Solid Color Well -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">
+								Solid color wells
+								</div>
+							</div>
+							<div class="panel-body no-padding-b">
+								<div class="well bg-info">
+									Look, I'm in a <code>.bg-info</code> well block!
+								</div>
+							</div>
+						</div>
+						<!-- /Solid Color Well -->
+
+					</div>
+				</div>
+				<!-- /Well blocks -->
+
+			</div>
+
+			<!-- Footer -->
+			<footer class="footer-container">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12 col-sm-12">
+							<div class="pull-left">
+								© 2017 Bird&nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;&nbsp;Web app kit by <a href="http://followtechnique.com" target="_blank">FollowTechnique</a>.							</div>
+	                        <div class="pull-right">
+								<div class="label label-info">Version: 1.3.0</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- /Footer -->
+
+		</section>
+		<!-- /Page Container ends -->
+
+		<!-- ScrolltoTop -->
+		<a id="scrollTop" href="#top"><i class="icon-arrow-up12"></i></a>
+		<!-- /ScrolltoTop -->
+
+	</div>
+
+<!-- Rightbar -->
+<div id="right_sidebar" class="right_bar"></div>
+<script>
+function open_rightbar() {
+	$(window).resize(function() {
+		if(($(window).width() < 500)){
+			document.getElementById("right_sidebar").style.width = "100%";
+		}
+		else if($(window).width() > 500) {
+			document.getElementById("right_sidebar").style.width = "260px";
+		}
+	}).resize();
+}
+function close_rightbar() {
+	document.getElementById("right_sidebar").style.width = "0";
+}
+</script>
+<!-- /Rightbar -->
+
+<!-- Layout settings -->
+<div class="layout"></div>
+<span class="is_hidden" id="jquery_vars">
+	<span class="is_hidden switch-active"></span>
+	<span class="is_hidden switch-inactive"></span>
+	<span class="is_hidden chart-bg"></span>
+	<span class="is_hidden chart-gridlines-color"></span>
+	<span class="is_hidden chart-legends-text-color"></span>
+	<span class="is_hidden chart-grid-text-color"></span>
+	<span class="is_hidden chart-data-color-option1"></span>
+	<span class="is_hidden chart-data-color-option2"></span>
+	<span class="is_hidden chart-data-color-option3"></span>
+	<span class="is_hidden chart-data-color-option4"></span>
+	<span class="is_hidden chart-data-color-option5"></span>
+	<span class="is_hidden chart-data-color-option6"></span>
+	<span class="is_hidden chart-data-color-option7"></span>
+	<span class="is_hidden chart-data-color-option8"></span>
+</span>
+<!-- /Layout settings -->
+
+<!-- Global scripts -->
+<script src="lib/js/core/jquery/jquery.js"></script>
+<script src="lib/js/core/jquery/jquery.ui.js"></script>
+<script src="lib/js/core/bootstrap/bootstrap.js"></script>
+<script src="lib/js/core/bootstrap/jasny_bootstrap.min.js"></script>
+<script src="lib/js/core/navigation/nav.accordion.js"></script>
+<script src="lib/js/core/hammer/hammerjs.js"></script>
+<script src="lib/js/core/hammer/jquery.hammer.js"></script>
+<script src="lib/js/core/slimscroll/jquery.slimscroll.js"></script>
+<script src="lib/js/extensions/smart-resize.js"></script>
+<script src="lib/js/extensions/blockui.min.js"></script>
+<script src="lib/js/forms/uniform.min.js"></script>
+<script src="lib/js/forms/switchery.js"></script>
+<script src="lib/js/forms/select2.min.js"></script>
+<script src="lib/js/plugins/venobox.js"></script>
+<script src="lib/js/core/app/layouts.js"></script>
+<script src="lib/js/core/app/core.js"></script>
+<!-- /Global scripts -->
+
+<!-- Page scripts -->
+<!-- /Page scripts -->
+
+</body>
+</html>

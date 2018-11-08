@@ -1,0 +1,699 @@
+<!doctype html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="theme-color" content="#1C2B36" />
+	<title>Bird - Responsive admin dashboard template by Followtechnique</title>
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="144x144">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="114x114">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="72x72">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png">
+	<link href="img/favicon.ico" rel="icon" type="image/png">
+	<link href="img/favicon.ico" rel="shortcut icon">
+    <!-- /Favicon -->
+
+    <!-- Global stylesheets -->
+	<link type="text/css" rel="stylesheet" href="lib/css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="lib/css/animate.min.css">
+    <link type="text/css" rel="stylesheet" href="lib/css/main.css">
+    <!-- /Global stylesheets -->
+</head>
+<body id="top">
+
+<!-- Preloader -->
+<div id="preloader">
+	<div id="status">
+		<div class="loader"></div>
+	</div>
+</div>
+<!-- /Preloader -->
+
+<div id="body-wrapper" class="body-container">
+
+	<!-- Header begins -->
+	<header class="main-nav clearfix">
+
+		<!-- Searchbar -->
+		<div class="top-search-bar">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3">
+						<div class="search-input-addon">
+							<span class="addon-icon"><i class="icon-search4"></i></span>
+							<input type="text" class="form-control top-search-input" placeholder="Enter your keyword...">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Searchbar -->
+
+		<!-- Branding -->
+		<div class="navbar-left pull-left">
+			<div class="clearfix">
+				<ul class="left-branding pull-left">
+					<li class="visible-handheld"><span class="left-toggle-switch"><i class="icon-menu7"></i></span></li>
+					<li>
+						<a href="index.html"><div class="logo"></div></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /Branding -->
+
+		<!-- Search & Languages -->
+		<div class="navbar pull-left">
+			<div class="clearfix">
+				<ul class="pull-left top-icons hidden-xs">
+					<li><a href="#" class="btn-top-search m-l-10"><i class="icon-search4"></i></a></li>
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-flag7"></i></a>
+						<ul class="dropdown-menu languages">
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">Deutsch</a></li>
+                            <li><a href="#">Українська</a></li>
+							<li><a href="#">España</a></li>
+                        </ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /Search & Languages -->
+
+		<!-- Navbar icons -->
+		<div class="navbar pull-right">
+			<div class="clearfix">
+				<ul class="pull-right top-icons">
+					<li><a href="#" class="btn-top-search visible-xs"><i class="icon-search4"></i></a></li>
+
+					<!-- Quick apps dropdown -->
+					<li class="dropdown apps-dropdown hidden-xs">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-grid2"></i></a>
+						<div class="dropdown-menu">
+						</div>
+					</li>
+					<!-- /Quick apps dropdown -->
+
+					<!-- Rightbar -->
+					<li><a href="#" onclick="open_rightbar()"><span class="bubble">6</span><i class="icon-stack3"></i></a></li>
+					<!-- /Rightbar -->
+
+					<!-- User dropdown -->
+					<li class="dropdown user-dropdown">
+						<a class="user-name hidden-xs" data-toggle="dropdown">Jane Elliott <i class="icon-more2"></i><small>Administrator</small></a>
+						<a href="#" class="btn-user dropdown-toggle hidden-xs" data-toggle="dropdown"><img src="http://via.placeholder.com/80x80" class="img-circle user" alt=""/></a>
+						<a href="#" class="dropdown-toggle visible-xs" data-toggle="dropdown"><i class="icon-more"></i></a>
+						<div class="dropdown-menu no-padding">
+						</div>
+					</li>
+					<!-- /User dropdown -->
+
+				</ul>
+			</div>
+		</div>
+		<!-- /Navbar icons -->
+
+	</header>
+	<!-- /Header ends -->
+
+	<!-- Sidebar -->
+	<aside class="menu">
+		<div class="left-aside-container">
+
+			<!-- User profile -->
+			<div class="user-profile"></div>
+			<!-- /User profile -->
+
+
+			<!-- Main menu -->
+			<div class="menu-container"></div>
+			<!-- /Main menu -->
+
+		</div>
+	</aside>
+	<!-- /Sidebar -->
+
+	<!-- Page container begins -->
+	<section class="main-container">
+		<h1 style="display:none">Empty Heading</h1>
+
+			<div class="container-fluid no-padding-l no-padding-r">
+
+				<div class="container-sidebar">
+
+					<!-- Sidebar -->
+					<div class="secondary-sidebar">
+					    <nav class="navbar no-margin-b">
+							<div class="p-10 p-t-15 p-b-20">
+								<div class="form-group">
+									<div class="input-group">
+										<span class="input-group-btn">
+											<button class="btn bg-default navbar-toggle no-margin-t no-margin-b"  data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" type="button"><i class="icon-three-bars"></i></button>
+										</span>
+										<input type="text" class="form-control" placeholder="Search emails...">
+									</div>
+								</div>
+							</div>
+
+				            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				                <ul class="nav">
+				                    <li class="inbox active"><a href="#" id="inbox"><i class="icon-inbox"></i>Inbox</a></li>
+									<li><a href="#"><i class="icon-paperplane"></i>Sent</a></li>
+									<li><a href="#"><i class="icon-star-full2"></i>Starred</a></li>
+									<li><a href="#"><i class="icon-drawer3"></i>Drafts</a></li>
+									<li><a href="#"><i class="icon-bin"></i>Trash</a></li>
+									<li><a href="#"><i class="icon-spam"></i>Spam</a></li>
+				                </ul>
+								<ul class="nav condensed">
+				                    <li><a href="#"><i class="icon-circles text-success"></i>Work</a></li>
+									<li><a href="#"><i class="icon-circles text-danger-400"></i>Important</a></li>
+									<li><a href="#"><i class="icon-circles text-info"></i>Social</a></li>
+									<li><a href="#"><i class="icon-circles text-grey-300"></i>Promotions</a></li>
+				                </ul>
+
+								<div class="hidden-xs hidden-sm">
+									<p class="text-semibold text-size-sm">Disk space used</p>
+									<div class="progress">
+										<div class="progress-bar progress-bar-danger" style="width: 80%">
+											<span class="sr-only">80% Complete</span>
+										</div>
+									</div>
+								</div>
+				            </div>
+					    </nav>
+					</div>
+					<!-- /Sidebar -->
+
+				</div>
+
+				<div class="container-aside">
+
+					<!-- Top buttons -->
+					<div class="p-15 header no-margin-b">
+						<div class="list-buttons">
+							<button type="button" class="btn bg-danger-400" id="compose">Compose New</button>
+
+							<div class="btn-group pull-right">
+								<button type="button" class="btn bg-default"><i class="icon-arrow-left12"></i></button>
+								<button type="button" class="btn bg-default"><i class="icon-arrow-right13"></i></button>
+							</div>
+
+							<div class="clearfix"></div>
+
+							<div class="btn-group">
+								<button type="button" class="btn bg-info dropdown-toggle m-r-10 m-t-10" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<i class="icon-folder-plus2"></i>
+								</button>
+
+								<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+									<li><a href="#"><i class="icon-home2"></i> Home</a></li>
+									<li><a href="#"><i class="icon-briefcase3"></i> Work</a></li>
+									<li><a href="#"><i class="icon-files-empty2"></i> Documents</a></li>
+									<li><a href="#"><i class="icon-images2"></i> Images</a></li>
+									<li><a href="#"><i class="icon-flag7"></i> Flagged</a></li>
+									<li class="divider"></li>
+									<li><a href="#"><i class="icon-folder-plus"></i> Add new folder</a></li>
+								</ul>
+							</div>
+
+							<div class="btn-group m-t-10">
+								<button type="button" class="btn btn-default" data-popup="tooltip" data-placement="top" data-original-title="Report as spam"><i class="icon-spam"></i></button>
+								<button type="button" class="btn btn-default" data-popup="tooltip" data-placement="top" data-original-title="Send to trash"><i class="icon-trash"></i></button>
+								<button type="button" class="btn btn-default">Mark as read</button>
+							</div>
+
+							<div class="btn-group m-t-10 pull-right">
+								<button type="button" class="btn bg-default dropdown-toggle"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<i class="icon-gear"></i>
+								</button>
+								<ul class="dropdown-menu dropdown-menu-right">
+									<li><a href="#"><i class="icon-cog3"></i> General settings</a></li>
+									<li><a href="#"><i class="icon-display"></i> Display settings</a></li>
+									<li><a href="#"><i class="icon-help"></i> Help</a></li>
+									<li class="divider"></li>
+									<li><a href="#"><i class="icon-cogs"></i> Configuration</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="new-buttons" style="display:none;">
+							<button type="button" class="btn bg-grey m-r-10 back"><i class="icon-arrow-left13"></i></button>
+							<button type="button" class="btn bg-info-400">Send mail</button>
+
+							<div class="btn-group pull-right">
+								<button type="button" class="btn btn-default"><i class="icon-floppy-disk position-left"></i>Save</button>
+								<button type="button" class="btn btn-default"><i class="icon-bin position-left"></i>Discard</button>
+							</div>
+						</div>
+
+						<div class="email-buttons" style="display:none;">
+							<button type="button" class="btn bg-grey m-r-10 back"><i class="icon-arrow-left13"></i></button>
+
+							<div class="btn-group m-r-10">
+								<button type="button" class="btn btn-default" data-popup="tooltip" data-placement="top" data-original-title="Archive"><i class="icon-archive"></i></button>
+								<button type="button" class="btn btn-default" data-popup="tooltip" data-placement="top" data-original-title="Report"><i class="icon-spam"></i></button>
+								<button type="button" class="btn btn-default" data-popup="tooltip" data-placement="top" data-original-title="Delete"><i class="icon-bin"></i></button>
+							</div>
+
+							<div class="btn-group pull-right">
+								<button type="button" class="btn btn-default dropdown-toggle"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<i class="icon-folder2"></i><i class="icon-arrow-down5"></i>
+								</button>
+								<ul class="dropdown-menu dropdown-menu-right">
+									<li><a href="#"><i class="icon-circles text-success"></i>Work</a></li>
+									<li><a href="#"><i class="icon-circles text-danger-400"></i>Important</a></li>
+									<li><a href="#"><i class="icon-circles text-info"></i>Social</a></li>
+									<li><a href="#"><i class="icon-circles text-grey-300"></i>Promotions</a></li>
+								</ul>
+							</div>
+
+							<div class="clearfix"></div>
+
+							<div class="btn-group m-t-10">
+								<button type="button" class="btn btn-info" data-popup="tooltip" data-placement="top" data-original-title="Reply" id="reply"><i class="icon-reply"></i></button>
+								<button type="button" class="btn btn-info" data-popup="tooltip" data-placement="top" data-original-title="Reply to all"><i class="icon-reply-all"></i></button>
+								<button type="button" class="btn btn-info" data-popup="tooltip" data-placement="top" data-original-title="Forward"><i class="icon-forward"></i></button>
+							</div>
+						</div>
+					</div>
+					<!-- /Top buttons -->
+
+					<!-- Emails list -->
+					<ul class="panel media-list media-list-linked media-list-bordered emails-list no-border-top">
+						<li class="media border-left-xlg border-left-info cursor-pointer">
+							<div class="media-link">
+								<div class="media-left">
+									<img src="http://via.placeholder.com/60x60" class="img-circle" alt="">
+								</div>
+
+								<div class="media-body">
+									<div class="media-heading"><div class="label label-info position-left">Work</div>Donec pede justo</div>
+									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+									<div class="media-options">
+										<i class="icon-attachment"></i>
+										<span class="date">10:15 am</span>
+										<div class="star">
+											<input  type="checkbox" value="1" checked="">
+												<label></label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li class="media border-left-xlg border-left-danger cursor-pointer">
+							<div class="media-link">
+								<div class="media-left">
+									<img src="http://via.placeholder.com/60x60" class="img-circle" alt="">
+								</div>
+
+								<div class="media-body">
+									<div class="media-heading">Cum sociis natoque </div>
+									Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut
+
+									<div class="media-options">
+										<span class="date">08:15 am</span>
+										<div class="star">
+											<input  type="checkbox" value="1" checked="">
+											<label></label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li class="media border-left-xlg border-left-info cursor-pointer">
+							<div class="media-link">
+								<div class="media-left">
+									<img src="http://via.placeholder.com/60x60" class="img-circle" alt="">
+								</div>
+
+								<div class="media-body">
+									<div class="media-heading"><div class="label label-danger position-left">Important</div>Lorem ipsum dolor sit amet</div>
+									Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu.
+
+									<div class="media-options">
+										<i class="icon-attachment"></i>
+										<span class="date">Yesterday</span>
+										<div class="star">
+											<input  type="checkbox" value="1">
+											<label></label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li class="media border-left-xlg border-left-grey-200 cursor-pointer">
+							<div class="media-link">
+								<div class="media-left">
+									<img src="http://via.placeholder.com/60x60" class="img-circle" alt="">
+								</div>
+
+								<div class="media-body">
+									<div class="media-heading">Donec pede justo</div>
+									Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.
+
+									<div class="media-options">
+										<i class="icon-attachment"></i>
+										<span class="date">Yesterday</span>
+										<div class="star">
+											<input  type="checkbox" value="1" checked="">
+											<label></label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li class="media">
+							<div class="media-link border-left-xlg border-left-warning cursor-pointer">
+								<div class="media-left">
+									<img src="http://via.placeholder.com/60x60" class="img-circle" alt="">
+								</div>
+
+								<div class="media-body">
+									<div class="media-heading">Cum sociis natoque </div>
+									Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. In enim justo, rhoncus ut, imperdiet a.
+
+									<div class="media-options">
+										<span class="date">Yesterday</span>
+										<div class="star">
+											<input  type="checkbox" value="1">
+											<label></label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li class="media cursor-pointer">
+							<div class="media-link">
+								<div class="media-left">
+									<img src="http://via.placeholder.com/60x60" class="img-circle" alt="">
+								</div>
+
+								<div class="media-body">
+									<div class="media-heading">Lorem ipsum dolor sit amet</div>
+									Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut
+
+									<div class="media-options">
+										<span class="date">Yesterday</span>
+										<div class="star">
+											<input  type="checkbox" value="1">
+											<label></label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li class="media cursor-pointer">
+							<div class="media-link border-left-xlg border-left-success">
+								<div class="media-left">
+									<img src="http://via.placeholder.com/60x60" class="img-circle" alt="">
+								</div>
+
+								<div class="media-body">
+									<div class="media-heading">Donec pede justo</div>
+									Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.
+
+									<div class="media-options">
+										<i class="icon-attachment"></i>
+										<span class="date">Jan 30</span>
+										<div class="star">
+											<input  type="checkbox" value="1">
+											<label></label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li class="media cursor-pointer">
+							<div class="media-link">
+								<div class="media-left">
+									<img src="http://via.placeholder.com/60x60" class="img-circle" alt="">
+								</div>
+
+								<div class="media-body">
+									<div class="media-heading">Cum sociis natoque </div>
+									Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. In enim justo, rhoncus ut, imperdiet a.
+
+									<div class="media-options">
+										<span class="date">Jan 18</span>
+										<div class="star">
+											<input  type="checkbox" value="1">
+											<label></label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li class="media cursor-pointer">
+							<div class="media-link">
+								<div class="media-left">
+									<img src="http://via.placeholder.com/60x60" class="img-circle" alt="">
+								</div>
+
+								<div class="media-body">
+									<div class="media-heading">Lorem ipsum dolor sit amet</div>
+									Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+									<div class="media-options">
+										<span class="date">Jan 25</span>
+										<div class="star">
+											<input  type="checkbox" value="1">
+											<label></label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li class="media cursor-pointer">
+							<div class="media-link">
+								<div class="media-left">
+									<img src="http://via.placeholder.com/60x60" class="img-circle" alt="">
+								</div>
+
+								<div class="media-body">
+									<div class="media-heading">Donec pede justo</div>
+									Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu.
+
+									<div class="media-options">
+										<span class="date">Jan 25</span>
+										<div class="star">
+											<input  type="checkbox" value="1">
+											<label></label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li class="media cursor-pointer">
+							<div class="media-link">
+								<div class="media-left">
+									<img src="http://via.placeholder.com/60x60" class="img-circle" alt="">
+								</div>
+
+								<div class="media-body">
+									<div class="media-heading">Cum sociis natoque </div>
+									Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut
+
+									<div class="media-options">
+										<span class="date">Jan 22</span>
+										<div class="star">
+											<input  type="checkbox" value="1">
+											<label></label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<!-- /Emails list -->
+
+					<!-- New email (Compose) -->
+					<div class="panel panel-flat new-email p-30" style="display:none;">
+						<div class="panel-body">
+							<form class="form-horizontal" action="#">
+								<fieldset>
+									<div class="form-group">
+										<label class="control-label col-md-2 col-sm-2 text-right">To</label>
+										<div class="col-md-10 col-sm-10">
+											<input type="text" class="form-control">
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="control-label col-md-2 col-sm-2 text-right">Subject</label>
+										<div class="col-md-10 col-sm-10">
+											<input type="text" class="form-control">
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label class="control-label col-md-2 col-sm-2 text-right">Content</label>
+										<div class="col-md-10 col-sm-10">
+											<textarea class="basic-editor"></textarea>
+										</div>
+									</div>
+								</fieldset>
+							</form>
+						</div>
+					</div>
+					<!-- /New email (Compose) -->
+
+					<!-- Single email -->
+					<div class="panel panel-flat email" style="display:none;">
+						<div class="panel-body p-20">
+							<h1 class="text-light no-margin-t">Donec pede justo</h1>
+							<hr>
+							<ul class="media-list">
+								<li class="media">
+									<div class="media-left p-r-15">
+										<a href="#"><img src="http://via.placeholder.com/60x60" class="img-circle" alt=""></a>
+									</div>
+									<div class="media-body">
+										<p class="m-b-0">jane_elliott@email.com</p>
+										<p class="text-sm">Today, 10 minutes ago</p>
+									</div>
+								</li>
+							</ul>
+							<hr>
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+							<hr>
+
+							<div class="row">
+								<div class="col-md-2 col-sm-2">
+									<div class="panel">
+										<div class="panel-body p-5">
+											<img src="http://via.placeholder.com/150x100" alt="" class="img-responsive img-100"/>
+										</div>
+										<div class="panel-footer p-5 p-l-10 p-r-10">
+											<i class="icon-attachment icon-sm position-left"></i>pic1.jpg
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 col-sm-3">
+									<div class="panel">
+										<div class="panel-body p-5 text-center p-20">
+											<i class="icon-file-pdf x6 text-slate-200"></i>
+										</div>
+										<div class="panel-footer p-5 p-l-10 p-r-10">
+											<i class="icon-attachment icon-sm position-left"></i>document_title.doc
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<hr>
+							<div class="text-semibold m-t-10 m-b-5">Reply:</div>
+							<textarea class="basic-editor"></textarea>
+						</div>
+					</div>
+					<!-- /Single email -->
+
+				</div>
+				<div class="clearfix"></div>
+
+			</div>
+
+			<!-- Footer -->
+			<footer class="footer-container">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12 col-sm-12">
+							<div class="pull-left">
+								© 2017 Bird&nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;&nbsp;Web app kit by <a href="http://followtechnique.com" target="_blank">FollowTechnique</a>.							</div>
+	                        <div class="pull-right">
+								<div class="label label-info">Version: 1.3.0</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- /Footer -->
+
+		</section>
+		<!-- /Page Container ends -->
+
+		<!-- ScrolltoTop -->
+		<a id="scrollTop" href="#top"><i class="icon-arrow-up12"></i></a>
+		<!-- /ScrolltoTop -->
+
+	</div>
+
+<!-- Rightbar -->
+<div id="right_sidebar" class="right_bar"></div>
+<script>
+function open_rightbar() {
+	$(window).resize(function() {
+		if(($(window).width() < 500)){
+			document.getElementById("right_sidebar").style.width = "100%";
+		}
+		else if($(window).width() > 500) {
+			document.getElementById("right_sidebar").style.width = "260px";
+		}
+	}).resize();
+}
+function close_rightbar() {
+	document.getElementById("right_sidebar").style.width = "0";
+}
+</script>
+<!-- /Rightbar -->
+
+<!-- Layout settings -->
+<div class="layout"></div>
+<span class="is_hidden" id="jquery_vars">
+	<span class="is_hidden switch-active"></span>
+	<span class="is_hidden switch-inactive"></span>
+	<span class="is_hidden chart-bg"></span>
+	<span class="is_hidden chart-gridlines-color"></span>
+	<span class="is_hidden chart-legends-text-color"></span>
+	<span class="is_hidden chart-grid-text-color"></span>
+	<span class="is_hidden chart-data-color-option1"></span>
+	<span class="is_hidden chart-data-color-option2"></span>
+	<span class="is_hidden chart-data-color-option3"></span>
+	<span class="is_hidden chart-data-color-option4"></span>
+	<span class="is_hidden chart-data-color-option5"></span>
+	<span class="is_hidden chart-data-color-option6"></span>
+	<span class="is_hidden chart-data-color-option7"></span>
+	<span class="is_hidden chart-data-color-option8"></span>
+</span>
+<!-- /Layout settings -->
+
+<!-- Global scripts -->
+<script src="lib/js/core/jquery/jquery.js"></script>
+<script src="lib/js/core/jquery/jquery.ui.js"></script>
+<script src="lib/js/core/bootstrap/bootstrap.js"></script>
+<script src="lib/js/core/bootstrap/jasny_bootstrap.min.js"></script>
+<script src="lib/js/core/navigation/nav.accordion.js"></script>
+<script src="lib/js/core/hammer/hammerjs.js"></script>
+<script src="lib/js/core/hammer/jquery.hammer.js"></script>
+<script src="lib/js/core/slimscroll/jquery.slimscroll.js"></script>
+<script src="lib/js/extensions/smart-resize.js"></script>
+<script src="lib/js/extensions/blockui.min.js"></script>
+<script src="lib/js/forms/uniform.min.js"></script>
+<script src="lib/js/forms/switchery.js"></script>
+<script src="lib/js/forms/select2.min.js"></script>
+<script src="lib/js/plugins/venobox.js"></script>
+<script src="lib/js/core/app/layouts.js"></script>
+<script src="lib/js/core/app/core.js"></script>
+<!-- /Global scripts -->
+
+<!-- Page scripts -->
+<script src="lib/assets/editors/tinymce/tinymce.min.js"></script>
+<script src="lib/js/pages/apps/emails.js"></script>
+<!-- /Page scripts -->
+
+</body>
+</html>

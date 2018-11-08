@@ -1,0 +1,593 @@
+<!doctype html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="theme-color" content="#1C2B36" />
+	<title>Bird - Responsive admin dashboard template by Followtechnique</title>
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="144x144">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="114x114">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="72x72">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png">
+	<link href="img/favicon.ico" rel="icon" type="image/png">
+	<link href="img/favicon.ico" rel="shortcut icon">
+    <!-- /Favicon -->
+
+    <!-- Global stylesheets -->
+	<link type="text/css" rel="stylesheet" href="lib/css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="lib/css/animate.min.css">
+    <link type="text/css" rel="stylesheet" href="lib/css/main.css">
+    <!-- /Global stylesheets -->
+</head>
+<body id="top">
+
+<!-- Preloader -->
+<div id="preloader">
+	<div id="status">
+		<div class="loader"></div>
+	</div>
+</div>
+<!-- /Preloader -->
+
+<div id="body-wrapper" class="body-container">
+
+	<!-- Header begins -->
+	<header class="main-nav clearfix">
+
+		<!-- Searchbar -->
+		<div class="top-search-bar">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3">
+						<div class="search-input-addon">
+							<span class="addon-icon"><i class="icon-search4"></i></span>
+							<input type="text" class="form-control top-search-input" placeholder="Enter your keyword...">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Searchbar -->
+
+		<!-- Branding -->
+		<div class="navbar-left pull-left">
+			<div class="clearfix">
+				<ul class="left-branding pull-left">
+					<li class="visible-handheld"><span class="left-toggle-switch"><i class="icon-menu7"></i></span></li>
+					<li>
+						<a href="index.html"><div class="logo"></div></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /Branding -->
+
+		<!-- Search & Languages -->
+		<div class="navbar pull-left">
+			<div class="clearfix">
+				<ul class="pull-left top-icons hidden-xs">
+					<li><a href="#" class="btn-top-search m-l-10"><i class="icon-search4"></i></a></li>
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-flag7"></i></a>
+						<ul class="dropdown-menu languages">
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">Deutsch</a></li>
+                            <li><a href="#">Українська</a></li>
+							<li><a href="#">España</a></li>
+                        </ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /Search & Languages -->
+
+		<!-- Navbar icons -->
+		<div class="navbar pull-right">
+			<div class="clearfix">
+				<ul class="pull-right top-icons">
+					<li><a href="#" class="btn-top-search visible-xs"><i class="icon-search4"></i></a></li>
+
+					<!-- Quick apps dropdown -->
+					<li class="dropdown apps-dropdown hidden-xs">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-grid2"></i></a>
+						<div class="dropdown-menu">
+						</div>
+					</li>
+					<!-- /Quick apps dropdown -->
+
+					<!-- Rightbar -->
+					<li><a href="#" onclick="open_rightbar()"><span class="bubble">6</span><i class="icon-stack3"></i></a></li>
+					<!-- /Rightbar -->
+
+					<!-- User dropdown -->
+					<li class="dropdown user-dropdown">
+						<a class="user-name hidden-xs" data-toggle="dropdown">Jane Elliott <i class="icon-more2"></i><small>Administrator</small></a>
+						<a href="#" class="btn-user dropdown-toggle hidden-xs" data-toggle="dropdown"><img src="http://via.placeholder.com/80x80" class="img-circle user" alt=""/></a>
+						<a href="#" class="dropdown-toggle visible-xs" data-toggle="dropdown"><i class="icon-more"></i></a>
+						<div class="dropdown-menu no-padding">
+						</div>
+					</li>
+					<!-- /User dropdown -->
+
+				</ul>
+			</div>
+		</div>
+		<!-- /Navbar icons -->
+
+	</header>
+	<!-- /Header ends -->
+
+	<!-- Sidebar -->
+	<aside class="menu">
+		<div class="left-aside-container">
+
+			<!-- User profile -->
+			<div class="user-profile"></div>
+			<!-- /User profile -->
+
+
+			<!-- Main menu -->
+			<div class="menu-container"></div>
+			<!-- /Main menu -->
+
+		</div>
+	</aside>
+	<!-- /Sidebar -->
+
+	<!-- Page container begins -->
+	<section class="main-container">
+		<h1 style="display:none">Empty Heading</h1>
+
+			<!-- Page header -->
+			<div class="header">
+				<div class="header-content">
+					<div class="page-title">
+						<i class="icon-lifebuoy position-left"></i> Support
+					</div>
+					<ul class="breadcrumb">
+						<li><a href="index.html"></a></li>
+						<li class="active">Support</li>
+					</ul>
+				</div>
+			</div>
+			<!-- /Page header -->
+
+			<div class="container-fluid page-content">
+
+				<div class="row">
+					<div class="col-xs-12 col-md-3 col-sm-4">
+
+						<!-- Manage tickets -->
+						<div class="list-group m-b-20">
+							<div class="list-group-header">Manage Tickets</div>
+							<a href="#" class="list-group-item active">
+								<i class="icon-ticket"></i> All tickets
+								<span class="badge badge-danger">93</span>
+							</a>
+							<a href="#" class="list-group-item">
+								<i class="icon-warning22"></i> Urgent
+							</a>
+							<a href="#" class="list-group-item">
+								<i class="icon-folder-open2"></i> Open
+							</a>
+							<a href="#" class="list-group-item">
+								<i class="icon-folder2"></i> Closed
+							</a>
+							<a href="#" class="list-group-item">
+								<i class="icon-cancel-circle2"></i> Invalid
+							</a>
+						</div>
+						<!-- /Manage tickets -->
+
+						<!-- Quick stats -->
+						<div class="panel panel-flat">
+							<div class="panel-heading no-margin-bottom">
+							<h6 class="text-uppercase text-muted text-semibold">Quick Stats</h6>
+							</div>
+							<div class="panel-body no-padding-l no-padding-r">
+								<table class="table table-striped table-borderless">
+									<tbody>
+										<tr>
+											<td class="text-right" style="width: 70%;">
+												<span class="text-semibold">Total Tickets</span>
+											</td>
+											<td>420</td>
+										</tr>
+										<tr>
+											<td class="text-right">
+												<span class="text-semibold">Total Responses</span>
+											</td>
+											<td>970</td>
+										</tr>
+										<tr>
+											<td class="text-right">
+												<span class="text-semibold">Forum Tickets</span>
+											</td>
+											<td>150</td>
+										</tr>
+										<tr>
+											<td class="text-right">
+												<span class="text-semibold">Email Tickets</span>
+											</td>
+											<td>200</td>
+										</tr>
+										<tr>
+											<td class="text-right">
+												<span class="text-semibold">Contact Form Tickets</span>
+											</td>
+											<td>70</td>
+										</tr>
+										<tr>
+											<td class="text-right">
+												<span class="text-semibold">Avg Response Time</span>
+											</td>
+											<td>5 hrs</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<!-- /Quick stats -->
+
+					</div>
+
+					<div class="col-xs-12 col-md-9 col-sm-8">
+
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">List all tickets</div>
+							</div>
+							<div class="panel-body">
+								<div class="tabbable">
+									<ul class="nav nav-tabs nav-lg nav-tabs-highlight">
+										<li class="active"><a href="#highlighted-justified-tab1" data-toggle="tab">Ticket List</a></li>
+										<li><a href="#highlighted-justified-tab2" data-toggle="tab">#TK449</a></li>
+									</ul>
+
+									<div class="tab-content">
+
+										<!-- List all tickets -->
+										<div class="tab-pane active" id="highlighted-justified-tab1">
+											<div class="table-responsive remove-margin-bottom">
+												<table class="table table-striped table-vcenter remove-margin-bottom">
+												<thead>
+												<tr>
+												<th class="text-center">ID</th>
+												<th style="width:10%" class="text-center">Sender</th>
+												<th>Title</th>
+												<th>Status</th>
+												<th>Source</th>
+
+
+												<th class="text-center"><i class="icon-comments"></i></th>
+												</tr>
+												</thead>
+												<tbody>
+												<tr>
+												<td class="text-center">#TK420</td>
+												<td class="text-center"><img src="http://via.placeholder.com/80x80" alt="Avatar" class="img-circle img-sm"></td>
+												<td>
+												<a href="javascript:void(0)"><span class="text-semibold">Lorem ipsum dolor sit amet?</span></a><br>
+												<span class="text-muted">1 hour ago by <span class="text-semibold">Jane Elliott</span></span>
+												</td>
+												<td><span class="label label-danger">URGENT</span></td>
+												<td>Forum</td>
+
+
+												<td class="text-center"><span class="label label-info">3</span></td>
+												</tr>
+												<tr>
+												<td class="text-center">#TK419</td>
+												<td class="text-center"><img src="http://via.placeholder.com/80x80" alt="Avatar" class="img-circle img-sm"></td>
+												<td>
+												<a href="javascript:void(0)"><span class="text-semibold">Suas habeo dicit an eos?</span></a><br>
+												<span class="text-muted">3 hours ago by <span class="text-semibold">Florence Douglas</span></span>
+												</td>
+												<td><span class="label label-danger">URGENT</span></td>
+												<td>Email</td>
+
+
+												<td class="text-center"><span class="label label-info">7</span></td>
+												</tr>
+												<tr>
+												<td class="text-center">#TK418</td>
+												<td class="text-center"><img src="http://via.placeholder.com/80x80" alt="Avatar" class="img-circle img-sm"></td>
+												<td>
+												<a href="javascript:void(0)"><span class="text-semibold">Vix simul alienum consetetur?</span></a><br>
+												<span class="text-muted">1 day ago by <span class="text-semibold">Matthew Stanley</span></span>
+												</td>
+												<td><span class="label label-success">OPEN</span></td>
+												<td>Email</td>
+
+
+												<td class="text-center"><span class="label label-info">1</span></td>
+												</tr>
+												<tr>
+												<td class="text-center">#TK417</td>
+												<td class="text-center"><img src="http://via.placeholder.com/80x80" alt="Avatar" class="img-circle img-sm"></td>
+												<td>
+												<a href="javascript:void(0)"><span class="text-semibold">Qui fugit expetendis e?</span></a><br>
+												<span class="text-muted">2 days ago by <span class="text-semibold">Eugene Griffin</span></span>
+												</td>
+												<td><span class="label label-success">OPEN</span></td>
+												<td>Forum</td>
+
+
+												<td class="text-center"><span class="label label-info">2</span></td>
+												</tr>
+												<tr>
+												<td class="text-center">#TK416</td>
+												<td class="text-center"><img src="http://via.placeholder.com/80x80" alt="Avatar" class="img-circle img-sm"></td>
+												<td>
+												<a href="javascript:void(0)"><span class="text-semibold">Lobortis senserit ius te?</span></a><br>
+												<span class="text-muted">2 days ago by <span class="text-semibold">Howard Smith</span></span>
+												</td>
+												<td><span class="label label-default">CLOSED</span></td>
+												<td>Contact Form</td>
+
+
+												<td class="text-center"><span class="label label-info">3</span></td>
+												</tr>
+												<tr>
+												<td class="text-center">#TK415</td>
+												<td class="text-center"><img src="http://via.placeholder.com/80x80" alt="Avatar" class="img-circle img-sm"></td>
+												<td>
+												<a href="javascript:void(0)"><span class="text-semibold">Te repudiare mnesarchum</span></a><br>
+												<span class="text-muted">1 week ago by <span class="text-semibold">Richard Armstrong</span></span>
+												</td>
+												<td><span class="label label-success">OPEN</span></td>
+												<td>Email</td>
+
+
+												<td class="text-center"><span class="label label-info">2</span></td>
+												</tr>
+												<tr>
+												<td class="text-center">#TK414</td>
+												<td class="text-center"><img src="http://via.placeholder.com/80x80" alt="Avatar" class="img-circle img-sm"></td>
+												<td>
+												<a href="javascript:void(0)"><span class="text-semibold">Qui ea homero regione</span></a><br>
+												<span class="text-muted">1 week ago by <span class="text-semibold">Timothy Wheeler</span></span>
+												</td>
+												<td><span class="label label-default">CLOSED</span></td>
+												<td>Forum</td>
+
+
+												<td class="text-center"><span class="label label-info">5</span></td>
+												</tr>
+												<tr>
+												<td class="text-center">#TK413</td>
+												<td class="text-center"><img src="http://via.placeholder.com/80x80" alt="Avatar" class="img-circle img-sm"></td>
+												<td>
+												<a href="javascript:void(0)"><span class="text-semibold">An usu alia accumsan?</span></a><br>
+												<span class="text-muted">2 weeks ago by <span class="text-semibold">Emma Weaver</span></span>
+												</td>
+												<td><span class="label label-warning">INVALID</span></td>
+												<td>Forum</td>
+
+
+												<td class="text-center"><span class="label label-info">0</span></td>
+												</tr>
+												<tr>
+												<td class="text-center">#TK412</td>
+												<td class="text-center"><img src="http://via.placeholder.com/80x80" alt="Avatar" class="img-circle img-sm"></td>
+												<td>
+												<a href="javascript:void(0)"><span class="text-semibold">Choro solet vis an?</span></a><br>
+												<span class="text-muted">1 month ago by <span class="text-semibold">Edward Harvey</span></span>
+												</td>
+												<td><span class="label label-danger">URGENT</span></td>
+												<td>Contact Form</td>
+
+
+												<td class="text-center"><span class="label label-info">0</span></td>
+												</tr>
+												<tr>
+												<td class="text-center">#TK411</td>
+												<td class="text-center"><img src="http://via.placeholder.com/80x80" alt="Avatar" class="img-circle img-sm"></td>
+												<td>
+												<a href="javascript:void(0)"><span class="text-semibold">Cum unum apeirian ne</span></a><br>
+												<span class="text-muted">1 month ago by <span class="text-semibold">Tyler Rivera</span></span>
+												</td>
+												<td><span class="label label-success">OPEN</span></td>
+												<td>Email</td>
+
+
+												<td class="text-center"><span class="label label-info">2</span></td>
+												</tr>
+												<tr>
+												<td class="text-center">#TK410</td>
+												<td class="text-center"><img src="http://via.placeholder.com/80x80" alt="Avatar" class="img-circle img-sm"></td>
+												<td>
+												<a href="javascript:void(0)"><span class="text-semibold">Atation noster assueverit est an?</span></a><br>
+												<span class="text-muted">2 months ago by <span class="text-semibold">Aaron Gibson</span></span>
+												</td>
+												<td><span class="label label-success">OPEN</span></td>
+												<td>Forum</td>
+
+
+												<td class="text-center"><span class="label label-info">0</span></td>
+												</tr>
+												</tbody>
+												</table>
+											</div>
+										</div>
+										<!-- /List all tickets -->
+
+										<!-- Single ticket -->
+										<div class="tab-pane" id="highlighted-justified-tab2">
+											<div class="alert bg-success alert-styled-left">
+												<span class="text-semibold">Current Status: </span> OPEN
+											</div>
+											<a href="javascript:void(0)" class="btn btn-success pull-right"><i class="icon-checkmark3 position-left"></i> Flag as Closed</a>
+											<a href="javascript:void(0)" class="btn btn-danger"><i class="icon-flag7 position-left"></i> Flag as Urgent</a>
+											<a href="javascript:void(0)" class="btn btn-warning"><i class="icon-flag7 position-left"></i> Flag as Invalid</a>
+											<hr>
+											<ul class="media-list">
+											<li class="media">
+											<a href="#" class="pull-left">
+											<img src="http://via.placeholder.com/80x80" alt="Avatar" class="img-circle img-sm pull-right">
+											</a>
+											<div class="media-body">
+											<h5 class="no-margin-top">
+											<span class="text-muted pull-right">
+											<small>2 hours ago</small>
+											</span>
+											<a href="#">Jane Elliott</a> through <a href="javascript:void(0)">Forum</a>
+											</h5>
+											<h5 class="text-semibold">Lorem ipsum dolor sit amet?</h5>
+											<p>Qui ea homero regione minimum, suas habeo dicit an eos, tation noster assueverit est an. Eros modus corrumpit ea pro, meliore alienum corpora ius ex. Cum unum apeirian ne, in has case vidisse admodum, dictas iriure voluptaria ea per. Ne habeo nostro his.</p>
+
+											<p>
+											<a href="javascript:void(0)" class="btn btn-default"><i class="icon-lifebuoy position-left"></i> Ask for Assistance</a>
+											<a href="javascript:void(0)" class="btn btn-default"><i class="icon-user-check position-left"></i> Assign this ticket</a>
+											</p>
+											</div>
+											</li>
+											<li class="media">
+											<a href="#" class="pull-left">
+											<img src="http://via.placeholder.com/80x80" alt="Avatar" class="img-circle img-sm pull-right">
+											</a>
+											<div class="media-body">
+											<h5 class="no-margin-top">
+											<span class="text-muted pull-right">
+											<small>1 hour ago</small>
+											</span>
+											<small><a href="#">Support Team</a></small>
+											</h5>
+											<p>Ut solet decore qui, viris audiam mei at. Vix simul alienum consetetur no. An usu alia accumsan. Mel te dolore noster delenit, quo cu graeco oblique.</p>
+											</div>
+											</li>
+											<li class="media">
+											<a href="#" class="pull-left">
+											<img src="http://via.placeholder.com/80x80" alt="Avatar" class="img-circle img-sm pull-right">
+											</a>
+											<div class="media-body">
+											<h5 class="no-margin-top">
+											<span class="text-muted pull-right">
+											<small>30 min ago</small>
+											</span>
+											<small><a href="#">Jane Elliott</a></small>
+											</h5>
+											<p>Lobortis senserit ius te, his ad omnis!</p>
+											<p>Te viris indoctum!</p>
+											</div>
+											</li>
+											<li class="media">
+											<a href="#" class="pull-left">
+											<img src="http://via.placeholder.com/80x80" alt="Avatar" class="img-circle img-sm pull-right">
+											</a>
+											<div class="media-body">
+											<form action="page_ready_tickets.html#tickets-single" method="post">
+											<textarea id="tickets-reply" name="tickets-reply" class="form-control" rows="3" placeholder="Enter your reply"></textarea>
+											<div class="row m-t-15">
+													<div class="col-xs-12 text-right">
+														<button type="button" class="btn bg-info btn-sm btn-labeled"><b><i class="icon-paperplane"></i></b> Send reply</button>
+													</div>
+												</div>
+											</form>
+											</div>
+											</li>
+											</ul>
+										</div>
+										<!-- /Single ticket -->
+
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+
+			<!-- Footer -->
+			<footer class="footer-container">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12 col-sm-12">
+							<div class="pull-left">
+								© 2017 Bird&nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;&nbsp;Web app kit by <a href="http://followtechnique.com" target="_blank">FollowTechnique</a>.							</div>
+	                        <div class="pull-right">
+								<div class="label label-info">Version: 1.3.0</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- /Footer -->
+
+		</section>
+		<!-- /Page Container ends -->
+
+		<!-- ScrolltoTop -->
+		<a id="scrollTop" href="#top"><i class="icon-arrow-up12"></i></a>
+		<!-- /ScrolltoTop -->
+
+	</div>
+
+<!-- Rightbar -->
+<div id="right_sidebar" class="right_bar"></div>
+<script>
+function open_rightbar() {
+	$(window).resize(function() {
+		if(($(window).width() < 500)){
+			document.getElementById("right_sidebar").style.width = "100%";
+		}
+		else if($(window).width() > 500) {
+			document.getElementById("right_sidebar").style.width = "260px";
+		}
+	}).resize();
+}
+function close_rightbar() {
+	document.getElementById("right_sidebar").style.width = "0";
+}
+</script>
+<!-- /Rightbar -->
+
+<!-- Layout settings -->
+<div class="layout"></div>
+<span class="is_hidden" id="jquery_vars">
+	<span class="is_hidden switch-active"></span>
+	<span class="is_hidden switch-inactive"></span>
+	<span class="is_hidden chart-bg"></span>
+	<span class="is_hidden chart-gridlines-color"></span>
+	<span class="is_hidden chart-legends-text-color"></span>
+	<span class="is_hidden chart-grid-text-color"></span>
+	<span class="is_hidden chart-data-color-option1"></span>
+	<span class="is_hidden chart-data-color-option2"></span>
+	<span class="is_hidden chart-data-color-option3"></span>
+	<span class="is_hidden chart-data-color-option4"></span>
+	<span class="is_hidden chart-data-color-option5"></span>
+	<span class="is_hidden chart-data-color-option6"></span>
+	<span class="is_hidden chart-data-color-option7"></span>
+	<span class="is_hidden chart-data-color-option8"></span>
+</span>
+<!-- /Layout settings -->
+
+<!-- Global scripts -->
+<script src="lib/js/core/jquery/jquery.js"></script>
+<script src="lib/js/core/jquery/jquery.ui.js"></script>
+<script src="lib/js/core/bootstrap/bootstrap.js"></script>
+<script src="lib/js/core/bootstrap/jasny_bootstrap.min.js"></script>
+<script src="lib/js/core/navigation/nav.accordion.js"></script>
+<script src="lib/js/core/hammer/hammerjs.js"></script>
+<script src="lib/js/core/hammer/jquery.hammer.js"></script>
+<script src="lib/js/core/slimscroll/jquery.slimscroll.js"></script>
+<script src="lib/js/extensions/smart-resize.js"></script>
+<script src="lib/js/extensions/blockui.min.js"></script>
+<script src="lib/js/forms/uniform.min.js"></script>
+<script src="lib/js/forms/switchery.js"></script>
+<script src="lib/js/forms/select2.min.js"></script>
+<script src="lib/js/plugins/venobox.js"></script>
+<script src="lib/js/core/app/layouts.js"></script>
+<script src="lib/js/core/app/core.js"></script>
+<!-- /Global scripts -->
+
+<!-- Page scripts -->
+<!-- /Page scripts -->
+
+</body>
+</html>

@@ -1,0 +1,2012 @@
+<!doctype html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="theme-color" content="#1C2B36" />
+	<title>Bird - Responsive admin dashboard template by Followtechnique</title>
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="144x144">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="114x114">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="72x72">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png">
+	<link href="img/favicon.ico" rel="icon" type="image/png">
+	<link href="img/favicon.ico" rel="shortcut icon">
+    <!-- /Favicon -->
+
+    <!-- Global stylesheets -->
+	<link type="text/css" rel="stylesheet" href="lib/css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="lib/css/animate.min.css">
+    <link type="text/css" rel="stylesheet" href="lib/css/main.css">
+    <!-- /Global stylesheets -->
+</head>
+<body id="top">
+
+<!-- Preloader -->
+<div id="preloader">
+	<div id="status">
+		<div class="loader"></div>
+	</div>
+</div>
+<!-- /Preloader -->
+
+<div id="body-wrapper" class="body-container">
+
+	<!-- Header begins -->
+	<header class="main-nav clearfix">
+
+		<!-- Searchbar -->
+		<div class="top-search-bar">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3">
+						<div class="search-input-addon">
+							<span class="addon-icon"><i class="icon-search4"></i></span>
+							<input type="text" class="form-control top-search-input" placeholder="Enter your keyword...">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Searchbar -->
+
+		<!-- Branding -->
+		<div class="navbar-left pull-left">
+			<div class="clearfix">
+				<ul class="left-branding pull-left">
+					<li class="visible-handheld"><span class="left-toggle-switch"><i class="icon-menu7"></i></span></li>
+					<li>
+						<a href="index.html"><div class="logo"></div></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /Branding -->
+
+		<!-- Search & Languages -->
+		<div class="navbar pull-left">
+			<div class="clearfix">
+				<ul class="pull-left top-icons hidden-xs">
+					<li><a href="#" class="btn-top-search m-l-10"><i class="icon-search4"></i></a></li>
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-flag7"></i></a>
+						<ul class="dropdown-menu languages">
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">Deutsch</a></li>
+                            <li><a href="#">Українська</a></li>
+							<li><a href="#">España</a></li>
+                        </ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /Search & Languages -->
+
+		<!-- Navbar icons -->
+		<div class="navbar pull-right">
+			<div class="clearfix">
+				<ul class="pull-right top-icons">
+					<li><a href="#" class="btn-top-search visible-xs"><i class="icon-search4"></i></a></li>
+
+					<!-- Quick apps dropdown -->
+					<li class="dropdown apps-dropdown hidden-xs">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-grid2"></i></a>
+						<div class="dropdown-menu">
+						</div>
+					</li>
+					<!-- /Quick apps dropdown -->
+
+					<!-- Rightbar -->
+					<li><a href="#" onclick="open_rightbar()"><span class="bubble">6</span><i class="icon-stack3"></i></a></li>
+					<!-- /Rightbar -->
+
+					<!-- User dropdown -->
+					<li class="dropdown user-dropdown">
+						<a class="user-name hidden-xs" data-toggle="dropdown">Jane Elliott <i class="icon-more2"></i><small>Administrator</small></a>
+						<a href="#" class="btn-user dropdown-toggle hidden-xs" data-toggle="dropdown"><img src="http://via.placeholder.com/80x80" class="img-circle user" alt=""/></a>
+						<a href="#" class="dropdown-toggle visible-xs" data-toggle="dropdown"><i class="icon-more"></i></a>
+						<div class="dropdown-menu no-padding">
+						</div>
+					</li>
+					<!-- /User dropdown -->
+
+				</ul>
+			</div>
+		</div>
+		<!-- /Navbar icons -->
+
+	</header>
+	<!-- /Header ends -->
+
+	<!-- Sidebar -->
+	<aside class="menu">
+		<div class="left-aside-container">
+
+			<!-- User profile -->
+			<div class="user-profile"></div>
+			<!-- /User profile -->
+
+
+			<!-- Main menu -->
+			<div class="menu-container"></div>
+			<!-- /Main menu -->
+
+		</div>
+	</aside>
+	<!-- /Sidebar -->
+
+	<!-- Page container begins -->
+	<section class="main-container">
+		<h1 style="display:none">Empty Heading</h1>
+
+
+			<!-- Page header -->
+			<div class="header">
+				<div class="header-content">
+					<div class="page-title">
+						<i class="icon-droplet position-left"></i> Color system
+					</div>
+					<ul class="breadcrumb">
+                        <li><a href="index.html"></a></li>
+						<li class="active">Color system</li>
+					</ul>
+				</div>
+			</div>
+			<!-- /Page header -->
+
+			<div class="container-fluid page-content">
+
+				<div class="alert alert-info alert-styled-left">
+					All color palettes contains 12 primary colors and 8 combination colors to help you make a perfect color combination for your project.
+				</div>
+
+				<div class="row">
+					<div class="col-md-12">
+
+						<!-- Primary Palette -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Primary Palette <small class="text-muted">(bg-primary-*)</small></div>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-12">
+										<ul class="colors-demo">
+											<li class="bg-primary-50">
+												<div class="code">*-50</div>
+												<div class="value">#CFE8FC</div>
+											</li>
+											<li class="bg-primary-100">
+												<div class="code">*-100</div>
+												<div class="value">#A8D6FA</div>
+											</li>
+											<li class="bg-primary-200">
+												<div class="code">*-200</div>
+												<div class="value">#82C4F8</div>
+											</li>
+											<li class="bg-primary-300">
+												<div class="code">*-300</div>
+												<div class="value">#5BB1F6</div>
+											</li>
+											<li class="bg-primary-400">
+												<div class="code">*-400</div>
+												<div class="value">#349FF4</div>
+											</li>
+											<li class="bg-primary">
+												<div class="code">*-500</div>
+												<div class="value">#2196F3</div>
+											</li>
+											<li class="bg-primary-600">
+												<div class="code">*-600</div>
+												<div class="value">#0E8DF2</div>
+											</li>
+											<li class="bg-primary-700">
+												<div class="code">*-700</div>
+												<div class="value">#0C82DF</div>
+											</li>
+											<li class="bg-primary-800">
+												<div class="code">*-800</div>
+												<div class="value">#0B76CC</div>
+											</li>
+											<li class="bg-primary-900">
+												<div class="code">*-900</div>
+												<div class="value">#0A6BB8</div>
+											</li>
+											<li class="bg-primary-1000">
+												<div class="code">*-1000</div>
+												<div class="value">#0960A5</div>
+											</li>
+											<li class="bg-primary-1100">
+												<div class="code">*-1100</div>
+												<div class="value">#085592</div>
+											</li>
+										</ul>
+
+										<ul class="colors-demo">
+											<li class="bg-primary-a100">
+												<div class="code">*-a100</div>
+												<div class="value">#003399</div>
+											</li>
+											<li class="bg-primary-a200">
+												<div class="code">*-a200</div>
+												<div class="value">#0099CC</div>
+											</li>
+											<li class="bg-primary-a300">
+												<div class="code">*-a300</div>
+												<div class="value">#66CCFF</div>
+											</li>
+											<li class="bg-primary-a400">
+												<div class="code">*-a400</div>
+												<div class="value">#CCFFCC</div>
+											</li>
+											<li class="bg-primary-a500">
+												<div class="code">*-a500</div>
+												<div class="value">#0044CC</div>
+											</li>
+											<li class="bg-primary-a600">
+												<div class="code">*-a600</div>
+												<div class="value">#3399FF</div>
+											</li>
+											<li class="bg-primary-a700">
+												<div class="code">*-a700</div>
+												<div class="value">#FF9966</div>
+											</li>
+											<li class="bg-primary-a800">
+												<div class="code">*-a800</div>
+												<div class="value">#FFCC99</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /Primary Palette -->
+
+						<!-- Danger Palette -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Danger Palette <small class="text-muted">(bg-danger-*)</small></div>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-12">
+										<ul class="colors-demo">
+											<li class="bg-danger-50">
+												<div class="code">*-50</div>
+												<div class="value">#0044CC</div>
+											</li>
+											<li class="bg-danger-100">
+												<div class="code">*-100</div>
+												<div class="value">#FBC2BD</div>
+											</li>
+											<li class="bg-danger-200">
+												<div class="code">*-200</div>
+												<div class="value">#F99D97</div>
+											</li>
+											<li class="bg-danger-300">
+												<div class="code">*-300</div>
+												<div class="value">#F77970</div>
+											</li>
+											<li class="bg-danger-400">
+												<div class="code">*-400</div>
+												<div class="value">#F55549</div>
+											</li>
+											<li class="bg-danger">
+												<div class="code">*-500</div>
+												<div class="value">#F44336</div>
+											</li>
+											<li class="bg-danger-600">
+												<div class="code">*-600</div>
+												<div class="value">#F33123</div>
+											</li>
+											<li class="bg-danger-700">
+												<div class="code">*-700</div>
+												<div class="value">#F21F0F</div>
+											</li>
+											<li class="bg-danger-800">
+												<div class="code">*-800</div>
+												<div class="value">#E11B0C</div>
+											</li>
+											<li class="bg-danger-900">
+												<div class="code">*-900</div>
+												<div class="value">#CD180B</div>
+											</li>
+											<li class="bg-danger-1000">
+												<div class="code">*-1000</div>
+												<div class="value">#BA160A</div>
+											</li>
+											<li class="bg-danger-1100">
+												<div class="code">*-1100</div>
+												<div class="value">#A61409</div>
+											</li>
+										</ul>
+
+										<ul class="colors-demo">
+											<li class="bg-danger-a100">
+												<div class="code">*-a100</div>
+												<div class="value">#AF3300</div>
+											</li>
+											<li class="bg-danger-a200">
+												<div class="code">*-a200</div>
+												<div class="value">#E2001C</div>
+											</li>
+											<li class="bg-danger-a300">
+												<div class="code">*-a300</div>
+												<div class="value">#FF7C81</div>
+											</li>
+											<li class="bg-danger-a400">
+												<div class="code">*-a400</div>
+												<div class="value">#F4E2FF</div>
+											</li>
+											<li class="bg-danger-a500">
+												<div class="code">*-a500</div>
+												<div class="value">#E24200</div>
+											</li>
+											<li class="bg-danger-a600">
+												<div class="code">*-a600</div>
+												<div class="value">#FF6049</div>
+											</li>
+											<li class="bg-danger-a700">
+												<div class="code">*-a700</div>
+												<div class="value">#7CFFFA</div>
+											</li>
+											<li class="bg-danger-a800">
+												<div class="code">*-a800</div>
+												<div class="value">#AFF5FF</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /Danger Palette -->
+
+						<!-- Success Palette -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Success Palette <small class="text-muted">(bg-success-*)</small></div>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-12">
+										<ul class="colors-demo">
+											<li class="bg-success-50">
+												<div class="code">*-50</div>
+												<div class="value">#CAE8CC</div>
+											</li>
+											<li class="bg-success-100">
+												<div class="code">*-100</div>
+												<div class="value">#AEDCB0</div>
+											</li>
+											<li class="bg-success-200">
+												<div class="code">*-200</div>
+												<div class="value">#92CF94</div>
+											</li>
+											<li class="bg-success-300">
+												<div class="code">*-300</div>
+												<div class="value">#75C378</div>
+											</li>
+											<li class="bg-success-400">
+												<div class="code">*-400</div>
+												<div class="value">#59B75C</div>
+											</li>
+											<li class="bg-success">
+												<div class="code">*-500</div>
+												<div class="value">#4CAF50</div>
+											</li>
+											<li class="bg-success-600">
+												<div class="code">*-600</div>
+												<div class="value">#46A149</div>
+											</li>
+											<li class="bg-success-700">
+												<div class="code">*-700</div>
+												<div class="value">#409343</div>
+											</li>
+											<li class="bg-success-800">
+												<div class="code">*-800</div>
+												<div class="value">#39843C</div>
+											</li>
+											<li class="bg-success-900">
+												<div class="code">*-900</div>
+												<div class="value">#337636</div>
+											</li>
+											<li class="bg-success-1000">
+												<div class="code">*-1000</div>
+												<div class="value">#2D682F</div>
+											</li>
+											<li class="bg-success-1100">
+												<div class="code">*-1100</div>
+												<div class="value">#275A29</div>
+											</li>
+										</ul>
+
+										<ul class="colors-demo">
+											<li class="bg-success-a100">
+												<div class="code">*-a100</div>
+												<div class="value">#206031</div>
+											</li>
+											<li class="bg-success-a200">
+												<div class="code">*-a200</div>
+												<div class="value">#3B862D</div>
+											</li>
+											<li class="bg-success-a300">
+												<div class="code">*-a300</div>
+												<div class="value">#80D27A</div>
+											</li>
+											<li class="bg-success-a400">
+												<div class="code">*-a400</div>
+												<div class="value">#ECDDC6</div>
+											</li>
+											<li class="bg-success-a500">
+												<div class="code">*-a500</div>
+												<div class="value">#2D8645</div>
+											</li>
+											<li class="bg-success-a600">
+												<div class="code">*-a600</div>
+												<div class="value">#54C55F</div>
+											</li>
+											<li class="bg-success-a700">
+												<div class="code">*-a700</div>
+												<div class="value">#CC7AD2</div>
+											</li>
+											<li class="bg-success-a800">
+												<div class="code">*-a800</div>
+												<div class="value">#DFA0D9</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /Success Palette -->
+
+						<!-- Warning Palette -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Warning Palette <small class="text-muted">(bg-warning-*)</small></div>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-12">
+										<ul class="colors-demo">
+											<li class="bg-warning-50">
+												<div class="code">*-50</div>
+												<div class="value">#FFE3DA</div>
+											</li>
+											<li class="bg-warning-100">
+												<div class="code">*-100</div>
+												<div class="value">#FFC4B1</div>
+											</li>
+											<li class="bg-warning-200">
+												<div class="code">*-200</div>
+												<div class="value">#FFA588</div>
+											</li>
+											<li class="bg-warning-300">
+												<div class="code">*-300</div>
+												<div class="value">#FF865F</div>
+											</li>
+											<li class="bg-warning-400">
+												<div class="code">*-400</div>
+												<div class="value">#FF6736</div>
+											</li>
+											<li class="bg-warning">
+												<div class="code">*-500</div>
+												<div class="value">#FF5722</div>
+											</li>
+											<li class="bg-warning-600">
+												<div class="code">*-600</div>
+												<div class="value">#FF470E</div>
+											</li>
+											<li class="bg-warning-700">
+												<div class="code">*-700</div>
+												<div class="value">#F83C00</div>
+											</li>
+											<li class="bg-warning-800">
+												<div class="code">*-800</div>
+												<div class="value">#E43700</div>
+											</li>
+											<li class="bg-warning-900">
+												<div class="code">*-900</div>
+												<div class="value">#CF3200</div>
+											</li>
+											<li class="bg-warning-1000">
+												<div class="code">*-1000</div>
+												<div class="value">#BB2D00</div>
+											</li>
+											<li class="bg-warning-1100">
+												<div class="code">*-1100</div>
+												<div class="value">#A72800</div>
+											</li>
+										</ul>
+
+										<ul class="colors-demo">
+											<li class="bg-warning-a100">
+												<div class="code">*-a100</div>
+												<div class="value">#A64D00</div>
+											</li>
+											<li class="bg-warning-a200">
+												<div class="code">*-a200</div>
+												<div class="value">#D90A00</div>
+											</li>
+											<li class="bg-warning-a300">
+												<div class="code">*-a300</div>
+												<div class="value">#FF8573</div>
+											</li>
+											<li class="bg-warning-a400">
+												<div class="code">*-a400</div>
+												<div class="value">#F7D9FF</div>
+											</li>
+											<li class="bg-warning-a500">
+												<div class="code">*-a500</div>
+												<div class="value">#D96500</div>
+											</li>
+											<li class="bg-warning-a600">
+												<div class="code">*-a600</div>
+												<div class="value">#FF7940</div>
+											</li>
+											<li class="bg-warning-a700">
+												<div class="code">*-a700</div>
+												<div class="value">#73EDFF</div>
+											</li>
+											<li class="bg-warning-a800">
+												<div class="code">*-a800</div>
+												<div class="value">#A6E5FF</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /Warning Palette -->
+
+						<!-- Info Palette -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Info Palette <small class="text-muted">(bg-info-*)</small></div>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-12">
+										<ul class="colors-demo">
+											<li class="bg-info-50">
+												<div class="code">*-50</div>
+												<div class="value">#FFE3DA</div>
+											</li>
+											<li class="bg-info-100">
+												<div class="code">*-100</div>
+												<div class="value">#64EDFF</div>
+											</li>
+											<li class="bg-info-200">
+												<div class="code">*-200</div>
+												<div class="value">#3BE9FF</div>
+											</li>
+											<li class="bg-info-300">
+												<div class="code">*-300</div>
+												<div class="value">#12E4FF</div>
+											</li>
+											<li class="bg-info-400">
+												<div class="code">*-400</div>
+												<div class="value">#00CEE8</div>
+											</li>
+											<li class="bg-info">
+												<div class="code">*-500</div>
+												<div class="value">#00BCD4</div>
+											</li>
+											<li class="bg-info-600">
+												<div class="code">*-600</div>
+												<div class="value">#00AAC0</div>
+											</li>
+											<li class="bg-info-700">
+												<div class="code">*-700</div>
+												<div class="value">#0098AB</div>
+											</li>
+											<li class="bg-info-800">
+												<div class="code">*-800</div>
+												<div class="value">#008697</div>
+											</li>
+											<li class="bg-info-900">
+												<div class="code">*-900</div>
+												<div class="value">#007482</div>
+											</li>
+											<li class="bg-info-1000">
+												<div class="code">*-1000</div>
+												<div class="value">#00626E</div>
+											</li>
+											<li class="bg-info-1100">
+												<div class="code">*-1100</div>
+												<div class="value">#004F5A</div>
+											</li>
+										</ul>
+
+										<ul class="colors-demo">
+											<li class="bg-info-a100">
+												<div class="code">*-a100</div>
+												<div class="value">#003B59</div>
+											</li>
+											<li class="bg-info-a200">
+												<div class="code">*-a200</div>
+												<div class="value">#008C81</div>
+											</li>
+											<li class="bg-info-a300">
+												<div class="code">*-a300</div>
+												<div class="value">#26FEFF</div>
+											</li>
+											<li class="bg-info-a400">
+												<div class="code">*-a400</div>
+												<div class="value">#B2FF8C</div>
+											</li>
+											<li class="bg-info-a500">
+												<div class="code">*-a500</div>
+												<div class="value">#005D8C</div>
+											</li>
+											<li class="bg-info-a600">
+												<div class="code">*-a600</div>
+												<div class="value">#00C9F2</div>
+											</li>
+											<li class="bg-info-a700">
+												<div class="code">*-a700</div>
+												<div class="value">#FF2726</div>
+											</li>
+											<li class="bg-info-a800">
+												<div class="code">*-a800</div>
+												<div class="value">#FF7559</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /Info Palette -->
+
+						<!-- Pink Palette -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Pink Palette <small class="text-muted">(bg-pink-*)</small></div>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-12">
+										<ul class="colors-demo">
+											<li class="bg-pink-50">
+												<div class="code">*-50</div>
+												<div class="value">#8DF2FF</div>
+											</li>
+											<li class="bg-pink-100">
+												<div class="code">*-100</div>
+												<div class="value">#F6A0BD</div>
+											</li>
+											<li class="bg-pink-200">
+												<div class="code">*-200</div>
+												<div class="value">#F27BA3</div>
+											</li>
+											<li class="bg-pink-300">
+												<div class="code">*-300</div>
+												<div class="value">#EE568A</div>
+											</li>
+											<li class="bg-pink-400">
+												<div class="code">*-400</div>
+												<div class="value">#EB3170</div>
+											</li>
+											<li class="bg-pink">
+												<div class="code">*-500</div>
+												<div class="value">#E91E63</div>
+											</li>
+											<li class="bg-pink-600">
+												<div class="code">*-600</div>
+												<div class="value">#DD1659</div>
+											</li>
+											<li class="bg-pink-700">
+												<div class="code">*-700</div>
+												<div class="value">#CA1452</div>
+											</li>
+											<li class="bg-pink-800">
+												<div class="code">*-800</div>
+												<div class="value">#B8124A</div>
+											</li>
+											<li class="bg-pink-900">
+												<div class="code">*-900</div>
+												<div class="value">#A51043</div>
+											</li>
+											<li class="bg-pink-1000">
+												<div class="code">*-1000</div>
+												<div class="value">#930E3B</div>
+											</li>
+											<li class="bg-pink-1100">
+												<div class="code">*-1100</div>
+												<div class="value">#800D34</div>
+											</li>
+										</ul>
+
+										<ul class="colors-demo">
+											<li class="bg-pink-a100">
+												<div class="code">*-a100</div>
+												<div class="value">#870514</div>
+											</li>
+											<li class="bg-pink-a200">
+												<div class="code">*-a200</div>
+												<div class="value">#B80765</div>
+											</li>
+											<li class="bg-pink-a300">
+												<div class="code">*-a300</div>
+												<div class="value">#F95FA4</div>
+											</li>
+											<li class="bg-pink-a400">
+												<div class="code">*-a400</div>
+												<div class="value">#CEC1FD</div>
+											</li>
+											<li class="bg-pink-a500">
+												<div class="code">*-a500</div>
+												<div class="value">#B8071C</div>
+											</li>
+											<li class="bg-pink-a600">
+												<div class="code">*-a600</div>
+												<div class="value">#F72E67</div>
+											</li>
+											<li class="bg-pink-a700">
+												<div class="code">*-a700</div>
+												<div class="value">#5FF9B4</div>
+											</li>
+											<li class="bg-pink-a800">
+												<div class="code">*-a800</div>
+												<div class="value">#90FBDD</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /Pink Palette -->
+
+						<!-- Purple Palette -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Purple Palette <small class="text-muted">(bg-purple-*)</small></div>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-12">
+										<ul class="colors-demo">
+											<li class="bg-purple-50">
+												<div class="code">*-50</div>
+												<div class="value">#E0A4EB</div>
+											</li>
+											<li class="bg-purple-100">
+												<div class="code">*-100</div>
+												<div class="value">#D582E3</div>
+											</li>
+											<li class="bg-purple-200">
+												<div class="code">*-200</div>
+												<div class="value">#CA61DC</div>
+											</li>
+											<li class="bg-purple-300">
+												<div class="code">*-300</div>
+												<div class="value">#BF40D5</div>
+											</li>
+											<li class="bg-purple-400">
+												<div class="code">*-400</div>
+												<div class="value">#AB2BC1</div>
+											</li>
+											<li class="bg-purple">
+												<div class="code">*-500</div>
+												<div class="value">#9C27B0</div>
+											</li>
+											<li class="bg-purple-600">
+												<div class="code">*-600</div>
+												<div class="value">#8D239F</div>
+											</li>
+											<li class="bg-purple-700">
+												<div class="code">*-700</div>
+												<div class="value">#7E208F</div>
+											</li>
+											<li class="bg-purple-800">
+												<div class="code">*-800</div>
+												<div class="value">#701C7E</div>
+											</li>
+											<li class="bg-purple-900">
+												<div class="code">*-900</div>
+												<div class="value">#61186D</div>
+											</li>
+											<li class="bg-purple-1000">
+												<div class="code">*-1000</div>
+												<div class="value">#52145D</div>
+											</li>
+											<li class="bg-purple-1100">
+												<div class="code">*-1100</div>
+												<div class="value">#43114C</div>
+											</li>
+										</ul>
+
+										<ul class="colors-demo">
+											<li class="bg-purple-a100">
+												<div class="code">*-a100</div>
+												<div class="value">#500C4B</div>
+											</li>
+											<li class="bg-purple-a200">
+												<div class="code">*-a200</div>
+												<div class="value">#59137C</div>
+											</li>
+											<li class="bg-purple-a300">
+												<div class="code">*-a300</div>
+												<div class="value">#BB45E3</div>
+											</li>
+											<li class="bg-purple-a400">
+												<div class="code">*-a400</div>
+												<div class="value">#9ECEF0</div>
+											</li>
+											<li class="bg-purple-a500">
+												<div class="code">*-a500</div>
+												<div class="value">#7C1374</div>
+											</li>
+											<li class="bg-purple-a600">
+												<div class="code">*-a600</div>
+												<div class="value">#C520D5</div>
+											</li>
+											<li class="bg-purple-a700">
+												<div class="code">*-a700</div>
+												<div class="value">#6DE345</div>
+											</li>
+											<li class="bg-purple-a800">
+												<div class="code">*-a800</div>
+												<div class="value">#7CEA71</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /Purple Palette -->
+
+						<!-- Deep Purple Palette -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Deep Purple Palette <small class="text-muted">(bg-dpurple-*)</small></div>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-12">
+										<ul class="colors-demo">
+											<li class="bg-dpurple-50">
+												<div class="code">*-50</div>
+												<div class="value">#CEBEEA</div>
+											</li>
+											<li class="bg-dpurple-100">
+												<div class="code">*-100</div>
+												<div class="value">#B79FE1</div>
+											</li>
+											<li class="bg-dpurple-200">
+												<div class="code">*-200</div>
+												<div class="value">#9F80D7</div>
+											</li>
+											<li class="bg-dpurple-300">
+												<div class="code">*-300</div>
+												<div class="value">#8861CD</div>
+											</li>
+											<li class="bg-dpurple-400">
+												<div class="code">*-400</div>
+												<div class="value">#7142C3</div>
+											</li>
+											<li class="bg-dpurple">
+												<div class="code">*-500</div>
+												<div class="value">#673AB7</div>
+											</li>
+											<li class="bg-dpurple-600">
+												<div class="code">*-600</div>
+												<div class="value">#5E35A8</div>
+											</li>
+											<li class="bg-dpurple-700">
+												<div class="code">*-700</div>
+												<div class="value">#563098</div>
+											</li>
+											<li class="bg-dpurple-800">
+												<div class="code">*-800</div>
+												<div class="value">#4D2B89</div>
+											</li>
+											<li class="bg-dpurple-900">
+												<div class="code">*-900</div>
+												<div class="value">#442679</div>
+											</li>
+											<li class="bg-dpurple-1000">
+												<div class="code">*-1000</div>
+												<div class="value">#3B216A</div>
+											</li>
+											<li class="bg-dpurple-1100">
+												<div class="code">*-1100</div>
+												<div class="value">#331D5A</div>
+											</li>
+										</ul>
+
+										<ul class="colors-demo">
+											<li class="bg-dpurple-a100">
+												<div class="code">*-a100</div>
+												<div class="value">#411660</div>
+											</li>
+											<li class="bg-dpurple-a200">
+												<div class="code">*-a200</div>
+												<div class="value">#322089</div>
+											</li>
+											<li class="bg-dpurple-a300">
+												<div class="code">*-a300</div>
+												<div class="value">#8467DB</div>
+											</li>
+											<li class="bg-dpurple-a400">
+												<div class="code">*-a400</div>
+												<div class="value">#B9EFEA</div>
+											</li>
+											<li class="bg-dpurple-a500">
+												<div class="code">*-a500</div>
+												<div class="value">#5D2089</div>
+											</li>
+											<li class="bg-dpurple-a600">
+												<div class="code">*-a600</div>
+												<div class="value">#7B3DD2</div>
+											</li>
+											<li class="bg-dpurple-a700">
+												<div class="code">*-a700</div>
+												<div class="value">#BEDB67</div>
+											</li>
+											<li class="bg-dpurple-a800">
+												<div class="code">*-a800</div>
+												<div class="value">#C2E590</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /Deep Purple Palette -->
+
+						<!-- Indigo Palette -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Indigo Palette <small class="text-muted">(bg-indigo-*)</small></div>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-12">
+										<ul class="colors-demo">
+											<li class="bg-indigo-50">
+												<div class="code">*-50</div>
+												<div class="value">#C2C8EA</div>
+											</li>
+											<li class="bg-indigo-100">
+												<div class="code">*-100</div>
+												<div class="value">#A4ADDF</div>
+											</li>
+											<li class="bg-indigo-200">
+												<div class="code">*-200</div>
+												<div class="value">#8591D5</div>
+											</li>
+											<li class="bg-indigo-300">
+												<div class="code">*-300</div>
+												<div class="value">#6776CA</div>
+											</li>
+											<li class="bg-indigo-400">
+												<div class="code">*-400</div>
+												<div class="value">#495BC0</div>
+											</li>
+											<li class="bg-indigo">
+												<div class="code">*-500</div>
+												<div class="value">#3F51B5</div>
+											</li>
+											<li class="bg-indigo-600">
+												<div class="code">*-600</div>
+												<div class="value">#3A4AA6</div>
+											</li>
+											<li class="bg-indigo-700">
+												<div class="code">*-700</div>
+												<div class="value">#344397</div>
+											</li>
+											<li class="bg-indigo-800">
+												<div class="code">*-800</div>
+												<div class="value">#2F3D88</div>
+											</li>
+											<li class="bg-indigo-900">
+												<div class="code">*-900</div>
+												<div class="value">#2A3678</div>
+											</li>
+											<li class="bg-indigo-1000">
+												<div class="code">*-1000</div>
+												<div class="value">#252F69</div>
+											</li>
+											<li class="bg-indigo-1100">
+												<div class="code">*-1100</div>
+												<div class="value">#1F285A</div>
+											</li>
+										</ul>
+
+										<ul class="colors-demo">
+											<li class="bg-indigo-a100">
+												<div class="code">*-a100</div>
+												<div class="value">#1E1960</div>
+											</li>
+											<li class="bg-indigo-a200">
+												<div class="code">*-a200</div>
+												<div class="value">#244688</div>
+											</li>
+											<li class="bg-indigo-a300">
+												<div class="code">*-a300</div>
+												<div class="value">#6C89D9</div>
+											</li>
+											<li class="bg-indigo-a400">
+												<div class="code">*-a400</div>
+												<div class="value">#BDEED1</div>
+											</li>
+											<li class="bg-indigo-a500">
+												<div class="code">*-a500</div>
+												<div class="value">#2B2488</div>
+											</li>
+											<li class="bg-indigo-a600">
+												<div class="code">*-a600</div>
+												<div class="value">#4451CE</div>
+											</li>
+											<li class="bg-indigo-a700">
+												<div class="code">*-a700</div>
+												<div class="value">#D9BC6C</div>
+											</li>
+											<li class="bg-indigo-a800">
+												<div class="code">*-a800</div>
+												<div class="value">#E3DC95</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /Indigo Palette -->
+
+						<!-- Teal Palette -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Teal Palette <small class="text-muted">(bg-teal-*)</small></div>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-12">
+										<ul class="colors-demo">
+											<li class="bg-teal-50">
+												<div class="code">*-50</div>
+												<div class="value">#E3DC95</div>
+											</li>
+											<li class="bg-teal-100">
+												<div class="code">*-100</div>
+												<div class="value">#26FFEB</div>
+											</li>
+											<li class="bg-teal-200">
+												<div class="code">*-200</div>
+												<div class="value">#00FCE4</div>
+											</li>
+											<li class="bg-teal-300">
+												<div class="code">*-300</div>
+												<div class="value">#00D3BF</div>
+											</li>
+											<li class="bg-teal-400">
+												<div class="code">*-400</div>
+												<div class="value">#00AA9A</div>
+											</li>
+											<li class="bg-teal">
+												<div class="code">*-500</div>
+												<div class="value">#009688</div>
+											</li>
+											<li class="bg-teal-600">
+												<div class="code">*-600</div>
+												<div class="value">#008276</div>
+											</li>
+											<li class="bg-teal-700">
+												<div class="code">*-700</div>
+												<div class="value">#006D63</div>
+											</li>
+											<li class="bg-teal-800">
+												<div class="code">*-800</div>
+												<div class="value">#005951</div>
+											</li>
+											<li class="bg-teal-900">
+												<div class="code">*-900</div>
+												<div class="value">#00443E</div>
+											</li>
+											<li class="bg-teal-1000">
+												<div class="code">*-1000</div>
+												<div class="value">#00302C</div>
+											</li>
+											<li class="bg-teal-1100">
+												<div class="code">*-1100</div>
+												<div class="value">#001C19</div>
+											</li>
+										</ul>
+
+										<ul class="colors-demo">
+											<li class="bg-teal-a100">
+												<div class="code">*-a100</div>
+												<div class="value">#00171B</div>
+											</li>
+											<li class="bg-teal-a200">
+												<div class="code">*-a200</div>
+												<div class="value">#004E38</div>
+											</li>
+											<li class="bg-teal-a300">
+												<div class="code">*-a300</div>
+												<div class="value">#00E7B8</div>
+											</li>
+											<li class="bg-teal-a400">
+												<div class="code">*-a400</div>
+												<div class="value">#ADFF4E</div>
+											</li>
+											<li class="bg-teal-a500">
+												<div class="code">*-a500</div>
+												<div class="value">#00444E</div>
+											</li>
+											<li class="bg-teal-a600">
+												<div class="code">*-a600</div>
+												<div class="value">#00B4AD</div>
+											</li>
+											<li class="bg-teal-a700">
+												<div class="code">*-a700</div>
+												<div class="value">#E7002F</div>
+											</li>
+											<li class="bg-teal-a800">
+												<div class="code">*-a800</div>
+												<div class="value">#FF1B23</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /Teal Palette -->
+
+						<!-- Light Green Palette -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Light Green Palette <small class="text-muted">(bg-lgreen-*)</small></div>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-12">
+										<ul class="colors-demo">
+											<li class="bg-lgreen-50">
+												<div class="code">*-50</div>
+												<div class="value">#E3F1D4</div>
+											</li>
+											<li class="bg-lgreen-100">
+												<div class="code">*-100</div>
+												<div class="value">#D0E7B5</div>
+											</li>
+											<li class="bg-lgreen-200">
+												<div class="code">*-200</div>
+												<div class="value">#BCDC97</div>
+											</li>
+											<li class="bg-lgreen-300">
+												<div class="code">*-300</div>
+												<div class="value">#A8D278</div>
+											</li>
+											<li class="bg-lgreen-400">
+												<div class="code">*-400</div>
+												<div class="value">#95C859</div>
+											</li>
+											<li class="bg-lgreen">
+												<div class="code">*-500</div>
+												<div class="value">#8BC34A</div>
+											</li>
+											<li class="bg-lgreen-600">
+												<div class="code">*-600</div>
+												<div class="value">#81BB3E</div>
+											</li>
+											<li class="bg-lgreen-700">
+												<div class="code">*-700</div>
+												<div class="value">#76AB39</div>
+											</li>
+											<li class="bg-lgreen-800">
+												<div class="code">*-800</div>
+												<div class="value">#6C9C34</div>
+											</li>
+											<li class="bg-lgreen-900">
+												<div class="code">*-900</div>
+												<div class="value">#618D2F</div>
+											</li>
+											<li class="bg-lgreen-1000">
+												<div class="code">*-1000</div>
+												<div class="value">#577D2A</div>
+											</li>
+											<li class="bg-lgreen-1100">
+												<div class="code">*-1100</div>
+												<div class="value">#4C6E24</div>
+											</li>
+										</ul>
+
+										<ul class="colors-demo">
+											<li class="bg-lgreen-a100">
+												<div class="code">*-a100</div>
+												<div class="value">#39751D</div>
+											</li>
+											<li class="bg-lgreen-a200">
+												<div class="code">*-a200</div>
+												<div class="value">#7E9E27</div>
+											</li>
+											<li class="bg-lgreen-a300">
+												<div class="code">*-a300</div>
+												<div class="value">#BDDF7F</div>
+											</li>
+											<li class="bg-lgreen-a400">
+												<div class="code">*-a400</div>
+												<div class="value">#F4D1D0</div>
+											</li>
+											<li class="bg-lgreen-a500">
+												<div class="code">*-a500</div>
+												<div class="value">#4C9E27</div>
+											</li>
+											<li class="bg-lgreen-a600">
+												<div class="code">*-a600</div>
+												<div class="value">#93D556</div>
+											</li>
+											<li class="bg-lgreen-a700">
+												<div class="code">*-a700</div>
+												<div class="value">#A17FDF</div>
+											</li>
+											<li class="bg-lgreen-a800">
+												<div class="code">*-a800</div>
+												<div class="value">#CAA8E9</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /Light Green Palette -->
+
+						<!-- Lime Palette -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Lime Palette <small class="text-muted">(bg-lime-*)</small></div>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-12">
+										<ul class="colors-demo">
+											<li class="bg-lime-50">
+												<div class="code">*-50</div>
+												<div class="value">#CAA8E9</div>
+											</li>
+											<li class="bg-lime-100">
+												<div class="code">*-100</div>
+												<div class="value">#ECF1B2</div>
+											</li>
+											<li class="bg-lime-200">
+												<div class="code">*-200</div>
+												<div class="value">#E3EB90</div>
+											</li>
+											<li class="bg-lime-300">
+												<div class="code">*-300</div>
+												<div class="value">#DAE56D</div>
+											</li>
+											<li class="bg-lime-400">
+												<div class="code">*-400</div>
+												<div class="value">#D1DF4A</div>
+											</li>
+											<li class="bg-lime">
+												<div class="code">*-500</div>
+												<div class="value">#CDDC39</div>
+											</li>
+											<li class="bg-lime-600">
+												<div class="code">*-600</div>
+												<div class="value">#C9D928</div>
+											</li>
+											<li class="bg-lime-700">
+												<div class="code">*-700</div>
+												<div class="value">#BAC923</div>
+											</li>
+											<li class="bg-lime-800">
+												<div class="code">*-800</div>
+												<div class="value">#A9B720</div>
+											</li>
+											<li class="bg-lime-900">
+												<div class="code">*-900</div>
+												<div class="value">#99A61D</div>
+											</li>
+											<li class="bg-lime-1000">
+												<div class="code">*-1000</div>
+												<div class="value">#89951A</div>
+											</li>
+											<li class="bg-lime-1100">
+												<div class="code">*-1100</div>
+												<div class="value">#798317</div>
+											</li>
+										</ul>
+
+										<ul class="colors-demo">
+											<li class="bg-lime-a100">
+												<div class="code">*-a100</div>
+												<div class="value">#648B0F</div>
+											</li>
+											<li class="bg-lime-a200">
+												<div class="code">*-a200</div>
+												<div class="value">#B9A814</div>
+											</li>
+											<li class="bg-lime-a300">
+												<div class="code">*-a300</div>
+												<div class="value">#F0EE76</div>
+											</li>
+											<li class="bg-lime-a400">
+												<div class="code">*-a400</div>
+												<div class="value">#FAD2E0</div>
+											</li>
+											<li class="bg-lime-a500">
+												<div class="code">*-a500</div>
+												<div class="value">#85B914</div>
+											</li>
+											<li class="bg-lime-a600">
+												<div class="code">*-a600</div>
+												<div class="value">#D3EB48</div>
+											</li>
+											<li class="bg-lime-a700">
+												<div class="code">*-a700</div>
+												<div class="value">#7678F0</div>
+											</li>
+											<li class="bg-lime-a800">
+												<div class="code">*-a800</div>
+												<div class="value">#B0A4F5</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /Lime Palette -->
+
+						<!-- Amber Palette -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Amber Palette <small class="text-muted">(bg-amber-*)</small></div>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-12">
+										<ul class="colors-demo">
+											<li class="bg-amber-50">
+												<div class="code">*-50</div>
+												<div class="value">#FFEFBF</div>
+											</li>
+											<li class="bg-amber-100">
+												<div class="code">*-100</div>
+												<div class="value">#FFE596</div>
+											</li>
+											<li class="bg-amber-200">
+												<div class="code">*-200</div>
+												<div class="value">#FFDB6D</div>
+											</li>
+											<li class="bg-amber-300">
+												<div class="code">*-300</div>
+												<div class="value">#FFD044</div>
+											</li>
+											<li class="bg-amber-400">
+												<div class="code">*-400</div>
+												<div class="value">#FFC61B</div>
+											</li>
+											<li class="bg-amber">
+												<div class="code">*-500</div>
+												<div class="value">#FFC107</div>
+											</li>
+											<li class="bg-amber-600">
+												<div class="code">*-600</div>
+												<div class="value">#F2B500</div>
+											</li>
+											<li class="bg-amber-700">
+												<div class="code">*-700</div>
+												<div class="value">#DDA600</div>
+											</li>
+											<li class="bg-amber-800">
+												<div class="code">*-800</div>
+												<div class="value">#C99700</div>
+											</li>
+											<li class="bg-amber-900">
+												<div class="code">*-900</div>
+												<div class="value">#B48700</div>
+											</li>
+											<li class="bg-amber-1000">
+												<div class="code">*-1000</div>
+												<div class="value">#A07800</div>
+											</li>
+											<li class="bg-amber-1100">
+												<div class="code">*-1100</div>
+												<div class="value">#8C6900</div>
+											</li>
+										</ul>
+
+										<ul class="colors-demo">
+											<li class="bg-amber-a100">
+												<div class="code">*-a100</div>
+												<div class="value">#8B8700</div>
+											</li>
+											<li class="bg-amber-a200">
+												<div class="code">*-a200</div>
+												<div class="value">#BE6A00</div>
+											</li>
+											<li class="bg-amber-a300">
+												<div class="code">*-a300</div>
+												<div class="value">#FFC358</div>
+											</li>
+											<li class="bg-amber-a400">
+												<div class="code">*-a400</div>
+												<div class="value">#FFBEEB</div>
+											</li>
+											<li class="bg-amber-a500">
+												<div class="code">*-a500</div>
+												<div class="value">#BEB900</div>
+											</li>
+											<li class="bg-amber-a600">
+												<div class="code">*-a600</div>
+												<div class="value">#FFD525</div>
+											</li>
+											<li class="bg-amber-a700">
+												<div class="code">*-a700</div>
+												<div class="value">#5894FF</div>
+											</li>
+											<li class="bg-amber-a800">
+												<div class="code">*-a800</div>
+												<div class="value">#8BA1FF</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /Amber Palette -->
+
+						<!-- Brown Palette -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Brown Palette <small class="text-muted">(bg-brown-*)</small></div>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-12">
+										<ul class="colors-demo">
+											<li class="bg-brown-50">
+												<div class="code">*-50</div>
+												<div class="value">#CDB4AB</div>
+											</li>
+											<li class="bg-brown-100">
+												<div class="code">*-100</div>
+												<div class="value">#BE9E92</div>
+											</li>
+											<li class="bg-brown-200">
+												<div class="code">*-200</div>
+												<div class="value">#AF8778</div>
+											</li>
+											<li class="bg-brown-300">
+												<div class="code">*-300</div>
+												<div class="value">#9F705F</div>
+											</li>
+											<li class="bg-brown-400">
+												<div class="code">*-400</div>
+												<div class="value">#865E50</div>
+											</li>
+											<li class="bg-brown">
+												<div class="code">*-500</div>
+												<div class="value">#795548</div>
+											</li>
+											<li class="bg-brown-600">
+												<div class="code">*-600</div>
+												<div class="value">#6C4C40</div>
+											</li>
+											<li class="bg-brown-700">
+												<div class="code">*-700</div>
+												<div class="value">#5F4339</div>
+											</li>
+											<li class="bg-brown-800">
+												<div class="code">*-800</div>
+												<div class="value">#533A31</div>
+											</li>
+											<li class="bg-brown-900">
+												<div class="code">*-900</div>
+												<div class="value">#46312A</div>
+											</li>
+											<li class="bg-brown-1000">
+												<div class="code">*-1000</div>
+												<div class="value">#392822</div>
+											</li>
+											<li class="bg-brown-1100">
+												<div class="code">*-1100</div>
+												<div class="value">#2C1F1A</div>
+											</li>
+										</ul>
+
+										<ul class="colors-demo">
+											<li class="bg-brown-a100">
+												<div class="code">*-a100</div>
+												<div class="value">#2F2317</div>
+											</li>
+											<li class="bg-brown-a200">
+												<div class="code">*-a200</div>
+												<div class="value">#522A27</div>
+											</li>
+											<li class="bg-brown-a300">
+												<div class="code">*-a300</div>
+												<div class="value">#B36C5F</div>
+											</li>
+											<li class="bg-brown-a400">
+												<div class="code">*-a400</div>
+												<div class="value">#CBA4D4</div>
+											</li>
+											<li class="bg-brown-a500">
+												<div class="code">*-a500</div>
+												<div class="value">#523C27</div>
+											</li>
+											<li class="bg-brown-a600">
+												<div class="code">*-a600</div>
+												<div class="value">#976148</div>
+											</li>
+											<li class="bg-brown-a700">
+												<div class="code">*-a700</div>
+												<div class="value">#5FA6B3</div>
+											</li>
+											<li class="bg-brown-a800">
+												<div class="code">*-a800</div>
+												<div class="value">#82AEC3</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /Brown Palette -->
+
+						<!-- Slate Palette -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Slate Palette <small class="text-muted">(bg-slate-*)</small></div>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-12">
+										<ul class="colors-demo">
+											<li class="bg-slate-50">
+												<div class="code">*-50</div>
+												<div class="value">#C9D4DA</div>
+											</li>
+											<li class="bg-slate-100">
+												<div class="code">*-100</div>
+												<div class="value">#B1C1C9</div>
+											</li>
+											<li class="bg-slate-200">
+												<div class="code">*-200</div>
+												<div class="value">#99AEB8</div>
+											</li>
+											<li class="bg-slate-300">
+												<div class="code">*-300</div>
+												<div class="value">#819BA8</div>
+											</li>
+											<li class="bg-slate-400">
+												<div class="code">*-400</div>
+												<div class="value">#688897</div>
+											</li>
+											<li class="bg-slate">
+												<div class="code">*-500</div>
+												<div class="value">#607D8B</div>
+											</li>
+											<li class="bg-slate-600">
+												<div class="code">*-600</div>
+												<div class="value">#58727F</div>
+											</li>
+											<li class="bg-slate-700">
+												<div class="code">*-700</div>
+												<div class="value">#4F6773</div>
+											</li>
+											<li class="bg-slate-800">
+												<div class="code">*-800</div>
+												<div class="value">#475C67</div>
+											</li>
+											<li class="bg-slate-900">
+												<div class="code">*-900</div>
+												<div class="value">#3F525B</div>
+											</li>
+											<li class="bg-slate-1000">
+												<div class="code">*-1000</div>
+												<div class="value">#36474F</div>
+											</li>
+											<li class="bg-slate-1100">
+												<div class="code">*-1100</div>
+												<div class="value">#2E3C43</div>
+											</li>
+										</ul>
+
+										<ul class="colors-demo">
+											<li class="bg-slate-a100">
+												<div class="code">*-a100</div>
+												<div class="value">#283648</div>
+											</li>
+											<li class="bg-slate-a200">
+												<div class="code">*-a200</div>
+												<div class="value">#3A6369</div>
+											</li>
+											<li class="bg-slate-a300">
+												<div class="code">*-a300</div>
+												<div class="value">#82AEBA</div>
+											</li>
+											<li class="bg-slate-a400">
+												<div class="code">*-a400</div>
+												<div class="value">#C7DEC4</div>
+											</li>
+											<li class="bg-slate-a500">
+												<div class="code">*-a500</div>
+												<div class="value">#3A4F69</div>
+											</li>
+											<li class="bg-slate-a600">
+												<div class="code">*-a600</div>
+												<div class="value">#628DA7</div>
+											</li>
+											<li class="bg-slate-a700">
+												<div class="code">*-a700</div>
+												<div class="value">#BA8E82</div>
+											</li>
+											<li class="bg-slate-a800">
+												<div class="code">*-a800</div>
+												<div class="value">#CCB3A3</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Slate Palette -->
+
+						<!-- Grey Palette -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Grey Palette <small class="text-muted">(bg-grey-*)</small></div>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-12">
+										<ul class="colors-demo">
+											<li class="bg-grey-50">
+												<div class="code">*-50</div>
+												<div class="value">#CCB3A3</div>
+											</li>
+											<li class="bg-grey-100">
+												<div class="code">*-100</div>
+												<div class="value">#E5E5E5</div>
+											</li>
+											<li class="bg-grey-200">
+												<div class="code">*-200</div>
+												<div class="value">#D1D1D1</div>
+											</li>
+											<li class="bg-grey-300">
+												<div class="code">*-300</div>
+												<div class="value">#BDBDBD</div>
+											</li>
+											<li class="bg-grey-400">
+												<div class="code">*-400</div>
+												<div class="value">#A8A8A8</div>
+											</li>
+											<li class="bg-grey">
+												<div class="code">*-500</div>
+												<div class="value">#9E9E9E</div>
+											</li>
+											<li class="bg-grey-600">
+												<div class="code">*-600</div>
+												<div class="value">#949494</div>
+											</li>
+											<li class="bg-grey-700">
+												<div class="code">*-700</div>
+												<div class="value">#8A8A8A</div>
+											</li>
+											<li class="bg-grey-800">
+												<div class="code">*-800</div>
+												<div class="value">#7F7F7F</div>
+											</li>
+											<li class="bg-grey-900">
+												<div class="code">*-900</div>
+												<div class="value">#757575</div>
+											</li>
+											<li class="bg-grey-1000">
+												<div class="code">*-1000</div>
+												<div class="value">#6B6B6B</div>
+											</li>
+											<li class="bg-grey-1100">
+												<div class="code">*-1100</div>
+												<div class="value">#616161</div>
+											</li>
+										</ul>
+
+										<ul class="colors-demo">
+											<li class="bg-grey-a100">
+												<div class="code">*-a100</div>
+												<div class="value">#6A5B57</div>
+											</li>
+											<li class="bg-grey-a200">
+												<div class="code">*-a200</div>
+												<div class="value">#876D72</div>
+											</li>
+											<li class="bg-grey-a300">
+												<div class="code">*-a300</div>
+												<div class="value">#CCC1C2</div>
+											</li>
+											<li class="bg-grey-a400">
+												<div class="code">*-a400</div>
+												<div class="value">#FAF9FA</div>
+											</li>
+											<li class="bg-grey-a500">
+												<div class="code">*-a500</div>
+												<div class="value">#87736D</div>
+											</li>
+											<li class="bg-grey-a600">
+												<div class="code">*-a600</div>
+												<div class="value">#B5A6A5</div>
+											</li>
+											<li class="bg-grey-a700">
+												<div class="code">*-a700</div>
+												<div class="value">#C1CCCB</div>
+											</li>
+											<li class="bg-grey-a800">
+												<div class="code">*-a800</div>
+												<div class="value">#DDE3E3</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /Grey Palette -->
+
+						<!-- Black Palette -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Black Palette <small class="text-muted">(bg-black-*)</small></div>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-12">
+										<ul class="colors-demo">
+											<li class="bg-black-50">
+												<div class="code">*-50</div>
+												<div class="value">#8F8F8F</div>
+											</li>
+											<li class="bg-black-100">
+												<div class="code">*-100</div>
+												<div class="value">#7A7A7A</div>
+											</li>
+											<li class="bg-black-200">
+												<div class="code">*-200</div>
+												<div class="value">#666666</div>
+											</li>
+											<li class="bg-black-300">
+												<div class="code">*-300</div>
+												<div class="value">#525252</div>
+											</li>
+											<li class="bg-black-400">
+												<div class="code">*-400</div>
+												<div class="value">#3D3D3D</div>
+											</li>
+											<li class="bg-black">
+												<div class="code">*-500</div>
+												<div class="value">#333333</div>
+											</li>
+											<li class="bg-black-600">
+												<div class="code">*-600</div>
+												<div class="value">#292929</div>
+											</li>
+											<li class="bg-black-700">
+												<div class="code">*-700</div>
+												<div class="value">#1F1F1F</div>
+											</li>
+											<li class="bg-black-800">
+												<div class="code">*-800</div>
+												<div class="value">#141414</div>
+											</li>
+											<li class="bg-black-900">
+												<div class="code">*-900</div>
+												<div class="value">#0A0A0A</div>
+											</li>
+											<li class="bg-black-1000">
+												<div class="code">*-1000</div>
+												<div class="value">#000000</div>
+											</li>
+											<li class="bg-black-1100">
+												<div class="code">*-1100</div>
+												<div class="value">#000000</div>
+											</li>
+										</ul>
+
+										<ul class="colors-demo">
+											<li class="bg-black-a100">
+												<div class="code">*-a100</div>
+												<div class="value">#000000</div>
+											</li>
+											<li class="bg-black-a200">
+												<div class="code">*-a200</div>
+												<div class="value">#110D0E</div>
+											</li>
+											<li class="bg-black-a300">
+												<div class="code">*-a300</div>
+												<div class="value">#655254</div>
+											</li>
+											<li class="bg-black-a400">
+												<div class="code">*-a400</div>
+												<div class="value">#90839A</div>
+											</li>
+											<li class="bg-black-a500">
+												<div class="code">*-a500</div>
+												<div class="value">#110E0D</div>
+											</li>
+											<li class="bg-black-a600">
+												<div class="code">*-a600</div>
+												<div class="value">#493C3B</div>
+											</li>
+											<li class="bg-black-a700">
+												<div class="code">*-a700</div>
+												<div class="value">#526563</div>
+											</li>
+											<li class="bg-black-a800">
+												<div class="code">*-a800</div>
+												<div class="value">#698081</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /Black Palette -->
+					</div>
+				</div>
+
+
+				<!-- Color system usage -->
+				<div class="panel panel-flat">
+					<div class="panel-heading">
+						<div class="panel-title">Color system usage</div>
+					</div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="table-responsive">
+									<table class="table table-bordered">
+										<thead>
+											<tr>
+												<th style="width: 200px;">Class</th>
+												<th style="width: 250px;">Prefixes</th>
+												<th>Description</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th colspan="3" class="active">Background</th>
+											</tr>
+											<tr>
+												<td><code>.bg-*</code></td>
+												<td>*-50, *-100, *-200, *-300, *-400, *-600, *-700, *-800, *-900,, *-1000, *-1100 *-a100, *-a200, *-a300, *-a400, *-a500, *-a600, *-a700, *-a800</td>
+												<td>Background color. Can be added to dropdown menus, sidebar, navbar, alerts, inputs, panel panel-colors, selects etc.</td>
+											</tr>
+
+											<tr>
+												<th colspan="3" class="active">Borders</th>
+											</tr>
+											<tr>
+												<td><code>.border-*</code></td>
+												<td rowspan="5">*-50, *-100, *-200, *-300, *-400, *-600, *-700, *-800, *-900,, *-1000, *-1100 *-a100, *-a200, *-a300, *-a400, *-a500, *-a600, *-a700, *-a800</td>
+												<td>4 sides border color. Any element that contains border</td>
+											</tr>
+											<tr>
+												<td><code>.border-top-*</code></td>
+												<td>Top border only. Any element that contains all sides border or <strong>top</strong> border only</td>
+											</tr>
+											<tr>
+												<td><code>.border-bottom-*</code></td>
+												<td>Bottom border only. Any element that contains all sides border or <strong>bottom</strong> border only</td>
+											</tr>
+											<tr>
+												<td><code>.border-left-*</code></td>
+												<td>Left border only. Any element that contains all sides border or <strong>left</strong> border only</td>
+											</tr>
+											<tr>
+												<td><code>.border-right-*</code></td>
+												<td>Right border only. Any element that contains all sides border or <strong>right</strong> border only</td>
+											</tr>
+
+											<tr>
+												<th colspan="3" class="active">Text</th>
+											</tr>
+											<tr>
+												<td><code>.text-*</code></td>
+												<td>*-50, *-100, *-200, *-300, *-400, *-600, *-700, *-800, *-900,, *-1000, *-1100 *-a100, *-a200, *-a300, *-a400, *-a500, *-a600, *-a700, *-a800</td>
+												<td>Text color. Can be used in text, icons and links</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Color system usage -->
+
+			</div>
+
+			<!-- Footer -->
+			<footer class="footer-container">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12 col-sm-12">
+							<div class="pull-left">
+								© 2017 Bird&nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;&nbsp;Web app kit by <a href="http://followtechnique.com" target="_blank">FollowTechnique</a>.							</div>
+	                        <div class="pull-right">
+								<div class="label label-info">Version: 1.3.0</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- /Footer -->
+
+		</section>
+		<!-- /Page Container ends -->
+
+		<!-- ScrolltoTop -->
+		<a id="scrollTop" href="#top"><i class="icon-arrow-up12"></i></a>
+		<!-- /ScrolltoTop -->
+
+	</div>
+
+<!-- Rightbar -->
+<div id="right_sidebar" class="right_bar"></div>
+<script>
+function open_rightbar() {
+	$(window).resize(function() {
+		if(($(window).width() < 500)){
+			document.getElementById("right_sidebar").style.width = "100%";
+		}
+		else if($(window).width() > 500) {
+			document.getElementById("right_sidebar").style.width = "260px";
+		}
+	}).resize();
+}
+function close_rightbar() {
+	document.getElementById("right_sidebar").style.width = "0";
+}
+</script>
+<!-- /Rightbar -->
+
+<!-- Layout settings -->
+<div class="layout"></div>
+<span class="is_hidden" id="jquery_vars">
+	<span class="is_hidden switch-active"></span>
+	<span class="is_hidden switch-inactive"></span>
+	<span class="is_hidden chart-bg"></span>
+	<span class="is_hidden chart-gridlines-color"></span>
+	<span class="is_hidden chart-legends-text-color"></span>
+	<span class="is_hidden chart-grid-text-color"></span>
+	<span class="is_hidden chart-data-color-option1"></span>
+	<span class="is_hidden chart-data-color-option2"></span>
+	<span class="is_hidden chart-data-color-option3"></span>
+	<span class="is_hidden chart-data-color-option4"></span>
+	<span class="is_hidden chart-data-color-option5"></span>
+	<span class="is_hidden chart-data-color-option6"></span>
+	<span class="is_hidden chart-data-color-option7"></span>
+	<span class="is_hidden chart-data-color-option8"></span>
+</span>
+<!-- /Layout settings -->
+
+<!-- Global scripts -->
+<script src="lib/js/core/jquery/jquery.js"></script>
+<script src="lib/js/core/jquery/jquery.ui.js"></script>
+<script src="lib/js/core/bootstrap/bootstrap.js"></script>
+<script src="lib/js/core/bootstrap/jasny_bootstrap.min.js"></script>
+<script src="lib/js/core/navigation/nav.accordion.js"></script>
+<script src="lib/js/core/hammer/hammerjs.js"></script>
+<script src="lib/js/core/hammer/jquery.hammer.js"></script>
+<script src="lib/js/core/slimscroll/jquery.slimscroll.js"></script>
+<script src="lib/js/extensions/smart-resize.js"></script>
+<script src="lib/js/extensions/blockui.min.js"></script>
+<script src="lib/js/forms/uniform.min.js"></script>
+<script src="lib/js/forms/switchery.js"></script>
+<script src="lib/js/forms/select2.min.js"></script>
+<script src="lib/js/plugins/venobox.js"></script>
+<script src="lib/js/core/app/layouts.js"></script>
+<script src="lib/js/core/app/core.js"></script>
+<!-- /Global scripts -->
+
+<!-- Page scripts -->
+<!-- /Page scripts -->
+
+</body>
+</html>

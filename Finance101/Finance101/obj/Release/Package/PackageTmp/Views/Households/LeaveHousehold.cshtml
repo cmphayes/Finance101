@@ -1,0 +1,29 @@
+﻿@model NYC_Budget.Models.Household
+
+<h2>Leave household</h2>
+
+<h3>Are you sure you want to exit the household?</h3>
+<p>You will no longer have acces to the accounts of the is household.</p>
+<div>
+    <h4>Household</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Household:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+        @Html.HiddenFor(model => model.Id)
+        <div class="form-actions no-color">
+            <input type="submit" value="Leave" class="btn btn-default" /> |
+            @*@Html.ActionLink("Back to List", "Index")*@
+        </div>
+    }
+</div>

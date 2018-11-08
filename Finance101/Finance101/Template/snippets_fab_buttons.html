@@ -1,0 +1,618 @@
+<!doctype html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="theme-color" content="#1C2B36" />
+	<title>Bird - Responsive admin dashboard template by Followtechnique</title>
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="144x144">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="114x114">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="72x72">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png">
+	<link href="img/favicon.ico" rel="icon" type="image/png">
+	<link href="img/favicon.ico" rel="shortcut icon">
+    <!-- /Favicon -->
+
+    <!-- Global stylesheets -->
+	<link type="text/css" rel="stylesheet" href="lib/css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="lib/css/animate.min.css">
+    <link type="text/css" rel="stylesheet" href="lib/css/main.css">
+    <!-- /Global stylesheets -->
+</head>
+<body id="top">
+
+<!-- Preloader -->
+<div id="preloader">
+	<div id="status">
+		<div class="loader"></div>
+	</div>
+</div>
+<!-- /Preloader -->
+
+<div id="body-wrapper" class="body-container">
+
+	<!-- Header begins -->
+	<header class="main-nav clearfix">
+
+		<!-- Searchbar -->
+		<div class="top-search-bar">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3">
+						<div class="search-input-addon">
+							<span class="addon-icon"><i class="icon-search4"></i></span>
+							<input type="text" class="form-control top-search-input" placeholder="Enter your keyword...">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Searchbar -->
+
+		<!-- Branding -->
+		<div class="navbar-left pull-left">
+			<div class="clearfix">
+				<ul class="left-branding pull-left">
+					<li class="visible-handheld"><span class="left-toggle-switch"><i class="icon-menu7"></i></span></li>
+					<li>
+						<a href="index.html"><div class="logo"></div></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /Branding -->
+
+		<!-- Search & Languages -->
+		<div class="navbar pull-left">
+			<div class="clearfix">
+				<ul class="pull-left top-icons hidden-xs">
+					<li><a href="#" class="btn-top-search m-l-10"><i class="icon-search4"></i></a></li>
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-flag7"></i></a>
+						<ul class="dropdown-menu languages">
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">Deutsch</a></li>
+                            <li><a href="#">Українська</a></li>
+							<li><a href="#">España</a></li>
+                        </ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /Search & Languages -->
+
+		<!-- Navbar icons -->
+		<div class="navbar pull-right">
+			<div class="clearfix">
+				<ul class="pull-right top-icons">
+					<li><a href="#" class="btn-top-search visible-xs"><i class="icon-search4"></i></a></li>
+
+					<!-- Quick apps dropdown -->
+					<li class="dropdown apps-dropdown hidden-xs">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-grid2"></i></a>
+						<div class="dropdown-menu">
+						</div>
+					</li>
+					<!-- /Quick apps dropdown -->
+
+					<!-- Rightbar -->
+					<li><a href="#" onclick="open_rightbar()"><span class="bubble">6</span><i class="icon-stack3"></i></a></li>
+					<!-- /Rightbar -->
+
+					<!-- User dropdown -->
+					<li class="dropdown user-dropdown">
+						<a class="user-name hidden-xs" data-toggle="dropdown">Jane Elliott <i class="icon-more2"></i><small>Administrator</small></a>
+						<a href="#" class="btn-user dropdown-toggle hidden-xs" data-toggle="dropdown"><img src="http://via.placeholder.com/80x80" class="img-circle user" alt=""/></a>
+						<a href="#" class="dropdown-toggle visible-xs" data-toggle="dropdown"><i class="icon-more"></i></a>
+						<div class="dropdown-menu no-padding">
+						</div>
+					</li>
+					<!-- /User dropdown -->
+
+				</ul>
+			</div>
+		</div>
+		<!-- /Navbar icons -->
+
+	</header>
+	<!-- /Header ends -->
+
+	<!-- Sidebar -->
+	<aside class="menu">
+		<div class="left-aside-container">
+
+			<!-- User profile -->
+			<div class="user-profile"></div>
+			<!-- /User profile -->
+
+
+			<!-- Main menu -->
+			<div class="menu-container"></div>
+			<!-- /Main menu -->
+
+		</div>
+	</aside>
+	<!-- /Sidebar -->
+
+	<!-- Page container begins -->
+	<section class="main-container">
+		<h1 style="display:none">Empty Heading</h1>
+
+			<!--Page Header-->
+			<div class="header">
+				<div class="header-content">
+					<div class="page-title">
+						<i class="icon-rocket position-left"></i> Fab buttons
+					</div>
+					<ul class="breadcrumb">
+						<li><a href="index.html"></a></li>
+						<li>Material snippets</li>
+						<li class="active">Fab buttons</li>
+					</ul>
+				</div>
+			</div>
+			<!--/Page Header-->
+
+			<div class="container-fluid page-content">
+
+				<div class="row">
+					<div class="col-md-12 col-sm-12 col-xs-12">
+
+						<!-- Material toggle button -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Material toggle buttons</div>
+							</div>
+							<div class="panel-body">
+								<div class="material-button-anim">
+								  <ul class="list-inline" id="options">
+									<li class="option">
+									  <button class="material-button option1" type="button">
+										<span class="icon-phone2" aria-hidden="true"></span>
+									  </button>
+									</li>
+									<li class="option">
+									  <button class="material-button option2" type="button">
+										<span class="icon-envelope" aria-hidden="true"></span>
+									  </button>
+									</li>
+									<li class="option">
+									  <button class="material-button option3" type="button">
+										<span class="icon-pencil" aria-hidden="true"></span>
+									  </button>
+									</li>
+								  </ul>
+								  <button class="material-button material-button-toggle" type="button">
+									<span class="icon-plus3" aria-hidden="true"></span>
+								  </button>
+								</div>
+							</div>
+						</div>
+						<!-- /Material toggle button -->
+
+					</div>
+				</div>
+
+				<div class="page-subtitle">Floating fab buttons</div>
+
+				<div class="row">
+					<div class="col-md-3 col-sm-6">
+
+						<!-- Floating fab button (Bottom right) -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Floating fab menu
+								<small class="display-block">Bottom right position</small>
+								</div>
+							</div>
+							<div class="panel-body">
+								<div style="min-height:240px"></div>
+								<ul class="fab-menu fab-menu-absolute fab-menu-bottom-right" data-fab-toggle="hover">
+									<li>
+										<a class="fab-menu-btn btn bg-success btn-float btn-rounded btn-icon">
+											<i class="fab-icon-open icon-plus2"></i>
+											<i class="fab-icon-close icon-cross2"></i>
+										</a>
+
+										<ul class="fab-menu-inner">
+											<li>
+												<div class="fab-label-visible" data-fab-label="Call now">
+													<a href="#" class="btn btn-default btn-rounded btn-icon btn-float">
+														<i class="icon-phone2"></i>
+													</a>
+												</div>
+											</li>
+											<li>
+												<div class="fab-label-visible" data-fab-label="Compose email">
+													<a href="#" class="btn btn-default btn-rounded btn-icon btn-float">
+														<i class="icon-pencil"></i>
+													</a>
+												</div>
+											</li>
+											<li>
+												<div class="fab-label-visible" data-fab-label="Conversations">
+													<a href="#" class="btn btn-default btn-rounded btn-icon btn-float">
+														<i class="icon-bubbles3"></i>
+													</a>
+												</div>
+											</li>
+											<li>
+												<div class="fab-label-visible" data-fab-label="Start chatting">
+													<a href="#" class="btn bg-success-600 btn-rounded btn-icon btn-float">
+														<img src="img/demo/img4.jpg" class="img-responsive img-circle" alt="">
+													</a>
+													<span class="status-mark border-pink-400"></span>
+												</div>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- /Floating fab button (Bottom right) -->
+
+					</div>
+
+					<div class="col-md-3 col-sm-6">
+
+						<!-- Floating fab button (Top right) -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Floating fab menu
+								<small class="display-block">Top right position</small>
+								</div>
+							</div>
+							<div class="panel-body">
+								<div style="min-height:240px"></div>
+								<ul class="fab-menu fab-menu-absolute fab-menu-top-right" data-fab-toggle="hover">
+									<li>
+										<a class="fab-menu-btn btn bg-success btn-float btn-rounded btn-icon">
+											<i class="fab-icon-open icon-plus2"></i>
+											<i class="fab-icon-close icon-cross2"></i>
+										</a>
+
+										<ul class="fab-menu-inner">
+											<li>
+												<div class="fab-label-visible" data-fab-label="Call now">
+													<a href="#" class="btn btn-default btn-rounded btn-icon btn-float">
+														<i class="icon-phone2"></i>
+													</a>
+												</div>
+											</li>
+											<li>
+												<div class="fab-label-visible" data-fab-label="Compose email">
+													<a href="#" class="btn btn-default btn-rounded btn-icon btn-float">
+														<i class="icon-pencil"></i>
+													</a>
+												</div>
+											</li>
+											<li>
+												<div class="fab-label-visible" data-fab-label="Conversations">
+													<a href="#" class="btn btn-default btn-rounded btn-icon btn-float">
+														<i class="icon-bubbles3"></i>
+													</a>
+												</div>
+											</li>
+											<li>
+												<div class="fab-label-visible" data-fab-label="Start chatting">
+													<a href="#" class="btn bg-success-600 btn-rounded btn-icon btn-float">
+														<img src="img/demo/img4.jpg" class="img-responsive img-circle" alt="">
+													</a>
+													<span class="status-mark border-pink-400"></span>
+												</div>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- /Floating fab button (Top right) -->
+
+					</div>
+
+					<div class="col-md-3 col-sm-6">
+
+						<!-- Floating fab button (Bottom left) -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Floating fab menu
+								<small class="display-block">Bottom left position</small>
+								</div>
+							</div>
+							<div class="panel-body">
+								<div style="min-height:240px"></div>
+								<ul class="fab-menu fab-menu-absolute fab-menu-bottom-left" data-fab-toggle="hover">
+									<li>
+										<a class="fab-menu-btn btn bg-success btn-float btn-rounded btn-icon">
+											<i class="fab-icon-open icon-plus2"></i>
+											<i class="fab-icon-close icon-cross2"></i>
+										</a>
+
+										<ul class="fab-menu-inner">
+											<li>
+												<div class="fab-label-visible" data-fab-label="Call now">
+													<a href="#" class="btn btn-default btn-rounded btn-icon btn-float">
+														<i class="icon-phone2"></i>
+													</a>
+												</div>
+											</li>
+											<li>
+												<div class="fab-label-visible" data-fab-label="Compose email">
+													<a href="#" class="btn btn-default btn-rounded btn-icon btn-float">
+														<i class="icon-pencil"></i>
+													</a>
+												</div>
+											</li>
+											<li>
+												<div class="fab-label-visible" data-fab-label="Conversations">
+													<a href="#" class="btn btn-default btn-rounded btn-icon btn-float">
+														<i class="icon-bubbles3"></i>
+													</a>
+												</div>
+											</li>
+											<li>
+												<div class="fab-label-visible" data-fab-label="Start chatting">
+													<a href="#" class="btn bg-success-600 btn-rounded btn-icon btn-float">
+														<img src="img/demo/img4.jpg" class="img-responsive img-circle" alt="">
+													</a>
+													<span class="status-mark border-pink-400"></span>
+												</div>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- /Floating fab button (Bottom left) -->
+
+					</div>
+
+					<div class="col-md-3 col-sm-6">
+
+						<!-- Floating fab button (Top left) -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Floating fab menu
+								<small class="display-block">Top left position</small>
+								</div>
+							</div>
+							<div class="panel-body">
+								<div style="min-height:240px"></div>
+								<ul class="fab-menu fab-menu-absolute fab-menu-top-left" data-fab-toggle="hover">
+									<li>
+										<a class="fab-menu-btn btn bg-success btn-float btn-rounded btn-icon">
+											<i class="fab-icon-open icon-plus2"></i>
+											<i class="fab-icon-close icon-cross2"></i>
+										</a>
+
+										<ul class="fab-menu-inner">
+											<li>
+												<div class="fab-label-visible" data-fab-label="Call now">
+													<a href="#" class="btn btn-default btn-rounded btn-icon btn-float">
+														<i class="icon-phone2"></i>
+													</a>
+												</div>
+											</li>
+											<li>
+												<div class="fab-label-visible" data-fab-label="Compose email">
+													<a href="#" class="btn btn-default btn-rounded btn-icon btn-float">
+														<i class="icon-pencil"></i>
+													</a>
+												</div>
+											</li>
+											<li>
+												<div class="fab-label-visible" data-fab-label="Conversations">
+													<a href="#" class="btn btn-default btn-rounded btn-icon btn-float">
+														<i class="icon-bubbles3"></i>
+													</a>
+												</div>
+											</li>
+											<li>
+												<div class="fab-label-visible" data-fab-label="Start chatting">
+													<a href="#" class="btn bg-success-600 btn-rounded btn-icon btn-float">
+														<img src="img/demo/img4.jpg" class="img-responsive img-circle" alt="">
+													</a>
+													<span class="status-mark border-pink-400"></span>
+												</div>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<!-- /Floating fab button (Top left) -->
+
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-12">
+
+						<!-- Fab menu classes -->
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Fab menu classes</div>
+							</div>
+							<div class="table-responsive">
+								<table class="table table-bordered">
+									<thead>
+										<tr>
+											<th style="width: 20%;">Class</th>
+											<th>Description</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr class="border-double">
+											<th colspan="2" class="active">Positions and directions</th>
+										</tr>
+										<tr>
+											<td><code>.fab-menu-top-left</code></td>
+											<td>Top left position. Can have absolute and fixed positions, also can be sticked to top on page scroll</td>
+										</tr>
+										<tr>
+											<td><code>.fab-menu-top-right</code></td>
+											<td>Top right position. Can have absolute and fixed positions, also can be sticked to top on page scroll</td>
+										</tr>
+										<tr>
+											<td><code>.fab-menu-bottom-left</code></td>
+											<td>Bottom left position. Can have absolute and fixed positions</td>
+										</tr>
+										<tr>
+											<td><code>.fab-menu-bottom-right</code></td>
+											<td>Bottom right position. Can have absolute and fixed positions</td>
+										</tr>
+
+										<tr class="border-double">
+											<th colspan="2" class="active">Menu positioning</th>
+										</tr>
+										<tr>
+											<td><code>.fab-menu-absolute</code></td>
+											<td>Absolute positioning. Can be used in any container</td>
+										</tr>
+										<tr>
+											<td><code>.fab-menu-fixed</code></td>
+											<td>Fixed positioning. Can be used in main container only, relative to page layout</td>
+										</tr>
+										<tr>
+											<td><code>.fab-menu-affixed</code></td>
+											<td>Sticky menu. Can be used in main container only, relative to page layout. Supported in top positions only</td>
+										</tr>
+
+										<tr class="border-double">
+											<th colspan="2" class="active">Menu visibility</th>
+										</tr>
+										<tr>
+											<td><code>data-fab-toggle="click"</code></td>
+											<td>Open menu on <strong>click</strong>. Applies to main menu container that has <code>.fab-menu</code> class</td>
+										</tr>
+										<tr>
+											<td><code>data-fab-toggle="hover"</code></td>
+											<td>Open menu on <strong>hover</strong>. Applies to main menu container that has <code>.fab-menu</code> class</td>
+										</tr>
+										<tr>
+											<td><code>data-fab-state="opened"</code></td>
+											<td>Display menu on page load. Works only with <code>data-fab-toggle="click"</code> option</td>
+										</tr>
+
+										<tr class="border-double">
+											<th colspan="2" class="active">Inner button labels</th>
+										</tr>
+										<tr>
+											<td><code>data-fab-label="..."</code></td>
+											<td>Text label to display on inner button hover. Must be added to <code>&lt;div&gt;</code> element inside inner menu item</td>
+										</tr>
+										<tr>
+											<td><code>.fab-label-right</code></td>
+											<td>Display labels on the right side. Default position is left. Must be added to <code>&lt;div&gt;</code> element inside inner menu item</td>
+										</tr>
+										<tr>
+											<td><code>.fab-label-light</code></td>
+											<td>Use this class if you want to display light labels instead of default dark. Must be added to <code>&lt;div&gt;</code> element inside inner menu item</td>
+										</tr>
+										<tr>
+											<td><code>.fab-label-visible</code></td>
+											<td>By default, all labels appear on hover. To make them always visible, add this class to <code>&lt;div&gt;</code> element inside inner menu item</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<!-- /Fab menu classes -->
+
+					</div>
+				</div>
+
+			</div>
+
+			<!-- Footer -->
+			<footer class="footer-container">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12 col-sm-12">
+							<div class="pull-left">
+								© 2017 Bird&nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;&nbsp;Web app kit by <a href="http://followtechnique.com" target="_blank">FollowTechnique</a>.							</div>
+	                        <div class="pull-right">
+								<div class="label label-info">Version: 1.3.0</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- /Footer -->
+
+		</section>
+		<!-- /Page Container ends -->
+
+		<!-- ScrolltoTop -->
+		<a id="scrollTop" href="#top"><i class="icon-arrow-up12"></i></a>
+		<!-- /ScrolltoTop -->
+
+	</div>
+
+<!-- Rightbar -->
+<div id="right_sidebar" class="right_bar"></div>
+<script>
+function open_rightbar() {
+	$(window).resize(function() {
+		if(($(window).width() < 500)){
+			document.getElementById("right_sidebar").style.width = "100%";
+		}
+		else if($(window).width() > 500) {
+			document.getElementById("right_sidebar").style.width = "260px";
+		}
+	}).resize();
+}
+function close_rightbar() {
+	document.getElementById("right_sidebar").style.width = "0";
+}
+</script>
+<!-- /Rightbar -->
+
+<!-- Layout settings -->
+<div class="layout"></div>
+<span class="is_hidden" id="jquery_vars">
+	<span class="is_hidden switch-active"></span>
+	<span class="is_hidden switch-inactive"></span>
+	<span class="is_hidden chart-bg"></span>
+	<span class="is_hidden chart-gridlines-color"></span>
+	<span class="is_hidden chart-legends-text-color"></span>
+	<span class="is_hidden chart-grid-text-color"></span>
+	<span class="is_hidden chart-data-color-option1"></span>
+	<span class="is_hidden chart-data-color-option2"></span>
+	<span class="is_hidden chart-data-color-option3"></span>
+	<span class="is_hidden chart-data-color-option4"></span>
+	<span class="is_hidden chart-data-color-option5"></span>
+	<span class="is_hidden chart-data-color-option6"></span>
+	<span class="is_hidden chart-data-color-option7"></span>
+	<span class="is_hidden chart-data-color-option8"></span>
+</span>
+<!-- /Layout settings -->
+
+<!-- Global scripts -->
+<script src="lib/js/core/jquery/jquery.js"></script>
+<script src="lib/js/core/jquery/jquery.ui.js"></script>
+<script src="lib/js/core/bootstrap/bootstrap.js"></script>
+<script src="lib/js/core/bootstrap/jasny_bootstrap.min.js"></script>
+<script src="lib/js/core/navigation/nav.accordion.js"></script>
+<script src="lib/js/core/hammer/hammerjs.js"></script>
+<script src="lib/js/core/hammer/jquery.hammer.js"></script>
+<script src="lib/js/core/slimscroll/jquery.slimscroll.js"></script>
+<script src="lib/js/extensions/smart-resize.js"></script>
+<script src="lib/js/extensions/blockui.min.js"></script>
+<script src="lib/js/forms/uniform.min.js"></script>
+<script src="lib/js/forms/switchery.js"></script>
+<script src="lib/js/forms/select2.min.js"></script>
+<script src="lib/js/plugins/venobox.js"></script>
+<script src="lib/js/core/app/layouts.js"></script>
+<script src="lib/js/core/app/core.js"></script>
+<!-- /Global scripts -->
+
+<!-- Page scripts -->
+<script src="lib/js/pages/snippets/fab_buttons.js"></script>
+<!-- /Page scripts -->
+
+</body>
+</html>

@@ -1,0 +1,1289 @@
+<!doctype html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="theme-color" content="#1C2B36" />
+	<title>Bird - Responsive admin dashboard template by Followtechnique</title>
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="144x144">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="114x114">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="72x72">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png">
+	<link href="img/favicon.ico" rel="icon" type="image/png">
+	<link href="img/favicon.ico" rel="shortcut icon">
+    <!-- /Favicon -->
+
+    <!-- Global stylesheets -->
+	<link type="text/css" rel="stylesheet" href="lib/css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="lib/css/animate.min.css">
+    <link type="text/css" rel="stylesheet" href="lib/css/main.css">
+    <!-- /Global stylesheets -->
+
+	<!-- Page css -->
+	<link rel="stylesheet" href="lib/assets/icons/climacon/styles.css">
+	<link rel="stylesheet" href="lib/assets/icons/climacon/climacon.css">
+	<!-- /page css -->
+</head>
+<body id="top">
+
+<!-- Preloader -->
+<div id="preloader">
+	<div id="status">
+		<div class="loader"></div>
+	</div>
+</div>
+<!-- /Preloader -->
+
+<div id="body-wrapper" class="body-container">
+
+	<!-- Header begins -->
+	<header class="main-nav clearfix">
+
+		<!-- Searchbar -->
+		<div class="top-search-bar">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3">
+						<div class="search-input-addon">
+							<span class="addon-icon"><i class="icon-search4"></i></span>
+							<input type="text" class="form-control top-search-input" placeholder="Enter your keyword...">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Searchbar -->
+
+		<!-- Branding -->
+		<div class="navbar-left pull-left">
+			<div class="clearfix">
+				<ul class="left-branding pull-left">
+					<li class="visible-handheld"><span class="left-toggle-switch"><i class="icon-menu7"></i></span></li>
+					<li>
+						<a href="index.html"><div class="logo"></div></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /Branding -->
+
+		<!-- Search & Languages -->
+		<div class="navbar pull-left">
+			<div class="clearfix">
+				<ul class="pull-left top-icons hidden-xs">
+					<li><a href="#" class="btn-top-search m-l-10"><i class="icon-search4"></i></a></li>
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-flag7"></i></a>
+						<ul class="dropdown-menu languages">
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">Deutsch</a></li>
+                            <li><a href="#">Українська</a></li>
+							<li><a href="#">España</a></li>
+                        </ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /Search & Languages -->
+
+		<!-- Navbar icons -->
+		<div class="navbar pull-right">
+			<div class="clearfix">
+				<ul class="pull-right top-icons">
+					<li><a href="#" class="btn-top-search visible-xs"><i class="icon-search4"></i></a></li>
+
+					<!-- Quick apps dropdown -->
+					<li class="dropdown apps-dropdown hidden-xs">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-grid2"></i></a>
+						<div class="dropdown-menu">
+						</div>
+					</li>
+					<!-- /Quick apps dropdown -->
+
+					<!-- Rightbar -->
+					<li><a href="#" onclick="open_rightbar()"><span class="bubble">6</span><i class="icon-stack3"></i></a></li>
+					<!-- /Rightbar -->
+
+					<!-- User dropdown -->
+					<li class="dropdown user-dropdown">
+						<a class="user-name hidden-xs" data-toggle="dropdown">Jane Elliott <i class="icon-more2"></i><small>Administrator</small></a>
+						<a href="#" class="btn-user dropdown-toggle hidden-xs" data-toggle="dropdown"><img src="http://via.placeholder.com/80x80" class="img-circle user" alt=""/></a>
+						<a href="#" class="dropdown-toggle visible-xs" data-toggle="dropdown"><i class="icon-more"></i></a>
+						<div class="dropdown-menu no-padding">
+						</div>
+					</li>
+					<!-- /User dropdown -->
+
+				</ul>
+			</div>
+		</div>
+		<!-- /Navbar icons -->
+
+	</header>
+	<!-- /Header ends -->
+
+	<!-- Sidebar -->
+	<aside class="menu">
+		<div class="left-aside-container">
+
+			<!-- User profile -->
+			<div class="user-profile"></div>
+			<!-- /User profile -->
+
+
+			<!-- Main menu -->
+			<div class="menu-container"></div>
+			<!-- /Main menu -->
+
+		</div>
+	</aside>
+	<!-- /Sidebar -->
+
+	<!-- Page container begins -->
+	<section class="main-container">
+		<h1 style="display:none">Empty Heading</h1>
+
+			<!--Page Header-->
+			<div class="header">
+				<div class="header-content">
+					<div class="page-title">
+						<i class="icon-puzzle position-left"></i> Dashboard Widgets
+					</div>
+					<ul class="breadcrumb">
+						<li><a href="index.html"></a></li>
+						<li>Widgets</li>
+						<li class="active">Dashboard Widgets</li>
+					</ul>
+				</div>
+			</div>
+			<!--/Page Header-->
+
+			<div class="container-fluid page-content">
+
+				<div class="row">
+					<div class="col-md-8 col-sm-8">
+
+						<!-- Total earnings chart -->
+						<div class="panel panel-flat">
+							<div class="panel-body">
+								<div id="earnings"></div>
+								<div class="row m-t-20">
+									<div class="col-md-7 col-sm-7 text-center m-t-10">
+										<div class="row">
+											<div class="col-md-12">
+												<h5 class="text-uppercase no-margin-b">Total Earnings <span>(This year)</span></h5>
+												<h1 class="text-semibold text-danger no-margin-t">$45,723</h1>
+											</div>
+										</div>
+
+										<div class="row m-t-15">
+											<div class="col-md-4 col-sm-4 col-xs-4 no-margin border-right border-slate-50 border-right-dashed">
+												<h3 class="text-semibold text-success no-margin-t no-margin-b">$12,411</h3>
+												<h6 class="text-uppercase no-margin-t no-margin-b">America</h6>
+											</div>
+
+											<div class="col-md-4 col-sm-4 col-xs-4 border-right border-slate-50 border-right-dashed">
+												<h3 class="text-semibold text-warning no-margin-t no-margin-b">$24,212</h3>
+												<h6 class="text-uppercase no-margin-t no-margin-b">Europe</h6>
+											</div>
+
+											<div class="col-md-4 col-sm-4 col-xs-4">
+												<h3 class="text-semibold text-info no-margin-t no-margin-b">$9,100</h3>
+												<h6 class="text-uppercase no-margin-t no-margin-b">Asia</h6>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-5 col-sm-5">
+										<div class="map-container world-map" style="max-height:170px;"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /Total earnings chart -->
+
+					</div>
+
+					<div class="col-md-4 col-sm-4">
+
+						<!-- Sales chart -->
+						<div class="panel panel-flat no-border bg-purple no-margin">
+							<div class="panel-heading no-padding-b">
+								<h4 class="panel-title">December 2016</h4>
+							</div>
+							<div class="chart bg-purple" id="google-line"></div>
+						</div>
+
+						<div class="panel panel-flat no-border no-margin p-20">
+							<div class="row">
+								<div class="col-md-4 col-sm-4 col-xs-4 text-right p-t-10">
+									<h2 class="no-margin m-t-5 text-semibold text-info">60%</h2>
+									<p class="text-muted text-uppercase">Direct Sales</p>
+								</div>
+								<div class="col-md-4 col-sm-4 col-xs-4 text-center">
+									<span class="pie-chart pie-chart-small chart1" data-percent="40">
+										<span class="pie-percent percent1"></span>
+									</span>
+								</div>
+								<div class="col-md-4 col-sm-4 col-xs-4 text-left p-t-10">
+									<h2 class="no-margin m-t-5 text-semibold text-success">40%</h2>
+									<p class="text-muted text-uppercase">Channel Sales</p>
+								</div>
+							</div>
+						</div>
+						<!-- /Sales chart -->
+
+						<!-- Expected sales -->
+						<div class="panel panel-flat no-border m-t-20 p-r-20">
+							<div class="row">
+								<div class="col-md-6 col-sm-6 col-xs-6 p-l-20 p-t-15">
+									<h2 class="x2 text-bold text-slate p-t-5 no-margin p-l-20">$34,356</h2>
+									<p class="text-muted text-uppercase p-l-20">Expected Sales</p>
+								</div>
+								<div class="col-md-6 col-sm-6 col-xs-6 text-left p-20">
+									<div class="chart" id="google-column-sales"></div>
+								</div>
+							</div>
+						</div>
+						<!-- /Expected sales -->
+
+						<!-- Pie charts -->
+						<div class="panel panel-flat">
+							<div class="panel-body text-center">
+								<div class="col-md-4 col-sm-4 col-xs-4">
+									<h5 class="m-b-10">Monthly</h5>
+									<span class="pie-chart pie-chart-small chart2" data-percent="86">
+										<span class="pie-percent percent1"></span>
+									</span>
+								</div>
+
+								<div class="col-md-4 col-sm-4 col-xs-4">
+									<h5 class="m-b-10">Yearly</h5>
+									<span class="pie-chart pie-chart-small chart3" data-percent="74">
+										<span class="pie-percent percent2"></span>
+									</span>
+								</div>
+
+								<div class="col-md-4 col-sm-4 col-xs-4">
+									<h5 class="m-b-10">Total</h5>
+									<span class="pie-chart pie-chart-small chart4" data-percent="54">
+										<span class="pie-percent percent3"></span>
+									</span>
+								</div>
+							</div>
+						</div>
+						<!-- /Pie charts -->
+
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4 col-sm-6">
+
+						<!-- Server load -->
+						<div class="panel panel-flat">
+							<div class="panel-heading no-padding-bottom">
+								<h5 class="text-uppercase text-semibold no-margin-t">Server load</h5>
+							</div>
+							<div class="panel-body p-b-35">
+								<p class="small">Server: www.followtechnique.com</p>
+								<div class="row">
+									<div class="col-md-4 col-sm-4 col-xs-4">
+										<h1 class="text-bold no-margin text-danger-200">1.2GB</h1>
+										<p class="small no-margin text-muted">Total usage</p>
+									</div>
+									<div class="col-md-4 col-sm-4 col-xs-4">
+										<h3 class="no-margin p-t-5">453.14KB</h3>
+										<p class="small no-margin text-muted">Current</p>
+									</div>
+									<div class="col-md-4 col-sm-4 col-xs-4">
+										<h3 class="no-margin p-t-5">56.615MB</h3>
+										<p class="small no-margin text-muted">Average</p>
+									</div>
+								</div>
+							</div>
+							<div id="chart_container">
+								<div id="chart0"></div>
+								<div id="legend" style="display:none;"></div>
+							</div>
+						</div>
+						<!-- /Server load -->
+
+					</div>
+
+					<div class="col-md-4 col-sm-6">
+
+						<!-- Current stocks -->
+						<div class="panel panel-flat">
+							<div class="panel-heading no-padding-bottom">
+								<h5 class="text-uppercase text-semibold no-margin-top">Current Stocks</h5>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-4 col-sm-4 col-xs-4">
+										<h3 class="text-bold no-margin text-success"><i class="icon-arrow-up16 position-left"></i>0.21%</h3>
+										<p class="small no-margin"><i class="icon-circles text-muted position-left"></i>Apple</p>
+									</div>
+									<div class="col-md-4 col-sm-4 col-xs-4">
+										<h3 class="text-bold no-margin text-success"><i class="icon-arrow-up16 position-left"></i>0.40%</h3>
+										<p class="small no-margin"><i class="icon-circles text-info position-left"></i>Facebook</p>
+									</div>
+									<div class="col-md-4 col-sm-4 col-xs-4">
+										<h3 class="text-bold no-margin text-danger"><i class="icon-arrow-down16 position-left"></i>0.09%</h3>
+										<p class="small no-margin"><i class="icon-circles text-purple position-left"></i>Google</p>
+									</div>
+								</div>
+							</div>
+							<div id="stocks" class="p-t-5 bg-white"></div>
+						</div>
+						<!-- /Current stocks -->
+
+						<!-- Website visits -->
+						<div class="panel panel-flat">
+							<div class="panel-heading no-padding-bottom">
+								<h5 class="text-uppercase text-semibold no-margin-top">Website Visits</h5>
+							</div>
+							<div class="row p-l-20 p-r-20">
+								<div class="col-md-2 col-sm-2 col-xs-2">
+									<i class="icon-earth icon-2x position-left text-muted p-t-5"></i>
+								</div>
+								<div class="col-md-10 col-sm-10 col-xs-10">
+									<p class="no-margin">www.followtechnique.com/index.html</p>
+									<p class="text-xs text-muted no-margin">Page Name</p>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6 col-sm-6 col-xs-6">
+									<div class="row text-center p-l-20 p-r-20">
+										<div class="col-md-4 col-sm-4 col-xs-4">
+											<h3 class="no-margin-bottom text-pink text-semibold">44</h3>
+											<p class="text-semibold text-muted text-xs no-margin-top">Today</p>
+										</div>
+
+										<div class="col-md-4 col-sm-4 col-xs-4">
+											<h3 class="no-margin-bottom text-pink text-semibold">284</h3>
+											<p class="text-semibold text-muted text-xs no-margin-top">Week</p>
+										</div>
+
+										<div class="col-md-4 col-sm-4 col-xs-4">
+											<h3 class="no-margin-bottom text-pink text-semibold">794</h3>
+											<p class="text-semibold text-muted text-xs no-margin-top">Month</p>
+										</div>
+									</div>
+									<div id="chart2" class="no-padding-t"></div>
+								</div>
+
+								<div class="col-md-6 col-sm-6 col-xs-6">
+									<div class="checkbox checkbox-switchery switchery-xs m-b-5">
+										<label>
+											<input type="checkbox" class="switchery">
+											Maintenance
+										</label>
+									</div>
+									<div class="checkbox checkbox-switchery switchery-xs m-b-5">
+										<label>
+											<input type="checkbox" class="switchery">
+											Offline Mode
+										</label>
+									</div>
+									<div class="checkbox checkbox-switchery switchery-xs m-b-5">
+										<label>
+											<input type="checkbox" class="switchery" checked="checked">
+											Porta consectetur
+										</label>
+									</div>
+									<div class="checkbox checkbox-switchery switchery-xs m-b-5">
+										<label>
+											<input type="checkbox" class="switchery" checked="checked">
+											Consectetuer
+										</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /Website visits -->
+
+					</div>
+
+					<div class="col-md-4 col-sm-12">
+						<div class="row">
+							<div class="col-md-6 col-sm-6">
+
+								<!-- Social comments -->
+								<div class="panel panel-flat">
+									<div class="panel-heading no-padding-b">
+										<h5 class="text-uppercase text-semibold no-margin-t">Social Comments</h5>
+									</div>
+									<div class="panel-body no-padding-t no-padding-b">
+										<div class="row text-center">
+											<div class="col-md-6 col-sm-6 col-xs-6">
+												<h2 class="no-margin text-indigo-300 text-semibold">64</h2>
+												<p class="text-semibold text-muted text-xs no-margin-t no-margin-b">Likes</p>
+											</div>
+											<div class="col-md-6 col-sm-6 col-xs-6">
+												<h2 class="no-margin text-info text-semibold">13</h2>
+												<p class="text-semibold text-muted text-xs no-margin-t no-margin-b">Shares</p>
+											</div>
+										</div>
+									</div>
+									<div id="social_graph" style="height:150px;"></div>
+								</div>
+								<!-- /Social comments -->
+
+								<!-- Activities -->
+								<div class="panel panel-flat bg-indigo p-b-5">
+									<div class="panel-heading no-padding-b">
+										<h5 class="text-uppercase text-semibold no-margin p-b-5">Activities</h5>
+									</div>
+									<div class="text-center">
+										<div class="GaugeMeter text-center m-t-10" id="meter1s" data-percent="80" data-append="%" data-size="128" data-theme="amber" data-back="rgba(0,0,0,.1)" data-animate_gauge_colors="1" data-animate_text_colors="1" data-width="15" data-label="Tasks" data-label_color="#fff" data-stripe="2"></div>
+									</div>
+								</div>
+								<!-- /Activities -->
+
+							</div>
+
+							<div class="col-md-6 col-sm-6">
+
+								<!-- Total leads -->
+								<div class="panel panel-flat bg-info">
+									<div class="panel-body p-10">
+										<div class="row">
+											<div class="col-md-7 col-xs-7">
+												<div id="leads"></div>
+											</div>
+											<div class="col-md-5 no-padding-l col-xs-5">
+												<p class="text-sm no-margin p-b-10">Total Leads</p>
+												<div class="x4 text-light text-white no-padding no-margin m-t-20 m-b-10 no-line-height">543</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- /Total leads -->
+
+								<!-- Total sales -->
+								<div class="panel panel-flat bg-success">
+									<div class="panel-body p-10">
+										<div class="row">
+											<div class="col-md-5 no-padding-r col-xs-5">
+												<p class="text-sm no-margin p-b-10">Total Sales</p>
+												<div class="x4 text-light text-white no-padding no-margin m-t-20 m-b-10 no-line-height">765</div>
+											</div>
+											<div class="col-md-7 col-xs-7">
+												<div id="sales"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- /Total sales -->
+
+								<!-- Sales graph -->
+								<div class="panel panel-flat">
+									<div class="panel-body no-padding bg-info-50">
+										<div class="">
+											<div id="container3"></div>
+										</div>
+									</div>
+									<div class="panel-body p-10">
+										<div class="row border-bottom border-slate-50 p-b-10">
+											<div class="col-md-7 col-sm-7 col-xs-7">
+												<div id="sales1"></div>
+											</div>
+											<div class="col-md-5 col-sm-5 col-xs-5 text-right">
+												<p class="text-xs text-muted text-semibold no-padding no-margin">Last</p>
+												<h3 class="text-semibold text-info no-padding no-margin">4.675</h3>
+											</div>
+										</div>
+										<div class="row p-t-10">
+											<div class="col-md-6 col-sm-6 col-xs-6">
+												<p class="text-xs text-muted text-semibold no-padding no-margin">Gross</p>
+												<h3 class="text-semibold text-info no-padding no-margin">12.456</h3>
+											</div>
+											<div class="col-md-6 col-sm-6 col-xs-6 text-right">
+												<p class="text-xs text-muted text-semibold no-padding no-margin">Net</p>
+												<h3 class="text-semibold text-info no-padding no-margin">14.904</h3>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- /Sales graph -->
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-7">
+
+						<!-- Weather block (Big) -->
+						<div class="weather-block-blur" style="background-image: url(img/demo/paris-lg.jpg)"></div>
+						<div class="weather-block-front">
+							<div class="weather-widget-block bg-slate">
+							  <div class="img-area">
+								 <div class="img-area-mask"></div>
+								 <img src="img/demo/paris-sm.jpg" alt="">
+								 <div class="img-area-front">
+									<h5 class="text-light location text-white">Paris</h5>
+									<p class="text-light dayToday">Sunday, July 27, 18:00</p>
+									<div class="weather-desc">
+									   <span>Cloudy, rain</span>
+									</div>
+									<ul class="weather-block-info">
+									   <li>
+										  <p class="temperature text-white">25<span class="temperature-feels">+20 feels</span></p>
+									   </li>
+									   <li>
+										<svg
+											 version="1.1"
+											 id="cloudRainSun"
+											 class="climacon climacon_cloudRainSun"
+											 xmlns="http://www.w3.org/2000/svg"
+											 xmlns:xlink="http://www.w3.org/1999/xlink"
+											 x="0px"
+											 y="0px"
+											 viewBox="15 15 70 70"
+											 enable-background="new 15 15 70 70"
+											 xml:space="preserve">
+											 <clipPath id="cloudFillClip">
+												<path d="M15,15v70h70V15H15z M59.943,61.639c-3.02,0-12.381,0-15.999,0c-6.626,0-11.998-5.371-11.998-11.998c0-6.627,5.372-11.999,11.998-11.999c5.691,0,10.434,3.974,11.665,9.29c1.252-0.81,2.733-1.291,4.334-1.291c4.418,0,8,3.582,8,8C67.943,58.057,64.361,61.639,59.943,61.639z"/>
+											 </clipPath>
+											 <clipPath id="sunCloudFillClip">
+												<path
+												   d="M15,15v70h70V15H15z M57.945,49.641c-4.417,0-8-3.582-8-7.999c0-4.418,3.582-7.999,8-7.999s7.998,3.581,7.998,7.999C65.943,46.059,62.362,49.641,57.945,49.641z"/>
+											 </clipPath>
+											 <clipPath id="cloudSunFillClip">
+												<path
+												   d="M15,15v70h20.947V63.481c-4.778-2.767-8-7.922-8-13.84c0-8.836,7.163-15.998,15.998-15.998c6.004,0,11.229,3.312,13.965,8.203c0.664-0.113,1.338-0.205,2.033-0.205c6.627,0,11.998,5.373,11.998,12c0,5.262-3.394,9.723-8.107,11.341V85H85V15H15z"/>
+											 </clipPath>
+											 <g class="climacon_iconWrap climacon_iconWrap-cloudRainSun">
+												<g clip-path="url(#cloudSunFillClip)">
+												   <g class="climacon_componentWrap climacon_componentWrap-sun climacon_componentWrap-sun_cloud">
+													  <g class="climacon_componentWrap climacon_componentWrap_sunSpoke">
+														 <path
+															class="climacon_component climacon_component-stroke climacon_component-stroke_sunSpoke climacon_component-stroke_sunSpoke-north"
+															d="M80.029,43.611h-3.998c-1.105,0-2-0.896-2-1.999s0.895-2,2-2h3.998c1.104,0,2,0.896,2,2S81.135,43.611,80.029,43.611z"/>
+														 <path
+															class="climacon_component climacon_component-stroke climacon_component-stroke_sunSpoke climacon_component-stroke_sunSpoke-north"
+															d="M72.174,30.3c-0.781,0.781-2.049,0.781-2.828,0c-0.781-0.781-0.781-2.047,0-2.828l2.828-2.828c0.779-0.781,2.047-0.781,2.828,0c0.779,0.781,0.779,2.047,0,2.828L72.174,30.3z"/>
+														 <path
+															class="climacon_component climacon_component-stroke climacon_component-stroke_sunSpoke climacon_component-stroke_sunSpoke-north"
+															d="M58.033,25.614c-1.105,0-2-0.896-2-2v-3.999c0-1.104,0.895-2,2-2c1.104,0,2,0.896,2,2v3.999C60.033,24.718,59.135,25.614,58.033,25.614z"/>
+														 <path
+															class="climacon_component climacon_component-stroke climacon_component-stroke_sunSpoke climacon_component-stroke_sunSpoke-north"
+															d="M43.892,30.3l-2.827-2.828c-0.781-0.781-0.781-2.047,0-2.828c0.78-0.781,2.047-0.781,2.827,0l2.827,2.828c0.781,0.781,0.781,2.047,0,2.828C45.939,31.081,44.673,31.081,43.892,30.3z"/>
+														 <path
+															class="climacon_component climacon_component-stroke climacon_component-stroke_sunSpoke climacon_component-stroke_sunSpoke-north"
+															d="M42.033,41.612c0,1.104-0.896,1.999-2,1.999h-4c-1.104,0-1.998-0.896-1.998-1.999s0.896-2,1.998-2h4C41.139,39.612,42.033,40.509,42.033,41.612z"/>
+														 <path
+															class="climacon_component climacon_component-stroke climacon_component-stroke_sunSpoke climacon_component-stroke_sunSpoke-north"
+															d="M43.892,52.925c0.781-0.78,2.048-0.78,2.827,0c0.781,0.78,0.781,2.047,0,2.828l-2.827,2.827c-0.78,0.781-2.047,0.781-2.827,0c-0.781-0.78-0.781-2.047,0-2.827L43.892,52.925z"/>
+														 <path
+															class="climacon_component climacon_component-stroke climacon_component-stroke_sunSpoke climacon_component-stroke_sunSpoke-north"
+															d="M58.033,57.61c1.104,0,2,0.895,2,1.999v4c0,1.104-0.896,2-2,2c-1.105,0-2-0.896-2-2v-4C56.033,58.505,56.928,57.61,58.033,57.61z"/>
+														 <path
+															class="climacon_component climacon_component-stroke climacon_component-stroke_sunSpoke climacon_component-stroke_sunSpoke-north"
+															d="M72.174,52.925l2.828,2.828c0.779,0.78,0.779,2.047,0,2.827c-0.781,0.781-2.049,0.781-2.828,0l-2.828-2.827c-0.781-0.781-0.781-2.048,0-2.828C70.125,52.144,71.391,52.144,72.174,52.925z"/>
+													  </g>
+													  <g class="climacon_componentWrap climacon_componentWrap-sunBody" clip-path="url(#sunCloudFillClip)">
+														 <circle
+															class="climacon_component climacon_component-stroke climacon_component-stroke_sunBody"
+															cx="58.033"
+															cy="41.612"
+															r="11.999"/>
+													  </g>
+												   </g>
+												</g>
+												<g class="climacon_componentWrap climacon_componentWrap-rain">
+												   <path
+													  class="climacon_component climacon_component-stroke climacon_component-stroke_rain climacon_component-stroke_rain- left"
+													  d="M41.946,53.641c1.104,0,1.999,0.896,1.999,2v15.998c0,1.105-0.895,2-1.999,2s-2-0.895-2-2V55.641C39.946,54.537,40.842,53.641,41.946,53.641z"/>
+												   <path
+													  class="climacon_component climacon_component-stroke climacon_component-stroke_rain climacon_component-stroke_rain- middle"
+													  d="M49.945,57.641c1.104,0,2,0.896,2,2v15.998c0,1.104-0.896,2-2,2s-2-0.896-2-2V59.641C47.945,58.535,48.841,57.641,49.945,57.641z"/>
+												   <path
+													  class="climacon_component climacon_component-stroke climacon_component-stroke_rain climacon_component-stroke_rain- right"
+													  d="M57.943,53.641c1.104,0,2,0.896,2,2v15.998c0,1.105-0.896,2-2,2c-1.104,0-2-0.895-2-2V55.641C55.943,54.537,56.84,53.641,57.943,53.641z"/>
+												   <path
+													  class="climacon_component climacon_component-stroke climacon_component-stroke_rain climacon_component-stroke_rain- left"
+													  d="M41.946,53.641c1.104,0,1.999,0.896,1.999,2v15.998c0,1.105-0.895,2-1.999,2s-2-0.895-2-2V55.641C39.946,54.537,40.842,53.641,41.946,53.641z"/>
+												   <path
+													  class="climacon_component climacon_component-stroke climacon_component-stroke_rain climacon_component-stroke_rain- middle"
+													  d="M49.945,57.641c1.104,0,2,0.896,2,2v15.998c0,1.104-0.896,2-2,2s-2-0.896-2-2V59.641C47.945,58.535,48.841,57.641,49.945,57.641z"/>
+												   <path
+													  class="climacon_component climacon_component-stroke climacon_component-stroke_rain climacon_component-stroke_rain- right"
+													  d="M57.943,53.641c1.104,0,2,0.896,2,2v15.998c0,1.105-0.896,2-2,2c-1.104,0-2-0.895-2-2V55.641C55.943,54.537,56.84,53.641,57.943,53.641z"/>
+												</g>
+												<g class="climacon_componentWrap climacon_componentWrap-cloud">
+												   <path
+													  class="climacon_component climacon_component-stroke climacon_component-stroke_cloud"
+													  d="M63.943,64.941v-4.381c2.389-1.384,4-3.961,4-6.92c0-4.417-3.582-8-8-8c-1.601,0-3.082,0.48-4.334,1.291c-1.23-5.317-5.973-9.29-11.665-9.29c-6.626,0-11.998,5.372-11.998,11.998c0,3.549,1.551,6.728,4,8.924v4.916c-4.777-2.768-8-7.922-8-13.84c0-8.835,7.163-15.997,15.998-15.997c6.004,0,11.229,3.311,13.965,8.203c0.664-0.113,1.338-0.205,2.033-0.205c6.627,0,11.998,5.372,11.998,12C71.941,58.863,68.602,63.293,63.943,64.941z"/>
+												</g>
+											 </g>
+										  </svg>
+									   </li>
+									   <li>
+										  <ul class="weather-params">
+											 <li><i class="climacon thermometer medium-high text-white"></i> <span class="text-white text-lg">743 mm Hg</span></li>
+											 <li><i class="climacon moon full text-white"></i> <span class="text-white text-lg">46% humidity</span></li>
+											 <li><i class="climacon wind text-white"></i> <span class="text-white text-lg">2m/s NW</span></li>
+										  </ul>
+									   </li>
+									</ul>
+								 </div>
+							  </div>
+							  <ul class="week-forecast text-white">
+								 <li class="sun">
+									<div class="inner">
+									   <h5 class="week-day">Monday</h5>
+									   <i class="climacon sun text-white"></i>
+									   <p class="week-day-temperature text-white">30</p>
+									</div>
+								 </li>
+								 <li class="rain">
+									<div class="inner">
+									   <h5 class="week-day">Tuesday</h5>
+									   <i class="climacon rain text-white"></i>
+									   <p class="week-day-temperature text-white">25</p>
+									</div>
+								 </li>
+								 <li class="cloud">
+									<div class="inner">
+									   <h5 class="week-day">Wednsday</h5>
+									   <i class="climacon cloud text-white"></i>
+									   <p class="week-day-temperature text-white">32</p>
+									</div>
+								 </li>
+								 <li class="sun">
+									<div class="inner">
+									   <h5 class="week-day">Thursday</h5>
+									   <i class="climacon sun text-white"></i>
+									   <p class="week-day-temperature text-white">30</p>
+									</div>
+								 </li>
+								 <li class="rain sun">
+									<div class="inner">
+									   <h5 class="week-day">Friday</h5>
+									   <i class="climacon rain sun text-white"></i>
+									   <p class="week-day-temperature text-white">29</p>
+									</div>
+								 </li>
+								 <li class="sun">
+									<div class="inner">
+									   <h5 class="week-day">Saturday</h5>
+									   <i class="climacon sun text-white"></i>
+									   <p class="week-day-temperature text-white">25</p>
+									</div>
+								 </li>
+								 <li class="cloud sun">
+									<div class="inner">
+									   <h5 class="week-day">Sunday</h5>
+									   <i class="climacon cloud sun text-white"></i>
+									   <p class="week-day-temperature text-white">22</p>
+									</div>
+								 </li>
+							  </ul>
+							</div>
+						</div>
+						<!-- /Weather block (Big) -->
+
+						<!-- Weather block (NY) -->
+						<div class="panel panel-flat m-t-20">
+							<div class="city">
+								<div class="title">
+									<h2>New York City</h2>
+									<h3>NEW YORK</h3>
+								</div>
+								<div class="date-time">
+									<div class="dmy">
+										<div id="txt" class="no-margin-b"></div>
+										<div class="date1">
+											<script type="text/javascript">
+											var mydate=new Date()
+											var year=mydate.getYear()
+											if(year<1000)
+											year+=1900
+											var day=mydate.getDay()
+											var month=mydate.getMonth()
+											var daym=mydate.getDate()
+											if(daym<10)
+											daym="0"+daym
+											var dayarray=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday")
+											var montharray=new Array("January","February","March","April","May","June","July","August","September","October","November","December")
+											document.write(""+dayarray[day]+", "+montharray[month]+" "+daym+", "+year+"")
+											</script>
+										</div>
+									</div>
+									<div class="currentTemperature">
+										<p class="text-white no-line-height">20°<span>C</span></p>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+
+							<div class="forecast">
+								<div class="forecast-icon text-center">
+									<img src="img/demo/forecast.png" alt="New York Weather Widget">
+								</div>
+								<div class="today-weather text-center">
+									<h3>Cloudy</h3>
+									<ul>
+										<li>Now <span> 20°C</span></li>
+										<li>09:00 <span> 22°C</span></li>
+										<li>12:00 <span> 24°C</span></li>
+										<li>15:00 <span> 23°C</span></li>
+										<li>18:00 <span> 20°C</span></li>
+									</ul>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<!-- /Weather block (NY) -->
+
+					</div>
+
+					<div class="col-md-5">
+
+						<!-- Weather block (Small) -->
+						<div class="panel panel-flat bg-indigo-600">
+							<div class="panel-body">
+								<div class="weather-top">
+									<div class="weather-grids">
+										<h3 class="day no-margin m-t-20">Friday </h3>
+										<h5 class="no-margin">Weather</h5>
+									</div>
+									<div class="weather-grids weather-mdl m-t-20">
+										<canvas id="clear-day" width="70" height="70"></canvas>
+									</div>
+									<div class="weather-grids">
+										<h4 class="no-margin m-t-20">Max 27°</h4>
+										<h2 class="no-margin">21°C</h2>
+										<h4 class="no-margin">Min 10°</h4>
+									</div>
+									<div class="clear"> </div>
+								</div>
+								<div class="clearfix"></div>
+								<div class="weather-bottom">
+									<ul>
+										<li class="bg"><h4>FRI</h4>
+											<figure class="icons">
+												<canvas id="clear-night" width="40" height="40"></canvas>
+											</figure>
+											<h5>27°C</h5>
+											<h6>17°C</h6>
+										</li>
+										<li><h4>SAT</h4>
+											<figure class="icons">
+												<canvas id="partly-cloudy-day" width="40" height="40"></canvas>
+											</figure>
+											<h5>20°C</h5>
+											<h6>15°C</h6>
+										</li>
+										<li class="bg"><h4>SUN</h4>
+											<figure class="icons">
+												<canvas id="cloudy" width="40" height="40"></canvas>
+											</figure>
+											<h5>18°C</h5>
+											<h6>12°C</h6>
+										</li>
+										<li><h4>MON</h4>
+											<figure class="icons">
+												<canvas id="sleet" width="40" height="40"></canvas>
+											</figure>
+											<h5>17°C</h5>
+											<h6>12°C</h6>
+										</li>
+										<li class="bg"><h4>TUE</h4>
+											<figure class="icons">
+												<canvas id="rain" width="40" height="40"></canvas>
+											</figure>
+											<h5>17°C</h5>
+											<h6>10°C</h6>
+										</li>
+										<li><h4>WED</h4>
+											<figure class="icons">
+												<canvas id="snow" width="40" height="40"></canvas>
+											</figure>
+											<h5>24°C</h5>
+											<h6>10°C</h6>
+										</li>
+										<li class="bg"><h4>THR</h4>
+											<figure class="icons">
+												<canvas id="wind" width="40" height="40"></canvas>
+											</figure>
+											<h5>25°C</h5>
+											<h6>15°C</h6>
+										</li>
+									</ul>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+						</div>
+						<!-- /Weather block (Small) -->
+
+						<!-- Monthly calendar -->
+						<div class="panel panel-flat bg-slate-600">
+							<div class="w3l">
+								<div class="agile">
+									<div class="dmy no-padding-b">
+										<div class="date">
+											<script type="text/javascript">
+											var mydate=new Date()
+											var year=mydate.getYear()
+											if(year<1000)
+											year+=1900
+											var day=mydate.getDay()
+											var month=mydate.getMonth()
+											var daym=mydate.getDate()
+											if(daym<10)
+											daym="0"+daym
+											var dayarray=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday")
+											var montharray=new Array("January","February","March","April","May","June","July","August","September","October","November","December")
+											document.write(""+dayarray[day]+"<br> "+montharray[month]+" "+daym+", "+year+"")
+											</script>
+										</div>
+									</div>
+								</div>
+								<div class="mini-cal">
+									<div class="calender">
+										<div class="calender-show-more-right">
+											<div class="cal1">
+												<div class="clndr">
+													<div class="clndr-controls">
+														<div class="clndr-control-button">
+															<span class="clndr-previous-button"><i class="icon-arrow-left32"></i></span>
+														</div>
+														<div class="month">July 2016</div>
+														<div class="clndr-control-button rightalign">
+															<span class="clndr-next-button"><i class="icon-arrow-right32"></i></span>
+														</div>
+													</div>
+													<table class="clndr-table">
+														<thead>
+															<tr class="header-days">
+																<td class="header-day">S</td>
+																<td class="header-day">M</td>
+																<td class="header-day">T</td>
+																<td class="header-day">W</td>
+																<td class="header-day">T</td>
+																<td class="header-day">F</td>
+																<td class="header-day">S</td>
+															</tr>
+														</thead>
+														<tbody>
+															<tr>
+																<td class="day past adjacent-month last-month calendar-day-2016-06-26 calendar-dow-0">
+																	<div class="day-contents">26</div>
+																</td>
+																<td class="day past adjacent-month last-month calendar-day-2016-06-27 calendar-dow-1">
+																	<div class="day-contents">27</div>
+																</td>
+																<td class="day past adjacent-month last-month calendar-day-2016-06-28 calendar-dow-2">
+																	<div class="day-contents">28</div>
+																</td>
+																<td class="day past adjacent-month last-month calendar-day-2016-06-29 calendar-dow-3">
+																	<div class="day-contents">29</div>
+																</td>
+																<td class="day past adjacent-month last-month calendar-day-2016-06-30 calendar-dow-4">
+																	<div class="day-contents">30</div>
+																</td>
+																<td class="day past calendar-day-2016-07-01 calendar-dow-5">
+																	<div class="day-contents">1</div>
+																</td>
+																<td class="day past calendar-day-2016-07-02 calendar-dow-6">
+																	<div class="day-contents">2</div>
+																</td>
+															</tr>
+															<tr>
+																<td class="day past calendar-day-2016-07-03 calendar-dow-0">
+																	<div class="day-contents">3</div>
+																</td>
+																<td class="day past calendar-day-2016-07-04 calendar-dow-1">
+																	<div class="day-contents">4</div>
+																</td>
+																<td class="day past calendar-day-2016-07-05 calendar-dow-2">
+																	<div class="day-contents">5</div>
+																</td>
+																<td class="day past calendar-day-2016-07-06 calendar-dow-3">
+																	<div class="day-contents">6</div>
+																</td>
+																<td class="day past calendar-day-2016-07-07 calendar-dow-4">
+																	<div class="day-contents">7</div>
+																</td>
+																<td class="day past calendar-day-2016-07-08 calendar-dow-5">
+																	<div class="day-contents">8</div>
+																</td>
+																<td class="day past calendar-day-2016-07-09 calendar-dow-6">
+																	<div class="day-contents">9</div>
+																</td>
+															</tr>
+															<tr>
+																<td class="day past event calendar-day-2016-07-10 calendar-dow-0">
+																	<div class="day-contents">10</div>
+																</td>
+																<td class="day past event calendar-day-2016-07-11 calendar-dow-1">
+																	<div class="day-contents">11</div>
+																</td>
+																<td class="day past event calendar-day-2016-07-12 calendar-dow-2">
+																	<div class="day-contents">12</div>
+																</td>
+																<td class="day past event calendar-day-2016-07-13 calendar-dow-3">
+																	<div class="day-contents">13</div>
+																</td>
+																<td class="day past event calendar-day-2016-07-14 calendar-dow-4">
+																	<div class="day-contents">14</div>
+																</td>
+																<td class="day past calendar-day-2016-07-15 calendar-dow-5">
+																	<div class="day-contents">15</div>
+																</td>
+																<td class="day today calendar-day-2016-07-16 calendar-dow-6">
+																	<div class="day-contents">16</div>
+																</td>
+															</tr>
+															<tr>
+																<td class="day calendar-day-2016-07-17 calendar-dow-0">
+																	<div class="day-contents">17</div>
+																</td>
+																<td class="day calendar-day-2016-07-18 calendar-dow-1">
+																	<div class="day-contents">18</div>
+																</td>
+																<td class="day calendar-day-2016-07-19 calendar-dow-2">
+																	<div class="day-contents">19</div>
+																</td>
+																<td class="day calendar-day-2016-07-20 calendar-dow-3">
+																	<div class="day-contents">20</div>
+																</td><td class="day calendar-day-2016-07-21 calendar-dow-4">
+																	<div class="day-contents">21</div>
+																</td>
+																<td class="day calendar-day-2016-07-22 calendar-dow-5">
+																	<div class="day-contents">22</div>
+																</td>
+																<td class="day event calendar-day-2016-07-23 calendar-dow-6">
+																	<div class="day-contents">23</div>
+																</td>
+															</tr>
+															<tr>
+																<td class="day event calendar-day-2016-07-24 calendar-dow-0">
+																	<div class="day-contents">24</div>
+																</td>
+																<td class="day event calendar-day-2016-07-25 calendar-dow-1">
+																	<div class="day-contents">25</div>
+																</td>
+																<td class="day event calendar-day-2016-07-26 calendar-dow-2">
+																	<div class="day-contents">26</div>
+																</td>
+																<td class="day calendar-day-2016-07-27 calendar-dow-3">
+																	<div class="day-contents">27</div>
+																</td>
+																<td class="day calendar-day-2016-07-28 calendar-dow-4">
+																	<div class="day-contents">28</div>
+																</td>
+																<td class="day calendar-day-2016-07-29 calendar-dow-5">
+																	<div class="day-contents">29</div>
+																</td>
+																<td class="day calendar-day-2016-07-30 calendar-dow-6">
+																	<div class="day-contents">30</div>
+																</td>
+															</tr>
+															<tr>
+																<td class="day calendar-day-2016-07-31 calendar-dow-0">
+																	<div class="day-contents">31</div>
+																</td>
+																<td class="day adjacent-month next-month calendar-day-2016-08-01 calendar-dow-1">
+																	<div class="day-contents">1</div>
+																</td>
+																<td class="day adjacent-month next-month calendar-day-2016-08-02 calendar-dow-2">
+																	<div class="day-contents">2</div>
+																</td>
+																<td class="day adjacent-month next-month calendar-day-2016-08-03 calendar-dow-3">
+																	<div class="day-contents">3</div>
+																</td>
+																<td class="day adjacent-month next-month calendar-day-2016-08-04 calendar-dow-4">
+																	<div class="day-contents">4</div>
+																</td>
+																<td class="day adjacent-month next-month calendar-day-2016-08-05 calendar-dow-5">
+																	<div class="day-contents">5</div>
+																</td>
+																<td class="day adjacent-month next-month calendar-day-2016-08-06 calendar-dow-6">
+																	<div class="day-contents">6</div>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="agileinfo">
+									<ul>
+										<li><span class="tod"></span>Today</li>
+										<li><span class="met"></span>Meet</li>
+										<li><span class="bus"></span>Busy</li>
+									</ul>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+						</div>
+						<!-- /Monthly calendar -->
+
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-12">
+
+						<!-- Stocks -->
+						<div class="panel panel-flat">
+							<div class="row">
+								<div class="col-md-5 col-sm-7 p-l-10">
+									<div id="vmap1" style="max-width: 500px; height: 320px;"></div>
+								</div>
+								<div class="col-md-7 col-sm-5 p-t-20">
+									<div class="col-md-6 col-sm-6 ">
+										<div class="row p-b-20 border-bottom border-grey-200">
+											<div class="col-md-6 col-sm-6 col-xs-6">
+												<p class="text-semibold no-margin">Apple</p>
+												<h2 class="text-bold no-margin text-success"><i class="icon-arrow-up16 position-left"></i>0.21%</h2>
+											</div>
+											<div class="col-md-6 col-sm-6 col-xs-6">
+												<p class="text-semibold no-margin">Facebook</p>
+												<h2 class="text-bold no-margin text-success"><i class="icon-arrow-up16 position-left"></i>0.40%</h2>
+											</div>
+										</div>
+										<div class="row m-t-20">
+											<div class="col-md-6 col-sm-6 col-xs-6">
+												<p class="text-semibold no-margin">Alabama</p>
+											</div>
+											<div class="col-md-6 col-sm-6 col-xs-6">
+												<p class="text-black">245 <i class="icon-arrow-up5 icon-1x text-success"></i></p>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-6 col-sm-6 col-xs-6">
+												<p class="text-semibold no-margin">Missouri</p>
+											</div>
+											<div class="col-md-6 col-sm-6 col-xs-6">
+												<p class="text-black">599 <i class="icon-arrow-down5 icon-1x text-danger"></i></p>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-6 col-sm-6 col-xs-6">
+												<p class="text-semibold no-margin">Texas</p>
+											</div>
+											<div class="col-md-6 col-sm-6 col-xs-6">
+												<p class="text-black">800 <i class="icon-arrow-down5 icon-1x text-danger"></i></p>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-6 col-sm-6 col-xs-6">
+												<p class="text-semibold no-margin">Oklahoma</p>
+											</div>
+											<div class="col-md-6 col-sm-6 col-xs-6">
+												<p class="text-black">450 <i class="icon-arrow-up5 icon-1x text-success"></i></p>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-6 col-sm-6 col-xs-6">
+												<p class="text-semibold no-margin">Ohio</p>
+											</div>
+											<div class="col-md-6 col-sm-6 col-xs-6">
+												<p class="text-error">155 <i class="icon-arrow-down5 icon-1x text-danger"></i></p>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6 col-sm-6">
+										<div class="row p-b-20 border-bottom border-grey-200">
+											<div class="col-md-6 col-sm-6 col-xs-6">
+												<p class="text-semibold no-margin">Google</p>
+												<h2 class="text-bold no-margin text-danger"><i class="icon-arrow-down16 position-left"></i>0.09%</h2>
+											</div>
+										</div>
+										<div class="row m-t-20">
+											<div class="col-md-6 col-sm-6 col-xs-6">
+												<p class="text-semibold no-margin">Alabama</p>
+											</div>
+											<div class="col-md-6 col-sm-6 col-xs-6">
+												<p class="text-black">245 <i class="icon-arrow-up5 icon-1x text-success"></i></p>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-6 col-sm-6 col-xs-6">
+												<p class="text-semibold no-margin">Missouri</p>
+											</div>
+											<div class="col-md-6 col-sm-6 col-xs-6">
+												<p class="text-black">599 <i class="icon-arrow-down5 icon-1x text-danger"></i></p>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-6 col-sm-6 col-xs-6">
+												<p class="text-semibold no-margin">Texas</p>
+											</div>
+											<div class="col-md-6 col-sm-6 col-xs-6">
+												<p class="text-black">800 <i class="icon-arrow-down5 icon-1x text-danger"></i></p>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-6 col-sm-6 col-xs-6">
+												<p class="text-semibold no-margin">Oklahoma</p>
+											</div>
+											<div class="col-md-6 col-sm-6 col-xs-6">
+												<p class="text-black">450 <i class="icon-arrow-up5 icon-1x text-success"></i></p>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-6 col-sm-6 col-xs-6">
+												<p class="text-semibold no-margin">Ohio</p>
+											</div>
+											<div class="col-md-6 col-sm-6 col-xs-6">
+												<p class="text-error">155 <i class="icon-arrow-down5 icon-1x text-danger"></i></p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /Stocks -->
+
+					</div>
+				</div>
+
+			</div>
+
+			<!-- Footer -->
+			<footer class="footer-container">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12 col-sm-12">
+							<div class="pull-left">
+								© 2017 Bird&nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;&nbsp;Web app kit by <a href="http://followtechnique.com" target="_blank">FollowTechnique</a>.							</div>
+	                        <div class="pull-right">
+								<div class="label label-info">Version: 1.3.0</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- /Footer -->
+
+		</section>
+		<!-- /Page Container ends -->
+
+		<!-- ScrolltoTop -->
+		<a id="scrollTop" href="#top"><i class="icon-arrow-up12"></i></a>
+		<!-- /ScrolltoTop -->
+
+	</div>
+
+<!-- Rightbar -->
+<div id="right_sidebar" class="right_bar"></div>
+<script>
+function open_rightbar() {
+	$(window).resize(function() {
+		if(($(window).width() < 500)){
+			document.getElementById("right_sidebar").style.width = "100%";
+		}
+		else if($(window).width() > 500) {
+			document.getElementById("right_sidebar").style.width = "260px";
+		}
+	}).resize();
+}
+function close_rightbar() {
+	document.getElementById("right_sidebar").style.width = "0";
+}
+</script>
+<!-- /Rightbar -->
+
+<!-- Layout settings -->
+<div class="layout"></div>
+<span class="is_hidden" id="jquery_vars">
+	<span class="is_hidden switch-active"></span>
+	<span class="is_hidden switch-inactive"></span>
+	<span class="is_hidden chart-bg"></span>
+	<span class="is_hidden chart-gridlines-color"></span>
+	<span class="is_hidden chart-legends-text-color"></span>
+	<span class="is_hidden chart-grid-text-color"></span>
+	<span class="is_hidden chart-data-color-option1"></span>
+	<span class="is_hidden chart-data-color-option2"></span>
+	<span class="is_hidden chart-data-color-option3"></span>
+	<span class="is_hidden chart-data-color-option4"></span>
+	<span class="is_hidden chart-data-color-option5"></span>
+	<span class="is_hidden chart-data-color-option6"></span>
+	<span class="is_hidden chart-data-color-option7"></span>
+	<span class="is_hidden chart-data-color-option8"></span>
+</span>
+<!-- /Layout settings -->
+
+<!-- Global scripts -->
+<script src="lib/js/core/jquery/jquery.js"></script>
+<script src="lib/js/core/jquery/jquery.ui.js"></script>
+<script src="lib/js/core/bootstrap/bootstrap.js"></script>
+<script src="lib/js/core/bootstrap/jasny_bootstrap.min.js"></script>
+<script src="lib/js/core/navigation/nav.accordion.js"></script>
+<script src="lib/js/core/hammer/hammerjs.js"></script>
+<script src="lib/js/core/hammer/jquery.hammer.js"></script>
+<script src="lib/js/core/slimscroll/jquery.slimscroll.js"></script>
+<script src="lib/js/extensions/smart-resize.js"></script>
+<script src="lib/js/extensions/blockui.min.js"></script>
+<script src="lib/js/forms/uniform.min.js"></script>
+<script src="lib/js/forms/switchery.js"></script>
+<script src="lib/js/forms/select2.min.js"></script>
+<script src="lib/js/plugins/venobox.js"></script>
+<script src="lib/js/core/app/layouts.js"></script>
+<script src="lib/js/core/app/core.js"></script>
+<!-- /Global scripts -->
+
+<!-- Page scripts -->
+<script src="lib/js/charts/highcharts.js"></script>
+<script src="lib/js/charts/highcharts-more.js"></script>
+<script src="lib/js/maps/jvectormap/jvectormap.min.js"></script>
+<script src="lib/js/maps/jvectormap/map_files/world.js"></script>
+<script src="lib/js/maps/jvectormap/map_files/usa.js"></script>
+<script src="https://www.google.com/jsapi"></script>
+<script src="lib/js/charts/google/lines/lines.js"></script>
+<script src="lib/js/core/jquery/jquery.easing.min.js"></script>
+<script src="lib/js/charts/jquery.easypiechart.min.js"></script>
+<script src="lib/js/charts/Rickshaw/d3.v3.js"></script>
+<script src="lib/js/charts/Rickshaw/Rickshaw.js"></script>
+<script src="lib/js/charts/Rickshaw/Rickshaw.Class.js"></script>
+<script src="lib/js/charts/Rickshaw/Rickshaw.Compat.ClassList.js"></script>
+<script src="lib/js/charts/Rickshaw/Rickshaw.Graph.js"></script>
+<script src="lib/js/charts/Rickshaw/Rickshaw.Graph.Renderer.js"></script>
+<script src="lib/js/charts/Rickshaw/Rickshaw.Graph.Renderer.Area.js"></script>
+<script src="lib/js/charts/Rickshaw/Rickshaw.Graph.Renderer.Line.js"></script>
+<script src="lib/js/charts/Rickshaw/Rickshaw.Graph.Renderer.Bar.js"></script>
+<script src="lib/js/charts/Rickshaw/Rickshaw.Graph.Renderer.ScatterPlot.js"></script>
+<script src="lib/js/charts/Rickshaw/Rickshaw.Graph.Renderer.Stack.js"></script>
+<script src="lib/js/charts/Rickshaw/Rickshaw.Graph.RangeSlider.js"></script>
+<script src="lib/js/charts/Rickshaw/Rickshaw.Graph.RangeSlider.Preview.js"></script>
+<script src="lib/js/charts/Rickshaw/Rickshaw.Graph.HoverDetail.js"></script>
+<script src="lib/js/charts/Rickshaw/Rickshaw.Graph.Annotate.js"></script>
+<script src="lib/js/charts/Rickshaw/Rickshaw.Graph.Legend.js"></script>
+<script src="lib/js/charts/Rickshaw/Rickshaw.Graph.Axis.Time.js"></script>
+<script src="lib/js/charts/Rickshaw/Rickshaw.Graph.Behavior.Series.Toggle.js"></script>
+<script src="lib/js/charts/Rickshaw/Rickshaw.Graph.Behavior.Series.Order.js"></script>
+<script src="lib/js/charts/Rickshaw/Rickshaw.Graph.Behavior.Series.Highlight.js"></script>
+<script src="lib/js/charts/Rickshaw/Rickshaw.Graph.Smoother.js"></script>
+<script src="lib/js/charts/Rickshaw/Rickshaw.Fixtures.Time.js"></script>
+<script src="lib/js/charts/Rickshaw/Rickshaw.Fixtures.Time.Local.js"></script>
+<script src="lib/js/charts/Rickshaw/Rickshaw.Fixtures.Number.js"></script>
+<script src="lib/js/charts/Rickshaw/Rickshaw.Fixtures.RandomData.js"></script>
+<script src="lib/js/charts/Rickshaw/Rickshaw.Fixtures.Color.js"></script>
+<script src="lib/js/charts/Rickshaw/Rickshaw.Color.Palette.js"></script>
+<script src="lib/js/charts/Rickshaw/Rickshaw.Graph.Axis.Y.js"></script>
+<script src="lib/js/charts/raphael-min.js"></script>
+<script src="lib/js/charts/morris.min.js"></script>
+<script src="lib/js/charts/gauge.min.js"></script>
+<script src="lib/assets/icons/climacon/skycons.js"></script>
+<script src="lib/js/core/underscore-min.js"></script>
+<script src="lib/js/core/moment.min.js"></script>
+<script src="lib/js/plugins/clndr/clndr.js"></script>
+<script src="lib/js/plugins/clndr/calndr.js"></script>
+<script src="lib/js/pages/widgets/widgets_dashboard.js"></script>
+<!-- /Page scripts -->
+
+</body>
+</html>

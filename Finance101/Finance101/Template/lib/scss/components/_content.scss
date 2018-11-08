@@ -1,0 +1,26 @@
+//----------------------------------
+//   File          : scss/components/_content.scss
+//   Type          : CSS stylesheet
+//   Version       : 1.3.0
+//   Last Updated  : July 08, 2017
+//   Description   : Page content and footer css definition
+//----------------------------------
+
+@include media(desktop,min){
+    .page-content{
+        @include w-max($main-container-max-width);
+        @include p-vh($main-container-padding-vertical,$main-container-padding-horizontal);
+    }
+}
+
+.footer-container {
+    @include w($main-container-max-width);
+    margin: 0 auto;
+    @include p-vh(15,$main-container-padding-horizontal);
+    @include typo($ff-semibold, $font-sm, lighten($black, 40%), left);
+    @include clearfix();
+    a{
+        color: $link-color;
+        @include bb(1,dotted,$link-color);
+    }
+}

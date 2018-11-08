@@ -1,0 +1,791 @@
+<!doctype html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="theme-color" content="#1C2B36" />
+	<title>Bird - Responsive admin dashboard template by Followtechnique</title>
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="144x144">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="114x114">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="72x72">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png">
+	<link href="img/favicon.ico" rel="icon" type="image/png">
+	<link href="img/favicon.ico" rel="shortcut icon">
+    <!-- /Favicon -->
+
+    <!-- Global stylesheets -->
+	<link type="text/css" rel="stylesheet" href="lib/css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="lib/css/animate.min.css">
+    <link type="text/css" rel="stylesheet" href="lib/css/main.css">
+    <!-- /Global stylesheets -->
+</head>
+<body id="top">
+
+<!-- Preloader -->
+<div id="preloader">
+	<div id="status">
+		<div class="loader"></div>
+	</div>
+</div>
+<!-- /Preloader -->
+
+<div id="body-wrapper" class="body-container">
+
+	<!-- Header begins -->
+	<header class="main-nav clearfix">
+
+		<!-- Searchbar -->
+		<div class="top-search-bar">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3">
+						<div class="search-input-addon">
+							<span class="addon-icon"><i class="icon-search4"></i></span>
+							<input type="text" class="form-control top-search-input" placeholder="Enter your keyword...">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Searchbar -->
+
+		<!-- Branding -->
+		<div class="navbar-left pull-left">
+			<div class="clearfix">
+				<ul class="left-branding pull-left">
+					<li class="visible-handheld"><span class="left-toggle-switch"><i class="icon-menu7"></i></span></li>
+					<li>
+						<a href="index.html"><div class="logo"></div></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /Branding -->
+
+		<!-- Search & Languages -->
+		<div class="navbar pull-left">
+			<div class="clearfix">
+				<ul class="pull-left top-icons hidden-xs">
+					<li><a href="#" class="btn-top-search m-l-10"><i class="icon-search4"></i></a></li>
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-flag7"></i></a>
+						<ul class="dropdown-menu languages">
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">Deutsch</a></li>
+                            <li><a href="#">Українська</a></li>
+							<li><a href="#">España</a></li>
+                        </ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /Search & Languages -->
+
+		<!-- Navbar icons -->
+		<div class="navbar pull-right">
+			<div class="clearfix">
+				<ul class="pull-right top-icons">
+					<li><a href="#" class="btn-top-search visible-xs"><i class="icon-search4"></i></a></li>
+
+					<!-- Quick apps dropdown -->
+					<li class="dropdown apps-dropdown hidden-xs">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-grid2"></i></a>
+						<div class="dropdown-menu">
+						</div>
+					</li>
+					<!-- /Quick apps dropdown -->
+
+					<!-- Rightbar -->
+					<li><a href="#" onclick="open_rightbar()"><span class="bubble">6</span><i class="icon-stack3"></i></a></li>
+					<!-- /Rightbar -->
+
+					<!-- User dropdown -->
+					<li class="dropdown user-dropdown">
+						<a class="user-name hidden-xs" data-toggle="dropdown">Jane Elliott <i class="icon-more2"></i><small>Administrator</small></a>
+						<a href="#" class="btn-user dropdown-toggle hidden-xs" data-toggle="dropdown"><img src="http://via.placeholder.com/80x80" class="img-circle user" alt=""/></a>
+						<a href="#" class="dropdown-toggle visible-xs" data-toggle="dropdown"><i class="icon-more"></i></a>
+						<div class="dropdown-menu no-padding">
+						</div>
+					</li>
+					<!-- /User dropdown -->
+
+				</ul>
+			</div>
+		</div>
+		<!-- /Navbar icons -->
+
+	</header>
+	<!-- /Header ends -->
+
+	<!-- Sidebar -->
+	<aside class="menu">
+		<div class="left-aside-container">
+
+			<!-- User profile -->
+			<div class="user-profile"></div>
+			<!-- /User profile -->
+
+
+			<!-- Main menu -->
+			<div class="menu-container"></div>
+			<!-- /Main menu -->
+
+		</div>
+	</aside>
+	<!-- /Sidebar -->
+
+	<!-- Page container begins -->
+	<section class="main-container">
+		<h1 style="display:none">Empty Heading</h1>
+
+			<div class="jumbo-header text-center">
+				<form action="#" class="form-horizontal">
+					<div class="form-group">
+						<div class="input-group input-group-xlg">
+							<div class="has-feedback has-feedback-left">
+								<input type="text" class="form-control input-xlg" placeholder="What are you looking for?">
+								<div class="form-control-feedback">
+									<i class="icon-search4 text-info icon-1x"></i>
+								</div>
+							</div>
+							<span class="input-group-btn">
+								<button class="btn btn-primary" type="button">Search</button>
+							</span>
+						</div>
+					</div>
+				</form>
+			</div>
+
+			<div class="container-fluid page-content">
+
+				<div class="tabbable">
+					<ul class="nav nav-tabs nav-lg nav-tabs-highlight no-margin-bottom" style="z-index:1;">
+						<li class="active"><a href="#web" data-toggle="tab"><i class="icon-earth position-left"></i> Web</a></li>
+						<li><a href="#news" data-toggle="tab"><i class="icon-newspaper position-left"></i> News</a></li>
+						<li><a href="#images" data-toggle="tab"><i class="icon-image4 position-left"></i> Images</a></li>
+						<li><a href="#videos" data-toggle="tab"><i class="icon-video-camera2 position-left"></i> Videos</a></li>
+					</ul>
+					<div class="tab-content no-padding no-border">
+
+						<!-- Web search -->
+						<div class="tab-pane active" id="web">
+							<div class="panel panel-flat no-border-top">
+								<div class="panel-body">
+									<p class="">About 64,372 results (0.43 seconds)</p>
+									<hr>
+									<div class="row">
+										<div class="col-lg-8 col-sm-8">
+											<ul class="media-list search-results-list media-list-bordered">
+												<li class="media">
+													<div class="media-body">
+														<h5 class="no-margin-top "><a href="#" class="text-lg"><span class="text-semibold">Bird</span> - Responsive admin theme by Followtechnique</a></h5>
+														<ul class="list-inline list-inline-separate text-size-small">
+															<li><i class="icon-earth position-left"></i><a href="#" class="">http://followtechnique.com</a></li>
+															<li>
+																&nbsp;<i class="icon-star-full2"></i><i class="icon-star-full2"></i><i class="icon-star-full2"></i><i class="icon-star-full2"></i><i class="icon-star-empty3"></i>
+															</li>
+															<li><i class="icon-thumbs-up2"></i> 1,242</li>
+															<li><i class="icon-thumbs-down2"></i> 348</li>
+														</ul>
+
+														Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae...
+
+														<div class="website-search-results p-20">
+															<div class="row">
+																<div class="col-md-6">
+																	<div class="">
+																		<div class="media-body">
+																			<h5 class="no-margin-top"><a href="#" class="text-lg">4 different layouts</a></h5>
+																			Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere...
+																		</div>
+																	</div>
+
+																	<div class="">
+																		<div class="media-body">
+																			<h5><a href="#" class="text-lg">50+ pages</a></h5>
+																			Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere...
+																		</div>
+																	</div>
+
+																</div>
+
+																<div class="col-md-6">
+																	<div class="">
+																		<div class="media-body">
+																			<h5 class="no-margin-top"><a href="#" class="text-lg">Media gallery</a></h5>
+																			Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere...
+																		</div>
+																	</div>
+
+																	<div class="">
+																		<div class="media-body">
+																			<h5><a href="#" class="text-lg">More components</a></h5>
+																			Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere...
+																		</div>
+																	</div>
+
+																</div>
+															</div>
+														</div>
+													</div>
+												</li>
+
+												<li class="media">
+													<div class="media-body">
+														<h5 class="no-margin-top"><a href="#" class="text-lg">At vero eos et <span class="text-semibold">accusamus</span> et iusto odio</a></h5>
+														<ul class="list-inline list-inline-separate ">
+															<li><i class="icon-earth position-left"></i><a href="#" class="">http://followtechnique.com</a></li>
+															<li>
+																&nbsp;<i class="icon-star-full2"></i><i class="icon-star-full2"></i><i class="icon-star-empty3"></i><i class="icon-star-empty3"></i><i class="icon-star-empty3"></i>
+															</li>
+															<li><i class="icon-thumbs-up2"></i> 1,254</li>
+															<li><i class="icon-thumbs-down2"></i> 1,348</li>
+														</ul>
+
+														At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident...
+													</div>
+												</li>
+
+												<li class="media">
+													<div class="media-body">
+														<h5 class="no-margin-top"><a href="#" class="text-lg"><span class="text-semibold">Similique</span> sunt in culpa qui officia deserunt</a></h5>
+														<ul class="list-inline list-inline-separate ">
+															<li><i class="icon-earth position-left"></i><a href="#" class="">http://followtechnique.com</a></li>
+															<li>
+																&nbsp;<i class="icon-star-full2"></i><i class="icon-star-full2"></i><i class="icon-star-full2"></i><i class="icon-star-empty3"></i><i class="icon-star-empty3"></i>
+															</li>
+															<li><i class="icon-thumbs-up2"></i> 142</li>
+															<li><i class="icon-thumbs-down2"></i> 48</li>
+														</ul>
+
+														Similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere...
+													</div>
+												</li>
+
+												<li class="media">
+													<div class="media-body">
+														<h5 class="no-margin-top"><a href="#" class="text-lg">At vero eos et <span class="text-semibold">accusamus</span> et iusto odio</a></h5>
+														<ul class="list-inline list-inline-separate ">
+															<li><i class="icon-earth position-left"></i><a href="#" class="">http://followtechnique.com</a></li>
+															<li>
+																&nbsp;<i class="icon-star-full2"></i><i class="icon-star-full2"></i><i class="icon-star-empty3"></i><i class="icon-star-empty3"></i><i class="icon-star-empty3"></i>
+															</li>
+															<li><i class="icon-thumbs-up2"></i> 1,254</li>
+															<li><i class="icon-thumbs-down2"></i> 1,348</li>
+														</ul>
+
+														At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident...
+													</div>
+												</li>
+
+												<li class="media">
+													<div class="media-body">
+														<h5 class="no-margin-top"><a href="#" class="text-lg"><span class="text-semibold">Similique</span> sunt in culpa qui officia deserunt</a></h5>
+														<ul class="list-inline list-inline-separate ">
+															<li><i class="icon-earth position-left"></i><a href="#" class="">http://followtechnique.com</a></li>
+															<li>
+																&nbsp;<i class="icon-star-full2"></i><i class="icon-star-full2"></i><i class="icon-star-full2"></i><i class="icon-star-empty3"></i><i class="icon-star-empty3"></i>
+															</li>
+															<li><i class="icon-thumbs-up2"></i> 142</li>
+															<li><i class="icon-thumbs-down2"></i> 48</li>
+														</ul>
+
+														Similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere...
+													</div>
+												</li>
+
+												<li class="media">
+													<div class="media-body">
+														<h5 class="no-margin-top"><a href="#" class="text-lg">At vero eos et <span class="text-semibold">accusamus</span> et iusto odio</a></h5>
+														<ul class="list-inline list-inline-separate ">
+															<li><i class="icon-earth position-left"></i><a href="#" class="">http://followtechnique.com</a></li>
+															<li>
+																&nbsp;<i class="icon-star-full2"></i><i class="icon-star-full2"></i><i class="icon-star-empty3"></i><i class="icon-star-empty3"></i><i class="icon-star-empty3"></i>
+															</li>
+															<li><i class="icon-thumbs-up2"></i> 1,254</li>
+															<li><i class="icon-thumbs-down2"></i> 1,348</li>
+														</ul>
+
+														At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident...
+													</div>
+												</li>
+
+												<li class="media">
+													<div class="media-body">
+														<h5 class="no-margin-top"><a href="#" class="text-lg"><span class="text-semibold">Similique</span> sunt in culpa qui officia deserunt</a></h5>
+														<ul class="list-inline list-inline-separate ">
+															<li><i class="icon-earth position-left"></i><a href="#" class="">http://followtechnique.com</a></li>
+															<li>
+																&nbsp;<i class="icon-star-full2"></i><i class="icon-star-full2"></i><i class="icon-star-full2"></i><i class="icon-star-empty3"></i><i class="icon-star-empty3"></i>
+															</li>
+															<li><i class="icon-thumbs-up2"></i> 142</li>
+															<li><i class="icon-thumbs-down2"></i> 48</li>
+														</ul>
+
+														Similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere...
+													</div>
+												</li>
+
+												<li class="media">
+													<div class="media-body">
+														<h5 class="no-margin-top"><a href="#" class="text-lg">At vero eos et <span class="text-semibold">accusamus</span> et iusto odio</a></h5>
+														<ul class="list-inline list-inline-separate ">
+															<li><i class="icon-earth position-left"></i><a href="#" class="">http://followtechnique.com</a></li>
+															<li>
+																&nbsp;<i class="icon-star-full2"></i><i class="icon-star-full2"></i><i class="icon-star-empty3"></i><i class="icon-star-empty3"></i><i class="icon-star-empty3"></i>
+															</li>
+															<li><i class="icon-thumbs-up2"></i> 1,254</li>
+															<li><i class="icon-thumbs-down2"></i> 1,348</li>
+														</ul>
+
+														At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident...
+													</div>
+												</li>
+
+												<li class="media">
+													<div class="media-body">
+														<h5 class="no-margin-top"><a href="#" class="text-lg"><span class="text-semibold">Similique</span> sunt in culpa qui officia deserunt</a></h5>
+														<ul class="list-inline list-inline-separate ">
+															<li><i class="icon-earth position-left"></i><a href="#" class="">http://followtechnique.com</a></li>
+															<li>
+																&nbsp;<i class="icon-star-full2"></i><i class="icon-star-full2"></i><i class="icon-star-full2"></i><i class="icon-star-empty3"></i><i class="icon-star-empty3"></i>
+															</li>
+															<li><i class="icon-thumbs-up2"></i> 142</li>
+															<li><i class="icon-thumbs-down2"></i> 48</li>
+														</ul>
+
+														Similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere...
+													</div>
+												</li>
+											</ul>
+										</div>
+
+										<div class="col-lg-4 col-md-4 col-sm-4">
+											<div class="">
+												<a href="#"><img src="http://via.placeholder.com/500x500" class="img-responsive img-rounded" alt=""></a>
+											</div>
+
+											<h5 class="text-lg p-t-10 p-b-10 text-semibold">Bird template <small class="display-block"></small></h5>
+											<p class="">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+
+											<ul class="list ">
+												<li><span class="text-semibold">Author:</span> <a href="#">James</a></li>
+												<li><span class="text-semibold">Date added:</span> 1 month ago</li>
+												<li><span class="text-semibold">Latest update:</span> June 30, 2016</li>
+											</ul>
+										</div>
+									</div>
+									<ul class="pagination pagination-flat">
+										<li><a href="#"><i class="icon-arrow-left12"></i></a></li>
+										<li class="active"><a href="#">1</a></li>
+										<li><a href="#">2</a></li>
+										<li><a href="#">3</a></li>
+										<li><span>...</span></li>
+										<li><a href="#">13</a></li>
+										<li><a href="#">14</a></li>
+										<li><a href="#">15</a></li>
+										<li><a href="#"><i class="icon-arrow-right13"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- /Web search -->
+
+						<!-- News search -->
+						<div class="tab-pane" id="news">
+							<div class="panel panel-flat no-border-top news-results">
+								<div class="panel-body">
+									<p class="">About 1,400 results (0.06 seconds)</p>
+									<hr>
+									<div class="row">
+										<div class="col-md-12">
+
+											<ul class="media-list search-results-list media-list-bordered">
+												<li class="media">
+													<div class="media-left">
+														<img src="http://via.placeholder.com/150x100" alt="" class="min-width-150 min-height-100">
+													</div>
+
+													<div class="media-body">
+														<h5><a href="#" class="text-lg">Europan lingues es membres</a></h5>
+														<ul class="list-inline list-inline-separate ">
+															<li><i class="icon-folder4 position-left"></i> Web Design tutorials</li>
+															<li><i class="icon-history position-left"></i> 10 minutes ago</li>
+															<li><a href="#">Read full news</a></li>
+														</ul>
+														Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation...
+													</div>
+												</li>
+
+												<li class="media">
+													<div class="media-left">
+														<a href="#">
+															<img src="http://via.placeholder.com/150x100" alt="" class="min-width-150 min-height-100">
+														</a>
+													</div>
+
+													<div class="media-body">
+														<h5><a href="#" class="text-lg">Lor separat existentie</a></h5>
+														<ul class="list-inline list-inline-separate ">
+															<li><i class="icon-folder4 position-left"></i> Web Design tutorials</li>
+															<li><i class="icon-history position-left"></i> 18 minutes ago</li>
+														</ul>
+														Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica...
+													</div>
+												</li>
+
+												<li class="media">
+													<div class="media-left">
+														<a href="#">
+															<img src="http://via.placeholder.com/150x100" alt="" class="min-width-150 min-height-100">
+														</a>
+													</div>
+
+													<div class="media-body">
+														<h5><a href="#" class="text-lg">Nullam dictum felis</a></h5>
+														<ul class="list-inline list-inline-separate ">
+															<li><i class="icon-folder4 position-left"></i> Web Design tutorials</li>
+															<li><i class="icon-history position-left"></i>11 minutes ago</li>
+														</ul>
+														In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus...
+													</div>
+												</li>
+
+												<li class="media">
+													<div class="media-left">
+														<a href="#">
+															<img src="http://via.placeholder.com/150x100" alt="" class="min-width-150 min-height-100">
+														</a>
+													</div>
+
+													<div class="media-body">
+														<h5><a href="#" class="text-lg">Maecenas nec odio et</a></h5>
+														<ul class="list-inline list-inline-separate ">
+															<li><i class="icon-folder4 position-left"></i> Web Design tutorials</li>
+															<li><i class="icon-history position-left"></i>7 minutes ago</li>
+														</ul>
+														Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt...
+													</div>
+												</li>
+
+												<li class="media">
+													<div class="media-left">
+														<a href="#">
+															<img src="http://via.placeholder.com/150x100" alt="" class="min-width-150 min-height-100">
+														</a>
+													</div>
+
+													<div class="media-body">
+														<h5><a href="#" class="text-lg">Totam rem aperiam</a></h5>
+														<ul class="list-inline list-inline-separate ">
+															<li><i class="icon-folder4 position-left"></i> Web Design tutorials</li>
+															<li><i class="icon-history position-left"></i>3 minutes ago</li>
+														</ul>
+														Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae...
+													</div>
+												</li>
+
+												<li class="media">
+													<div class="media-left">
+														<a href="#">
+															<img src="http://via.placeholder.com/150x100" alt="" class="min-width-150 min-height-100">
+														</a>
+													</div>
+
+													<div class="media-body">
+														<h5><a href="#" class="text-lg">Odio dignissimos ducimus qui</a></h5>
+														<ul class="list-inline list-inline-separate ">
+															<li><i class="icon-folder4 position-left"></i> Web Design tutorials</li>
+															<li><i class="icon-history position-left"></i>16 minutes ago</li>
+														</ul>
+														At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint...
+													</div>
+												</li>
+
+												<li class="media">
+													<div class="media-left">
+														<a href="#">
+															<img src="http://via.placeholder.com/150x100" alt="" class="min-width-150 min-height-100">
+														</a>
+													</div>
+
+													<div class="media-body">
+														<h5><a href="#" class="text-lg">Nam libero tempore</a></h5>
+														<ul class="list-inline list-inline-separate ">
+															<li><i class="icon-folder4 position-left"></i> Web Design tutorials</li>
+															<li><i class="icon-history position-left"></i>12 minutes ago</li>
+														</ul>
+														Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere...
+													</div>
+												</li>
+
+												<li class="media">
+													<div class="media-left">
+														<a href="#">
+															<img src="http://via.placeholder.com/150x100" alt="" class="min-width-150 min-height-100">
+														</a>
+													</div>
+
+													<div class="media-body">
+														<h5><a href="#" class="text-lg">Totam rem aperiam</a></h5>
+														<ul class="list-inline list-inline-separate ">
+															<li><i class="icon-folder4 position-left"></i> Web Design tutorials</li>
+															<li><i class="icon-history position-left"></i>3 minutes ago</li>
+														</ul>
+														Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae...
+													</div>
+												</li>
+											</ul>
+
+											<ul class="pagination pagination-flat">
+												<li><a href="#"><i class="icon-arrow-left12"></i></a></li>
+												<li class="active"><a href="#">1</a></li>
+												<li><a href="#">2</a></li>
+												<li><a href="#">3</a></li>
+												<li><span>...</span></li>
+												<li><a href="#">13</a></li>
+												<li><a href="#">14</a></li>
+												<li><a href="#">15</a></li>
+												<li><a href="#"><i class="icon-arrow-right13"></i></a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- /News search -->
+
+						<!-- Images search -->
+						<div class="tab-pane" id="images">
+							<div class="panel panel-flat no-border-top images-results">
+								<div class="panel-body">
+
+									<p class="">About 3,463 results (1.14 seconds)</p>
+									<hr>
+
+									<div class="row">
+										<div class="col-md-4 col-sm-4">
+											<div class="thumbnail">
+												<div class="thumb">
+													<img src="http://via.placeholder.com/300x200" alt="">
+													<div class="caption-overflow">
+														<span>
+															<a href="http://via.placeholder.com/800x600" class="venobox btn border-none text-white btn-flat btn-icon"><i class="icon-zoomin3"></i></a>
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-4 col-sm-4">
+											<div class="thumbnail">
+												<div class="thumb">
+													<img src="http://via.placeholder.com/300x200" alt="">
+													<div class="caption-overflow">
+														<span>
+															<a href="http://via.placeholder.com/800x600" class="venobox btn border-none text-white btn-flat btn-icon"><i class="icon-zoomin3"></i></a>
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-4 col-sm-4">
+											<div class="thumbnail">
+												<div class="thumb">
+													<img src="http://via.placeholder.com/300x200" alt="">
+													<div class="caption-overflow">
+														<span>
+															<a href="http://via.placeholder.com/800x600" class="venobox btn border-none text-white btn-flat btn-icon"><i class="icon-zoomin3"></i></a>
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-4 col-sm-4">
+											<div class="thumbnail">
+												<div class="thumb">
+													<img src="http://via.placeholder.com/300x200" alt="">
+													<div class="caption-overflow">
+														<span>
+															<a href="http://via.placeholder.com/800x600" class="venobox btn border-none text-white btn-flat btn-icon"><i class="icon-zoomin3"></i></a>
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-4 col-sm-4">
+											<div class="thumbnail">
+												<div class="thumb">
+													<img src="http://via.placeholder.com/300x200" alt="">
+													<div class="caption-overflow">
+														<span>
+															<a href="http://via.placeholder.com/800x600" class="venobox btn border-none text-white btn-flat btn-icon"><i class="icon-zoomin3"></i></a>
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-4 col-sm-4">
+											<div class="thumbnail">
+												<div class="thumb">
+													<img src="http://via.placeholder.com/300x200" alt="">
+													<div class="caption-overflow">
+														<span>
+															<a href="http://via.placeholder.com/800x600" class="venobox btn border-none text-white btn-flat btn-icon"><i class="icon-zoomin3"></i></a>
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+
+									<ul class="pagination pagination-flat">
+										<li><a href="#"><i class="icon-arrow-left12"></i></a></li>
+										<li class="active"><a href="#">1</a></li>
+										<li><a href="#">2</a></li>
+										<li><a href="#">3</a></li>
+										<li><span>...</span></li>
+										<li><a href="#">13</a></li>
+										<li><a href="#">14</a></li>
+										<li><a href="#">15</a></li>
+										<li><a href="#"><i class="icon-arrow-right13"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- /Images search -->
+
+						<!-- Videos search -->
+						<div class="tab-pane" id="videos">
+							<div class="panel panel-flat no-border-top videos-results">
+								<div class="panel-body">
+									<p class="">About 345 results (1.56 seconds)</p>
+									<hr>
+									<div class="row m-b-10">
+										<div class="col-md-4 col-sm-4">
+											<iframe height="180" src="https://www.youtube.com/embed/YE7VzlLtp-4" allowfullscreen></iframe>
+										</div>
+
+										<div class="col-md-4 col-sm-4">
+											<iframe height="180" src="https://www.youtube.com/embed/aqz-KE-bpKQ" allowfullscreen></iframe>
+										</div>
+
+										<div class="col-md-4 col-sm-4">
+											<iframe height="180" src="https://www.youtube.com/embed/YvR8LGOUpNA" allowfullscreen></iframe>
+										</div>
+									</div>
+
+									<ul class="pagination pagination-flat">
+										<li><a href="#"><i class="icon-arrow-left12"></i></a></li>
+										<li class="active"><a href="#">1</a></li>
+										<li><a href="#">2</a></li>
+										<li><a href="#">3</a></li>
+										<li><span>...</span></li>
+										<li><a href="#">13</a></li>
+										<li><a href="#">14</a></li>
+										<li><a href="#">15</a></li>
+										<li><a href="#"><i class="icon-arrow-right13"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- /Videos search -->
+
+					</div>
+				</div>
+
+			</div>
+
+			<!-- Footer -->
+			<footer class="footer-container">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12 col-sm-12">
+							<div class="pull-left">
+								© 2017 Bird&nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;&nbsp;Web app kit by <a href="http://followtechnique.com" target="_blank">FollowTechnique</a>.							</div>
+	                        <div class="pull-right">
+								<div class="label label-info">Version: 1.3.0</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- /Footer -->
+
+		</section>
+		<!-- /Page Container ends -->
+
+		<!-- ScrolltoTop -->
+		<a id="scrollTop" href="#top"><i class="icon-arrow-up12"></i></a>
+		<!-- /ScrolltoTop -->
+
+	</div>
+
+<!-- Rightbar -->
+<div id="right_sidebar" class="right_bar"></div>
+<script>
+function open_rightbar() {
+	$(window).resize(function() {
+		if(($(window).width() < 500)){
+			document.getElementById("right_sidebar").style.width = "100%";
+		}
+		else if($(window).width() > 500) {
+			document.getElementById("right_sidebar").style.width = "260px";
+		}
+	}).resize();
+}
+function close_rightbar() {
+	document.getElementById("right_sidebar").style.width = "0";
+}
+</script>
+<!-- /Rightbar -->
+
+<!-- Layout settings -->
+<div class="layout"></div>
+<span class="is_hidden" id="jquery_vars">
+	<span class="is_hidden switch-active"></span>
+	<span class="is_hidden switch-inactive"></span>
+	<span class="is_hidden chart-bg"></span>
+	<span class="is_hidden chart-gridlines-color"></span>
+	<span class="is_hidden chart-legends-text-color"></span>
+	<span class="is_hidden chart-grid-text-color"></span>
+	<span class="is_hidden chart-data-color-option1"></span>
+	<span class="is_hidden chart-data-color-option2"></span>
+	<span class="is_hidden chart-data-color-option3"></span>
+	<span class="is_hidden chart-data-color-option4"></span>
+	<span class="is_hidden chart-data-color-option5"></span>
+	<span class="is_hidden chart-data-color-option6"></span>
+	<span class="is_hidden chart-data-color-option7"></span>
+	<span class="is_hidden chart-data-color-option8"></span>
+</span>
+<!-- /Layout settings -->
+
+<!-- Global scripts -->
+<script src="lib/js/core/jquery/jquery.js"></script>
+<script src="lib/js/core/jquery/jquery.ui.js"></script>
+<script src="lib/js/core/bootstrap/bootstrap.js"></script>
+<script src="lib/js/core/bootstrap/jasny_bootstrap.min.js"></script>
+<script src="lib/js/core/navigation/nav.accordion.js"></script>
+<script src="lib/js/core/hammer/hammerjs.js"></script>
+<script src="lib/js/core/hammer/jquery.hammer.js"></script>
+<script src="lib/js/core/slimscroll/jquery.slimscroll.js"></script>
+<script src="lib/js/extensions/smart-resize.js"></script>
+<script src="lib/js/extensions/blockui.min.js"></script>
+<script src="lib/js/forms/uniform.min.js"></script>
+<script src="lib/js/forms/switchery.js"></script>
+<script src="lib/js/forms/select2.min.js"></script>
+<script src="lib/js/plugins/venobox.js"></script>
+<script src="lib/js/core/app/layouts.js"></script>
+<script src="lib/js/core/app/core.js"></script>
+<!-- /Global scripts -->
+
+<!-- Page scripts -->
+<!-- /Page scripts -->
+
+</body>
+</html>

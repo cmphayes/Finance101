@@ -1,0 +1,541 @@
+<!doctype html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="theme-color" content="#1C2B36" />
+	<title>Bird - Responsive admin dashboard template by Followtechnique</title>
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="144x144">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="114x114">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="72x72">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png">
+	<link href="img/favicon.ico" rel="icon" type="image/png">
+	<link href="img/favicon.ico" rel="shortcut icon">
+    <!-- /Favicon -->
+
+    <!-- Global stylesheets -->
+	<link type="text/css" rel="stylesheet" href="lib/css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="lib/css/animate.min.css">
+    <link type="text/css" rel="stylesheet" href="lib/css/main.css">
+    <!-- /Global stylesheets -->
+</head>
+<body id="top">
+
+<!-- Preloader -->
+<div id="preloader">
+	<div id="status">
+		<div class="loader"></div>
+	</div>
+</div>
+<!-- /Preloader -->
+
+<div id="body-wrapper" class="body-container">
+
+	<!-- Header begins -->
+	<header class="main-nav clearfix">
+
+		<!-- Searchbar -->
+		<div class="top-search-bar">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3">
+						<div class="search-input-addon">
+							<span class="addon-icon"><i class="icon-search4"></i></span>
+							<input type="text" class="form-control top-search-input" placeholder="Enter your keyword...">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Searchbar -->
+
+		<!-- Branding -->
+		<div class="navbar-left pull-left">
+			<div class="clearfix">
+				<ul class="left-branding pull-left">
+					<li class="visible-handheld"><span class="left-toggle-switch"><i class="icon-menu7"></i></span></li>
+					<li>
+						<a href="index.html"><div class="logo"></div></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /Branding -->
+
+		<!-- Search & Languages -->
+		<div class="navbar pull-left">
+			<div class="clearfix">
+				<ul class="pull-left top-icons hidden-xs">
+					<li><a href="#" class="btn-top-search m-l-10"><i class="icon-search4"></i></a></li>
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-flag7"></i></a>
+						<ul class="dropdown-menu languages">
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">Deutsch</a></li>
+                            <li><a href="#">Українська</a></li>
+							<li><a href="#">España</a></li>
+                        </ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /Search & Languages -->
+
+		<!-- Navbar icons -->
+		<div class="navbar pull-right">
+			<div class="clearfix">
+				<ul class="pull-right top-icons">
+					<li><a href="#" class="btn-top-search visible-xs"><i class="icon-search4"></i></a></li>
+
+					<!-- Quick apps dropdown -->
+					<li class="dropdown apps-dropdown hidden-xs">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-grid2"></i></a>
+						<div class="dropdown-menu">
+						</div>
+					</li>
+					<!-- /Quick apps dropdown -->
+
+					<!-- Rightbar -->
+					<li><a href="#" onclick="open_rightbar()"><span class="bubble">6</span><i class="icon-stack3"></i></a></li>
+					<!-- /Rightbar -->
+
+					<!-- User dropdown -->
+					<li class="dropdown user-dropdown">
+						<a class="user-name hidden-xs" data-toggle="dropdown">Jane Elliott <i class="icon-more2"></i><small>Administrator</small></a>
+						<a href="#" class="btn-user dropdown-toggle hidden-xs" data-toggle="dropdown"><img src="http://via.placeholder.com/80x80" class="img-circle user" alt=""/></a>
+						<a href="#" class="dropdown-toggle visible-xs" data-toggle="dropdown"><i class="icon-more"></i></a>
+						<div class="dropdown-menu no-padding">
+						</div>
+					</li>
+					<!-- /User dropdown -->
+
+				</ul>
+			</div>
+		</div>
+		<!-- /Navbar icons -->
+
+	</header>
+	<!-- /Header ends -->
+
+	<!-- Sidebar -->
+	<aside class="menu">
+		<div class="left-aside-container">
+
+			<!-- User profile -->
+			<div class="user-profile"></div>
+			<!-- /User profile -->
+
+
+			<!-- Main menu -->
+			<div class="menu-container"></div>
+			<!-- /Main menu -->
+
+		</div>
+	</aside>
+	<!-- /Sidebar -->
+
+	<!-- Page container begins -->
+	<section class="main-container">
+		<h1 style="display:none">Empty Heading</h1>
+
+
+			<!--Page Header-->
+			<div class="header">
+				<div class="header-content">
+					<div class="page-title">
+						<i class="icon-cube3 position-left"></i> Carousel slider
+					</div>
+					<ul class="breadcrumb">
+						<li><a href="index.html"></a></li>
+						<li>Components</li>
+						<li class="active">Carousel slider</li>
+					</ul>
+				</div>
+			</div>
+			<!--/Page Header-->
+
+			<div class="container-fluid page-content">
+
+				<div class="row">
+					<div class="col-md-9 col-sm-9">
+
+
+						<div class="panel panel-flat" id="examples">
+							<div class="panel-heading">
+								<div class="panel-title">Examples</div>
+							</div>
+							<div class="panel-body">
+								<p>A slideshow component for cycling through elements, like a carousel. <strong>Nested carousels are not supported.</strong></p>
+
+								<!-- Examples -->
+								<div class="bs-example" data-example-id="simple-carousel">
+									<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+										<ol class="carousel-indicators">
+											<li data-target="#carousel-example-generic" data-slide-to="0" class=""></li>
+											<li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+											<li data-target="#carousel-example-generic" data-slide-to="2" class="active"></li>
+										</ol>
+										<div class="carousel-inner" role="listbox">
+											<div class="item">
+												<img data-src="http://via.placeholder.com/900x500" alt="First slide [900x500]" src="http://via.placeholder.com/900x500" data-holder-rendered="true">
+											</div>
+											<div class="item">
+												<img data-src="http://via.placeholder.com/900x500" alt="Second slide [900x500]" src="http://via.placeholder.com/900x500" data-holder-rendered="true">
+											</div>
+											<div class="item active">
+												<img data-src="http://via.placeholder.com/900x500" alt="Third slide [900x500]" src="http://via.placeholder.com/900x500" data-holder-rendered="true">
+											</div>
+										</div>
+										<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+											<span class="icon-circle-left2" aria-hidden="true"></span>
+											<span class="sr-only">Previous</span>
+										</a>
+										<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+											<span class="icon-circle-right2" aria-hidden="true"></span>
+											<span class="sr-only">Next</span>
+										</a>
+									</div>
+								</div>
+
+								<pre class="line-numbers language-markup mt-20"><code class="language-markup"><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"carousel-example-generic"</span> <span class="na">class=</span><span class="s">"carousel slide"</span> <span class="na">data-ride=</span><span class="s">"carousel"</span><span class="nt">&gt;</span>
+  <span class="c">&lt;!-- Indicators --&gt;</span>
+  <span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"carousel-indicators"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">data-target=</span><span class="s">"#carousel-example-generic"</span> <span class="na">data-slide-to=</span><span class="s">"0"</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">data-target=</span><span class="s">"#carousel-example-generic"</span> <span class="na">data-slide-to=</span><span class="s">"1"</span><span class="nt">&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">data-target=</span><span class="s">"#carousel-example-generic"</span> <span class="na">data-slide-to=</span><span class="s">"2"</span><span class="nt">&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;/ol&gt;</span>
+
+  <span class="c">&lt;!-- Wrapper for slides --&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"carousel-inner"</span> <span class="na">role=</span><span class="s">"listbox"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"item active"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">alt=</span><span class="s">"..."</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"carousel-caption"</span><span class="nt">&gt;</span>
+        ...
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">alt=</span><span class="s">"..."</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"carousel-caption"</span><span class="nt">&gt;</span>
+        ...
+      <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    ...
+  <span class="nt">&lt;/div&gt;</span>
+
+  <span class="c">&lt;!-- Controls --&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"left carousel-control"</span> <span class="na">href=</span><span class="s">"#carousel-example-generic"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">data-slide=</span><span class="s">"prev"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-circle-left2"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Previous<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"right carousel-control"</span> <span class="na">href=</span><span class="s">"#carousel-example-generic"</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">data-slide=</span><span class="s">"next"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"icon-circle-right2"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/span&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Next<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+
+								<!-- /Examples -->
+
+								<!-- Optional captions -->
+								<div class="panel-title m-t-20">Optional captions</div>
+								<p>Add captions to your slides easily with the <code>.carousel-caption</code> element within any <code>.item</code>. Place just about any optional HTML within there and it will be automatically aligned and formatted.</p>
+
+								<div id="carousel-example-captions" class="carousel slide" data-ride="carousel">
+									<ol class="carousel-indicators">
+										<li data-target="#carousel-example-captions" data-slide-to="0" class="active"></li>
+										<li data-target="#carousel-example-captions" data-slide-to="1" class=""></li>
+										<li data-target="#carousel-example-captions" data-slide-to="2" class=""></li>
+									</ol>
+									<div class="carousel-inner" role="listbox">
+										<div class="item active">
+											<img data-src="http://via.placeholder.com/900x500" alt="900x500" src="http://via.placeholder.com/900x500" data-holder-rendered="true">
+											<div class="carousel-caption">
+												<h3>First slide label</h3>
+												<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+											</div>
+										</div>
+										<div class="item">
+											<img data-src="http://via.placeholder.com/900x500" alt="900x500" src="http://via.placeholder.com/900x500" data-holder-rendered="true">
+											<div class="carousel-caption">
+												<h3>Second slide label</h3>
+												<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+											</div>
+										</div>
+										<div class="item">
+											<img data-src="http://via.placeholder.com/900x500" alt="900x500" src="http://via.placeholder.com/900x500" data-holder-rendered="true">
+											<div class="carousel-caption">
+												<h3>Third slide label</h3>
+												<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+											</div>
+										</div>
+									</div>
+									<a class="left carousel-control" href="#carousel-example-captions" role="button" data-slide="prev">
+										<span class="icon-circle-left2" aria-hidden="true"></span>
+										<span class="sr-only">Previous</span>
+									</a>
+									<a class="right carousel-control" href="#carousel-example-captions" role="button" data-slide="next">
+										<span class="icon-circle-right2" aria-hidden="true"></span>
+										<span class="sr-only">Next</span>
+									</a>
+								</div>
+
+								<pre class="line-numbers language-markup mt-20"><code class="language-markup" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"item"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"..."</span> <span class="na">alt=</span><span class="s">"..."</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"carousel-caption"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h3&gt;</span>...<span class="nt">&lt;/h3&gt;</span>
+    <span class="nt">&lt;p&gt;</span>...<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+
+								<!-- /Optional captions -->
+
+							</div>
+						</div>
+
+						<!-- Usage -->
+						<div class="panel panel-flat" id="usage">
+							<div class="panel-heading no-padding-bottom">
+								<div class="panel-title">Usage</div>
+							</div>
+							<div class="panel-body">
+								<div>Multiple carousels</div>
+								<p>Carousels require the use of an <code>id</code> on the outermost container (the <code>.carousel</code>) for carousel controls to function properly. When adding multiple carousels, or when changing a carousel's <code>id</code>, be sure to update the relevant controls.</p>
+
+								<div>Via data attributes</div>
+								<p>Use data attributes to easily control the position of the carousel. <code>data-slide</code> accepts the keywords <code>prev</code> or <code>next</code>, which alters the slide position relative to its current position. Alternatively, use <code>data-slide-to</code> to pass a raw slide index to the carousel <code>data-slide-to="2"</code>, which shifts the slide position to a particular index beginning with <code>0</code>.</p>
+								<p>The <code>data-ride="carousel"</code> attribute is used to mark a carousel as animating starting at page load. <strong>It cannot be used in combination with (redundant and unnecessary) explicit JavaScript initialization of the same carousel.</strong></p>
+								<div>Via JavaScript</div>
+								<p>Call carousel manually with:</p>
+								<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="nx">$</span><span class="p">(</span><span class="s1">'.carousel'</span><span class="p">).</span><span class="nx">carousel</span><span class="p">()</span></code></pre>
+							</div>
+						</div>
+						<!-- /Usage -->
+
+						<!-- Options -->
+						<div class="panel panel-flat" id="option">
+							<div class="panel-heading">
+								<div class="panel-title">Options</div>
+							</div>
+							<div class="panel-body">
+								<p>Options can be passed via data attributes or JavaScript. For data attributes, append the option name to <code>data-</code>, as in <code>data-interval=""</code>.</p>
+							</div>
+
+							<table class="table table-bordered table-striped">
+								<thead>
+									<tr>
+										<th>Name</th>
+										<th>type</th>
+										<th>default</th>
+										<th>description</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>interval</td>
+										<td>number</td>
+										<td>5000</td>
+										<td>The amount of time to delay between automatically cycling an item. If false, carousel will not automatically cycle.</td>
+									</tr>
+									<tr>
+										<td>pause</td>
+										<td>string</td>
+										<td>"hover"</td>
+										<td>Pauses the cycling of the carousel on mouseenter and resumes the cycling of the carousel on mouseleave.</td>
+									</tr>
+									<tr>
+										<td>wrap</td>
+										<td>boolean</td>
+										<td>true</td>
+										<td>Whether the carousel should cycle continuously or have hard stops.</td>
+									</tr>
+									<tr>
+										<td>keyboard</td>
+										<td>boolean</td>
+										<td>true</td>
+										<td>Whether the carousel should react to keyboard events.</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- /Options -->
+
+						<!-- Methods -->
+						<div class="panel panel-flat" id="methods">
+							<div class="panel-heading no-padding-bottom">
+								<div class="panel-title">Methods</div>
+							</div>
+							<div class="panel-body">
+								<div><code>.carousel(options)</code></div>
+								<p>Initializes the carousel with an optional options <code>object</code> and starts cycling through items.</p>
+								<pre class="line-numbers language-javascript"><code class="language-javascript" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="s1">'.carousel'</span><span class="p">).</span><span class="nx">carousel</span><span class="p">({</span>
+  <span class="na">interval</span><span class="p">:</span> <span class="mi">2000</span>
+<span class="p">})</span></code></pre>
+
+								<div class="m-t-10"><code>.carousel('cycle')</code></div>
+								<p>Cycles through the carousel items from left to right.</p>
+								<div><code>.carousel('pause')</code></div>
+								<p>Stops the carousel from cycling through items.</p>
+								<div><code>.carousel(number)</code></div>
+								<p>Cycles the carousel to a particular frame (0 based, similar to an array).</p>
+								<div><code>.carousel('prev')</code></div>
+								<p>Cycles to the previous item.</p>
+								<div><code>.carousel('next')</code></div>
+								<p>Cycles to the next item.</p>
+							</div>
+						</div>
+						<!-- /Methods -->
+
+						<!-- Events -->
+						<div class="panel panel-flat" id="events">
+							<div class="panel-heading">
+								<div class="panel-title">Events</div>
+							</div>
+							<div class="panel-body no-padding-bottom">
+								<p>Bootstrap's carousel class exposes two events for hooking into carousel functionality.</p>
+								<p>Both events have the following additional properties:</p>
+								<ul>
+									<li><code>direction</code>: The direction in which the carousel is sliding (either <code>"left"</code> or <code>"right"</code>).</li>
+									<li><code>relatedTarget</code>: The DOM element that is being slid into place as the active item.</li>
+								</ul>
+								<p>All carousel events are fired at the carousel itself (i.e. at the <code>&lt;div class="carousel"&gt;</code>).</p>
+							</div>
+							<div class="table-responsive">
+								<table class="table table-bordered table-striped bs-events-table">
+									<thead>
+										<tr>
+											<th>Event Type</th>
+											<th>Description</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>slide.bs.carousel</td>
+											<td>This event fires immediately when the <code>slide</code> instance method is invoked.</td>
+										</tr>
+										<tr>
+											<td>slid.bs.carousel</td>
+											<td>This event is fired when the carousel has completed its slide transition.</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="panel-body">
+								<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="nx">$</span><span class="p">(</span><span class="s1">'#myCarousel'</span><span class="p">).</span><span class="nx">on</span><span class="p">(</span><span class="s1">'slide.bs.carousel'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+  <span class="c1">// do something…</span>
+<span class="p">})</span></code></pre>
+							</div>
+						</div>
+						<!-- /Events -->
+
+					</div>
+
+					<div class="col-md-3 col-sm-3 hidden-xs">
+
+						<!-- Affix menu -->
+						<div class="panel panel-flat affix-example affix" data-spy="affix" data-offset-top="60">
+							<ul class="no-padding-top list-group">
+								<li class="navigation-header list-group-header">CAROUSEL PLUGIN</li>
+								<li class="active"><a href="#examples" class="list-group-item">Examples</a></li>
+								<li><a href="#usage" class="list-group-item">Usage</a></li>
+								<li><a href="#option" class="list-group-item">Options</a></li>
+								<li><a href="#methods" class="list-group-item">Methods</a></li>
+								<li><a href="#events" class="list-group-item">Events</a></li>
+							</ul>
+						</div>
+						<!-- /Affix menu -->
+
+					</div>
+				</div>
+
+			</div>
+
+			<!-- Footer -->
+			<footer class="footer-container">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12 col-sm-12">
+							<div class="pull-left">
+								© 2017 Bird&nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;&nbsp;Web app kit by <a href="http://followtechnique.com" target="_blank">FollowTechnique</a>.							</div>
+	                        <div class="pull-right">
+								<div class="label label-info">Version: 1.3.0</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- /Footer -->
+
+		</section>
+		<!-- /Page Container ends -->
+
+		<!-- ScrolltoTop -->
+		<a id="scrollTop" href="#top"><i class="icon-arrow-up12"></i></a>
+		<!-- /ScrolltoTop -->
+
+	</div>
+
+<!-- Rightbar -->
+<div id="right_sidebar" class="right_bar"></div>
+<script>
+function open_rightbar() {
+	$(window).resize(function() {
+		if(($(window).width() < 500)){
+			document.getElementById("right_sidebar").style.width = "100%";
+		}
+		else if($(window).width() > 500) {
+			document.getElementById("right_sidebar").style.width = "260px";
+		}
+	}).resize();
+}
+function close_rightbar() {
+	document.getElementById("right_sidebar").style.width = "0";
+}
+</script>
+<!-- /Rightbar -->
+
+<!-- Layout settings -->
+<div class="layout"></div>
+<span class="is_hidden" id="jquery_vars">
+	<span class="is_hidden switch-active"></span>
+	<span class="is_hidden switch-inactive"></span>
+	<span class="is_hidden chart-bg"></span>
+	<span class="is_hidden chart-gridlines-color"></span>
+	<span class="is_hidden chart-legends-text-color"></span>
+	<span class="is_hidden chart-grid-text-color"></span>
+	<span class="is_hidden chart-data-color-option1"></span>
+	<span class="is_hidden chart-data-color-option2"></span>
+	<span class="is_hidden chart-data-color-option3"></span>
+	<span class="is_hidden chart-data-color-option4"></span>
+	<span class="is_hidden chart-data-color-option5"></span>
+	<span class="is_hidden chart-data-color-option6"></span>
+	<span class="is_hidden chart-data-color-option7"></span>
+	<span class="is_hidden chart-data-color-option8"></span>
+</span>
+<!-- /Layout settings -->
+
+<!-- Global scripts -->
+<script src="lib/js/core/jquery/jquery.js"></script>
+<script src="lib/js/core/jquery/jquery.ui.js"></script>
+<script src="lib/js/core/bootstrap/bootstrap.js"></script>
+<script src="lib/js/core/bootstrap/jasny_bootstrap.min.js"></script>
+<script src="lib/js/core/navigation/nav.accordion.js"></script>
+<script src="lib/js/core/hammer/hammerjs.js"></script>
+<script src="lib/js/core/hammer/jquery.hammer.js"></script>
+<script src="lib/js/core/slimscroll/jquery.slimscroll.js"></script>
+<script src="lib/js/extensions/smart-resize.js"></script>
+<script src="lib/js/extensions/blockui.min.js"></script>
+<script src="lib/js/forms/uniform.min.js"></script>
+<script src="lib/js/forms/switchery.js"></script>
+<script src="lib/js/forms/select2.min.js"></script>
+<script src="lib/js/plugins/venobox.js"></script>
+<script src="lib/js/core/app/layouts.js"></script>
+<script src="lib/js/core/app/core.js"></script>
+<!-- /Global scripts -->
+
+<!-- Page scripts -->
+<!-- /Page scripts -->
+
+</body>
+</html>

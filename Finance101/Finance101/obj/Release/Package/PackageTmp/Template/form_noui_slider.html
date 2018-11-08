@@ -1,0 +1,632 @@
+<!doctype html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="theme-color" content="#1C2B36" />
+	<title>Bird - Responsive admin dashboard template by Followtechnique</title>
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="144x144">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="114x114">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="72x72">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png">
+	<link href="img/favicon.ico" rel="icon" type="image/png">
+	<link href="img/favicon.ico" rel="shortcut icon">
+    <!-- /Favicon -->
+
+    <!-- Global stylesheets -->
+	<link type="text/css" rel="stylesheet" href="lib/css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="lib/css/animate.min.css">
+    <link type="text/css" rel="stylesheet" href="lib/css/main.css">
+    <!-- /Global stylesheets -->
+</head>
+<body id="top">
+
+<!-- Preloader -->
+<div id="preloader">
+	<div id="status">
+		<div class="loader"></div>
+	</div>
+</div>
+<!-- /Preloader -->
+
+<div id="body-wrapper" class="body-container">
+
+	<!-- Header begins -->
+	<header class="main-nav clearfix">
+
+		<!-- Searchbar -->
+		<div class="top-search-bar">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3">
+						<div class="search-input-addon">
+							<span class="addon-icon"><i class="icon-search4"></i></span>
+							<input type="text" class="form-control top-search-input" placeholder="Enter your keyword...">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Searchbar -->
+
+		<!-- Branding -->
+		<div class="navbar-left pull-left">
+			<div class="clearfix">
+				<ul class="left-branding pull-left">
+					<li class="visible-handheld"><span class="left-toggle-switch"><i class="icon-menu7"></i></span></li>
+					<li>
+						<a href="index.html"><div class="logo"></div></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /Branding -->
+
+		<!-- Search & Languages -->
+		<div class="navbar pull-left">
+			<div class="clearfix">
+				<ul class="pull-left top-icons hidden-xs">
+					<li><a href="#" class="btn-top-search m-l-10"><i class="icon-search4"></i></a></li>
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-flag7"></i></a>
+						<ul class="dropdown-menu languages">
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">Deutsch</a></li>
+                            <li><a href="#">Українська</a></li>
+							<li><a href="#">España</a></li>
+                        </ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /Search & Languages -->
+
+		<!-- Navbar icons -->
+		<div class="navbar pull-right">
+			<div class="clearfix">
+				<ul class="pull-right top-icons">
+					<li><a href="#" class="btn-top-search visible-xs"><i class="icon-search4"></i></a></li>
+
+					<!-- Quick apps dropdown -->
+					<li class="dropdown apps-dropdown hidden-xs">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-grid2"></i></a>
+						<div class="dropdown-menu">
+						</div>
+					</li>
+					<!-- /Quick apps dropdown -->
+
+					<!-- Rightbar -->
+					<li><a href="#" onclick="open_rightbar()"><span class="bubble">6</span><i class="icon-stack3"></i></a></li>
+					<!-- /Rightbar -->
+
+					<!-- User dropdown -->
+					<li class="dropdown user-dropdown">
+						<a class="user-name hidden-xs" data-toggle="dropdown">Jane Elliott <i class="icon-more2"></i><small>Administrator</small></a>
+						<a href="#" class="btn-user dropdown-toggle hidden-xs" data-toggle="dropdown"><img src="http://via.placeholder.com/80x80" class="img-circle user" alt=""/></a>
+						<a href="#" class="dropdown-toggle visible-xs" data-toggle="dropdown"><i class="icon-more"></i></a>
+						<div class="dropdown-menu no-padding">
+						</div>
+					</li>
+					<!-- /User dropdown -->
+
+				</ul>
+			</div>
+		</div>
+		<!-- /Navbar icons -->
+
+	</header>
+	<!-- /Header ends -->
+
+	<!-- Sidebar -->
+	<aside class="menu">
+		<div class="left-aside-container">
+
+			<!-- User profile -->
+			<div class="user-profile"></div>
+			<!-- /User profile -->
+
+
+			<!-- Main menu -->
+			<div class="menu-container"></div>
+			<!-- /Main menu -->
+
+		</div>
+	</aside>
+	<!-- /Sidebar -->
+
+	<!-- Page container begins -->
+	<section class="main-container">
+		<h1 style="display:none">Empty Heading</h1>
+
+			<!-- Page Header -->
+			<div class="header">
+				<div class="header-content">
+					<div class="page-title">
+						<i class="icon-select2 position-left"></i> NoUI slider
+					</div>
+					<ul class="breadcrumb">
+						<li><a href="index.html"></a></li>
+						<li>Form components</li>
+						<li class="active">NoUI slider</li>
+					</ul>
+				</div>
+			</div>
+			<!-- /Page Header -->
+
+			<div class="container-fluid page-content">
+
+				<!-- Basic sliders -->
+				<div class="page-subtitle">Basic sliders</div>
+				<div class="row">
+					<div class="col-md-4 col-sm-4">
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Slider handles</div>
+							</div>
+							<div class="panel-body">
+								<div id="noui-slider-handles"></div>
+								<div class="clearfix">
+									<span class="val-demo pull-left">Value: <span id="noui-handles-lower-val"></span></span>
+									<span class="val-demo pull-right">Value: <span id="noui-handles-upper-val"></span></span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-sm-4">
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Values range</div>
+							</div>
+							<div class="panel-body">
+								<div id="noui-slider-range"></div>
+								<span class="val-demo">Value: <span id="noui-range-val"></span></span>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-sm-4">
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Stepping and snapping to values</div>
+							</div>
+							<div class="panel-body">
+								<div id="noui-slider-stepping"></div>
+								<span class="val-demo">Value: <span id="noui-stepping-val"></span></span>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-sm-4">
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Range in non-linear slider</div>
+							</div>
+							<div class="panel-body">
+								<div id="noui-slider-nonlinear"></div>
+								<span class="val-demo">Value: <span id="noui-nonlinear-val"></span></span>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-sm-4">
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Stepping in non-linear sliders</div>
+							</div>
+							<div class="panel-body">
+								<div id="noui-slider-nonlinear-stepping"></div>
+								<div class="clearfix">
+									<span class="val-demo pull-left">Value: <span id="noui-nonlinear-stepping-lower-val"></span></span>
+									<span class="val-demo pull-right">Value: <span id="noui-nonlinear-stepping-upper-val"></span></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /Basic sliders -->
+
+				<!-- Slider Behaviour -->
+				<div class="page-subtitle">Slider Behaviour</div>
+				<div class="row">
+					<div class="col-md-4 col-sm-4">
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Tap behaviour (Lower)</div>
+							</div>
+							<div class="panel-body">
+								<div id="noui-slider-tap-lower"></div>
+								<span class="val-demo">Value: <span id="noui-slider-tap-val-lower"></span></span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Drag behaviour</div>
+							</div>
+							<div class="panel-body">
+								<div id="noui-slider-drag"></div>
+								<div class="clearfix">
+									<span class="val-demo pull-left">Value: <span id="noui-slider-drag-lower-val"></span></span>
+									<span class="val-demo pull-right">Value: <span id="noui-slider-drag-upper-val"></span></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Snap behaviour</div>
+							</div>
+							<div class="panel-body">
+								<div id="noui-slider-snap"></div>
+								<span class="val-demo">Value: <span id="noui-slider-snap-val"></span></span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Tap behaviour (Upper)</div>
+							</div>
+							<div class="panel-body">
+								<div id="noui-slider-tap-upper"></div>
+								<span class="val-demo">Value: <span id="noui-slider-tap-val-upper"></span></span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Fixed dragging</div>
+							</div>
+							<div class="panel-body">
+								<div id="noui-slider-drag-fixed"></div>
+								<div class="clearfix">
+									<span class="val-demo pull-left">Value: <span id="noui-slider-fixed-lower-val"></span></span>
+									<span class="val-demo pull-right">Value: <span id="noui-slider-fixed-upper-val"></span></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Combined options</div>
+							</div>
+							<div class="panel-body">
+								<div id="noui-slider-combined"></div>
+								<div class="clearfix">
+									<span class="val-demo pull-left">Value: <span id="noui-slider-combined-lower-val"></span></span>
+									<span class="val-demo pull-right">Value: <span id="noui-slider-combined-upper-val"></span></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /Slider Behaviour -->
+
+				<!-- Advanced examples -->
+				<div class="page-subtitle">Advanced examples</div>
+				<div class="row">
+					<div class="col-md-4 col-sm-4">
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Slider with pips</div>
+							</div>
+							<div class="panel-body">
+								<div class="has-pips" id="noui-slider-pips-range"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Slider with tooltips</div>
+							</div>
+							<div class="panel-body">
+								<div id="noui-slider-tooltip"></div>
+								<div class="clearfix m-b-5">
+									<span class="val-demo pull-left">Value: <span id="noui-slider-tooltip-lower-val"></span></span>
+									<span class="val-demo pull-right">Value: <span id="noui-slider-tooltip-upper-val"></span></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Connect to lower side</div>
+							</div>
+							<div class="panel-body">
+								<div id="noui-slider-connect-lower"></div>
+								<div class="val-demo m-b-5">Value: <span id="noui-slider-connect-lower-val"></span></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Skipping steps</div>
+							</div>
+							<div class="panel-body">
+								<div id="noui-slider-skip-steps"></div>
+								<div class="clearfix">
+									<span class="val-demo pull-left">Value: <span id="noui-slider-skip-lower-val"></span></span>
+									<span class="val-demo pull-right">Value: <span id="noui-slider-skip-upper-val"></span></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Minimum handles distance</div>
+							</div>
+							<div class="panel-body">
+								<div id="noui-slider-margin"></div>
+								<div class="clearfix">
+									<span class="val-demo pull-left">Value: <span id="noui-slider-margin-lower-val"></span></span>
+									<span class="val-demo pull-right">Value: <span id="noui-slider-margin-upper-val"></span></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Connect to upper side</div>
+							</div>
+							<div class="panel-body">
+								<div id="noui-slider-connect-upper"></div>
+								<span class="val-demo">Value: <span id="noui-slider-connect-upper-val"></span></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /Advanced examples -->
+
+				<!-- Vertical sliders -->
+				<div class="page-subtitle">Vertical sliders</div>
+				<div class="row">
+					<div class="col-md-2 col-sm-2">
+						<div class="panel panel-flat text-center">
+							<div class="panel-heading">
+								<div class="panel-title text-center">Default vertical slider</div>
+							</div>
+							<div class="panel-body">
+								<div id="noui-slider-values"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-2">
+						<div class="panel panel-flat text-center">
+							<div class="panel-heading">
+								<div class="panel-title text-center">Vertical range slider</div>
+							</div>
+							<div class="panel-body">
+								<div id="noui-slider-vertical-range"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-2">
+						<div class="panel panel-flat text-center">
+							<div class="panel-heading">
+								<div class="panel-title text-center">Connect to upper side</div>
+							</div>
+							<div class="panel-body">
+								<div id="noui-slider-lower"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-2">
+						<div class="panel panel-flat text-center">
+							<div class="panel-heading">
+								<div class="panel-title text-center">Connect to lower side</div>
+							</div>
+							<div class="panel-body">
+								<div id="noui-slider-upper"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-2">
+						<div class="panel panel-flat text-center">
+							<div class="panel-heading">
+								<div class="panel-title text-center">Top to bottom pips slider</div>
+							</div>
+							<div class="panel-body">
+								<div class="has-pips" id="noui-slider-top"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-2">
+						<div class="panel panel-flat text-center">
+							<div class="panel-heading">
+								<div class="panel-title text-center">Bottom to top pips slider</div>
+							</div>
+							<div class="panel-body">
+								<div class="has-pips" id="noui-slider-bottom"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /Vertical sliders -->
+
+				<!-- Slider colors -->
+				<div class="page-subtitle">Slider colors</div>
+				<div class="row">
+					<div class="col-md-4 col-sm-4">
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Default slider</div>
+							</div>
+							<div class="panel-body">
+								<div id="noui-slider-color-default"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Primary slider style</div>
+							</div>
+							<div class="panel-body">
+								<div class="noui-slider-primary" id="noui-slider-color-primary"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Danger slider style</div>
+							</div>
+							<div class="panel-body">
+								<div class="noui-slider-danger" id="noui-slider-color-danger"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Success slider style</div>
+							</div>
+							<div class="panel-body">
+								<div class="noui-slider-success" id="noui-slider-color-success"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Warning slider style</div>
+							</div>
+							<div class="panel-body">
+								<div class="noui-slider-warning" id="noui-slider-color-warning"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-4">
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<div class="panel-title">Info slider style</div>
+							</div>
+							<div class="panel-body">
+								<div class="noui-slider-info" id="noui-slider-color-info"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /Slider colors -->
+
+				<!-- Slider sizing -->
+				<div class="page-subtitle">Slider sizing</div>
+				<div class="panel panel-flat">
+					<div class="panel-body">
+						<h5>Large slider</h5>
+						<div class="noui-slider-lg m-b-20 m-t-10" id="slider-default-lg"></div>
+						<h5>Default slider</h5>
+						<div class="m-t-10 m-b-20" id="slider-default-default"></div>
+						<h5>Small slider</h5>
+						<div class="noui-slider-sm m-t-10 m-b-20" id="slider-default-sm"></div>
+						<h5>Mini slider</h5>
+						<div class="noui-slider-xs m-t-10" id="slider-default-xs"></div>
+					</div>
+				</div>
+				<!-- /Slider sizing -->
+
+			</div>
+
+			<!-- Footer -->
+			<footer class="footer-container">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12 col-sm-12">
+							<div class="pull-left">
+								© 2017 Bird&nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;&nbsp;Web app kit by <a href="http://followtechnique.com" target="_blank">FollowTechnique</a>.							</div>
+	                        <div class="pull-right">
+								<div class="label label-info">Version: 1.3.0</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- /Footer -->
+
+		</section>
+		<!-- /Page Container ends -->
+
+		<!-- ScrolltoTop -->
+		<a id="scrollTop" href="#top"><i class="icon-arrow-up12"></i></a>
+		<!-- /ScrolltoTop -->
+
+	</div>
+
+<!-- Rightbar -->
+<div id="right_sidebar" class="right_bar"></div>
+<script>
+function open_rightbar() {
+	$(window).resize(function() {
+		if(($(window).width() < 500)){
+			document.getElementById("right_sidebar").style.width = "100%";
+		}
+		else if($(window).width() > 500) {
+			document.getElementById("right_sidebar").style.width = "260px";
+		}
+	}).resize();
+}
+function close_rightbar() {
+	document.getElementById("right_sidebar").style.width = "0";
+}
+</script>
+<!-- /Rightbar -->
+
+<!-- Layout settings -->
+<div class="layout"></div>
+<span class="is_hidden" id="jquery_vars">
+	<span class="is_hidden switch-active"></span>
+	<span class="is_hidden switch-inactive"></span>
+	<span class="is_hidden chart-bg"></span>
+	<span class="is_hidden chart-gridlines-color"></span>
+	<span class="is_hidden chart-legends-text-color"></span>
+	<span class="is_hidden chart-grid-text-color"></span>
+	<span class="is_hidden chart-data-color-option1"></span>
+	<span class="is_hidden chart-data-color-option2"></span>
+	<span class="is_hidden chart-data-color-option3"></span>
+	<span class="is_hidden chart-data-color-option4"></span>
+	<span class="is_hidden chart-data-color-option5"></span>
+	<span class="is_hidden chart-data-color-option6"></span>
+	<span class="is_hidden chart-data-color-option7"></span>
+	<span class="is_hidden chart-data-color-option8"></span>
+</span>
+<!-- /Layout settings -->
+
+<!-- Global scripts -->
+<script src="lib/js/core/jquery/jquery.js"></script>
+<script src="lib/js/core/jquery/jquery.ui.js"></script>
+<script src="lib/js/core/bootstrap/bootstrap.js"></script>
+<script src="lib/js/core/bootstrap/jasny_bootstrap.min.js"></script>
+<script src="lib/js/core/navigation/nav.accordion.js"></script>
+<script src="lib/js/core/hammer/hammerjs.js"></script>
+<script src="lib/js/core/hammer/jquery.hammer.js"></script>
+<script src="lib/js/core/slimscroll/jquery.slimscroll.js"></script>
+<script src="lib/js/extensions/smart-resize.js"></script>
+<script src="lib/js/extensions/blockui.min.js"></script>
+<script src="lib/js/forms/uniform.min.js"></script>
+<script src="lib/js/forms/switchery.js"></script>
+<script src="lib/js/forms/select2.min.js"></script>
+<script src="lib/js/plugins/venobox.js"></script>
+<script src="lib/js/core/app/layouts.js"></script>
+<script src="lib/js/core/app/core.js"></script>
+<!-- /Global scripts -->
+
+<!-- Page scripts -->
+<script src="lib/js/forms/nouislider.min.js"></script>
+<script src="lib/js/pages/forms/form_noui_slider.js"></script>
+<!-- /Page scripts -->
+
+</body>
+</html>

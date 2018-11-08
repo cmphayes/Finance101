@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="theme-color" content="#1C2B36" />
+	<title>Bird - Responsive admin dashboard template by Followtechnique</title>
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="144x144">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="114x114">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="72x72">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png">
+	<link href="img/favicon.ico" rel="icon" type="image/png">
+	<link href="img/favicon.ico" rel="shortcut icon">
+    <!-- /Favicon -->
+
+    <!-- Global stylesheets -->
+	<link type="text/css" rel="stylesheet" href="lib/css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="lib/css/animate.min.css">
+    <link type="text/css" rel="stylesheet" href="lib/css/main.css">
+    <!-- /Global stylesheets -->
+</head>
+<body id="top">
+
+<!-- Preloader -->
+<div id="preloader">
+	<div id="status">
+		<div class="loader"></div>
+	</div>
+</div>
+<!-- /Preloader -->
+
+<div id="body-wrapper" class="body-container">
+
+	<!-- Header begins -->
+	<header class="main-nav clearfix">
+
+		<!-- Searchbar -->
+		<div class="top-search-bar">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3">
+						<div class="search-input-addon">
+							<span class="addon-icon"><i class="icon-search4"></i></span>
+							<input type="text" class="form-control top-search-input" placeholder="Enter your keyword...">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Searchbar -->
+
+		<!-- Branding -->
+		<div class="navbar-left pull-left">
+			<div class="clearfix">
+				<ul class="left-branding pull-left">
+					<li class="visible-handheld"><span class="left-toggle-switch"><i class="icon-menu7"></i></span></li>
+					<li>
+						<a href="index.html"><div class="logo"></div></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /Branding -->
+
+		<!-- Search & Languages -->
+		<div class="navbar pull-left">
+			<div class="clearfix">
+				<ul class="pull-left top-icons hidden-xs">
+					<li><a href="#" class="btn-top-search m-l-10"><i class="icon-search4"></i></a></li>
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-flag7"></i></a>
+						<ul class="dropdown-menu languages">
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">Deutsch</a></li>
+                            <li><a href="#">Українська</a></li>
+							<li><a href="#">España</a></li>
+                        </ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /Search & Languages -->
+
+		<!-- Navbar icons -->
+		<div class="navbar pull-right">
+			<div class="clearfix">
+				<ul class="pull-right top-icons">
+					<li><a href="#" class="btn-top-search visible-xs"><i class="icon-search4"></i></a></li>
+
+					<!-- Quick apps dropdown -->
+					<li class="dropdown apps-dropdown hidden-xs">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-grid2"></i></a>
+						<div class="dropdown-menu">
+						</div>
+					</li>
+					<!-- /Quick apps dropdown -->
+
+					<!-- Rightbar -->
+					<li><a href="#" onclick="open_rightbar()"><span class="bubble">6</span><i class="icon-stack3"></i></a></li>
+					<!-- /Rightbar -->
+
+					<!-- User dropdown -->
+					<li class="dropdown user-dropdown">
+						<a class="user-name hidden-xs" data-toggle="dropdown">Jane Elliott <i class="icon-more2"></i><small>Administrator</small></a>
+						<a href="#" class="btn-user dropdown-toggle hidden-xs" data-toggle="dropdown"><img src="http://via.placeholder.com/80x80" class="img-circle user" alt=""/></a>
+						<a href="#" class="dropdown-toggle visible-xs" data-toggle="dropdown"><i class="icon-more"></i></a>
+						<div class="dropdown-menu no-padding">
+						</div>
+					</li>
+					<!-- /User dropdown -->
+
+				</ul>
+			</div>
+		</div>
+		<!-- /Navbar icons -->
+
+	</header>
+	<!-- /Header ends -->
+
+	<!-- Sidebar -->
+	<aside class="menu">
+		<div class="left-aside-container">
+
+			<!-- User profile -->
+			<div class="user-profile"></div>
+			<!-- /User profile -->
+
+
+			<!-- Main menu -->
+			<div class="menu-container"></div>
+			<!-- /Main menu -->
+
+		</div>
+	</aside>
+	<!-- /Sidebar -->
+
+	<!-- Page container begins -->
+	<section class="main-container">
+		<h1 style="display:none">Empty Heading</h1>
+
+			<!-- Page header -->
+			<div class="header">
+				<div class="header-content">
+					<div class="page-title">
+						<i class="icon-puzzle2 position-left"></i> Text styling
+					</div>
+					<ul class="breadcrumb">
+						<li><a href="index.html"></a></li>
+						<li>Content Appearance</li>
+						<li class="active">Text styling</li>
+					</ul>
+				</div>
+			</div>
+			<!-- /Page header -->
+
+			<div class="container-fluid page-content">
+
+				<div class="row">
+
+					<!-- Contextual colors -->
+					<div class="col-md-6">
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<h5 class="panel-title">Contextual colors</h5>
+							</div>
+
+							<div class="table-responsive">
+								<table class="table table-lg">
+									<thead>
+										<tr>
+											<th>Example</th>
+											<th>Description</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><span class="text-muted">This is a muted text</span></td>
+											<td>For muted text color use <code>.text-muted</code> class</td>
+										</tr>
+										<tr>
+											<td><span class="text-primary">This is a primary text</span></td>
+											<td>For primary text color use <code>.text-primary</code> class</td>
+										</tr>
+										<tr>
+											<td><span class="text-danger">This is a danger text</span></td>
+											<td>For danger text color use <code>.text-danger</code> class</td>
+										</tr>
+										<tr>
+											<td><span class="text-success">This is a success text</span></td>
+											<td>For success text color use <code>.text-success</code> class</td>
+										</tr>
+										<tr>
+											<td><span class="text-warning">This is a warning text</span></td>
+											<td>For warning text color use <code>.text-warning</code> class</td>
+										</tr>
+										<tr>
+											<td><span class="text-info">This is a info text</span></td>
+											<td>For info text color use <code>.text-info</code> class</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!-- /Contextual colors -->
+
+
+					<!-- Contextual backgrounds -->
+					<div class="col-md-6">
+						<div class="panel panel-flat">
+							<div class="panel-heading">
+								<h5 class="panel-title">Contextual backgrounds</h5>
+							</div>
+
+							<div class="table-responsive">
+								<table class="table table-lg">
+									<thead>
+										<tr>
+											<th class="col-md-4">Example</th>
+											<th>Description</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td><span class="bg-primary text-highlight">Primary background</span></td>
+											<td>For primary background color use <code>.bg-primary</code> class</td>
+										</tr>
+										<tr>
+											<td><span class="bg-danger text-highlight">Danger background</span></td>
+											<td>For danger background color use <code>.bg-danger</code> class</td>
+										</tr>
+										<tr>
+											<td><span class="bg-success text-highlight">Success background</span></td>
+											<td>For success background color use <code>.bg-success</code> class</td>
+										</tr>
+										<tr>
+											<td><span class="bg-warning text-highlight">Warning background</span></td>
+											<td>For warning background color use <code>.bg-warning</code> class</td>
+										</tr>
+										<tr>
+											<td><span class="bg-info text-highlight">Info background</span></td>
+											<td>For info background color use <code>.bg-info</code> class</td>
+										</tr>
+										<tr>
+											<td><span class="bg-slate-light text-highlight">Custom background</span></td>
+											<td>For a <a href="color_system.html">custom background</a> color use <code>.bg-*</code> class</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<!-- /Contextual backgrounds -->
+				</div>
+
+				<div class="panel panel-flat">
+					<div class="panel-heading">
+						<h5 class="panel-title">Text options</h5>
+					</div>
+
+					<div class="table-responsive">
+						<table class="table table-lg">
+							<thead>
+								<tr>
+									<th>Example</th>
+									<th>Description</th>
+								</tr>
+							</thead>
+							<tbody>
+
+								<!-- Links -->
+								<tr>
+									<th colspan="2" class="active">Links</th>
+								</tr>
+								<tr>
+									<td><a href="#">This is a default link</a></td>
+									<td>Default style for <code>&lt;a&gt;</code> element</td>
+								</tr>
+								<tr>
+									<td><a href="#" class="text-default">This is a text color link</a></td>
+									<td>To use a link with default text color link, add <code>.text-default</code> class</td>
+								</tr>
+								<tr>
+									<td><a href="#" class="text-danger">This is a contextual color link</a></td>
+									<td>To use a link with contextual color link, add <code>.text-danger</code> or any other contextual class</td>
+								</tr>
+								<tr>
+									<td><a href="#" class="text-indigo-darkest">This is a custom color link</a></td>
+									<td>To use a link with custom color link, add <code>.text-*</code> or any other text color class</td>
+								</tr>
+								<!-- Links -->
+
+								<!-- Font weight -->
+								<tr>
+									<th colspan="2" class="active">Font weight</th>
+								</tr>
+
+								<tr>
+									<td>This is a <span class="text-light">light text</span></td>
+									<td>For light font weight use <code>.text-light</code> class</td>
+								</tr>
+								<tr>
+									<td>This is a <span class="text-regular">regular text</span></td>
+									<td>For forced regular font weight use <code>.text-regular</code> class</td>
+								</tr>
+								<tr>
+									<td>This is a <span class="text-semibold">semibold text</span></td>
+									<td>For semibold font weight use <code>.text-semibold</code> class</td>
+								</tr>
+								<tr>
+									<td>This is a <span class="text-bold">bold text</span></td>
+									<td>For bold font weight use <code>.text-bold</code> class</td>
+								</tr>
+								<tr>
+									<td>This is a <span class="text-extrabold">extra bold text</span></td>
+									<td>For extra bold font weight use <code>.text-extrabold</code> class</td>
+								</tr>
+								<!-- Font weight -->
+
+								<!-- Font style -->
+								<tr>
+									<th colspan="2" class="active">Font style</th>
+								</tr>
+								<tr>
+									<td>This is an <em>italic text</em></td>
+									<td>For italic font style use <code>&lt;em&gt;</code> tag</td>
+								</tr>
+								<tr>
+									<td>This is an <span class="text-uppercase">uppercase text</span></td>
+									<td>For uppercase text transformation use <code>.text-uppercase</code> class</td>
+								</tr>
+								<tr>
+									<td>This is a <span class="text-lowercase">lowercase</span> text</td>
+									<td>For lowercase text transformation use <code>.text-lowercase</code> class</td>
+								</tr>
+								<tr>
+									<td>This is a <span class="text-capitalize">capitalized text</span></td>
+									<td>For capitalize text transformation use <code>.text-capitalize</code> class</td>
+								</tr>
+								<tr>
+									<td>This is a <del>deleted text</del></td>
+									<td>For indicating blocks of text that have been deleted use the <code>&lt;del&gt;</code> tag.</td>
+								</tr>
+								<tr>
+									<td>This is a <s>strikethrough text</s></td>
+									<td>For indicating blocks of text that are no longer relevant use the <code>&lt;s&gt;</code> tag.</td>
+								</tr>
+								<tr>
+									<td>This is an <u>underlined text</u></td>
+									<td>To underline text use the <code>&lt;u&gt;</code> tag.</td>
+								</tr>
+								<!-- /Font style -->
+
+								<!-- Font size -->
+								<tr>
+									<th colspan="2" class="active">Font size</th>
+								</tr>
+								<tr>
+									<td><span class="text-xlg">This is a extra large text size</span></td>
+									<td>For larger text size use <code>.text-xlg</code> class</td>
+								</tr>
+								<tr>
+									<td><span class="text-lg">This is a large text size</span></td>
+									<td>For larger text size use <code>.text-lg</code> class</td>
+								</tr>
+								<tr>
+									<td>This is a default text size</td>
+									<td>Default font size is <code>12px</code>, doesn;t require any special classes</td>
+								</tr>
+								<tr>
+									<td><span class="text-sm">This is a smaller text size</span></td>
+									<td>For smaller text size use <code>.text-sm</code> class</td>
+								</tr>
+								<tr>
+									<td><span class="text-xs">This is a mini text size</span></td>
+									<td>For mini text size use <code>.text-xs</code> class</td>
+								</tr>
+								<!-- /Font size -->
+
+								<!-- Text elements -->
+								<tr>
+									<th colspan="2" class="active">Text elements</th>
+								</tr>
+								<tr>
+									<td>This is a <span class="text-muted">muted</span> text</td>
+									<td>Add <code>.text-muted</code> class to mute text</td>
+								</tr>
+								<tr>
+									<td>This is a <mark>highlighted</mark> text</td>
+									<td>For text highlighting in another context, use the <code>&lt;mark&gt;</code> tag</td>
+								</tr>
+								<tr>
+									<td>This is a <ins>inserted text</ins></td>
+									<td>For indicating additions to the document use the <code>&lt;ins&gt;</code> tag</td>
+								</tr>
+								<tr>
+									<td>Basic <abbr title="" data-popup="tooltip" data-original-title="Abbr title">abbreviation</abbr></td>
+									<td>For expanded text on abbr hover, use the <code>&lt;abbr&gt;</code> element</td>
+								</tr>
+								<tr>
+									<td><abbr title="" data-popup="tooltip" class="initialism" data-original-title="Abbr title">Abbreviation</abbr> with initialism</td>
+									<td>Add <code>.initialism</code> to an abbreviation for a slightly smaller font-size</td>
+								</tr>
+								<tr>
+									<td>Press <kbd>ctrl + ,</kbd> to edit</td>
+									<td>Use the <code>&lt;kbd&gt;</code> to indicate input that is typically entered via keyboard</td>
+								</tr>
+								<tr>
+									<td><var>y</var> = <var>m</var><var>x</var> + <var>b</var></td>
+									<td>Use the <code>&lt;var&gt;</code> to indicate variables</td>
+								</tr>
+								<tr>
+									<td><samp>This is a sample text</samp></td>
+									<td>Use the <code>&lt;samp&gt;</code> to indicate blocks sample output from a program</td>
+								</tr>
+								<tr>
+									<td><code>Inline code snippet</code></td>
+									<td>Wrap inline snippets of code with <code>&lt;code&gt;</code></td>
+								</tr>
+								<!-- /Text elements -->
+
+								<!-- Text alignment -->
+								<tr>
+									<th colspan="2" class="active">Text alignment</th>
+								</tr>
+								<tr>
+									<td class="text-left">Left aligned text</td>
+									<td>For left text alignment, use <code>.text-left</code> alignment class</td>
+								</tr>
+								<tr>
+									<td class="text-center">Centered text</td>
+									<td>For center text alignment, use <code>.text-center</code> alignment class</td>
+								</tr>
+								<tr>
+									<td class="text-right">Right aligned text</td>
+									<td>For right text alignment, use <code>.text-right</code> alignment class</td>
+								</tr>
+								<tr>
+									<td class="text-justify">Justified text</td>
+									<td>For justified text, use <code>.text-justify</code> alignment class</td>
+								</tr>
+								<tr>
+									<td class="text-nowrap">No wrap text</td>
+									<td>For no wrap text, use <code>.text-nowrap</code> alignment class</td>
+								</tr>
+								<!-- /Text alignment -->
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+			</div>
+
+			<!-- Footer -->
+			<footer class="footer-container">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12 col-sm-12">
+							<div class="pull-left">
+								© 2017 Bird&nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;&nbsp;Web app kit by <a href="http://followtechnique.com" target="_blank">FollowTechnique</a>.							</div>
+	                        <div class="pull-right">
+								<div class="label label-info">Version: 1.3.0</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- /Footer -->
+
+		</section>
+		<!-- /Page Container ends -->
+
+		<!-- ScrolltoTop -->
+		<a id="scrollTop" href="#top"><i class="icon-arrow-up12"></i></a>
+		<!-- /ScrolltoTop -->
+
+	</div>
+
+<!-- Rightbar -->
+<div id="right_sidebar" class="right_bar"></div>
+<script>
+function open_rightbar() {
+	$(window).resize(function() {
+		if(($(window).width() < 500)){
+			document.getElementById("right_sidebar").style.width = "100%";
+		}
+		else if($(window).width() > 500) {
+			document.getElementById("right_sidebar").style.width = "260px";
+		}
+	}).resize();
+}
+function close_rightbar() {
+	document.getElementById("right_sidebar").style.width = "0";
+}
+</script>
+<!-- /Rightbar -->
+
+<!-- Layout settings -->
+<div class="layout"></div>
+<span class="is_hidden" id="jquery_vars">
+	<span class="is_hidden switch-active"></span>
+	<span class="is_hidden switch-inactive"></span>
+	<span class="is_hidden chart-bg"></span>
+	<span class="is_hidden chart-gridlines-color"></span>
+	<span class="is_hidden chart-legends-text-color"></span>
+	<span class="is_hidden chart-grid-text-color"></span>
+	<span class="is_hidden chart-data-color-option1"></span>
+	<span class="is_hidden chart-data-color-option2"></span>
+	<span class="is_hidden chart-data-color-option3"></span>
+	<span class="is_hidden chart-data-color-option4"></span>
+	<span class="is_hidden chart-data-color-option5"></span>
+	<span class="is_hidden chart-data-color-option6"></span>
+	<span class="is_hidden chart-data-color-option7"></span>
+	<span class="is_hidden chart-data-color-option8"></span>
+</span>
+<!-- /Layout settings -->
+
+<!-- Global scripts -->
+<script src="lib/js/core/jquery/jquery.js"></script>
+<script src="lib/js/core/jquery/jquery.ui.js"></script>
+<script src="lib/js/core/bootstrap/bootstrap.js"></script>
+<script src="lib/js/core/bootstrap/jasny_bootstrap.min.js"></script>
+<script src="lib/js/core/navigation/nav.accordion.js"></script>
+<script src="lib/js/core/hammer/hammerjs.js"></script>
+<script src="lib/js/core/hammer/jquery.hammer.js"></script>
+<script src="lib/js/core/slimscroll/jquery.slimscroll.js"></script>
+<script src="lib/js/extensions/smart-resize.js"></script>
+<script src="lib/js/extensions/blockui.min.js"></script>
+<script src="lib/js/forms/uniform.min.js"></script>
+<script src="lib/js/forms/switchery.js"></script>
+<script src="lib/js/forms/select2.min.js"></script>
+<script src="lib/js/plugins/venobox.js"></script>
+<script src="lib/js/core/app/layouts.js"></script>
+<script src="lib/js/core/app/core.js"></script>
+<!-- /Global scripts -->
+
+<!-- Page scripts -->
+<!-- /Page scripts -->
+
+</body>
+</html>

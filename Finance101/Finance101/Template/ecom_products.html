@@ -1,0 +1,633 @@
+<!doctype html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="theme-color" content="#1C2B36" />
+	<title>Bird - Responsive admin dashboard template by Followtechnique</title>
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="144x144">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="114x114">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="72x72">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png">
+	<link href="img/favicon.ico" rel="icon" type="image/png">
+	<link href="img/favicon.ico" rel="shortcut icon">
+    <!-- /Favicon -->
+
+    <!-- Global stylesheets -->
+	<link type="text/css" rel="stylesheet" href="lib/css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="lib/css/animate.min.css">
+    <link type="text/css" rel="stylesheet" href="lib/css/main.css">
+    <!-- /Global stylesheets -->
+</head>
+<body id="top">
+
+<!-- Preloader -->
+<div id="preloader">
+	<div id="status">
+		<div class="loader"></div>
+	</div>
+</div>
+<!-- /Preloader -->
+
+<div id="body-wrapper" class="body-container">
+
+	<!-- Header begins -->
+	<header class="main-nav clearfix">
+
+		<!-- Searchbar -->
+		<div class="top-search-bar">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3">
+						<div class="search-input-addon">
+							<span class="addon-icon"><i class="icon-search4"></i></span>
+							<input type="text" class="form-control top-search-input" placeholder="Enter your keyword...">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Searchbar -->
+
+		<!-- Branding -->
+		<div class="navbar-left pull-left">
+			<div class="clearfix">
+				<ul class="left-branding pull-left">
+					<li class="visible-handheld"><span class="left-toggle-switch"><i class="icon-menu7"></i></span></li>
+					<li>
+						<a href="index.html"><div class="logo"></div></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /Branding -->
+
+		<!-- Search & Languages -->
+		<div class="navbar pull-left">
+			<div class="clearfix">
+				<ul class="pull-left top-icons hidden-xs">
+					<li><a href="#" class="btn-top-search m-l-10"><i class="icon-search4"></i></a></li>
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-flag7"></i></a>
+						<ul class="dropdown-menu languages">
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">Deutsch</a></li>
+                            <li><a href="#">Українська</a></li>
+							<li><a href="#">España</a></li>
+                        </ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /Search & Languages -->
+
+		<!-- Navbar icons -->
+		<div class="navbar pull-right">
+			<div class="clearfix">
+				<ul class="pull-right top-icons">
+					<li><a href="#" class="btn-top-search visible-xs"><i class="icon-search4"></i></a></li>
+
+					<!-- Quick apps dropdown -->
+					<li class="dropdown apps-dropdown hidden-xs">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-grid2"></i></a>
+						<div class="dropdown-menu">
+						</div>
+					</li>
+					<!-- /Quick apps dropdown -->
+
+					<!-- Rightbar -->
+					<li><a href="#" onclick="open_rightbar()"><span class="bubble">6</span><i class="icon-stack3"></i></a></li>
+					<!-- /Rightbar -->
+
+					<!-- User dropdown -->
+					<li class="dropdown user-dropdown">
+						<a class="user-name hidden-xs" data-toggle="dropdown">Jane Elliott <i class="icon-more2"></i><small>Administrator</small></a>
+						<a href="#" class="btn-user dropdown-toggle hidden-xs" data-toggle="dropdown"><img src="http://via.placeholder.com/80x80" class="img-circle user" alt=""/></a>
+						<a href="#" class="dropdown-toggle visible-xs" data-toggle="dropdown"><i class="icon-more"></i></a>
+						<div class="dropdown-menu no-padding">
+						</div>
+					</li>
+					<!-- /User dropdown -->
+
+				</ul>
+			</div>
+		</div>
+		<!-- /Navbar icons -->
+
+	</header>
+	<!-- /Header ends -->
+
+	<!-- Sidebar -->
+	<aside class="menu">
+		<div class="left-aside-container">
+
+			<!-- User profile -->
+			<div class="user-profile"></div>
+			<!-- /User profile -->
+
+
+			<!-- Main menu -->
+			<div class="menu-container"></div>
+			<!-- /Main menu -->
+
+		</div>
+	</aside>
+	<!-- /Sidebar -->
+
+	<!-- Page container begins -->
+	<section class="main-container">
+		<h1 style="display:none">Empty Heading</h1>
+
+			<!-- Page header -->
+			<div class="header">
+				<div class="header-content">
+					<div class="page-title">
+						<i class="icon-cart2 position-left"></i> All Products
+					</div>
+					<ul class="breadcrumb">
+						<li><a href="index.html"></a></li>
+						<li>E-commerce</li>
+						<li class="active">All Products</li>
+					</ul>
+				</div>
+			</div>
+			<!-- /Page header -->
+
+			<div class="container-fluid page-content">
+
+				<div class="row">
+
+					<!-- Product 1 -->
+					<div class="col-md-3 col-sm-4">
+						<div class="panel panel-flat">
+							<div class="panel-body">
+								<a href="ecom_product.html"><img src="http://via.placeholder.com/360x360" alt="product" class="img-responsive" /></a>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-8 col-sm-7">
+										<a href="ecom_product.html"><p class="text-semibold">Mens Watch #033</p></a>
+										<h4 class="text-semibold text-uppercase text-muted m-b-10 m-t-0">20% Off</h4>
+									</div>
+									<div class="col-md-4 col-sm-5 text-right">
+										<div class="x2 no-margin text-danger no-line-height">$39.99</div>
+										<div class="text-uppercase m-l-10"><s>$49.99</s></div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="btn-group pull-left">
+			                                <button type="button" class="btn btn-default" data-popup="tooltip" data-original-title="Add to Wishlist"><i class="icon-heart5 text-pink"></i></button>
+			                                <button type="button" class="btn btn-default" data-popup="tooltip" data-original-title="Add to Compare"><i class="icon-transmission text-indigo"></i></button>
+			                            </div>
+										<button type="button" class="btn bg-amber text-semibold text-uppercase cd-add-to-cart pull-right" data-price="39.99"><i class="icon-cart4 position-left"></i>Add to cart</button>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /Product 1 -->
+
+					<!-- Product 2 -->
+					<div class="col-md-3 col-sm-4">
+						<div class="panel panel-flat">
+							<div class="panel-body">
+								<a href="ecom_product.html"><img src="http://via.placeholder.com/360x360" alt="product" class="img-responsive" /></a>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-8 col-sm-8">
+										<a href="ecom_product.html"><p class="text-semibold">Mens Shirt #021</p></a>
+										<h4 class="text-semibold text-uppercase text-muted m-b-10 m-t-0">20% Off</h4>
+									</div>
+									<div class="col-md-4 col-sm-4 text-right">
+										<div class="x2 no-margin text-danger no-line-height">$15.99</div>
+										<div class="text-uppercase m-l-10"><s>$19.99</s></div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="btn-group pull-left">
+			                                <button type="button" class="btn btn-default" data-popup="tooltip" data-original-title="Add to Wishlist"><i class="icon-heart5 text-pink"></i></button>
+			                                <button type="button" class="btn btn-default" data-popup="tooltip" data-original-title="Add to Compare"><i class="icon-transmission text-indigo"></i></button>
+			                            </div>
+										<button type="button" class="btn bg-amber text-semibold text-uppercase cd-add-to-cart pull-right" data-price="39.99"><i class="icon-cart4 position-left"></i>Add to cart</button>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /Product 2 -->
+
+					<!-- Product 3 -->
+					<div class="col-md-3 col-sm-4">
+						<div class="panel panel-flat">
+							<div class="panel-body">
+								<a href="ecom_product.html"><img src="http://via.placeholder.com/360x360" alt="product" class="img-responsive" /></a>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-8 col-sm-8">
+										<a href="ecom_product.html"><p class="text-semibold">Woman Dress #004</p></a>
+										<h4 class="text-semibold text-uppercase text-muted m-b-10 m-t-0">20% Off</h4>
+									</div>
+									<div class="col-md-4 col-sm-4 text-right">
+										<div class="x2 no-margin text-danger no-line-height">$56.99</div>
+										<div class="text-uppercase m-l-10"><s>$69.99</s></div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="btn-group pull-left">
+			                                <button type="button" class="btn btn-default" data-popup="tooltip" data-original-title="Add to Wishlist"><i class="icon-heart5 text-pink"></i></button>
+			                                <button type="button" class="btn btn-default" data-popup="tooltip" data-original-title="Add to Compare"><i class="icon-transmission text-indigo"></i></button>
+			                            </div>
+										<button type="button" class="btn bg-amber text-semibold text-uppercase cd-add-to-cart pull-right" data-price="39.99"><i class="icon-cart4 position-left"></i>Add to cart</button>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /Product 3 -->
+
+					<!-- Product 4 -->
+					<div class="col-md-3 col-sm-4">
+						<div class="panel panel-flat">
+							<div class="panel-body">
+								<a href="ecom_product.html"><img src="http://via.placeholder.com/360x360" alt="product" class="img-responsive" /></a>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-8 col-sm-8">
+										<a href="ecom_product.html"><p class="text-semibold">Single Sofa #009</p></a>
+										<h4 class="text-semibold text-uppercase text-muted m-b-10 m-t-0">No Discount</h4>
+									</div>
+									<div class="col-md-4 col-sm-4 text-right">
+										<div class="x2 no-margin text-danger no-line-height">$149.99</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="btn-group pull-left">
+			                                <button type="button" class="btn btn-default" data-popup="tooltip" data-original-title="Add to Wishlist"><i class="icon-heart5 text-pink"></i></button>
+			                                <button type="button" class="btn btn-default" data-popup="tooltip" data-original-title="Add to Compare"><i class="icon-transmission text-indigo"></i></button>
+			                            </div>
+										<button type="button" class="btn bg-amber text-semibold text-uppercase cd-add-to-cart pull-right" data-price="39.99"><i class="icon-cart4 position-left"></i>Add to cart</button>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /Product 4 -->
+
+					<!-- Product 5 -->
+					<div class="col-md-3 col-sm-4">
+						<div class="panel panel-flat">
+							<div class="panel-body">
+								<a href="ecom_product.html"><img src="http://via.placeholder.com/360x360" alt="product" class="img-responsive" /></a>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-8 col-sm-8">
+										<a href="ecom_product.html"><p class="text-semibold">Table Night Lamp</p></a>
+										<h4 class="text-semibold text-uppercase text-muted m-b-10 m-t-0">No Discount</h4>
+									</div>
+									<div class="col-md-4 col-sm-4 text-right">
+										<div class="x2 no-margin text-danger no-line-height">$79.99</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="btn-group pull-left">
+			                                <button type="button" class="btn btn-default" data-popup="tooltip" data-original-title="Add to Wishlist"><i class="icon-heart5 text-pink"></i></button>
+			                                <button type="button" class="btn btn-default" data-popup="tooltip" data-original-title="Add to Compare"><i class="icon-transmission text-indigo"></i></button>
+			                            </div>
+										<button type="button" class="btn bg-amber text-semibold text-uppercase cd-add-to-cart pull-right" data-price="39.99"><i class="icon-cart4 position-left"></i>Add to cart</button>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /Product 5 -->
+
+					<!-- Product 6 -->
+					<div class="col-md-3 col-sm-4">
+						<div class="panel panel-flat">
+							<div class="panel-body">
+								<a href="ecom_product.html"><img src="http://via.placeholder.com/360x360" alt="product" class="img-responsive" /></a>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-8 col-sm-8">
+										<a href="ecom_product.html"><p class="text-semibold">Ladies Hand Bag</p></a>
+										<h4 class="text-semibold text-uppercase text-muted m-b-10 m-t-0">No Discount</h4>
+									</div>
+									<div class="col-md-4 col-sm-4 text-right">
+										<div class="x2 no-margin text-danger no-line-height">$19.99</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="btn-group pull-left">
+			                                <button type="button" class="btn btn-default" data-popup="tooltip" data-original-title="Add to Wishlist"><i class="icon-heart5 text-pink"></i></button>
+			                                <button type="button" class="btn btn-default" data-popup="tooltip" data-original-title="Add to Compare"><i class="icon-transmission text-indigo"></i></button>
+			                            </div>
+										<button type="button" class="btn bg-amber text-semibold text-uppercase cd-add-to-cart pull-right" data-price="39.99"><i class="icon-cart4 position-left"></i>Add to cart</button>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /Product 6 -->
+
+					<!-- Product 7 -->
+					<div class="col-md-3 col-sm-4">
+						<div class="panel panel-flat">
+							<div class="panel-body">
+								<a href="ecom_product.html"><img src="http://via.placeholder.com/360x360" alt="product" class="img-responsive" /></a>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-8 col-sm-8">
+										<a href="ecom_product.html"><p class="text-semibold">Mens T-Shirt</p></a>
+										<h4 class="text-semibold text-uppercase text-muted m-b-10 m-t-0">5% Off</h4>
+									</div>
+									<div class="col-md-4 col-sm-4 text-right">
+										<div class="x2 no-margin text-danger no-line-height">$18.99</div>
+										<div class="text-uppercase m-l-10"><s>$19.99</s></div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="btn-group pull-left">
+			                                <button type="button" class="btn btn-default" data-popup="tooltip" data-original-title="Add to Wishlist"><i class="icon-heart5 text-pink"></i></button>
+			                                <button type="button" class="btn btn-default" data-popup="tooltip" data-original-title="Add to Compare"><i class="icon-transmission text-indigo"></i></button>
+			                            </div>
+										<button type="button" class="btn bg-amber text-semibold text-uppercase cd-add-to-cart pull-right" data-price="39.99"><i class="icon-cart4 position-left"></i>Add to cart</button>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /Product 7 -->
+
+					<!-- Product 8 -->
+					<div class="col-md-3 col-sm-4">
+						<div class="panel panel-flat">
+							<div class="panel-body">
+								<a href="ecom_product.html"><img src="http://via.placeholder.com/360x360" alt="product" class="img-responsive" /></a>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-8 col-sm-8">
+										<a href="ecom_product.html"><p class="text-semibold">Mens Pocket Watch</p></a>
+										<h4 class="text-semibold text-uppercase text-muted m-b-10 m-t-0">20% Off</h4>
+									</div>
+									<div class="col-md-4 col-sm-4 text-right">
+										<div class="x2 no-margin text-danger no-line-height">$39.99</div>
+										<div class="text-uppercase m-l-10"><s>$49.99</s></div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="btn-group pull-left">
+			                                <button type="button" class="btn btn-default" data-popup="tooltip" data-original-title="Add to Wishlist"><i class="icon-heart5 text-pink"></i></button>
+			                                <button type="button" class="btn btn-default" data-popup="tooltip" data-original-title="Add to Compare"><i class="icon-transmission text-indigo"></i></button>
+			                            </div>
+										<button type="button" class="btn bg-amber text-semibold text-uppercase cd-add-to-cart pull-right" data-price="39.99"><i class="icon-cart4 position-left"></i>Add to cart</button>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /Product 8 -->
+
+					<!-- Product 9 -->
+					<div class="col-md-3 col-sm-4">
+						<div class="panel panel-flat">
+							<div class="panel-body">
+								<a href="ecom_product.html"><img src="http://via.placeholder.com/360x360" alt="product" class="img-responsive" /></a>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-8 col-sm-8">
+										<a href="ecom_product.html"><p class="text-semibold">Mens Vollet</p></a>
+										<h4 class="text-semibold text-uppercase text-muted m-b-10 m-t-0">No Discount</h4>
+									</div>
+									<div class="col-md-4 col-sm-4 text-right">
+										<div class="x2 no-margin text-danger no-line-height">$14.99</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="btn-group pull-left">
+			                                <button type="button" class="btn btn-default" data-popup="tooltip" data-original-title="Add to Wishlist"><i class="icon-heart5 text-pink"></i></button>
+			                                <button type="button" class="btn btn-default" data-popup="tooltip" data-original-title="Add to Compare"><i class="icon-transmission text-indigo"></i></button>
+			                            </div>
+										<button type="button" class="btn bg-amber text-semibold text-uppercase cd-add-to-cart pull-right" data-price="39.99"><i class="icon-cart4 position-left"></i>Add to cart</button>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /Product 9 -->
+
+					<!-- Product 10 -->
+					<div class="col-md-3 col-sm-4">
+						<div class="panel panel-flat">
+							<div class="panel-body">
+								<a href="ecom_product.html"><img src="http://via.placeholder.com/360x360" alt="product" class="img-responsive" /></a>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-8 col-sm-8">
+										<a href="ecom_product.html"><p class="text-semibold">Mens Belt</p></a>
+										<h4 class="text-semibold text-uppercase text-muted m-b-10 m-t-0">No Discount</h4>
+									</div>
+									<div class="col-md-4 col-sm-4 text-right">
+										<div class="x2 no-margin text-danger no-line-height">$9.99</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="btn-group pull-left">
+			                                <button type="button" class="btn btn-default" data-popup="tooltip" data-original-title="Add to Wishlist"><i class="icon-heart5 text-pink"></i></button>
+			                                <button type="button" class="btn btn-default" data-popup="tooltip" data-original-title="Add to Compare"><i class="icon-transmission text-indigo"></i></button>
+			                            </div>
+										<button type="button" class="btn bg-amber text-semibold text-uppercase cd-add-to-cart pull-right" data-price="39.99"><i class="icon-cart4 position-left"></i>Add to cart</button>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /Product 10 -->
+
+					<!-- Product 11 -->
+					<div class="col-md-3 col-sm-4">
+						<div class="panel panel-flat">
+							<div class="panel-body">
+								<a href="ecom_product.html"><img src="http://via.placeholder.com/360x360" alt="product" class="img-responsive" /></a>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-md-8 col-sm-8">
+										<a href="ecom_product.html"><p class="text-semibold">Queen Size Bed</p></a>
+										<h4 class="text-semibold text-uppercase text-muted m-b-10 m-t-0">10% Off</h4>
+									</div>
+									<div class="col-md-4 col-sm-4 text-right">
+										<div class="x2 no-margin text-danger no-line-height">$449.99</div>
+										<div class="text-uppercase m-l-10"><s>$499.99</s></div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="btn-group pull-left">
+			                                <button type="button" class="btn btn-default" data-popup="tooltip" data-original-title="Add to Wishlist"><i class="icon-heart5 text-pink"></i></button>
+			                                <button type="button" class="btn btn-default" data-popup="tooltip" data-original-title="Add to Compare"><i class="icon-transmission text-indigo"></i></button>
+			                            </div>
+										<button type="button" class="btn bg-amber text-semibold text-uppercase cd-add-to-cart pull-right" data-price="39.99"><i class="icon-cart4 position-left"></i>Add to cart</button>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /Product 11 -->
+
+				</div>
+
+				<!-- Quick cart -->
+				<div class="cd-cart-container empty">
+					<a href="#0" class="cd-cart-trigger">
+						Cart
+						<ul class="count">
+							<li>0</li>
+							<li>0</li>
+						</ul>
+					</a>
+
+					<div class="cd-cart">
+						<div class="wrapper">
+							<header>
+								<h4 class="text-semibold text-uppercase p-t-5">Shopping Cart</h4>
+								<span class="undo">Item removed. <a href="#0">Undo</a></span>
+							</header>
+
+							<div class="body">
+								<ul>
+									<!-- products added to the cart will be inserted here using JavaScript -->
+								</ul>
+							</div>
+
+							<footer>
+								<a href="ecom_checkout.html" class="checkout btn text-light x2 p-t-12">Checkout - $<span>0</span></a>
+							</footer>
+						</div>
+					</div>
+				</div>
+				<!-- /Quick cart -->
+
+			</div>
+
+			<!-- Footer -->
+			<footer class="footer-container">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12 col-sm-12">
+							<div class="pull-left">
+								© 2017 Bird&nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;&nbsp;Web app kit by <a href="http://followtechnique.com" target="_blank">FollowTechnique</a>.							</div>
+	                        <div class="pull-right">
+								<div class="label label-info">Version: 1.3.0</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- /Footer -->
+
+		</section>
+		<!-- /Page Container ends -->
+
+		<!-- ScrolltoTop -->
+		<a id="scrollTop" href="#top"><i class="icon-arrow-up12"></i></a>
+		<!-- /ScrolltoTop -->
+
+	</div>
+
+<!-- Rightbar -->
+<div id="right_sidebar" class="right_bar"></div>
+<script>
+function open_rightbar() {
+	$(window).resize(function() {
+		if(($(window).width() < 500)){
+			document.getElementById("right_sidebar").style.width = "100%";
+		}
+		else if($(window).width() > 500) {
+			document.getElementById("right_sidebar").style.width = "260px";
+		}
+	}).resize();
+}
+function close_rightbar() {
+	document.getElementById("right_sidebar").style.width = "0";
+}
+</script>
+<!-- /Rightbar -->
+
+<!-- Layout settings -->
+<div class="layout"></div>
+<span class="is_hidden" id="jquery_vars">
+	<span class="is_hidden switch-active"></span>
+	<span class="is_hidden switch-inactive"></span>
+	<span class="is_hidden chart-bg"></span>
+	<span class="is_hidden chart-gridlines-color"></span>
+	<span class="is_hidden chart-legends-text-color"></span>
+	<span class="is_hidden chart-grid-text-color"></span>
+	<span class="is_hidden chart-data-color-option1"></span>
+	<span class="is_hidden chart-data-color-option2"></span>
+	<span class="is_hidden chart-data-color-option3"></span>
+	<span class="is_hidden chart-data-color-option4"></span>
+	<span class="is_hidden chart-data-color-option5"></span>
+	<span class="is_hidden chart-data-color-option6"></span>
+	<span class="is_hidden chart-data-color-option7"></span>
+	<span class="is_hidden chart-data-color-option8"></span>
+</span>
+<!-- /Layout settings -->
+
+<!-- Global scripts -->
+<script src="lib/js/core/jquery/jquery.js"></script>
+<script src="lib/js/core/jquery/jquery.ui.js"></script>
+<script src="lib/js/core/bootstrap/bootstrap.js"></script>
+<script src="lib/js/core/bootstrap/jasny_bootstrap.min.js"></script>
+<script src="lib/js/core/navigation/nav.accordion.js"></script>
+<script src="lib/js/core/hammer/hammerjs.js"></script>
+<script src="lib/js/core/hammer/jquery.hammer.js"></script>
+<script src="lib/js/core/slimscroll/jquery.slimscroll.js"></script>
+<script src="lib/js/extensions/smart-resize.js"></script>
+<script src="lib/js/extensions/blockui.min.js"></script>
+<script src="lib/js/forms/uniform.min.js"></script>
+<script src="lib/js/forms/switchery.js"></script>
+<script src="lib/js/forms/select2.min.js"></script>
+<script src="lib/js/plugins/venobox.js"></script>
+<script src="lib/js/core/app/layouts.js"></script>
+<script src="lib/js/core/app/core.js"></script>
+<!-- /Global scripts -->
+
+<!-- Page scripts -->
+<script src="lib/js/pages/ecom/ecom_product.js"></script>
+<!-- /Page scripts -->
+
+</body>
+</html>

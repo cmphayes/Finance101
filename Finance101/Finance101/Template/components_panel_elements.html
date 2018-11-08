@@ -1,0 +1,789 @@
+<!doctype html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="theme-color" content="#1C2B36" />
+	<title>Bird - Responsive admin dashboard template by Followtechnique</title>
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="144x144">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="114x114">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="72x72">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png">
+	<link href="img/favicon.ico" rel="icon" type="image/png">
+	<link href="img/favicon.ico" rel="shortcut icon">
+    <!-- /Favicon -->
+
+    <!-- Global stylesheets -->
+	<link type="text/css" rel="stylesheet" href="lib/css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="lib/css/animate.min.css">
+    <link type="text/css" rel="stylesheet" href="lib/css/main.css">
+    <!-- /Global stylesheets -->
+</head>
+<body id="top">
+
+<!-- Preloader -->
+<div id="preloader">
+	<div id="status">
+		<div class="loader"></div>
+	</div>
+</div>
+<!-- /Preloader -->
+
+<div id="body-wrapper" class="body-container">
+
+	<!-- Header begins -->
+	<header class="main-nav clearfix">
+
+		<!-- Searchbar -->
+		<div class="top-search-bar">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3">
+						<div class="search-input-addon">
+							<span class="addon-icon"><i class="icon-search4"></i></span>
+							<input type="text" class="form-control top-search-input" placeholder="Enter your keyword...">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Searchbar -->
+
+		<!-- Branding -->
+		<div class="navbar-left pull-left">
+			<div class="clearfix">
+				<ul class="left-branding pull-left">
+					<li class="visible-handheld"><span class="left-toggle-switch"><i class="icon-menu7"></i></span></li>
+					<li>
+						<a href="index.html"><div class="logo"></div></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /Branding -->
+
+		<!-- Search & Languages -->
+		<div class="navbar pull-left">
+			<div class="clearfix">
+				<ul class="pull-left top-icons hidden-xs">
+					<li><a href="#" class="btn-top-search m-l-10"><i class="icon-search4"></i></a></li>
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-flag7"></i></a>
+						<ul class="dropdown-menu languages">
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">Deutsch</a></li>
+                            <li><a href="#">Українська</a></li>
+							<li><a href="#">España</a></li>
+                        </ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /Search & Languages -->
+
+		<!-- Navbar icons -->
+		<div class="navbar pull-right">
+			<div class="clearfix">
+				<ul class="pull-right top-icons">
+					<li><a href="#" class="btn-top-search visible-xs"><i class="icon-search4"></i></a></li>
+
+					<!-- Quick apps dropdown -->
+					<li class="dropdown apps-dropdown hidden-xs">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-grid2"></i></a>
+						<div class="dropdown-menu">
+						</div>
+					</li>
+					<!-- /Quick apps dropdown -->
+
+					<!-- Rightbar -->
+					<li><a href="#" onclick="open_rightbar()"><span class="bubble">6</span><i class="icon-stack3"></i></a></li>
+					<!-- /Rightbar -->
+
+					<!-- User dropdown -->
+					<li class="dropdown user-dropdown">
+						<a class="user-name hidden-xs" data-toggle="dropdown">Jane Elliott <i class="icon-more2"></i><small>Administrator</small></a>
+						<a href="#" class="btn-user dropdown-toggle hidden-xs" data-toggle="dropdown"><img src="http://via.placeholder.com/80x80" class="img-circle user" alt=""/></a>
+						<a href="#" class="dropdown-toggle visible-xs" data-toggle="dropdown"><i class="icon-more"></i></a>
+						<div class="dropdown-menu no-padding">
+						</div>
+					</li>
+					<!-- /User dropdown -->
+
+				</ul>
+			</div>
+		</div>
+		<!-- /Navbar icons -->
+
+	</header>
+	<!-- /Header ends -->
+
+	<!-- Sidebar -->
+	<aside class="menu">
+		<div class="left-aside-container">
+
+			<!-- User profile -->
+			<div class="user-profile"></div>
+			<!-- /User profile -->
+
+
+			<!-- Main menu -->
+			<div class="menu-container"></div>
+			<!-- /Main menu -->
+
+		</div>
+	</aside>
+	<!-- /Sidebar -->
+
+	<!-- Page container begins -->
+	<section class="main-container">
+		<h1 style="display:none">Empty Heading</h1>
+
+			<!-- Page header -->
+			<div class="header">
+				<div class="header-content">
+					<div class="page-title">
+						<i class="icon-cube3 position-left"></i> Panel elements
+					</div>
+					<ul class="breadcrumb">
+						<li><a href="index.html"></a></li>
+						<li>Components</li>
+						<li class="active">Panel elements</li>
+					</ul>
+				</div>
+			</div>
+			<!-- /Page header -->
+
+			<div class="container-fluid page-content">
+
+				<!-- Advanced panel controls -->
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<div class="panel-title">Advanced panel controls <small>(Sub title)</small></div>
+						<div class="elements">
+							<ul class="icons-list">
+								<li><a data-action="collapse" data-popup="tooltip" title="Collapse"></a></li>
+								<li><a data-action="reload" data-popup="tooltip" title="Reload"></a></li>
+								<li><a data-action="move" data-popup="tooltip" title="Move panel"></a></li>
+								<li><a data-action="modal" data-toggle="modal" data-target="#modal_default" data-popup="tooltip" title="Modal"></a></li>
+								<li>
+									<a class="dropdown-toggle" data-toggle="dropdown" data-popup="tooltip" title="Menu"></a>
+									<ul class="dropdown-menu dropdown-menu-right">
+										<li><a href="#">Action</a></li>
+										<li><a href="#">Another action</a></li>
+										<li><a href="#">Something else here</a></li>
+									</ul>
+								</li>
+								<li><a data-action="close" data-popup="tooltip" title="Close"></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="panel-body">
+						<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+						<div class="row">
+							<div class="col-md-4 col-sm-4">
+								<div><i class="icon-arrow-down32 position-left"></i> Collapse</div>
+								<p>Collapse/expand the panel body</p>
+								<div class="m-t-20"><i class="icon-sync position-left"></i> Reload</div>
+								<p>Reloads data inside panel body. Requires <b>block.js</b></p>
+							</div>
+							<div class="col-md-4 col-sm-4">
+								<div><i class="icon-popout position-left"></i> Modal</div>
+								<p>Opens a modal. Using bootstrap modal.js.</p>
+								<div class="m-t-20"><i class="icon-menu7 position-left"></i> Options menu</div>
+								<p>Dropdown menu for more options.</p>
+							</div>
+							<div class="col-md-4 col-sm-4">
+								<div><i class="icon-move-alt1 position-left"></i> Move</div>
+								<p>Drags the panel inside the main content area.</p>
+								<div class="m-t-20"><i class="icon-cross2 position-left"></i> Close</div>
+								<p>Closes the panel. Hides it form the page.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="modal_default" class="modal fade">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<div class="modal-title">Basic modal</div>
+							</div>
+							<div class="modal-body">
+								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+								<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+								<button type="button" class="btn btn-primary">Submit</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /Advanced panel controls -->
+
+
+				<div class="page-subtitle">Basic header elements</div>
+				<div class="row">
+					<div class="col-md-3 col-sm-3">
+
+						<!-- Left title icon -->
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<div class="panel-title"><i class="icon-three-bars position-left"></i> Left title icon</div>
+							</div>
+							<div class="panel-body">
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+							</div>
+						</div>
+						<!-- Left title icon -->
+
+					</div>
+
+					<div class="col-md-3 col-sm-3">
+
+						<!-- Right title icon -->
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<div class="panel-title">Right title icon <i class="icon-three-bars pull-right position-right"></i></div>
+							</div>
+							<div class="panel-body">
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+							</div>
+						</div>
+						<!-- /Right title icon -->
+
+					</div>
+
+					<div class="col-md-3 col-sm-3">
+
+						<!-- Left label -->
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<div class="panel-title">Left label <span class="label label-success position-right">New</span></div>
+							</div>
+							<div class="panel-body">
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+							</div>
+						</div>
+						<!-- /Left label -->
+
+					</div>
+
+					<div class="col-md-3 col-sm-3">
+
+						<!-- Right label -->
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<div class="panel-title">Right label</div>
+								<div class="elements">
+									<span class="label label-danger heading-text">Important</span>
+								</div>
+							</div>
+							<div class="panel-body">
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+							</div>
+						</div>
+						<!-- /Right label -->
+
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6 col-sm-6">
+
+						<!-- Heading text -->
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<div class="panel-title">Heading text</div>
+								<div class="elements">
+									<span class="heading-text"><i class="icon-circle-right2"></i>&nbsp; Some text with icon</span>
+								</div>
+							</div>
+							<div class="panel-body">
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+							</div>
+						</div>
+						<!-- /Heading text -->
+
+					</div>
+
+					<div class="col-md-6 col-sm-6">
+
+						<!-- Bullet list -->
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<div class="panel-title">Bullet list</div>
+								<div class="elements">
+									<ul class="list-inline list-inline-separate heading-text">
+										<li>Home</li>
+										<li>Panels</li>
+										<li><a href="#">Setings</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="panel-body">
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+							</div>
+						</div>
+						<!-- /Bullet list -->
+
+					</div>
+				</div>
+
+
+				<div class="page-subtitle">Header form elements</div>
+				<div class="row">
+					<div class="col-md-6 col-sm-6">
+
+						<!-- Single checkbox -->
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<div class="panel-title">Single checkbox</div>
+								<div class="elements">
+									<form class="header-form" action="#">
+										<div class="form-group">
+											<label class="checkbox-inline">
+												<input type="checkbox" class="styled" checked="checked">
+												Single checkbox
+											</label>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="panel-body">
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+							</div>
+						</div>
+						<!-- /Single checkbox -->
+
+						<!-- Single radio -->
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<div class="panel-title">Single radio</div>
+								<div class="elements">
+									<form class="header-form" action="#">
+										<div class="form-group">
+											<label class="radio-inline">
+												<input type="radio" name="single-radio" class="styled">
+												Single select
+											</label>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="panel-body">
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+							</div>
+						</div>
+						<!-- /Single radio -->
+
+						<!-- Switchery toggle -->
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<div class="panel-title">Switchery toggle</div>
+								<div class="elements">
+									<form class="header-form" action="#">
+										<div class="form-group">
+											<label class="checkbox-inline checkbox-right checkbox-switchery switchery-xs">
+												<input type="checkbox" class="switchery" checked="checked">
+												Switch on right
+											</label>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="panel-body">
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+							</div>
+						</div>
+						<!-- /Switchery toggle -->
+
+						<!-- Text input -->
+						<div class="panel panel-default">
+							<div class="panel-heading p-15">
+								<div class="panel-title">Text input</div>
+								<div class="elements">
+									<form class="header-form" action="#">
+										<div class="form-group">
+											<input type="text" class="form-control" placeholder="Enter keyword here...">
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="panel-body">
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+							</div>
+						</div>
+						<!-- /Text input -->
+
+					</div>
+
+					<div class="col-md-6 col-sm-6">
+
+						<!-- Checkbox group -->
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<div class="panel-title">Checkbox group</div>
+								<div class="elements">
+									<form class="header-form" action="#">
+										<div class="form-group">
+											<label class="checkbox-inline checkbox-right">
+												<input type="checkbox" class="styled" checked="checked">
+												Uncheck
+											</label>
+											<label class="checkbox-inline checkbox-right">
+												<input type="checkbox" class="styled">
+												Check
+											</label>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="panel-body">
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+							</div>
+						</div>
+						<!-- /Checkbox group -->
+
+						<!-- Radio group -->
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<div class="panel-title">Radio group</div>
+								<div class="elements">
+									<form class="header-form" action="#">
+										<div class="form-group">
+											<label class="radio-inline radio-right">
+												<input type="radio" name="group-radio" class="styled" checked="checked">
+												Select
+											</label>
+											<label class="radio-inline radio-right">
+												<input type="radio" name="group-radio" class="styled">
+												Unselect
+											</label>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="panel-body">
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+							</div>
+						</div>
+						<!-- /Radio group -->
+
+						<!-- Switchery toggle -->
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<div class="panel-title">Switchery toggle</div>
+								<div class="elements">
+									<form class="header-form" action="#">
+										<div class="form-group">
+											<label class="checkbox-inline checkbox-switchery switchery-xs">
+												<input type="checkbox" class="switchery" checked="checked">
+												Switch on left
+											</label>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="panel-body">
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+							</div>
+						</div>
+						<!-- /Switchery toggle -->
+
+						<!-- Input with icon -->
+						<div class="panel panel-default">
+							<div class="panel-heading p-15">
+								<div class="panel-title">Input with icon</div>
+								<div class="elements">
+									<form class="header-form" action="#">
+										<div class="form-group has-feedback has-feedback-left">
+											<input type="search" class="form-control" placeholder="Enter keyword here...">
+											<div class="form-control-feedback">
+												<i class="icon-search4 text-size-base text-muted"></i>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="panel-body">
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+							</div>
+						</div>
+						<!-- /Input with icon -->
+
+					</div>
+				</div>
+
+				<div class="page-subtitle">Header buttons</div>
+				<div class="row">
+					<div class="col-md-6 col-sm-6">
+
+						<!-- Single button -->
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<div class="panel-title">Single button</div>
+								<div class="elements">
+									<button type="button" class="btn btn-primary">Button</button>
+								</div>
+							</div>
+							<div class="panel-body">
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+							</div>
+						</div>
+						<!-- /Single button -->
+
+					</div>
+
+					<div class="col-md-6 col-sm-6">
+
+						<!-- Button dropdown -->
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<div class="panel-title">Button dropdown</div>
+								<div class="elements">
+									<div class="btn-group heading-btn">
+										<button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">Menu <span class="caret"></span></button>
+										<ul class="dropdown-menu dropdown-menu-right">
+											<li><a href="#">Action</a></li>
+											<li><a href="#">Another action</a></li>
+											<li><a href="#">Something else here</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="panel-body">
+								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+							</div>
+						</div>
+						<!-- /Button dropdown -->
+
+					</div>
+				</div>
+
+
+				<div class="page-subtitle">Basic footer elements</div>
+				<div class="row">
+					<div class="col-md-6 col-sm-6">
+
+						<!-- Panel footer with simple text -->
+						<div class="panel panel-default">
+							<div class="panel-body">
+								Panel footer with simple text
+							</div>
+							<div class="panel-footer">
+								<div class="elements">
+									<span class="heading-text text-semibold">Simple footer text:</span>
+									<span class="heading-text pull-right">Sample text</span>
+								</div>
+							</div>
+						</div>
+						<!-- /Panel footer with simple text -->
+
+						<!-- Panel footer text with left icon -->
+						<div class="panel panel-default">
+							<div class="panel-body">
+								Panel footer text with left icon
+							</div>
+							<div class="panel-footer">
+								<div class="elements">
+									<span class="heading-text text-semibold">Text with left icon:</span>
+									<span class="heading-text pull-right"><i class="icon-thumbs-up2 position-left"></i> 41 likes</span>
+								</div>
+							</div>
+						</div>
+						<!-- /Panel footer text with left icon -->
+
+						<!-- Panel footer with label -->
+						<div class="panel panel-default">
+							<div class="panel-body">
+								Panel footer with label
+							</div>
+							<div class="panel-footer">
+								<div class="elements">
+									<span class="heading-text text-semibold">Status:</span>
+									<span class="heading-text pull-right"><span class="label bg-danger position-left">Bug</span></span>
+								</div>
+							</div>
+						</div>
+						<!-- /Panel footer with label -->
+
+						<!-- Panel footer with pagination -->
+						<div class="panel panel-default">
+							<div class="panel-body">
+								Panel footer with pagination
+							</div>
+							<div class="panel-footer">
+								<div class="elements">
+									<span class="heading-text text-semibold">Pagination:</span>
+									<ul class="pagination pagination-sm pull-right">
+										<li><a href="#"><i class="icon-arrow-left22"></i></a></li>
+										<li><a href="#">1</a></li>
+										<li class="active"><a href="#">2</a></li>
+										<li><a href="#">3</a></li>
+										<li><a href="#"><i class="icon-arrow-right22"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- /Panel footer with pagination -->
+
+					</div>
+
+					<div class="col-md-6 col-sm-6">
+
+						<!-- Panel footer with simple link -->
+						<div class="panel panel-default">
+							<div class="panel-body">
+								Panel footer with simple link
+							</div>
+							<div class="panel-footer">
+								<div class="elements">
+									<span class="heading-text text-semibold">Simple footer link:</span>
+									<a href="#" class="heading-text pull-right">Click me</a>
+								</div>
+							</div>
+						</div>
+						<!-- /Panel footer with simple link -->
+
+						<!-- Panel footer text with right icon -->
+						<div class="panel panel-default">
+							<div class="panel-body">
+								Panel footer text with right icon
+							</div>
+							<div class="panel-footer">
+								<div class="elements">
+									<span class="heading-text text-semibold">Text with right icon:</span>
+									<a href="#" class="heading-btn btn btn-link pull-right">Read more <i class="icon-arrow-right6 position-right"></i></a>
+								</div>
+							</div>
+						</div>
+						<!-- /Panel footer text with right icon -->
+
+						<!-- Panel footer with badge -->
+						<div class="panel panel-default">
+							<div class="panel-body">
+								Panel footer with badge
+							</div>
+							<div class="panel-footer">
+								<div class="elements">
+									<span class="heading-text text-semibold">Unread messages:</span>
+									<span class="heading-text pull-right"><span class="badge bg-success position-left">14</span></span>
+								</div>
+							</div>
+						</div>
+						<!-- /Panel footer with badge -->
+
+						<!-- Panel footer with pager -->
+						<div class="panel panel-default">
+							<div class="panel-body">
+								Panel footer with pager
+							</div>
+							<div class="panel-footer">
+								<div class="elements">
+									<span class="heading-text text-semibold">Pager:</span>
+									<ul class="pager pager-sm pull-right">
+										<li><a href="#"><i class="icon-arrow-left22"></i> Prev</a></li>
+										<li><a href="#">Next <i class="icon-arrow-right22"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- /Panel footer with pager -->
+						
+					</div>
+				</div>
+
+			</div>
+
+			<!-- Footer -->
+			<footer class="footer-container">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12 col-sm-12">
+							<div class="pull-left">
+								© 2017 Bird&nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;&nbsp;Web app kit by <a href="http://followtechnique.com" target="_blank">FollowTechnique</a>.							</div>
+	                        <div class="pull-right">
+								<div class="label label-info">Version: 1.3.0</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- /Footer -->
+
+		</section>
+		<!-- /Page Container ends -->
+
+		<!-- ScrolltoTop -->
+		<a id="scrollTop" href="#top"><i class="icon-arrow-up12"></i></a>
+		<!-- /ScrolltoTop -->
+
+	</div>
+
+<!-- Rightbar -->
+<div id="right_sidebar" class="right_bar"></div>
+<script>
+function open_rightbar() {
+	$(window).resize(function() {
+		if(($(window).width() < 500)){
+			document.getElementById("right_sidebar").style.width = "100%";
+		}
+		else if($(window).width() > 500) {
+			document.getElementById("right_sidebar").style.width = "260px";
+		}
+	}).resize();
+}
+function close_rightbar() {
+	document.getElementById("right_sidebar").style.width = "0";
+}
+</script>
+<!-- /Rightbar -->
+
+<!-- Layout settings -->
+<div class="layout"></div>
+<span class="is_hidden" id="jquery_vars">
+	<span class="is_hidden switch-active"></span>
+	<span class="is_hidden switch-inactive"></span>
+	<span class="is_hidden chart-bg"></span>
+	<span class="is_hidden chart-gridlines-color"></span>
+	<span class="is_hidden chart-legends-text-color"></span>
+	<span class="is_hidden chart-grid-text-color"></span>
+	<span class="is_hidden chart-data-color-option1"></span>
+	<span class="is_hidden chart-data-color-option2"></span>
+	<span class="is_hidden chart-data-color-option3"></span>
+	<span class="is_hidden chart-data-color-option4"></span>
+	<span class="is_hidden chart-data-color-option5"></span>
+	<span class="is_hidden chart-data-color-option6"></span>
+	<span class="is_hidden chart-data-color-option7"></span>
+	<span class="is_hidden chart-data-color-option8"></span>
+</span>
+<!-- /Layout settings -->
+
+<!-- Global scripts -->
+<script src="lib/js/core/jquery/jquery.js"></script>
+<script src="lib/js/core/jquery/jquery.ui.js"></script>
+<script src="lib/js/core/bootstrap/bootstrap.js"></script>
+<script src="lib/js/core/bootstrap/jasny_bootstrap.min.js"></script>
+<script src="lib/js/core/navigation/nav.accordion.js"></script>
+<script src="lib/js/core/hammer/hammerjs.js"></script>
+<script src="lib/js/core/hammer/jquery.hammer.js"></script>
+<script src="lib/js/core/slimscroll/jquery.slimscroll.js"></script>
+<script src="lib/js/extensions/smart-resize.js"></script>
+<script src="lib/js/extensions/blockui.min.js"></script>
+<script src="lib/js/forms/uniform.min.js"></script>
+<script src="lib/js/forms/switchery.js"></script>
+<script src="lib/js/forms/select2.min.js"></script>
+<script src="lib/js/plugins/venobox.js"></script>
+<script src="lib/js/core/app/layouts.js"></script>
+<script src="lib/js/core/app/core.js"></script>
+<!-- /Global scripts -->
+
+<!-- Page scripts -->
+<!-- /Page scripts -->
+
+</body>
+</html>

@@ -1,0 +1,1649 @@
+<!doctype html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="theme-color" content="#1C2B36" />
+	<title>Bird - Responsive admin dashboard template by Followtechnique</title>
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="144x144">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="114x114">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png" sizes="72x72">
+	<link href="img/favicon.ico" rel="apple-touch-icon" type="image/png">
+	<link href="img/favicon.ico" rel="icon" type="image/png">
+	<link href="img/favicon.ico" rel="shortcut icon">
+    <!-- /Favicon -->
+
+    <!-- Global stylesheets -->
+	<link type="text/css" rel="stylesheet" href="lib/css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="lib/css/animate.min.css">
+    <link type="text/css" rel="stylesheet" href="lib/css/main.css">
+    <!-- /Global stylesheets -->
+</head>
+<body id="top">
+
+<!-- Preloader -->
+<div id="preloader">
+	<div id="status">
+		<div class="loader"></div>
+	</div>
+</div>
+<!-- /Preloader -->
+
+<div id="body-wrapper" class="body-container">
+
+	<!-- Header begins -->
+	<header class="main-nav clearfix">
+
+		<!-- Searchbar -->
+		<div class="top-search-bar">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3">
+						<div class="search-input-addon">
+							<span class="addon-icon"><i class="icon-search4"></i></span>
+							<input type="text" class="form-control top-search-input" placeholder="Enter your keyword...">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /Searchbar -->
+
+		<!-- Branding -->
+		<div class="navbar-left pull-left">
+			<div class="clearfix">
+				<ul class="left-branding pull-left">
+					<li class="visible-handheld"><span class="left-toggle-switch"><i class="icon-menu7"></i></span></li>
+					<li>
+						<a href="index.html"><div class="logo"></div></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /Branding -->
+
+		<!-- Search & Languages -->
+		<div class="navbar pull-left">
+			<div class="clearfix">
+				<ul class="pull-left top-icons hidden-xs">
+					<li><a href="#" class="btn-top-search m-l-10"><i class="icon-search4"></i></a></li>
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-flag7"></i></a>
+						<ul class="dropdown-menu languages">
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">Deutsch</a></li>
+                            <li><a href="#">Українська</a></li>
+							<li><a href="#">España</a></li>
+                        </ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /Search & Languages -->
+
+		<!-- Navbar icons -->
+		<div class="navbar pull-right">
+			<div class="clearfix">
+				<ul class="pull-right top-icons">
+					<li><a href="#" class="btn-top-search visible-xs"><i class="icon-search4"></i></a></li>
+
+					<!-- Quick apps dropdown -->
+					<li class="dropdown apps-dropdown hidden-xs">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-grid2"></i></a>
+						<div class="dropdown-menu">
+						</div>
+					</li>
+					<!-- /Quick apps dropdown -->
+
+					<!-- Rightbar -->
+					<li><a href="#" onclick="open_rightbar()"><span class="bubble">6</span><i class="icon-stack3"></i></a></li>
+					<!-- /Rightbar -->
+
+					<!-- User dropdown -->
+					<li class="dropdown user-dropdown">
+						<a class="user-name hidden-xs" data-toggle="dropdown">Jane Elliott <i class="icon-more2"></i><small>Administrator</small></a>
+						<a href="#" class="btn-user dropdown-toggle hidden-xs" data-toggle="dropdown"><img src="http://via.placeholder.com/80x80" class="img-circle user" alt=""/></a>
+						<a href="#" class="dropdown-toggle visible-xs" data-toggle="dropdown"><i class="icon-more"></i></a>
+						<div class="dropdown-menu no-padding">
+						</div>
+					</li>
+					<!-- /User dropdown -->
+
+				</ul>
+			</div>
+		</div>
+		<!-- /Navbar icons -->
+
+	</header>
+	<!-- /Header ends -->
+
+	<!-- Sidebar -->
+	<aside class="menu">
+		<div class="left-aside-container">
+
+			<!-- User profile -->
+			<div class="user-profile"></div>
+			<!-- /User profile -->
+
+
+			<!-- Main menu -->
+			<div class="menu-container"></div>
+			<!-- /Main menu -->
+
+		</div>
+	</aside>
+	<!-- /Sidebar -->
+
+	<!-- Page container begins -->
+	<section class="main-container">
+		<h1 style="display:none">Empty Heading</h1>
+
+			<!--Page Header-->
+			<div class="header">
+				<div class="header-content">
+					<div class="page-title">
+						<i class="spinner icon-spinner2 position-left"></i> CSS3 animations
+					</div>
+					<ul class="breadcrumb">
+						<li><a href="index.html"></a></li>
+						<li class="active">CSS3 animations</li>
+					</ul>
+				</div>
+			</div>
+			<!--/Page Header-->
+
+			<div class="container-fluid page-content">
+
+				<!-- Attention seekers -->
+				<div class="page-subtitle">
+					Attention seekers
+					<small>(Basic animations using <code>animate.min.css</code>)</small>
+				</div>
+
+				<div class="row">
+					<div class="col-md-3 col-sm-3">
+
+						<!-- Bounce -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">Bounce</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="bounce"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Bounce animation using <code>bounce</code> class
+							</div>
+						</div>
+						<!-- /Bounce -->
+
+						<!-- Shake -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">Shake</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="shake"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Shake animation using <code>shake</code> class
+							</div>
+						</div>
+						<!-- /Shake -->
+					</div>
+
+					<div class="col-md-3 col-sm-3">
+
+						<!-- Flash -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">Flash</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="flash"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Flash animation using <code>flash</code> class
+							</div>
+						</div>
+						<!-- /Flash -->
+
+						<!-- Swing -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">Swing</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="swing"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Swing animation using <code>swing</code> class
+							</div>
+						</div>
+						<!-- /Swing -->
+					</div>
+
+					<div class="col-md-3 col-sm-3">
+						<!-- Pulse -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">Pulse</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="pulse"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Pulse animation using <code>pulse</code> class
+							</div>
+						</div>
+						<!-- /Pulse -->
+
+						<!-- Tada -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">Tada</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="tada"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Tada animation using <code>tada</code> class
+							</div>
+						</div>
+						<!-- /Tada -->
+					</div>
+
+					<div class="col-md-3 col-sm-3">
+						<!-- Rubberband -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">Rubberband</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="rubberBand"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Rubberband animation using <code>rubberBand</code> class
+							</div>
+						</div>
+						<!-- /Rubberband -->
+
+						<!-- Wobble -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">Wobble</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="wobble"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Wobble animation using <code>wobble</code> class
+							</div>
+						</div>
+						<!-- /Wobble -->
+					</div>
+				</div>
+				<!-- /Attention seekers -->
+
+
+				<!-- Bouncing entrances -->
+				<div class="page-subtitle">
+					Bouncing entrances
+					<small>(Entrance options for <code>bounce</code> animations)</small>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4 col-sm-4">
+
+						<!-- BounceInLeft -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">BounceInLeft</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="bounceInLeft"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Bounce In Left animation using <code>bounceInLeft</code> class
+							</div>
+						</div>
+						<!-- /BounceInLeft -->
+					</div>
+
+					<div class="col-md-4 col-sm-4">
+
+						<!-- BounceIn -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">BounceIn</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="bounceIn"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Bounce In animation using <code>bounceIn</code> class
+							</div>
+						</div>
+						<!-- /BounceIn -->
+					</div>
+
+					<div class="col-md-4 col-sm-4">
+
+						<!-- BounceInRight -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">BounceInRight</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="bounceInRight"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Bounce In Right animation using <code>bounceInRight</code> class
+							</div>
+						</div>
+						<!-- /BounceInRight -->
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6 col-sm-6">
+
+						<!-- BounceInUp -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">BounceInUp</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="bounceInUp"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Bounce In Up animation using <code>bounceInUp</code> class
+							</div>
+						</div>
+						<!-- /BounceInUp -->
+					</div>
+
+					<div class="col-md-6 col-sm-6">
+
+						<!-- BounceInDown -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">BounceInDown</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="bounceInDown"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Bounce In Down animation using <code>bounceInDown</code> class
+							</div>
+						</div>
+						<!-- /BounceInDown -->
+					</div>
+				</div>
+				<!-- /Bouncing entrances -->
+
+
+				<!-- Bouncing exits -->
+				<div class="page-subtitle">
+					Bouncing exits
+					<small>(Exit options for <code>bounce</code> animations)</small>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4 col-sm-4">
+
+						<!-- BounceOutLeft -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">BounceOutLeft</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="bounceOutLeft"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Bounce Out Left animation using <code>bounceOutLeft</code> class
+							</div>
+						</div>
+						<!-- /BounceOutLeft -->
+					</div>
+
+					<div class="col-md-4 col-sm-4">
+
+						<!-- BounceOut -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">BounceOut</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="bounceOut"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Bounce Out animation using <code>bounceOut</code> class
+							</div>
+						</div>
+						<!-- /BounceOut -->
+					</div>
+
+					<div class="col-md-4 col-sm-4">
+
+						<!-- BounceOutRight -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">BounceOutRight</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="bounceOutRight"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Bounce Out Right animation using <code>bounceOutRight</code> class
+							</div>
+						</div>
+						<!-- /BounceOutRight -->
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6 col-sm-6">
+
+						<!-- BounceOutUp -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">BounceOutUp</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="bounceOutUp"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Bounce Out Up animation using <code>bounceOutUp</code> class
+							</div>
+						</div>
+						<!-- /BounceOutUp -->
+					</div>
+
+					<div class="col-md-6 col-sm-6">
+
+						<!-- BounceOutDown -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">BounceOutDown</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="bounceOutDown"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Bounce Out Down animation using <code>bounceOutDown</code> class
+							</div>
+						</div>
+						<!-- /BounceOutDown -->
+					</div>
+				</div>
+				<!-- /Bouncing exits -->
+
+
+				<!-- Fading entrances -->
+				<div class="page-subtitle">
+					Fading entrances
+					<small>(Entrance options for <code>fade</code> animations)</small>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4 col-sm-4">
+
+						<!-- FadeIn -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">FadeIn</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="fadeIn"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Fade In animation using <code>fadeIn</code> class
+							</div>
+						</div>
+						<!-- /FadeIn -->
+
+						<!-- FadeInLeft -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">FadeInLeft</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="fadeInLeft"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Fade In Left animation using <code>fadeInLeft</code> class
+							</div>
+						</div>
+						<!-- /FadeInLeft -->
+
+						<!-- FadeInRight -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">FadeInRight</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="fadeInRight"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Fade In Right animation using <code>fadeInRight</code> class
+							</div>
+						</div>
+						<!-- /FadeInRight -->
+					</div>
+
+					<div class="col-md-4 col-sm-4">
+
+						<!-- FadeInDown -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">FadeInDown</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="fadeInDown"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Fade In Down animation using <code>fadeInDown</code> class
+							</div>
+						</div>
+						<!-- /FadeInDown -->
+
+						<!-- FadeInLeftBig -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">FadeInLeftBig</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="fadeInLeftBig"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Fade In Left Big animation using <code>fadeInLeftBig</code> class
+							</div>
+						</div>
+						<!-- /FadeInLeftBig -->
+
+						<!-- FadeInRightBig -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">FadeInRightBig</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="fadeInRightBig"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Fade In Right Big animation using <code>fadeInRightBig</code> class
+							</div>
+						</div>
+						<!-- /FadeInRightBig -->
+					</div>
+
+					<div class="col-md-4 col-sm-4">
+
+						<!-- FadeInDownBig -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">FadeInDownBig</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="fadeInDownBig"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Fade In Down Big animation using <code>fadeInDownBig</code> class
+							</div>
+						</div>
+						<!-- /FadeInDownBig -->
+
+						<!-- FadeInUp -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">FadeInUp</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="fadeInUp"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Fade In Up animation using <code>fadeInUp</code> class
+							</div>
+						</div>
+						<!-- /FadeInUp -->
+
+						<!-- FadeInUpBig -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">FadeInUpBig</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="fadeInUpBig"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Fade In Up Big animation using <code>fadeInUpBig</code> class
+							</div>
+						</div>
+						<!-- /FadeInUpBig -->
+					</div>
+				</div>
+				<!-- /Fading entrances -->
+
+				<!-- Fading exits -->
+				<div class="page-subtitle">
+					Fading exits
+					<small>(Exit options for <code>fade</code> animations)</small>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4 col-sm-4">
+
+						<!-- FadeOut -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">FadeOut</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="fadeOut"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Fade Out animation using <code>fadeOut</code> class
+							</div>
+						</div>
+						<!-- /FadeOut -->
+
+						<!-- FadeOutLeft -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">FadeOutLeft</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="fadeOutLeft"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Fade Out Left animation using <code>fadeOutLeft</code> class
+							</div>
+						</div>
+						<!-- /FadeOutLeft -->
+
+						<!-- FadeOutRight -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">FadeOutRight</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="fadeOutRight"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Fade Out Right animation using <code>fadeOutRight</code> class
+							</div>
+						</div>
+						<!-- /FadeOutRight -->
+					</div>
+
+					<div class="col-md-4 col-sm-4">
+
+						<!-- FadeOutDown -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">FadeOutDown</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="fadeOutDown"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Fade Out Down animation using <code>fadeOutDown</code> class
+							</div>
+						</div>
+						<!-- /FadeOutDown -->
+
+						<!-- FadeOutLeftBig -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">FadeOutLeftBig</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="fadeOutLeftBig"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Fade Out Left Big animation using <code>fadeOutLeftBig</code> class
+							</div>
+						</div>
+						<!-- /FadeOutLeftBig -->
+
+						<!-- FadeOutRightBig -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">FadeOutRightBig</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="fadeOutRightBig"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Fade Out Right Big animation using <code>fadeOutRightBig</code> class
+							</div>
+						</div>
+						<!-- /FadeOutRightBig -->
+					</div>
+
+					<div class="col-md-4 col-sm-4">
+
+						<!-- FadeOutDownBig -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">FadeOutDownBig</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="fadeOutDownBig"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Fade Out Down Big animation using <code>fadeOutDownBig</code> class
+							</div>
+						</div>
+						<!-- /FadeOutDownBig -->
+
+						<!-- FadeOutUp -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">FadeOutUp</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="fadeOutUp"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Fade Out Up animation using <code>fadeOutUp</code> class
+							</div>
+						</div>
+						<!-- /FadeOutUp -->
+
+						<!-- FadeOutUpBig -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">FadeOutUpBig</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="fadeOutUpBig"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Fade Out Up Big animation using <code>fadeOutUpBig</code> class
+							</div>
+						</div>
+						<!-- /FadeOutUpBig -->
+					</div>
+				</div>
+				<!-- /Fading exits -->
+
+
+				<!-- Flippers -->
+				<div class="page-subtitle">
+					Flip animations
+					<small>(Options for <code>flip</code> animations)</small>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4 col-sm-4">
+
+						<!-- FlipInX -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">FlipInX</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="flipInX"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Flip In X animation using <code>flipInX</code> class
+							</div>
+						</div>
+						<!-- /FlipInX -->
+					</div>
+
+					<div class="col-md-4 col-sm-4">
+
+						<!-- Flip -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">Flip</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="flip"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Flip animation using <code>flip</code> class
+							</div>
+						</div>
+						<!-- /Flip -->
+					</div>
+
+					<div class="col-md-4 col-sm-4">
+
+						<!-- FlipInY -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">FlipInY</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="flipInY"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Flip In Y animation using <code>flipInY</code> class
+							</div>
+						</div>
+						<!-- /FlipInY -->
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6 col-sm-6">
+
+						<!-- FlipOutX -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">FlipOutX</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="flipOutX"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Flip Out X animation using <code>flipOutX</code> class
+							</div>
+						</div>
+						<!-- /FlipOutX -->
+					</div>
+
+					<div class="col-md-6 col-sm-6">
+
+						<!-- FlipOutY -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">FlipOutY</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="flipOutY"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Flip Out Y animation using <code>flipOutY</code> class
+							</div>
+						</div>
+						<!-- /FlipOutY -->
+					</div>
+				</div>
+				<!-- /Flippers -->
+
+				<!-- Lightspeed -->
+				<div class="page-subtitle">
+					Lightspeed animations
+					<small>(Options for <code>light speed</code> animations)</small>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6 col-sm-6">
+
+						<!-- LightSpeedIn -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">LightSpeedIn</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="lightSpeedIn"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Light Speed In animation using <code>lightSpeedIn</code> class
+							</div>
+						</div>
+						<!-- /LightSpeedIn -->
+					</div>
+
+					<div class="col-md-6 col-sm-6">
+
+						<!-- LightSpeedOut -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">LightSpeedOut</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="lightSpeedOut"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Light Speed Out animation using <code>lightSpeedOut</code> class
+							</div>
+						</div>
+						<!-- /LightSpeedOut -->
+					</div>
+				</div>
+				<!-- /Lightspeed -->
+
+				<!-- Rotating entrances -->
+				<div class="page-subtitle">
+					Rotating entrances
+					<small>(Entrance options for <code>rotate</code> animations)</small>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4 col-sm-4">
+
+						<!-- RotateInDownLeft -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">RotateInDownLeft</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="rotateInDownLeft"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Rotate In Down Left animation using <code>rotateInDownLeft</code> class
+							</div>
+						</div>
+						<!-- /RotateInDownLeft -->
+					</div>
+
+					<div class="col-md-4 col-sm-4">
+
+						<!-- RotateIn -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">RotateIn</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="rotateIn"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Rotate In animation using <code>rotateIn</code> class
+							</div>
+						</div>
+						<!-- /RotateIn -->
+					</div>
+
+					<div class="col-md-4 col-sm-4">
+
+						<!-- RotateInDownRight -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">RotateInDownRight</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="rotateInDownRight"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Rotate In Down Right animation using <code>rotateInDownRight</code> class
+							</div>
+						</div>
+						<!-- /RotateInDownRight -->
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6 col-sm-6">
+
+						<!-- RotateInUpLeft -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">RotateInUpLeft</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="rotateInUpLeft"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Rotate In Up Left animation using <code>rotateInUpLeft</code> class
+							</div>
+						</div>
+						<!-- /RotateInUpLeft -->
+					</div>
+
+					<div class="col-md-6 col-sm-6">
+
+						<!-- RotateInUpRight -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">RotateInUpRight</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="rotateInUpRight"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Rotate In Up Right animation using <code>rotateInUpRight</code> class
+							</div>
+						</div>
+						<!-- /RotateInUpRight -->
+					</div>
+				</div>
+				<!-- /Rotating entrances -->
+
+				<!-- Rotating exits -->
+				<div class="page-subtitle">
+					Rotating exits
+					<small>(Exit options for <code>rotate</code> animations)</small>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4 col-sm-4">
+
+						<!-- RotateOutDownLeft -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">RotateOutDownLeft</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="rotateOutDownLeft"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Rotate Out Down Left animation using <code>rotateOutDownLeft</code> class
+							</div>
+						</div>
+						<!-- /RotateOutDownLeft -->
+					</div>
+
+					<div class="col-md-4 col-sm-4">
+
+						<!-- RotateOut -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">RotateOut</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="rotateOut"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Rotate Out animation using <code>rotateOut</code> class
+							</div>
+						</div>
+						<!-- /RotateOut -->
+					</div>
+
+					<div class="col-md-4 col-sm-4">
+
+						<!-- RotateOutDownRight -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">RotateOutDownRight</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="rotateOutDownRight"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Rotate Out Down Right animation using <code>rotateOutDownRight</code> class
+							</div>
+						</div>
+						<!-- /RotateOutDownRight -->
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6 col-sm-6">
+
+						<!-- RotateOutUpLeft -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">RotateOutUpLeft</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="rotateOutUpLeft"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Rotate Out Up Left animation using <code>rotateOutUpLeft</code> class
+							</div>
+						</div>
+						<!-- /RotateOutUpLeft -->
+					</div>
+
+					<div class="col-md-6 col-sm-6">
+
+						<!-- RotateOutUpRight -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">RotateOutUpRight</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="rotateOutUpRight"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Rotate Out Up Right animation using <code>rotateOutUpRight</code> class
+							</div>
+						</div>
+						<!-- /RotateOutUpRight -->
+					</div>
+				</div>
+				<!-- /Rotating exits -->
+
+
+				<!-- Special animations -->
+				<div class="page-subtitle">
+					Special animations
+					<small>(Options for <code>special</code> animations)</small>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4 col-sm-4">
+
+						<!-- RollIn -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">RollIn</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="rollIn"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Roll In animation using <code>rollIn</code> class
+							</div>
+						</div>
+						<!-- /RollIn -->
+					</div>
+
+					<div class="col-md-4 col-sm-4">
+
+						<!-- Hinge -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">Hinge</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="hinge"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Hinge animation using <code>hinge</code> class
+							</div>
+						</div>
+						<!-- /Hinge -->
+					</div>
+
+					<div class="col-md-4 col-sm-4">
+
+						<!-- RollOut -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">RollOut</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="rollOut"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Roll Out animation using <code>rollOut</code> class
+							</div>
+						</div>
+						<!-- /RollOut -->
+					</div>
+				</div>
+				<!-- /Special animations -->
+
+
+				<!-- Zoom entrances -->
+				<div class="page-subtitle">
+					Zoom entrances
+					<small>(Entrance options for <code>zoom</code> animations)</small>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4 col-sm-4">
+
+						<!-- ZoomInLeft -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">ZoomInLeft</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="zoomInLeft"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Zoom In Left animation using <code>zoomInLeft</code> class
+							</div>
+						</div>
+						<!-- /ZoomInLeft -->
+					</div>
+
+					<div class="col-md-4 col-sm-4">
+
+						<!-- ZoomIn -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">ZoomIn</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="zoomIn"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Zoom In animation using <code>zoomIn</code> class
+							</div>
+						</div>
+						<!-- /ZoomIn -->
+					</div>
+
+					<div class="col-md-4 col-sm-4">
+
+						<!-- ZoomInRight -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">ZoomInRight</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="zoomInRight"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Zoom In Right animation using <code>zoomInRight</code> class
+							</div>
+						</div>
+						<!-- /ZoomInRight -->
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6 col-sm-6">
+
+						<!-- ZoomInUp -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">ZoomInUp</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="zoomInUp"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Zoom In Up animation using <code>zoomInUp</code> class
+							</div>
+						</div>
+						<!-- /ZoomInUp -->
+					</div>
+
+					<div class="col-md-6 col-sm-6">
+
+						<!-- ZoomInDown -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">ZoomInDown</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="zoomInDown"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Zoom In Down animation using <code>zoomInDown</code> class
+							</div>
+						</div>
+						<!-- /ZoomInDown -->
+					</div>
+				</div>
+				<!-- /Zoom entrances -->
+
+
+				<!-- Zoom exits -->
+				<div class="page-subtitle">
+					Zoom exits
+					<small>(Exit options for <code>zoom</code> animations)</small>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4 col-sm-4">
+
+						<!-- ZoomOutLeft -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">ZoomOutLeft</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="zoomOutLeft"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Zoom Out Left animation using <code>zoomOutLeft</code> class
+							</div>
+						</div>
+						<!-- /ZoomOutLeft -->
+					</div>
+
+					<div class="col-md-4 col-sm-4">
+
+						<!-- ZoomOut -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">ZoomOut</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="zoomOut"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Zoom Out animation using <code>zoomOut</code> class
+							</div>
+						</div>
+						<!-- /ZoomOut -->
+					</div>
+
+					<div class="col-md-4 col-sm-4">
+
+						<!-- ZoomOutRight -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">ZoomOutRight</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="zoomOutRight"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Zoom Out Right animation using <code>zoomOutRight</code> class
+							</div>
+						</div>
+						<!-- /ZoomOutRight -->
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-6 col-sm-6">
+
+						<!-- ZoomOutUp -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">ZoomOutUp</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="zoomOutUp"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Zoom Out Up animation using <code>zoomOutUp</code> class
+							</div>
+						</div>
+						<!-- /ZoomOutUp -->
+					</div>
+
+					<div class="col-md-6 col-sm-6">
+
+						<!-- ZoomOutDown -->
+						<div class="panel panel-default" style="min-height:110px;">
+							<div class="panel-heading">
+								<div class="panel-title">ZoomOutDown</div>
+								<div class="elements">
+									<ul class="icons-list">
+										<li><a href="#" class="animation" data-animation="zoomOutDown"><i class="icon-play3"></i></a></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="panel-body">
+								Zoom Out Down animation using <code>zoomOutDown</code> class
+							</div>
+						</div>
+						<!-- /ZoomOutDown -->
+					</div>
+				</div>
+				<!-- /Zoom exits -->
+
+			</div>
+
+			<!-- Footer -->
+			<footer class="footer-container">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12 col-sm-12">
+							<div class="pull-left">
+								© 2017 Bird&nbsp;&nbsp;&nbsp;&bull;&nbsp;&nbsp;&nbsp;Web app kit by <a href="http://followtechnique.com" target="_blank">FollowTechnique</a>.							</div>
+	                        <div class="pull-right">
+								<div class="label label-info">Version: 1.3.0</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- /Footer -->
+
+		</section>
+		<!-- /Page Container ends -->
+
+		<!-- ScrolltoTop -->
+		<a id="scrollTop" href="#top"><i class="icon-arrow-up12"></i></a>
+		<!-- /ScrolltoTop -->
+
+	</div>
+
+<!-- Rightbar -->
+<div id="right_sidebar" class="right_bar"></div>
+<script>
+function open_rightbar() {
+	$(window).resize(function() {
+		if(($(window).width() < 500)){
+			document.getElementById("right_sidebar").style.width = "100%";
+		}
+		else if($(window).width() > 500) {
+			document.getElementById("right_sidebar").style.width = "260px";
+		}
+	}).resize();
+}
+function close_rightbar() {
+	document.getElementById("right_sidebar").style.width = "0";
+}
+</script>
+<!-- /Rightbar -->
+
+<!-- Layout settings -->
+<div class="layout"></div>
+<span class="is_hidden" id="jquery_vars">
+	<span class="is_hidden switch-active"></span>
+	<span class="is_hidden switch-inactive"></span>
+	<span class="is_hidden chart-bg"></span>
+	<span class="is_hidden chart-gridlines-color"></span>
+	<span class="is_hidden chart-legends-text-color"></span>
+	<span class="is_hidden chart-grid-text-color"></span>
+	<span class="is_hidden chart-data-color-option1"></span>
+	<span class="is_hidden chart-data-color-option2"></span>
+	<span class="is_hidden chart-data-color-option3"></span>
+	<span class="is_hidden chart-data-color-option4"></span>
+	<span class="is_hidden chart-data-color-option5"></span>
+	<span class="is_hidden chart-data-color-option6"></span>
+	<span class="is_hidden chart-data-color-option7"></span>
+	<span class="is_hidden chart-data-color-option8"></span>
+</span>
+<!-- /Layout settings -->
+
+<!-- Global scripts -->
+<script src="lib/js/core/jquery/jquery.js"></script>
+<script src="lib/js/core/jquery/jquery.ui.js"></script>
+<script src="lib/js/core/bootstrap/bootstrap.js"></script>
+<script src="lib/js/core/bootstrap/jasny_bootstrap.min.js"></script>
+<script src="lib/js/core/navigation/nav.accordion.js"></script>
+<script src="lib/js/core/hammer/hammerjs.js"></script>
+<script src="lib/js/core/hammer/jquery.hammer.js"></script>
+<script src="lib/js/core/slimscroll/jquery.slimscroll.js"></script>
+<script src="lib/js/extensions/smart-resize.js"></script>
+<script src="lib/js/extensions/blockui.min.js"></script>
+<script src="lib/js/forms/uniform.min.js"></script>
+<script src="lib/js/forms/switchery.js"></script>
+<script src="lib/js/forms/select2.min.js"></script>
+<script src="lib/js/plugins/venobox.js"></script>
+<script src="lib/js/core/app/layouts.js"></script>
+<script src="lib/js/core/app/core.js"></script>
+<!-- /Global scripts -->
+
+<!-- Page scripts -->
+<script src="lib/js/pages/animations.js"></script>
+<!-- /Page scripts -->
+
+</body>
+</html>
